@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer()
 {
     return (       
-        <footer className="bg-black flex flex-col space-y-3 sm:flex-row sm:space-y-0 justify-between items-center px-4 py-3">
+        <footer className="bg-[#222222] border-t border-gray-600 flex flex-col space-y-3 sm:flex-row sm:space-y-0 justify-between items-center px-4 py-3">
             
             {/* Logo à gauche */}
             <div>
