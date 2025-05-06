@@ -1,11 +1,21 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import LandingSection from "../components/home/LandingSection";
+import AboutPreview from "../components/home/AboutPreview";
+import ServicesPreview from "../components/home/ServicesPreview";
+import SkillsPreview from "../components/home/SkillsPreview";
+import ProjectsPreview from "../components/home/ProjectsPreview";
+import BlogPreview from "../components/home/BlogPreview";
+import ContactTeaser from "../components/home/ContactTeaser";
 
 export default function HomePage() {
-    return (
-      <div>
-        <h1>Page d'Accueil</h1>
-        <p>Bienvenue sur mon portfolio !</p>
-      </div>
-    );
-  }
+  return (
+    <main className="scroll-smooth">
+      <LandingSection />
+      <AboutPreview />
+      <ServicesPreview />
+      <SkillsPreview />
+      <ProjectsPreview />
+      <BlogPreview />
+      <ContactTeaser />
+    </main>
+  );
+}
