@@ -11,14 +11,14 @@ import ArticlePage from "./pages/ArticlePage";
 import ContactPage from "./pages/ContactPage";
 import LegalAndPrivacyPage from "./pages/LegalAndPrivacyPage"; // Mentions légales + politique de confidentialité
 import NotFoundPage from "./pages/NotFoundPage";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HeaderWrapper from "./components/HeaderWrapper";
 
 export default function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        <Header />
+      <HeaderWrapper />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />

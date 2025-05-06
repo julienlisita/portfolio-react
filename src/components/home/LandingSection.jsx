@@ -2,7 +2,7 @@ import { ArrowDown } from "lucide-react";
 
 export default function LandingSection() {
   return (
-    <section className="h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#000000] to-[#222222] px-4">
+    <section id="landing" className="h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#000000] to-[#222222] px-4">
         {/* Phrase d'accroche */}
         <p className="mb-8 max-w-xl text-white text-lg sm:text-xl md:text-2xl font-poppins">
             "Des solutions <span className="text-[#5AC8FA]">sur mesure</span><br />
