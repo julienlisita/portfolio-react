@@ -1,9 +1,9 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function BlogPage() {
     return (
       <div>
-        <Header/>
         <h1>Mon Blog</h1>
         <p>Derniers articles publiés :</p>
         <ul>

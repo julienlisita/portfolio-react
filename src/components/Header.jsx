@@ -9,7 +9,7 @@ export default function Header() {
     <header className="h-14 sm:h-16 lg:h-20 flex items-center justify-between px-4 bg-black sticky top-0 z-50">
       {/* Logo à gauche */}
         <div>
-            <img src="./src/assets/logo.png" alt="Logo Julien Lisita" className="h-8 sm:h-10 lg:h-12 w-auto" />
+            <img src="./src/assets/logos/site/logo1.png" alt="Logo Julien Lisita" className="h-8 sm:h-10 lg:h-12 w-auto" />
         </div>
 
         {/* Nom (centré en tablette & desktop) */}

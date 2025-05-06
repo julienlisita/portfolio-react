@@ -1,9 +1,9 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function PortfolioPage() {
     return (
       <div>
-        <Header/>
         <h1>Mes Projets</h1>
         <p>Voici mes projets récents :</p>
         <ul>
