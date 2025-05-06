@@ -6,7 +6,7 @@ export default function Header() {
   const {state:isOpen, toggleState} = useToggle(false);
 
   return (
-    <header className="h-14 sm:h-16 lg:h-20 flex items-center justify-between px-4 bg-black sticky top-0 z-50">
+    <header className="h-14 sm:h-16 lg:h-20 flex items-center justify-between px-4 bg-[#222222] sticky top-0 z-50 shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
       {/* Logo à gauche */}
         <div>
             <img src="./src/assets/logos/site/logo1.png" alt="Logo Julien Lisita" className="h-8 sm:h-10 lg:h-12 w-auto" />
@@ -19,11 +19,11 @@ export default function Header() {
 
         {/* Menu desktop */}
         <nav className="hidden lg:flex space-x-6 text-white">
-        <Link to="/">Accueil</Link>
-        <Link to="/portfolio">Portfolio</Link>
-        <Link to="/competences">Compétences</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/contact">Contact</Link>
+        <Link className="hover:underline" to="/" >Accueil</Link>
+        <Link className="hover:underline" to="/portfolio" >Portfolio</Link>
+        <Link className="hover:underline" to="/competences">Compétences</Link>
+        <Link className="hover:underline" to="/blog">Blog</Link>
+        <Link className="hover:underline" to="/contact">Contact</Link>
         </nav>
 
         {/* Burger menu mobile/tablette */}
