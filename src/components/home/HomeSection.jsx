@@ -1,5 +1,6 @@
 import LinkButton from "../LinkButton";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle";
+
 
 export default function HomeSection({ id, title, children, link }) {
     return (
