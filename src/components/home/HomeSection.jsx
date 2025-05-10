@@ -1,4 +1,4 @@
-import LinkButton from "../LinkButton";
+import Button from "../LinkButton";
 import SectionTitle from "../SectionTitle";
 
 
@@ -19,7 +19,7 @@ export default function HomeSection({ id, title, children, link }) {
           {/* Lien */}
           {link && (
             <div className="flex justify-center items-center my-4 sm:my-5 lg:my-6">
-              <LinkButton to={link.href}>{link.text}</LinkButton>
+              <Button to={link.href}>{link.text}</Button>
             </div>
           )}
         </div>
