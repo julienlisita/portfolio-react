@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
 
 export default function Footer()
 {
@@ -20,9 +22,13 @@ export default function Footer()
             </div>
 
             {/* Réseaux sociaux à droite */}
-            <div className="flex items-center space-x-2 sm:space-x-3 lg:space-x-4">
-                <a href="https://github.com/julienlisita"><img src="./src/assets/logos/socials/icon-github.png" alt="Logo Julien Lisita" className="h-8 sm:h-9 lg:h-12 w-auto" /></a>
-                <a href="https://www.linkedin.com/in/julienlisita/"> <img src="./src/assets/logos/socials/icon-linkedin.png" alt="Logo Julien Lisita" className="h-8 sm:h-8 lg:h-12 w-auto" /></a>
+           <div className="flex items-center space-x-2 sm:space-x-3 lg:space-x-4">
+                <a href="https://github.com/julienlisita" target="_blank" rel="noopener noreferrer">
+                    <FaGithub className="h-8 sm:h-9 lg:h-12 w-auto text-white transition-all duration-300 hover:text-[#5AC8FA] hover:scale-105" />
+                </a>
+                <a href="https://www.linkedin.com/in/julienlisita/" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin className="h-8 sm:h-9 lg:h-12 w-auto text-white transition-all duration-300 hover:text-[#5AC8FA] hover:scale-105" />
+                </a>
             </div>
         </footer>
     )
