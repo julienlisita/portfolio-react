@@ -1,8 +1,8 @@
-export default function SectionTitle({ children }) {
+export default function SectionTitle({ className, children }) {
     return (
-      <h2 className=" 
+      <h2 className={`${className}
         text-lg sm:text-xl lg:text-3xl 
-        font-semibold text-white">
+        font-semibold text-white`}>
         {children}
       </h2>
     );
