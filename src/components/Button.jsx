@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function LinkButton({ ...props}) {
+export default function Button({ ...props}) {
    const newProps = { 
         ...props,
         className: `
