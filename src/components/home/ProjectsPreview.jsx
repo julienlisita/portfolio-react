@@ -1,35 +1,9 @@
 import HomeSection from "./HomeSection";
 import ProjectCard from "./ProjectCard";
+import { projects } from "../../data/projectsData";
 
 export default function ProjectPreview()
 {
-
-const projects = [
-  {
-    title: "ShogiConnect",
-    description: "Une plateforme communautaire autour du shogi, avec profils joueurs, forum de discussion",
-    image: "./src/assets/images/projects/shogiconnect.png",
-    technos: ["React", "Node/Express", "Sequelize", "Socket.io"],
-    demo: "#",
-    github: "https://github.com/julienlisita/shogiconnect-client",
-  },
-  {
-    title: "Planify",
-    description: "Une plateforme de création de recettes de cuisine avec planification des repas",
-    image: "./src/assets/images/projects/planify.png",
-    technos: ["React", "Node/Express", "Sequelize", "Taiwind"],
-    demo: "#", 
-    github: "https://github.com/julienlisita/planify-frontend",
-  },
-  {
-    title: "Site Portfolio React",
-    description: "Un site responsive pour un freelance, intégration à partir de maquette Figma.",
-    image: "./src/assets/images/projects/portfolio.png",
-    technos: ["React", "Tailwind", "Frame-Motion"],
-    demo: "#",
-    github: "https://github.com/julienlisita/portfolio-react",
-  },
-];
     return (
         <HomeSection
             id="portfolio"

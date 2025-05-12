@@ -8,8 +8,8 @@ export default function ProjectCard({ id, image, title, description, technos }) 
     >
       <img
         src={image}
-        alt={title}
-        className="h-48 w-full object-fill"
+        alt={`Aperçu du projet ${title}`}
+        className="h-48 w-full object-cover"
       />
       <div className="p-4">
         <h3 className="text-lg text-white font-semibold mb-2">{title}</h3>
