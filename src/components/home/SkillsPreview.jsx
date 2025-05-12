@@ -54,11 +54,11 @@ export default function SkillesPreview() {
     title="Mes compétences"
     link={{ href: "/competences", text: "En savoir plus" }}
   >
-    <p className="text-white w-4/5 sm:w-4/5 lg:w-2/3">
+    <p className="text-white w-4/5 text-base sm:text-lg lg:text-xl">
       En tant que développeur full stack et mobile, je mets à votre disposition une expertise technique diversifiée pour concevoir des applications modernes, performantes et évolutives. Voici un aperçu des technologies que j’utilise pour transformer vos idées en réalité.
     </p>
   
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 w-4/5 sm:w-4/5 lg:w-2/3">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 w-4/5 ">
       {skillsData.map(({ title, description, icons }, index) => (
       <div key={index} className="relative pl-10">
       {/* Lueur subtile et fondue */}
@@ -69,7 +69,7 @@ export default function SkillesPreview() {
     
       <div className="relative z-30">
         <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
-        <p className="text-sm text-gray-300 mb-4">{description}</p>
+        <p className="text-base text-gray-300 mb-4">{description}</p>
         <div className="flex flex-wrap items-center gap-4">
           {icons.map((icon, i) => (
             <img key={i} src={icon} alt="Tech logo" className="h-7 w-auto" />

@@ -17,7 +17,7 @@ export default function ServiceCard({ icon, title, description, color }) {
       </h3>
 
       {/* Description */}
-      <p className="text-white text-center">
+      <p className="text-base text-white text-center">
         {description}
       </p>
     </div>
