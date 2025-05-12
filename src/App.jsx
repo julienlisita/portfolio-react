@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -17,24 +18,32 @@ import HeaderWrapper from "./components/HeaderWrapper";
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-      <HeaderWrapper />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/competences" element={<CompetencesPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/portfolio/:id" element={<ProjectDetailPage />} />
-            <Route path="/blog" element={<BlogPage />} />
-            <Route path="/blog/:id" element={<ArticlePage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/mentions-legales" element={<LegalAndPrivacyPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <MainContent />
     </Router>
+  );
+}
+
+function MainContent() {
+  const { pathname } = useLocation(); // Utilisation de useLocation() à l'intérieur du Router
+  
+  return (
+    <div className="flex flex-col min-h-screen">
+      <HeaderWrapper />
+      <main className={pathname === "/" ? "" : "px-4 sm:px-6 lg:px-12 flex-grow bg-[#222222]"}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/competences" element={<CompetencesPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/portfolio/:id" element={<ProjectDetailPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<ArticlePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/mentions-legales" element={<LegalAndPrivacyPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
