@@ -8,7 +8,7 @@ export default function HomeSection({ id, title, children, link }) {
         <div className="
           flex flex-col items-center 
           gap-6 m:gap-8 lg:gap-12
-          px-3 sm:px-5 lg:px-6">
+          px-4 sm:px-6 lg:px-12">
           {/* Titre */}
           <SectionTitle>{title}</SectionTitle>
   

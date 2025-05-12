@@ -34,21 +34,20 @@ export default function ServicesPreview()
         },
       ];
 
-
     return (
         <HomeSection
             id="service"
             title="Mes services"
             link={{href:"/about", text:"En savoir plus"}}
         > 
-            <div className="
-              flex flex-wrap items-center justify-center gap-5
-              mt-6 sm:mt-8 lg:mt-10">
-                {services.map((service) => (
-                <ServiceCard key={service.title} {...service} 
-                />
-                ))}
-            </div>
+        
+        <div className="w-full flex flex-wrap justify-center lg:justify-between gap-4 sm:gap-6 lg:gap-8">
+              {services.map((service) => (
+              <ServiceCard key={service.title} {...service} 
+              />
+              ))}
+        </div>
+      
         </HomeSection>
     )
 }

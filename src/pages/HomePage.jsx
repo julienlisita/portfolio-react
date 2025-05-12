@@ -8,7 +8,7 @@ import ContactTeaser from "../components/home/ContactTeaser";
 
 export default function HomePage() {
   return (
-    <main className="scroll-smooth">
+    <main className="scroll-smooth bg-[#222222]">
       <LandingSection />
       <AboutPreview />
       <ServicesPreview />
