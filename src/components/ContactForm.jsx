@@ -3,7 +3,7 @@ import Button from "./Button";
 export default function ContactForm()
 {
     return (
-        <form className="w-full  bg-[#2a2a2a] rounded-2xl p-8 shadow-[0_0_12px_#5AC8FA] space-y-6">
+        <form className="w-full max-w-2xl bg-[#2a2a2a] rounded-2xl p-8 shadow-[0_0_12px_#5AC8FA] space-y-6">
         <div className="flex flex-col">
           <label className="mb-1 text-sm text-[#FFFFFF]">Nom</label>
           <input
