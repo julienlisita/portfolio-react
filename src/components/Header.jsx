@@ -20,6 +20,7 @@ export default function Header() {
       {/* Menu desktop */}
       <nav className="hidden lg:flex space-x-6 text-white">
         <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/" >Accueil</Link>
+        <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/services" >Services</Link>
         <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/competences">Compétences</Link>
         <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/portfolio" >Portfolio</Link>
         <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/blog">Blog</Link>
@@ -51,6 +52,7 @@ export default function Header() {
         .filter(Boolean)
         .join(" ")}>
         <Link to="/" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Accueil</Link>
+        <Link to="/services" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Services</Link>
         <Link to="/competences" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Compétences</Link>
         <Link to="/portfolio" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Portfolio</Link>
         <Link to="/blog" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Blog</Link>

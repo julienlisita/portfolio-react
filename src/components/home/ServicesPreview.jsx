@@ -38,7 +38,7 @@ export default function ServicesPreview()
         <HomeSection
             id="service"
             title="Mes services"
-            link={{href:"/about", text:"En savoir plus"}}
+            link={{href:"/services", text:"Voir détail"}}
         > 
         
         <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">

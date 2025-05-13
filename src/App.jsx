@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 // Pages
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/SevicesPage";
 import CompetencesPage from "./pages/CompetencesPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
@@ -33,6 +34,7 @@ function MainContent() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage/>} />
           <Route path="/competences" element={<CompetencesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/portfolio/:slug" element={<ProjectDetailPage />} />
