@@ -9,7 +9,7 @@ export default function BlogPreview() {
       title="Derniers articles"
       link={{ href: "/blog", text: "Voir le blog" }}
     >
-      <div className="space-y-4 mt-8">
+      <div className="space-y-4">
         {articles.map((article, index) => (
           <a
             key={index}
