@@ -76,7 +76,7 @@ export const projects = [
     {
         id: "portfolio",
         title: "Portfolio React",
-        description: "Site vitrine responsive conçu sur mesure pour présenter mon parcours, mes projets et mes services de développeur.",
+        description: "Site vitrine responsive pour présenter mes projets et mes services de développeur.",
         image: "/src/assets/images/projects/portfolio.png",
         technos: ["React", "Tailwind", "Framer Motion"],
         github: [
