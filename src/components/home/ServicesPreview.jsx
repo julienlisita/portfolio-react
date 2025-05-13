@@ -41,7 +41,7 @@ export default function ServicesPreview()
             link={{href:"/about", text:"En savoir plus"}}
         > 
         
-        <div className="w-full flex flex-wrap justify-center lg:justify-between gap-4 sm:gap-6 lg:gap-8">
+        <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
               {services.map((service) => (
               <ServiceCard key={service.title} {...service} 
               />

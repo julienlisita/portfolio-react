@@ -10,7 +10,7 @@ export default function ProjectPreview()
             title="Derniers projets"
             link={{href:"/portfolio", text:"Voir le portfolio"}}
         > 
-            <div className="w-full flex flex-wrap justify-center gap-8 lg:justify-between">
+            <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
             {projects.slice(0, 3).map((project) => (
                 <ProjectCard key={project.title} {...project} />
                 ))}
