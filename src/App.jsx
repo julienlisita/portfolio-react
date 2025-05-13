@@ -35,7 +35,7 @@ function MainContent() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/competences" element={<CompetencesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/portfolio/:id" element={<ProjectDetailPage />} />
+          <Route path="/portfolio/:slug" element={<ProjectDetailPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<ArticlePage />} />
           <Route path="/contact" element={<ContactPage />} />

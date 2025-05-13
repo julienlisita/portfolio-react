@@ -2,7 +2,7 @@
 
 export const projects = [
     {
-        id: "shogiconnect",
+        slug: "shogiconnect",
         title: "ShogiConnect",
         description: "Plateforme communautaire dédiée au shogi, avec profils, forum et interface de jeu en ligne.",
         image: "/src/assets/images/projects/shogiconnect.png",
@@ -38,7 +38,7 @@ export const projects = [
         }
     },
     {
-        id: "planify",
+        slug: "planify",
         title: "Planify",
         description: "Application intuitive pour créer ses propres recettes et organiser ses repas au quotidien.",
         image: "/src/assets/images/projects/planify.png",
@@ -74,7 +74,7 @@ export const projects = [
         }
     },
     {
-        id: "portfolio",
+        slug: "portfolio",
         title: "Portfolio React",
         description: "Site vitrine responsive pour présenter mes projets et mes services de développeur.",
         image: "/src/assets/images/projects/portfolio.png",
