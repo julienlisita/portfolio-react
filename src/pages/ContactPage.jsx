@@ -1,5 +1,6 @@
 import ContactForm from "../components/ContactForm";
-import { Mail, Phone, MapPin, Car, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, Car, MapPin} from "lucide-react";
+import { LuLinkedin, LuGithub } from 'react-icons/lu';
 import SectionTitle from "../components/SectionTitle";
 import PageTitle from "../components/PageTitle";
 
@@ -41,7 +42,7 @@ export default function ContactPage() {
 
         <div className="flex items-start gap-3">
           <Car className="text-[#5AC8FA]" />
-          <span>Permis B</span>
+          <span>Permis B, véhiculé</span>
         </div>
       </div>
 
@@ -60,22 +61,22 @@ export default function ContactPage() {
         ></iframe>
     </div>
       {/*Réseaux sociaux*/}
-      <div className="flex items-center gap-5 mt-8 sm:mt-10 lg:mt-12">
+      <div className="flex items-center gap-20 mt-8 sm:mt-10 lg:mt-12">
         <a
           href="https://www.linkedin.com/in/ton-profil"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#5AC8FA]"
+          className="px-1 py-1 hover:outline hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]"
         >
-          <Linkedin size={40} />
+          <LuLinkedin size={40} />
         </a>
         <a
           href="https://github.com/ton-pseudo"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#5AC8FA]"
+          className="px-1 py-1 hover:outline hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]"
         >
-          <Github size={40} />
+          <LuGithub size={40} />
         </a>
       </div>
     </section>

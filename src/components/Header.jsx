@@ -19,27 +19,27 @@ export default function Header() {
 
       {/* Menu desktop */}
       <nav className="hidden lg:flex space-x-6 text-white">
-        <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/" >Accueil</Link>
-        <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/services" >Services</Link>
-        <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/competences">Compétences</Link>
-        <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/portfolio" >Portfolio</Link>
-        <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/blog">Blog</Link>
-        <Link className="hover:bg-[#5AC8FA] hover:text-[#222222] px-2 py-1 rounded-md transition-all duration-300" to="/contact">Contact</Link>
+        <Link className="hover:outline hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/">Accueil</Link>
+        <Link className="hover:outline hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/services">Services</Link>
+        <Link className="hover:outline hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/competences">Compétences</Link>
+        <Link className="hover:outline hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/portfolio">Portfolio</Link>
+        <Link className="hover:outline hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/blog">Blog</Link>
+        <Link className="hover:outline hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/contact">Contact</Link>
       </nav>
 
       {/* Burger menu mobile/tablette */}
       <button
-        className="lg:hidden relative p-3 rounded-full transition-all duration-300 hover:bg-[#5AC8FA]"
+        className="lg:hidden relative p-2 rounded-full transition-colors hover:ring-2 hover:ring-[#5AC8FA] hover:ring-opacity-50 hover:shadow-[0_0_8px_#5AC8FA]"
         onClick={toggleState}
         aria-label="Toggle menu"
       >
         {isOpen ? (
           <X 
-            className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-white hover:text-[#222222] transition-colors duration-300"
+            className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-white duration-300"
           />
         ) : (
           <Menu
-            className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-white hover:text-[#222222] transition-colors duration-300"
+            className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-white duration-300"
           />
         )}
       </button>
