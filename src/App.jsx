@@ -15,10 +15,12 @@ import LegalAndPrivacyPage from "./pages/LegalAndPrivacyPage"; // Mentions léga
 import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/Footer";
 import HeaderWrapper from "./components/HeaderWrapper";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <MainContent />
     </Router>
   );
