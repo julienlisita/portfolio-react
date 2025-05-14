@@ -16,7 +16,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/Footer";
 import HeaderWrapper from "./components/HeaderWrapper";
 import ScrollToTop from "./components/ScrollToTop";
-import MerciPage from "./components/MerciPage";
+import MerciPage from "./pages/MerciPage";
 
 export default function App() {
   return (
