@@ -11,11 +11,11 @@ export default function LandingSection() {
     >
        {/* 🧠 Fond illustré avec react-icons */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        <FaReact className="text-[#5AC8FA] opacity-10 blur-sm absolute top-14 left-12 text-7xl rotate-12" />
-        <FaJsSquare className="text-yellow-300 opacity-10 blur-sm absolute bottom-16 right-10 text-6xl -rotate-6" />
-        <FaNodeJs className="text-green-400 opacity-10 blur-sm absolute top-1/3 right-10 text-5xl rotate-6" />
-        <SiCplusplus className="text-blue-400 opacity-10 blur-sm absolute bottom-20 left-16 text-6xl rotate-3" />
-        <FaCode className="text-white opacity-10 blur-sm absolute top-12 left-1/2 transform -translate-x-1/2 text-6xl pointer-events-none" />
+        <FaReact className="text-[#5AC8FA] opacity-15 blur-sm absolute top-16 left-10 text-7xl rotate-12" />
+        <FaJsSquare className="text-yellow-300 opacity-15 blur-sm absolute bottom-16 right-10 text-6xl -rotate-6" />
+        <FaNodeJs className="text-green-400 opacity-15 blur-sm absolute top-1/3 right-10 text-5xl rotate-6" />
+        <SiCplusplus className="text-blue-400 opacity-15 blur-sm absolute bottom-20 left-14 text-6xl rotate-3" />
+        <FaCode className="text-white opacity-15 blur-sm absolute top-12 left-1/2 transform -translate-x-1/2 text-6xl pointer-events-none" />
       </div>
 
       {/* Logo carré néon */}
@@ -55,8 +55,8 @@ export default function LandingSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 1 }}
       >
-        Des solutions <span className="text-[#FF66B2] font-semibold">sur mesure</span><br />
-        pour des projets <span className="text-[#5AC8FA] font-semibold">à votre image</span>
+        Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure</span><br />
+        pour des projets <span className="text-[#FF66B2] font-semibold">à votre image</span>
       </motion.p>
 
       {/* Flèche scroll */}
