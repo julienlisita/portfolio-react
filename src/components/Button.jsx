@@ -20,6 +20,12 @@ export default function Button({ ...props}) {
         active:text-[#222222]`
     }
 
+  if (props.href) {
+    return (
+      <a href={props.href} download={props.download} {...newProps}/>
+    );
+  }
+
   if(props.to)
     {
         return  <Link {...newProps}/>
