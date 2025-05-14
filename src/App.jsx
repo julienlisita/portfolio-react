@@ -16,6 +16,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/Footer";
 import HeaderWrapper from "./components/HeaderWrapper";
 import ScrollToTop from "./components/ScrollToTop";
+import MerciPage from "./components/MerciPage";
 
 export default function App() {
   return (
@@ -44,6 +45,7 @@ function MainContent() {
           <Route path="/blog/:slug" element={<ArticlePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/mentions-legales" element={<LegalAndPrivacyPage />} />
+          <Route path="/merci" element={<MerciPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
