@@ -9,7 +9,7 @@ export default function AboutPage() {
       {/* Photo + Intro */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 mt-8 sm:mt-10 lg:mt-12 max-w-3xl m-auto">
         <img
-          src="src/assets/images/profile-pic.png" 
+          src="/assets/images/profile-pic.png" 
           alt="Julien Lisita"
           className="w-40 h-40 rounded-full object-cover shadow-lg"
         />

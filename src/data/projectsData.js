@@ -5,7 +5,7 @@ export const projects = [
         slug: "shogiconnect",
         title: "ShogiConnect",
         description: "Plateforme communautaire dédiée au shogi, avec profils, forum et interface de jeu en ligne.",
-        image: "/src/assets/images/projects/shogiconnect.png",
+        image: "/assets/images/projects/shogiconnect.png",
         technos: ["React", "CSS", "Node", "Socket.io"],
         github: [
         { label: "Client", url: "https://github.com/julienlisita/shogiconnect-client" },
@@ -41,7 +41,7 @@ export const projects = [
         slug: "planify",
         title: "Planify",
         description: "Application intuitive pour créer ses propres recettes et organiser ses repas au quotidien.",
-        image: "/src/assets/images/projects/planify.png",
+        image: "/assets/images/projects/planify.png",
         technos: ["React", "Tailwind", "Node"],
         github: "https://github.com/julienlisita/planify-frontend",
         demo: "#",
@@ -77,7 +77,7 @@ export const projects = [
         slug: "portfolio",
         title: "Portfolio React",
         description: "Site vitrine responsive pour présenter mes projets et mes services de développeur.",
-        image: "/src/assets/images/projects/portfolio.png",
+        image: "/assets/images/projects/portfolio.png",
         technos: ["React", "Tailwind", "Framer Motion"],
         github: [
         { label: "Client", url: "https://github.com/julienlisita/portfolio-react" },

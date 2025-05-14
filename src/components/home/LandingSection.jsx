@@ -11,7 +11,7 @@ export default function LandingSection() {
     
         {/* Logo */}
         <img
-            src="../src/assets/logos/site/logo2.png"
+            src="/assets/logos/site/logo2.png"
             alt="Logo Julien Lisita"
             className="h-40 w-auto sm:h-48 md:h-64 "
         />

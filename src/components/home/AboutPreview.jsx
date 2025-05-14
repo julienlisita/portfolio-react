@@ -13,7 +13,7 @@ export default function AboutPreview() {
             {/* Photo de profil */}
             <div className=" h-auto sm:h-[400px] lg:h-[500px] rounded-lg overflow-hidden relative">
                 <img
-                    src="../src/assets/images/workingProfile.jpg" 
+                    src="/assets/images/workingProfile.jpg" 
                     alt="Julien LISITA"
                     className="w-full h-full object-cover"
                 />
