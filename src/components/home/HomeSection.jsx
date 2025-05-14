@@ -2,9 +2,9 @@ import Button from "../Button";
 import SectionTitle from "../SectionTitle";
 
 
-export default function HomeSection({ id, title, children, link }) {
+export default function HomeSection({ id, title, children, link, className }) {
     return (
-      <section id={id} className="bg-[#222222]">
+      <section id={id} className="bg-[#222222]  scroll-mt-14 sm:scroll-mt-16 lg:scroll-mt-20">
         <div className="
           flex flex-col items-center 
           gap-6 m:gap-8 lg:gap-12
