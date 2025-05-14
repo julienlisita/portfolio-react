@@ -1,4 +1,5 @@
 import HomeSection from "./HomeSection";
+import '../../../src/index.css';
 
 export default function AboutPreview() {
   return (
@@ -11,7 +12,7 @@ export default function AboutPreview() {
         <div className="
             flex flex-col sm:flex-row items-start justify-between gap-6 sm:gap-0 lg:gap-0">
             {/* Photo de profil */}
-            <div className=" h-auto sm:h-[400px] lg:h-[500px] rounded-lg overflow-hidden relative">
+            <div className=" w-full sm:w-2/5 lg:w-1/3 rounded-lg overflow-hidden relative">
                 <img
                     src="/assets/images/workingProfile.jpg" 
                     alt="Julien LISITA"
@@ -22,7 +23,7 @@ export default function AboutPreview() {
 
             {/* biographie */}
             <div className="
-                sm:w-1/2 flex flex-col justify-center items-center">
+                w-full sm:w-1/2 flex flex-col justify-center items-center">
                 <p className="text-base sm:text-lg lg:text-xl leading-snug text-white">
                     Bonjour, je suis Julien, un développeur freelance passionné par la création de solutions web innovantes. Après avoir travaillé en ingénierie logicielle embarquée, j’ai décidé de me spécialiser dans le développement web, attiré par la possibilité de transformer des idées en réalité numérique.
                 </p>
