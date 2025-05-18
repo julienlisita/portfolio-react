@@ -51,7 +51,12 @@ export default function ContactForm()
             ></textarea>
           </div>
           <div className="text-center">
-            <Button type="submit">Envoyer</Button>
+            <Button 
+            type="submit"
+            variant="primary"
+            >
+              Envoyer
+            </Button>
           </div>
         </form>
     )
