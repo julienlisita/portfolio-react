@@ -4,18 +4,17 @@ export const projects = [
     {
         slug: "shogiconnect",
         title: "ShogiConnect",
+        category: "web",
         description: "Plateforme communautaire dédiée au shogi, avec profils, forum et interface de jeu en ligne.",
         image: "/assets/images/projects/shogiconnect.png",
         technos: ["React", "CSS", "Node", "Socket.io"],
-        github: [
+        liveSite: "https://shogiconnect.netlify.app",
+        sourceCode: [
         { label: "Client", url: "https://github.com/julienlisita/shogiconnect-client" },
         { label: "API", url: "https://github.com/julienlisita/shogiconnect-api" },
         { label: "Serveur de jeu", url: "https://github.com/julienlisita/shogiconnect-game-server" }
         ],
-        demo: [
-        { label: "Site principal", url: "#" },
-        { label: "Back office", url: "#" }
-        ],
+        demo: null,
         summary: [
             "ShogiConnect est une plateforme communautaire autour du Shogi, le jeu d’échecs japonais. Elle permet aux utilisateurs de découvrir le jeu, de se former à ses règles, et de rejoindre une communauté active. Le site propose des profils utilisateurs, un forum de discussion, un annuaire des clubs français, ainsi qu’une interface de jeu en ligne en temps réel permettant à deux joueurs de s’affronter. Cette application vise à démocratiser la pratique du Shogi en France, tout en proposant des fonctionnalités interactives adaptées aussi bien aux débutants qu’aux passionnés.",
             "L’une des fonctionnalités clés de ShogiConnect est la possibilité pour les utilisateurs ayant crée un compte de jouer en ligne contre d’autres membres. Un système de rendez-vous permet de planifier des parties à des dates et heures convenues, un membre peut donc proposer une partie visible par les autres membres qui pourront s’y inscrire. Pour renforcer cette communauté, une section forum permet aux utilisateurs d’échanger sur des sujets relatifs au jeu classés par catégorie comme les analyses de partie ou les clubs et tournois. Chaque utilisateur possède un profil personnel visible par les autres membres, comprenant des informations telles qu’une biographie, le pays, un avatar, son activité sur le site ainsi que ses résultats en tant que joueur. L’objectif principal est de donner une dimension sociale et interactive au site."
@@ -40,19 +39,16 @@ export const projects = [
     {
         slug: "planify",
         title: "Planify",
+        category: "web",
         description: "Application intuitive pour créer ses propres recettes et organiser ses repas au quotidien.",
         image: "/assets/images/projects/planify.png",
         technos: ["React", "Tailwind", "Node"],
-        github: "https://github.com/julienlisita/planify-frontend",
-        demo: "#",
-        github: [
+        liveSite: null,
+        sourceCode: [
         { label: "Client", url: "https://github.com/julienlisita/planify-frontend" },
         { label: "API", url: "https://github.com/julienlisita/planify-backend" },
         ],
-        demo: [
-        { label: "Site principal", url: "#" },
-        { label: "Back office", url: "#" }
-        ],
+        demo: null,
         summary: [
             "Planify est un projet de plateforme web collaborative qui permet aux utilisateurs d’accéder un large de choix de recettes de cuisine classées par catégorie, d'interagir avec celles-ci, et de publier leurs propres recettes. Le projet vise également à simplifier la planification des repas hebdomadaires et à encourager la contribution d’articles sur l’actualité culinaire. Le projet s’inscrit dans un contexte de bien-être alimentaire et de convivialité dans le but d’apporter une solution moderne et intuitive pour découvrir de nouvelles idées culinaires et organiser leur repas de façon efficace."
         ],
@@ -76,15 +72,15 @@ export const projects = [
     {
         slug: "portfolio",
         title: "Portfolio React",
+        category: "web",
         description: "Site vitrine responsive pour présenter mes projets et mes services de développeur.",
         image: "/assets/images/projects/portfolio.png",
         technos: ["React", "Tailwind", "Framer Motion"],
-        github: [
+        liveSite: "https://julienlisita.com",
+        sourceCode: [
         { label: "Client", url: "https://github.com/julienlisita/portfolio-react" },
         ],
-        demo: [
-        { label: "Site principal", url: "#" }
-        ],
+        demo: null,
         summary: [
             "Ce portfolio a pour objectif de présenter mon parcours, mes compétences et mes projets en tant que développeur web full stack. Il vise à offrir une vitrine professionnelle claire, moderne et évolutive, que ce soit pour des recruteurs, des entreprises ou des clients potentiels. L’accent est mis à la fois sur l’ergonomie, l’accessibilité et la qualité du code."
         ],
@@ -101,5 +97,54 @@ export const projects = [
             test: null,
             deployment: ["Netlify"]
         }
+    },
+    {
+        slug: "shellchess",
+        title: "Shell Chess",
+        category: "dev",
+        description: "Jeu d'échec en console",
+        image: "/assets/images/projects/shellchess.png",
+        technos: ["c", "socket"],
+        liveSite: null,
+        sourceCode: [
+        { label: "Projet complet", url: "https://github.com/julienlisita/Shell_Chess" },
+        ],
+        demo: null,
+        summary: [
+            "L'objectif est de créer un jeux complet d'échec avec gestion des coups valides"
+        ],
+        features: [
+            "Système de choix de mode online ou local",
+            "utilisation de commande en console déplacer les pieces",
+            "Vérification des mouvements valides",
+            "Vérifification de l'état échec, échec et mat",
+            "Affichage du plateau de l'échiquier en console",
+        ],
+        stack: null
+    },
+    {
+        slug: "klondikegame",
+        title: "Klondike game",
+        category: "dev",
+        description: "Jeu de solitaire en console",
+        image: "/assets/images/projects/klondike.png",
+        technos: ["java"],
+        liveSite: null,
+        sourceCode: [
+        { label: "Projet complet", url: "https://github.com/julienlisita/Klondike_game" },
+        ],
+        demo: null,
+        summary: [
+            "L'objectif est de répoduire en console "
+        ],
+        features: [
+
+            "Initilisation du jeu aléatoire",
+            "Utilisation de commande en console pour saisir une carte, une pile, la poser etc",
+            "Vérification des poses de cartes valides",
+            "Affichage du plateau de jeu en console"
+            
+        ],
+        stack: null
     },
 ];

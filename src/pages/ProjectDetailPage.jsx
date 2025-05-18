@@ -34,10 +34,12 @@ export default function ProjectDetailPage() {
         </ul>
       </div>
       )}
-      <SectionTitle>Spécifications techniques</SectionTitle>
+      { project.stack && 
+        <SectionTitle>Spécifications techniques</SectionTitle>
+      }
       <div className="flex gap-4 flex-wrap mt-8 sm:mt-10 lg:mt-12">
       <div className="space-y-4">
-        {Object.entries(project.stack).map(([category, items]) =>
+        {project.stack && Object.entries(project.stack).map(([category, items]) =>
           items && items.length > 0 ? (
             <div key={category}>
               <h3 className="text-lg font-semibold capitalize text-white">
@@ -68,13 +70,26 @@ export default function ProjectDetailPage() {
         )}
       </div>
       </div>
-     <SectionTitle>Démonstration du Projet & Code GitHub</SectionTitle>
-    {(project.demo || project.github) && (
-      <div className="flex justify-between gap-8 mt-8 sm:mt-10 lg:mt-12">
-        
+     <SectionTitle>Démonstration et code source</SectionTitle>
+    {(project.demo || project.sourceCode || project.liveSite) && (
+      <div className="flex flex-wrap justify-between gap-8 mt-8 sm:mt-10 lg:mt-12">
+         
+        {/* Section lien site */}
+        {project.liveSite && (
+          <div className="flex-1 min-w-[200px]">
+            <h4 className="text-lg font-semibold text-white mb-2">Lien du site</h4>
+            <ul className="space-y-1">
+              {
+                <a href={project.liveSite} target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">
+                  {project.liveSite}
+                </a>
+              }
+            </ul>
+          </div>
+        )}
         {/* Section Démo */}
         {project.demo && (
-          <div className="flex-1">
+          <div className="flex-1 min-w-[200px]">
             <h4 className="text-lg font-semibold text-white mb-2">Démo</h4>
             <ul className="space-y-1">
               {project.demo.map((link, i) => (
@@ -89,11 +104,11 @@ export default function ProjectDetailPage() {
         )}
 
         {/* Section Code Source */}
-        {project.github && (
-          <div className="flex-1">
+        {project.sourceCode && (
+          <div className="flex-1 min-w-[200px]">
             <h4 className="text-lg font-semibold text-white mb-2">Code source</h4>
             <ul className="space-y-1">
-              {project.github.map((repo, i) => (
+              {project.sourceCode.map((repo, i) => (
                 <li key={i}>
                   <a href={repo.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">
                     {repo.label}
