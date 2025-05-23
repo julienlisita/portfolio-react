@@ -30,14 +30,13 @@ export default function ContactPage() {
         </div>
 
         <div className="flex items-start gap-3">
-          <MapPin className="text-[#5AC8FA]" />
-          <span>12 Avenue Pierre Mendes-France,<br/> 33700 Mérignac</span>
+           <Mail className="text-[#5AC8FA]" />
+          <a href="mailto:julien@example.com" className="hover:underline">julien.lisita@gmail.com</a>
         </div>
 
         <div className="flex items-start gap-3">
-           <Mail className="text-[#5AC8FA]" />
-          <a href="mailto:julien@example.com" className="hover:underline">julien.lisita@gmail.com</a>
-         
+          <MapPin className="text-[#5AC8FA]" />
+          <span>33700 Mérignac</span>
         </div>
 
         <div className="flex items-start gap-3">
@@ -50,7 +49,7 @@ export default function ContactPage() {
       <div className="mt-8 sm:mt-10 lg:mt-12 w-full max-w-2xl">
         <iframe
           title="Carte"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5658.489127789495!2d-0.6432714239088505!3d44.836952575070896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d9cce052920f%3A0xa7ac072c9c8fdc71!2s12%20Av.%20Pierre%20Mend%C3%A8s-France%2C%2033700%20M%C3%A9rignac!5e0!3m2!1sfr!2sfr!4v1746956319863!5m2!1sfr!2sfr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90544.70913754782!2d-0.8377950902134641!3d44.83129852447797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da1f33de99fd%3A0x1c06651a91af85b0!2s33700%20M%C3%A9rignac!5e0!3m2!1sfr!2sfr!4v1747995234719!5m2!1sfr!2sfr"
           width="100%"
           height="450"
           style={{ border: 0 }}
