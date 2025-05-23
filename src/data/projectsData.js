@@ -7,7 +7,7 @@ export const projects = [
         category: "web",
         description: "Plateforme communautaire dédiée au shogi, avec profils, forum et interface de jeu en ligne.",
         image: "/assets/images/projects/shogiconnect.png",
-        technos: ["React", "CSS", "Node", "Socket.io"],
+        technos: ["React", "CSS", "Node.js", "Socket.io"],
         liveSite: "https://shogiconnect.netlify.app",
         sourceCode: [
         { label: "Client", url: "https://github.com/julienlisita/shogiconnect-client" },
@@ -33,7 +33,7 @@ export const projects = [
             backend: ["Node.js","Express", "Sequelize", "Axios", "JWT (JSON Web Token)", "Socket.io"],
             database: ["mySQL"],
             test: ["Postman"],
-            deployment: ["Render (API)", "Vercel (client)"]
+            deployment: ["Railway (API + BDD)", "Netlify (client)"]
         }
     },
     {
@@ -42,7 +42,7 @@ export const projects = [
         category: "web",
         description: "Application intuitive pour créer ses propres recettes et organiser ses repas au quotidien.",
         image: "/assets/images/projects/planify.png",
-        technos: ["React", "Tailwind", "Node"],
+        technos: ["React", "Tailwind", "Node.js"],
         liveSite: null,
         sourceCode: [
         { label: "Client", url: "https://github.com/julienlisita/planify-frontend" },
@@ -65,8 +65,8 @@ export const projects = [
             frontend: ["React", "React Router", "Tailwind CSS"],
             backend: ["Node.js","Express", "Sequelize", "JWT (JSON Web Token)"],
             database: ["mySQL"],
-            test: ["Jest"],
-            deployment: ["Render (API)", "Vercel (client)"]
+            test: null,
+            deployment: null
         }
     },
     {

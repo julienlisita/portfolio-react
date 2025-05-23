@@ -13,8 +13,8 @@ import {
   SiTailwindcss,
   SiJavascript,
   SiNextdotjs,
+  SiRailway,
   SiExpress,
-  SiMongodb,
   SiMysql,
   SiRedux,
   SiFirebase,
@@ -35,9 +35,9 @@ export default function SkillesPreview() {
         "Création d’interfaces modernes et performantes grâce à HTML5, CSS3, Tailwind CSS, Sass, et JavaScript. Développement d’applications interactives avec React et Next.js, en s’appuyant sur Figma pour concevoir des maquettes et garantir une expérience utilisateur fluide.",
       icons: [
         <FaReact key="react" />,
-        <SiNextdotjs key="next" />,
+        <FaSass key="sass"/>,
         <SiTailwindcss key="tailwind" />,
-        <SiJavascript key="js" />,
+        <FaFigma key="figma"/>
       ],
     },
     {
@@ -47,8 +47,8 @@ export default function SkillesPreview() {
       icons: [
         <FaNodeJs key="node" />,
         <SiExpress key="express" />,
-        <SiMysql key="mysql" />,
         <SiSequelize key="sequelize" />,
+        <SiMysql key="mysql" />,
       ],
     },
     // {
@@ -68,8 +68,8 @@ export default function SkillesPreview() {
       description:
         "Hébergement, mise en ligne, et automatisation avec Vercel, Netlify, et Firebase Hosting. Surveillance des performances et collaboration facilitée via Git, GitHub Actions, et outils de gestion comme Trello et Notion.",
       icons: [
-        <SiVercel key="vercel" />,
         <SiNetlify key="netlify" />,
+         <SiRailway key="railway" />,
         <FaGitAlt key="git" />,
         <FaTrello key="trello" />,
       ],
