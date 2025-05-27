@@ -45,7 +45,7 @@ export default function LandingSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        Développeur Web Full Stack
+        Développeur web & solutions digitales
       </motion.h2>
 
       {/* Phrase d'accroche */}
@@ -55,16 +55,26 @@ export default function LandingSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 1 }}
       >
-        Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure</span><br />
-        pour des projets <span className="text-[#FF66B2] font-semibold">à votre image</span>
+        Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure,</span><br />
+        à l'image de <span className="text-[#FF66B2] font-semibold">votre projet</span>
       </motion.p>
+
+      {/* Mots clés offre*/}
+      <motion.h2
+        className="text-white text-lg sm:text-xl md:text-2xl font-medium tracking-wide"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 1 }}
+      >
+        Conception - Développement - Maintenance
+      </motion.h2>
 
       {/* Flèche scroll */}
       <motion.div
-        className="absolute bottom-14 flex flex-col items-center animate-pulse"
+        className="absolute bottom-10 flex flex-col items-center animate-pulse"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
+        transition={{ delay: 1.3, duration: 1 }}
       >
         <a href="#about"
             onClick={(e) => {
