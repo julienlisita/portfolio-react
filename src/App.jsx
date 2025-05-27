@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 // Pages
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ServicesPage from "./pages/SevicesPage";
+import ServicesPage from "./pages/ServicesPage";
 import CompetencesPage from "./pages/CompetencesPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
