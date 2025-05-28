@@ -18,7 +18,7 @@ export default function LegalAndPrivacyPage() {
               Julien Lisita – Développeur web freelance<br />
               Adresse : 12 Avenue Pierre Mendes-France, 33700 Mérignac<br />
               Email : julien.lisita@gmail.com<br />
-              Statut juridique : Micro-entrepreneur, entreprise individuelle (EI), régime micro-social simplifié<br />
+              Statut juridique : Entreprise individuelle (EI)<br/>
               SIRET : 933 677 965 00016<br />
               TVA non applicable, article 293 B du CGI
             </p>

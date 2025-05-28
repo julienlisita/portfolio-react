@@ -17,7 +17,7 @@ export default function Footer()
                     <Link className="text-center hover:underline" to="/about">A propos</Link>
                     <Link className="text-center hover:underline" to="/mentions-legales">Mentions légales et politique de confidentialité</Link>
                 </nav>
-                <p className=" text-xs sm:text-sm text-center text-gray-400">© 2025 Tout droit réservés Julien LISITA – Développeur Web – Micro-entrepreneur (EI)</p>
+                <p className=" text-xs sm:text-sm text-center text-gray-400">© 2025 Tout droit réservés Julien LISITA – Développeur Web – Entreprise Individuelle (EI)</p>
             </div>
 
             {/* Réseaux sociaux à droite */}
