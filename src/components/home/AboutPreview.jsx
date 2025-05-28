@@ -25,10 +25,10 @@ export default function AboutPreview() {
             <div className="
                 w-full sm:w-1/2 flex flex-col justify-center items-center">
                 <p className="text-base sm:text-lg lg:text-xl leading-snug text-white">
-                    Bonjour, je suis Julien, un développeur freelance passionné par la création de solutions web innovantes. Après avoir travaillé en ingénierie logicielle embarquée, j’ai décidé de me spécialiser dans le développement web, attiré par la possibilité de transformer des idées en réalité numérique.
-                </p>
+                    Bonjour, je suis Julien, développeur freelance passionné par la création de solutions web innovantes. Après une expérience en ingénierie logicielle embarquée, j’ai choisi de me spécialiser dans le développement web, attiré par la possibilité de transformer des idées en outils numériques concrets.
+                </p>   
                 <p className="text-base sm:text-lg lg:text-xl text-white mt-6 sm:mt-8 md:mt-10">
-                    Avec une formation intensive dans la conception et le développement d’applications front-end et back-end, je mets à profit mes compétences en HTML, CSS, JavaScript, ainsi que dans des frameworks comme React et Node.js. Mon parcours m’a permis de travailler sur divers projets, allant de sites vitrines simples à des applications complexes, et je m’efforce toujours de livrer un code de qualité, tout en respectant les délais.
+                  Grâce à une formation intensive, j’ai acquis des compétences solides en HTML, CSS, JavaScript, ainsi qu’avec des frameworks modernes comme React et Node.js. J’ai eu l’occasion de travailler sur des projets variés, allant de sites vitrines à des applications complexes. Mon objectif : produire un code fiable, clair, et livrer chaque projet dans les délais.
                 </p>
             </div>
         </div>

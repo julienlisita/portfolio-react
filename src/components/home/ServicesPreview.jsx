@@ -36,8 +36,12 @@ export default function ServicesPreview()
         <HomeSection
             id="service"
             title="Mes services"
-            link={{href:"/services", text:"Voir détail"}}
+            link={{href:"/services", text:"En savoir plus"}}
         > 
+
+        <p className="text-white text-base sm:text-lg lg:text-xl">
+          De l’idée initiale à la mise en ligne, je vous accompagne à chaque étape pour construire des solutions web performantes et durables.
+        </p>
         
         <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
           {services.map((service) => (

@@ -83,7 +83,7 @@ export default function SkillesPreview() {
     link={{ href: "/competences", text: "En savoir plus" }}
   >
     <p className="text-white text-base sm:text-lg lg:text-xl">
-      En tant que développeur full stack et mobile, je mets à votre disposition une expertise technique diversifiée pour concevoir des applications modernes, performantes et évolutives. Voici un aperçu des technologies que j’utilise pour transformer vos idées en réalité.
+      Le choix des technologies jouant un rôle clé dans la réussite d’un projet, voici un aperçu des outils que j’utilise à chaque étape de réalisation.
     </p>
   
     <div className="flex flex-col gap-6 mt-8">

@@ -6,11 +6,11 @@ export default function ContactTeaser()
     return (
         <HomeSection
             id="contact"
-            title="Envie de discuter d’un projet ?"
-            link={{href:"/contact", text:"Plus d'infos"}}
+            title="Contact"
+            link={{href:"/contact", text:"en savoir plus"}}
         > 
         <p className="text-white max-w-2xl">
-            Une idée, un projet ou simplement envie d’échanger ? Remplissez le formulaire ci-dessous et je vous répondrai rapidement.
+           Une idée, un projet ou une question ? N’hésitez pas à me contacter via le formulaire ci-dessous. Je reviendrai vers vous dans les plus brefs délais.
         </p>
         <ContactForm/>
         </HomeSection>
