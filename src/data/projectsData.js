@@ -72,7 +72,7 @@ export const projects = [
     {
         slug: "portfolio",
         title: "Portfolio React",
-        category: "web",
+        category: "vitrines",
         description: "Site vitrine responsive pour présenter mes projets et mes services de développeur.",
         image: "/assets/images/projects/portfolio.png",
         technos: ["React", "Tailwind", "Framer Motion"],
