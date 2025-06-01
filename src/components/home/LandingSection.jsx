@@ -41,7 +41,7 @@ export default function LandingSection() {
         style={{ backgroundImage: 'linear-gradient(to bottom, #5AC8FA 30%, #FF66B2 90%)' }}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 1 }}
+        transition={{ duration: 1 }}
       >
         Julien Lisita
       </motion.h1>
@@ -51,7 +51,7 @@ export default function LandingSection() {
         className="text-gray-100 text-lg sm:text-xl md:text-2xl font-medium font-heading tracking-wide"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 1 }}
+        transition={{ delay: 0.7, duration: 2 }}
       >
         Développeur web & solutions digitales
       </motion.h2>
@@ -61,7 +61,7 @@ export default function LandingSection() {
         className="text-gray-200 text-base sm:text-lg md:text-xl font-light font-body tracking-wide max-w-xl leading-relaxed"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.7, duration: 1 }}
+        transition={{ delay: 1.3, duration: 2 }}
       >
         Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure</span><br />
         à l'image de <span className="text-[#FF66B2] font-semibold">votre projet</span>
@@ -76,7 +76,7 @@ export default function LandingSection() {
           variants={{
             visible: {
               transition: {
-                staggerChildren: 0.3,
+                staggerChildren: 0.6,
               },
             },
           }}
@@ -89,7 +89,7 @@ export default function LandingSection() {
                 hidden: {},
                 visible: {
                   transition: {
-                    delayChildren: 1 + i * 0.1,
+                    delayChildren: 1.6 + i * 0.1,
                     staggerChildren: 0.06,
                   },
                 },
