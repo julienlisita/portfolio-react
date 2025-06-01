@@ -1,17 +1,26 @@
 import Button from "./Button";
 import FloatingInput from "./FloatingInput";
 import FloatingTextarea from "./FloatingTextarea";
+import { motion } from "framer-motion";
 
 export default function ContactForm()
 {
     return (
-        <form 
-           name="contact"
-           method="POST"
+        <motion.form 
+          name="contact"
+          method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
           action="/merci"
-          className="w-full max-w-2xl bg-[#2a2a2a] rounded-2xl p-8 shadow-[0_0_12px_#5AC8FA] space-y-6"
+          className="w-full max-w-2xl bg-[#2a2a2a] rounded-2xl p-8 space-y-6"
+          initial={{
+          boxShadow: "0px 0px 0px rgba(0, 0, 0, 0)",
+          }}
+          whileInView={{
+          boxShadow:
+          "0px 0px 12px rgba(90, 200, 250, 0.4), 0px 0px 12px rgba(90, 200, 250, 0.4)",
+           }}
+          transition={{ delay: 1 }}
         >
           <input type="hidden" name="form-name" value="contact" />
           <p className="hidden">
@@ -30,6 +39,6 @@ export default function ContactForm()
               Envoyer
             </Button>
           </div>
-        </form>
+        </motion.form>
     )
 }
