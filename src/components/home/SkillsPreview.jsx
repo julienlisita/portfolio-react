@@ -2,29 +2,20 @@ import HomeSection from "./HomeSection";
 import {
   FaReact,
   FaNodeJs,
-  FaSass,
-  FaHtml5,
-  FaCss3Alt,
   FaFigma,
   FaGitAlt,
   FaTrello,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
-  SiJavascript,
   SiNextdotjs,
   SiRailway,
   SiExpress,
   SiMysql,
-  SiRedux,
-  SiFirebase,
-  SiExpo,
-  SiVercel,
   SiNetlify,
-  SiNotion,
   SiSequelize,
-  SiAxios,
 } from "react-icons/si";
+import SkillCard from "../SkillCard";
 
 export default function SkillesPreview() {
 
@@ -35,7 +26,7 @@ export default function SkillesPreview() {
         "Création d’interfaces modernes et performantes grâce à HTML5, CSS3, Tailwind CSS, Sass, et JavaScript. Développement d’applications interactives avec React et Next.js, en s’appuyant sur Figma pour concevoir des maquettes et garantir une expérience utilisateur fluide.",
       icons: [
         <FaReact key="react" />,
-        <FaSass key="sass"/>,
+        <SiNextdotjs key="next"/>,
         <SiTailwindcss key="tailwind" />,
         <FaFigma key="figma"/>
       ],
@@ -51,18 +42,6 @@ export default function SkillesPreview() {
         <SiMysql key="mysql" />,
       ],
     },
-    // {
-    //   title: "Applications mobiles",
-    //   description:
-    //     "Conception d’applications mobiles hybrides multiplateformes avec React Native, Redux, et Expo. Intégration de fonctionnalités modernes et synchronisation des données grâce à Firebase et Axios.",
-    //   icons: [
-    //     <FaReact key="react-native" />,
-    //     <SiRedux key="redux" />,
-    //     <SiFirebase key="firebase" />,
-    //     <SiExpo key="expo" />,
-    //     <SiAxios key="axios" />,
-    //   ],
-    // },
     {
       title: "Outils & déploiement",
       description:
@@ -86,26 +65,14 @@ export default function SkillesPreview() {
       Le choix des technologies jouant un rôle clé dans la réussite d’un projet, voici un aperçu des outils que j’utilise à chaque étape de réalisation.
     </p>
   
-    <div className="flex flex-col gap-6 mt-8">
+    <div className="flex flex-col gap-6">
       {skillsData.map(({ title, description, icons }, index) => (
-      <div key={index} className="relative pl-10">
-      {/* Lueur subtile et fondue */}
-      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-t from-[#9B59B6] to-[#007AFF] blur-[6px] z-10 pointer-events-none" />
-    
-      {/* Bordure nette par-dessus */}
-      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-t from-[#9B59B6] to-[#007AFF] z-20" />
-    
-      <div className="relative z-30">
-        
-        <h3 className="text-lg font-semibold text-gray-100 mb-2">{title}</h3>
-        <p className="text-base mb-4">{description}</p>
-        <div className="flex flex-wrap items-center gap-4 text-[#9B59B6] text-[28px]">
-          {icons.map((IconComponent, i) => (
-            <span key={i}>{IconComponent}</span>
-          ))}
-        </div>
-      </div>
-    </div>
+     <SkillCard
+        key={index}
+        title={title}
+        description={description}
+        icons={icons}
+     />
       ))}
     </div>
   </HomeSection>
