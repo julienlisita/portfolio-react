@@ -8,7 +8,7 @@ export default function ArticlePage() {
   const article = articles.find((a) => a.slug === slug)
 
   if (!article) {
-    return <p className="text-white">Article non trouvé.</p>;
+    return <p className="text-gray-200">Article non trouvé.</p>;
   }
 
   return (
@@ -17,7 +17,7 @@ export default function ArticlePage() {
         <PageTitle>{article.title}</PageTitle>
       </header>
 
-      <section className="prose prose-invert max-w-none text-gray-300">
+      <section className="prose prose-invert max-w-none text-gray-200">
         {/* Ici tu peux rendre du HTML ou du Markdown compilé */}
        
         <p className="text-sm text-gray-400">{article.date}</p>

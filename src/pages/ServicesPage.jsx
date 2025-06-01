@@ -8,7 +8,7 @@ export default function ServicesPage()
     <div className="text-white pt-14 sm:pt-16 lg:pt-20  pb-16 sm:pb-20 lg:pb-24 px-6 space-y-12">
       <section>
         <PageTitle>Mes services</PageTitle>
-        <p className="text-lg mt-8 sm:mt-10 lg:mt-12">
+        <p className="mt-8 sm:mt-10 lg:mt-12">
           Je conçois et développe des solutions web <strong>modernes</strong>, <strong>rapides</strong> et <strong>personnalisées</strong>,
           adaptées aux besoins des professionnels, indépendants, artisans ou entrepreneurs.
           Mon approche privilégie la clarté, la performance, et un accompagnement de bout en bout.

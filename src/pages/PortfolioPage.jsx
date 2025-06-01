@@ -5,14 +5,14 @@ import SectionTitle from "../components/SectionTitle";
 
 export default function Portfolio() {
   return (
-    <div className="pt-14 sm:pt-16 lg:pt-20 text-white pb-16 sm:pb-20 lg:pb-24">
+    <div className="pt-14 sm:pt-16 lg:pt-20 text-gray-300 pb-16 sm:pb-20 lg:pb-24">
       {/* Titre de la page */}
       <PageTitle>Portfolio</PageTitle>
 
       <div className="mt-8 sm:mt-10 lg:mt-12">
         {/* Introduction ou section d'accueil */}
         <div className="text-left">
-          <p className="text-gray-300 mt-4 text-left">
+          <p className=" mt-4 text-left">
             Voici quelques-uns des projets sur lesquels j’ai travaillé. Vous y trouverez des applications web complètes, des sites vitrines modernes, ainsi que divers projets de développement mettant en avant des concepts de programmation procédurale, orientée objet et d’algorithmie. Cliquez sur chaque projet pour en savoir plus.
           </p>
         </div>

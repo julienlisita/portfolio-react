@@ -30,7 +30,7 @@ export default function ProjectCard({ slug, image, title, description, technos }
         />
         <div className="p-4">
           <h3 className="text-base sm:text-lg text-white font-semibold mb-2">{title}</h3>
-          <p className="text-sm sm:text-base text-gray-300 mb-4">{description}</p>
+          <p className="text-sm sm:text-base text-gray-200 mb-4">{description}</p>
           <div className="flex flex-wrap gap-2 pb-2">
             {technos.map((tech, i) => (
               <span

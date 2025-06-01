@@ -13,7 +13,7 @@ export default function BlogPage() {
   const totalPages = Math.ceil(articles.length / articlesPerPage);
 
   return (
-    <div className="pt-14 sm:pt-16 lg:pt-20 text-white pb-16 sm:pb-20 lg:pb-24">
+    <div className="pt-14 sm:pt-16 lg:pt-20 text-gray-200 pb-16 sm:pb-20 lg:pb-24">
       
       <PageTitle>Tout les articles</PageTitle>
 
@@ -28,7 +28,7 @@ export default function BlogPage() {
               <div className="w-1 rounded h-full bg-gradient-to-b from-[#9B59B6] to-[#007AFF] blur-[4px]" />
               <div>
                 <p className="text-xs text-gray-400">{article.date}</p>
-                <h3 className="text-white font-semibold text-lg group-hover:text-[#007AFF] transition">
+                <h3 className="text-gray-100 font-semibold text-lg group-hover:text-[#007AFF] transition">
                   {article.title}
                 </h3>
                 <p className="text-gray-300 text-sm group-hover:text-[#007AFF] transition">

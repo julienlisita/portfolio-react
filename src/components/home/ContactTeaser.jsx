@@ -9,7 +9,7 @@ export default function ContactTeaser()
             title="Contact"
             link={{href:"/contact", text:"En savoir plus"}}
         > 
-        <p className="text-white max-w-2xl">
+        <p className="max-w-2xl">
            Une idée, un projet ou une question ? N’hésitez pas à me contacter via le formulaire ci-dessous. Je reviendrai vers vous dans les plus brefs délais.
         </p>
         <ContactForm/>

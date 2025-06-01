@@ -32,7 +32,7 @@ export default function ServiceCard({ icon, title, description, color }) {
 
       {/* Description */}
       <div className="flex flex-col items-center justify-start p-6 pt-4">
-        <p className="text-base text-center text-gray-300">
+        <p className="text-base text-center text-gray-200">
           {description}
         </p>
       </div>

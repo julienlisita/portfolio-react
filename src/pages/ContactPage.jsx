@@ -7,13 +7,13 @@ import PageTitle from "../components/PageTitle";
 export default function ContactPage() {
   return (
     <section className="
-            bg-[#222222] text-white
+            bg-[#222222] text-gray-200
               pt-14 sm:pt-16 lg:pt-20 
               flex flex-col items-center
               pb-16 sm:pb-20 lg:pb-24">
       <PageTitle>Contact</PageTitle>
       <SectionTitle>M'envoyer un mail</SectionTitle>
-      <p className="text-left text-gray-300 mt-8 sm:mt-10 lg:mt-12 max-w-2xl">
+      <p className="text-left mt-8 sm:mt-10 lg:mt-12 max-w-2xl">
        Je suis toujours ravi de discuter de nouveaux projets ou d’échanger des idées. N’hésitez pas à me contacter pour discuter de vos besoins. Je suis basé à Mérignac, près de Bordeaux, et je suis toujours à la recherche de nouveaux défis. J’aime collaborer avec mes clients pour comprendre leurs besoins et leur fournir des solutions personnalisées qui répondent à leurs objectifs.
       </p>
       {/* Formulaire de contact*/}
@@ -65,7 +65,7 @@ export default function ContactPage() {
           href="https://www.linkedin.com/in/ton-profil"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-1 py-1 hover:outline hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]"
+          className="px-1 py-1 hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]"
         >
           <LuLinkedin size={40} />
         </a>
@@ -73,7 +73,7 @@ export default function ContactPage() {
           href="https://github.com/ton-pseudo"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-1 py-1 hover:outline hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]"
+          className="px-1 py-1 hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]"
         >
           <LuGithub size={40} />
         </a>

@@ -82,7 +82,7 @@ export default function SkillesPreview() {
     title="Mes compétences"
     link={{ href: "/competences", text: "En savoir plus" }}
   >
-    <p className="text-white text-base sm:text-lg lg:text-xl">
+    <p className="text-base sm:text-lg lg:text-xl">
       Le choix des technologies jouant un rôle clé dans la réussite d’un projet, voici un aperçu des outils que j’utilise à chaque étape de réalisation.
     </p>
   
@@ -97,8 +97,8 @@ export default function SkillesPreview() {
     
       <div className="relative z-30">
         
-        <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
-        <p className="text-base text-gray-300 mb-4">{description}</p>
+        <h3 className="text-lg font-semibold text-gray-100 mb-2">{title}</h3>
+        <p className="text-base mb-4">{description}</p>
         <div className="flex flex-wrap items-center gap-4 text-[#9B59B6] text-[28px]">
           {icons.map((IconComponent, i) => (
             <span key={i}>{IconComponent}</span>

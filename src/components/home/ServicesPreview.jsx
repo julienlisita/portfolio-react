@@ -39,7 +39,7 @@ export default function ServicesPreview()
             link={{href:"/services", text:"En savoir plus"}}
         > 
 
-        <p className="text-white text-base sm:text-lg lg:text-xl">
+        <p className="text-base sm:text-lg lg:text-xl">
           De l’idée initiale à la mise en ligne, je vous accompagne à chaque étape pour construire des solutions web performantes et durables.
         </p>
         
