@@ -62,7 +62,7 @@ export default function ContactPage() {
       {/*Réseaux sociaux*/}
       <div className="flex items-center gap-20 mt-8 sm:mt-10 lg:mt-12">
         <a
-          href="https://www.linkedin.com/in/ton-profil"
+          href="https://www.linkedin.com/in/julienlisita"
           target="_blank"
           rel="noopener noreferrer"
           className="px-1 py-1 hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]"
@@ -70,7 +70,7 @@ export default function ContactPage() {
           <LuLinkedin size={40} />
         </a>
         <a
-          href="https://github.com/ton-pseudo"
+          href="https://github.com/julienlisita"
           target="_blank"
           rel="noopener noreferrer"
           className="px-1 py-1 hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]"
