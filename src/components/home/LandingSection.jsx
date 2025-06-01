@@ -4,6 +4,13 @@ import { FaReact, FaJsSquare, FaNodeJs, FaCode } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 
 export default function LandingSection() {
+
+  const keywords = [
+    "Conception",
+    "Développement",
+    "Maintenance",
+  ];
+
   return (
     <section
       id="landing"
@@ -42,8 +49,8 @@ export default function LandingSection() {
       {/* Titre */}
       <motion.h2
         className="text-gray-100 text-lg sm:text-xl md:text-2xl font-medium font-heading tracking-wide"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
         Développeur web & solutions digitales
@@ -52,8 +59,8 @@ export default function LandingSection() {
       {/* Phrase d'accroche */}
       <motion.p
         className="text-gray-200 text-base sm:text-lg md:text-xl font-light font-body tracking-wide max-w-xl leading-relaxed"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 1 }}
       >
         Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure</span><br />
@@ -61,21 +68,55 @@ export default function LandingSection() {
       </motion.p>
 
       {/* Mots clés offre*/}
-      <motion.h2
-        className="text-white text-lg sm:text-xl md:text-2xl font-medium font-code tracking-wide font-code"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 1 }}
-      >
-        Conception - Développement - Maintenance
-      </motion.h2>
+
+      <motion.div
+          className="flex flex-col sm:flex-row sm:space-x-4 items-center text-white text-lg sm:text-xl md:text-2xl font-medium font-code tracking-wide"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.3,
+              },
+            },
+          }}
+        >
+          {keywords.map((word, i) => (
+            <motion.div
+              key={i}
+              className="flex space-x-1 sm:space-x-0 sm:mx-2"
+              variants={{
+                hidden: {},
+                visible: {
+                  transition: {
+                    delayChildren: 1 + i * 0.1,
+                    staggerChildren: 0.06,
+                  },
+                },
+              }}
+            >
+              {[...word].map((char, j) => (
+                <motion.span
+                  key={j}
+                  variants={{
+                    hidden: { opacity: 0 },
+                    visible: { opacity: 1 },
+                  }}
+                  style={{ display: "inline-block" }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </motion.div>
+          ))}
+        </motion.div>
 
       {/* Flèche scroll */}
       <motion.div
         className="absolute bottom-10 flex flex-col items-center animate-pulse"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.3, duration: 1 }}
+        transition={{ delay: 1.6, duration: 1 }}
       >
         <a href="#about"
             onClick={(e) => {

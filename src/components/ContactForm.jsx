@@ -1,6 +1,6 @@
 import Button from "./Button";
 import FloatingInput from "./FloatingInput";
-import FloatingTextarea from "./home/FloatingTextArea";
+import FloatingTextarea from "./FloatingTextarea";
 
 export default function ContactForm()
 {
