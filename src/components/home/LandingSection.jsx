@@ -22,7 +22,7 @@ export default function LandingSection() {
       <motion.img
         src="/assets/logos/site/logo1.png"
         alt="Logo initiales Julien Lisita"
-        className="h-32 w-32 sm:h-40 sm:w-40 md:h-48 md:w-48 drop-shadow-[0_0_10px_#5AC8FA] transition-all"
+        className="h-32 w-32 sm:h-40 sm:w-40 md:h-48 md:w-48"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
@@ -30,12 +30,13 @@ export default function LandingSection() {
 
       {/* Nom */}
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-heading text-transparent bg-clip-text bg-gradient-to-br from-[#5AC8FA] to-[#FF66B2]"
+        className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-body text-transparent bg-clip-text"
+        style={{ backgroundImage: 'linear-gradient(to bottom, #5AC8FA 30%, #FF66B2 90%)' }}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 1 }}
       >
-        Julien LISITA
+        Julien Lisita
       </motion.h1>
 
       {/* Titre */}
@@ -55,7 +56,7 @@ export default function LandingSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 1 }}
       >
-        Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure,</span><br />
+        Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure</span><br />
         à l'image de <span className="text-[#FF66B2] font-semibold">votre projet</span>
       </motion.p>
 
@@ -84,7 +85,7 @@ export default function LandingSection() {
             >
           <ArrowDown className="h-10 w-10 sm:h-12 sm:w-12 text-[#5AC8FA]" />
         </a>
-        <p className="text-white text-xs mt-1">Scrollez ou cliquez</p>
+        <p className="text-gray-500 text-xs mt-1">Faites défiler ou cliquez</p>
       </motion.div>
     </section>
   );

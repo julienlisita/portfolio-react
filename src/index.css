@@ -1,6 +1,10 @@
 
 @import "tailwindcss";
 
+.font-name {
+  font-family: "Poppins", sans-serif;
+}
+
 .font-heading {
   font-family: "Space Grotesk", sans-serif;
 }
