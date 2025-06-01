@@ -18,6 +18,15 @@ import HeaderWrapper from "./components/HeaderWrapper";
 import ScrollToTop from "./components/ScrollToTop";
 import MerciPage from "./pages/MerciPage";
 
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/700.css";
+
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/500.css";
+
+import "@fontsource/space-grotesk/400.css";
+import "@fontsource/space-grotesk/700.css";
+
 export default function App() {
   return (
     <Router>

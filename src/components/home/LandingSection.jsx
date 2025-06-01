@@ -30,7 +30,7 @@ export default function LandingSection() {
 
       {/* Nom */}
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-[#5AC8FA] to-[#FF66B2]"
+        className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-heading text-transparent bg-clip-text bg-gradient-to-br from-[#5AC8FA] to-[#FF66B2]"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 1 }}
@@ -40,7 +40,7 @@ export default function LandingSection() {
 
       {/* Titre */}
       <motion.h2
-        className="text-white text-lg sm:text-xl md:text-2xl font-medium tracking-wide"
+        className="text-white text-lg sm:text-xl md:text-2xl font-medium font-heading tracking-wide"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
@@ -50,7 +50,7 @@ export default function LandingSection() {
 
       {/* Phrase d'accroche */}
       <motion.p
-        className="text-white text-base sm:text-lg md:text-xl font-light tracking-wide max-w-xl leading-relaxed"
+        className="text-white text-base sm:text-lg md:text-xl font-light font-body tracking-wide max-w-xl leading-relaxed"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 1 }}
@@ -61,7 +61,7 @@ export default function LandingSection() {
 
       {/* Mots clés offre*/}
       <motion.h2
-        className="text-white text-lg sm:text-xl md:text-2xl font-medium tracking-wide"
+        className="text-white text-lg sm:text-xl md:text-2xl font-medium font-code tracking-wide font-code"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1 }}

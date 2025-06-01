@@ -1,1 +1,14 @@
+
 @import "tailwindcss";
+
+.font-heading {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.font-code {
+     font-family: "Jetbrains Mono", "sans-serif";
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
