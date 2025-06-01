@@ -13,7 +13,7 @@ export default function Footer()
             
             {/* Menu et mentions légales au centre */}
             <div className="flex flex-col items-center">
-                <nav className="text-sm sm:text-sm lg:text-sm flex flex-col sm:flex-row items-center space-x-6 mb-2  text-white">
+                <nav className="text-sm sm:text-sm lg:text-sm flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4 lg:space-x-6 mb-2  text-white">
                     <Link className="text-center hover:underline" to="/about">A propos</Link>
                     <Link className="text-center hover:underline" to="/mentions-legales">Mentions légales et politique de confidentialité</Link>
                 </nav>
@@ -23,10 +23,10 @@ export default function Footer()
             {/* Réseaux sociaux à droite */}
            <div className="flex items-center space-x-2 sm:space-x-3 lg:space-x-4">
                 <a href="https://www.linkedin.com/in/julienlisita/" target="_blank" rel="noopener noreferrer">
-                    <LuLinkedin className="h-7 sm:h-8 lg:h-11 w-auto text-white px-1 py-1 hover:outline hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]" />
+                    <LuLinkedin className="h-7 sm:h-8 lg:h-11 w-auto text-white px-1 py-1 hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]" />
                 </a>
                 <a href="https://github.com/julienlisita" target="_blank" rel="noopener noreferrer">
-                    <LuGithub className="h-7 sm:h-8 lg:h-11 w-auto text-white px-1 py-1 hover:outline hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]" />
+                    <LuGithub className="h-7 sm:h-8 lg:h-11 w-auto text-white px-1 py-1 hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]" />
                 </a>
             </div>
         </footer>
