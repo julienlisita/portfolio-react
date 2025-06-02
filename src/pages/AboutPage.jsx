@@ -2,14 +2,14 @@
 
 import Button from "../components/common/Button";
 import PageTitle from "../components/common/PageTitle";
-import SectionTitle from "../components/common/SectionTitle";
+import Section from "../components/common/Section";
 
 export default function AboutPage() {
   return (
     <>
       <PageTitle>A propos</PageTitle>
       {/* Photo + Intro */}
-      <section className="flex flex-col lg:flex-row items-center lg:items-start gap-10 mt-8 sm:mt-10 lg:mt-12 max-w-3xl m-auto">
+      <Section className="flex flex-col lg:flex-row items-center lg:items-start gap-10 max-w-3xl m-auto">
         <img
           src="/assets/images/profile-pic.png" 
           alt="Julien Lisita"
@@ -23,12 +23,11 @@ export default function AboutPage() {
             je conçois des applications modernes, performantes et sur mesure. Basé à Mérignac, je travaille à distance ou sur site.
           </p>
         </div>
-      </section>
+      </Section>
 
       {/* Parcours */}
-      <section>
-        <SectionTitle>Mon parcours</SectionTitle>
-        <p className="mt-8 sm:mt-10 lg:mt-12 max-w-3xl m-auto">
+      <Section title="Parcour">
+        <p className="max-w-3xl m-auto">
           Après une première carrière dans l’ingénierie, j’ai choisi de me reconvertir dans le développement web.
           J’ai suivi un bootcamp intensif en développement full stack, où j’ai pu consolider mes compétences en JavaScript,
           React et Node.js. Depuis, je développe des projets concrets en freelance et en auto-formation continue.
@@ -44,7 +43,7 @@ export default function AboutPage() {
           Télécharger mon CV
           </Button>
         </div>
-      </section>
+      </Section>
     </>
   );
 }

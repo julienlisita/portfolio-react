@@ -1,19 +1,16 @@
 // src/pages/LegalAndPrivacyPage.jsx
 
 import PageTitle from "../components/common/PageTitle";
+import Section from "../components/common/Section";
 import SectionTitle from "../components/common/SectionTitle";
 
 export default function LegalAndPrivacyPage() {
     return (
       <>
         <PageTitle>Mentions légales & Politique de confidentialité</PageTitle>
-
-        
-
           {/* Mentions légales */}
-          <section>
-            <SectionTitle>Mentions légales</SectionTitle>
-            <p className="mt-8 sm:mt-10 lg:mt-12">
+          <Section title="Mentions légales">
+            <p>
               <strong>Éditeur du site :</strong><br />
               Julien Lisita – Développeur web freelance<br />
               Adresse : 12 Avenue Pierre Mendes-France, 33700 Mérignac<br />
@@ -46,12 +43,10 @@ export default function LegalAndPrivacyPage() {
               <strong>Responsabilité :</strong><br />
               L’éditeur ne peut être tenu responsable des dommages liés à l’utilisation du site ou à un dysfonctionnement éventuel.
             </p>
-          </section>
-
+          </Section>
           {/* Politique de confidentialité */}
-          <section>
-            <SectionTitle>Politique de confidentialité</SectionTitle>
-            <p className="mt-8 sm:mt-10 lg:mt-12">
+          <Section title="Politique de confidentialité">
+            <p>
               <strong>Collecte des données :</strong><br />
               Ce site ne collecte pas de données personnelles automatiquement. Les seules données enregistrées sont celles envoyées volontairement via le formulaire de contact (nom, email, message).
             </p>
@@ -70,7 +65,7 @@ export default function LegalAndPrivacyPage() {
               <strong>Droits des utilisateurs :</strong><br />
               Vous pouvez demander l’accès, la modification ou la suppression de vos données en m’écrivant à julien.lisita@gmail.com.
             </p>
-          </section>
+          </Section>
         
       </>
     );

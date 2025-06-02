@@ -4,6 +4,7 @@ import { useState } from "react";
 import Pagination from "../components/common/Pagination";
 import PageTitle from "../components/common/PageTitle";
 import {articles} from "../data/articles"
+import Section from "../components/common/Section";
 
 export default function BlogPage() {
 
@@ -18,7 +19,7 @@ export default function BlogPage() {
     <>
       <PageTitle>Tout les articles</PageTitle>
 
-      <section className="space-y-4 mt-8 sm:mt-10 lg:mt-12">
+      <Section className="space-y-4">
         {paginatedArticles.map((article, index) => (
           <a
             key={index}
@@ -39,7 +40,7 @@ export default function BlogPage() {
             </div>
           </a>
         ))}
-      </section>
+      </Section>
 
       <Pagination
         currentPage={currentPage}

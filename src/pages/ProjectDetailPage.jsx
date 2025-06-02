@@ -4,6 +4,7 @@ import PageTitle from '../components/common/PageTitle';
 import { useParams } from "react-router-dom";
 import { projects } from "../data/projectsData";
 import SectionTitle from '../components/common/SectionTitle';
+import Section from '../components/common/Section';
 
 export default function ProjectDetailPage() {
   const { slug } = useParams();
@@ -13,11 +14,11 @@ export default function ProjectDetailPage() {
       <>
         <PageTitle>{project.title}</PageTitle>
         {/* Intro */}
-        <section>
+        <Section>
           <img
           src={project.image}
           alt={project.title}
-          className="w-full max-h-[400px] object-cover rounded-lg mt-8 sm:mt-10 lg:mt-12"
+          className="w-full max-h-[400px] object-cover rounded-lg"
           />
           {project.summary && (
           <div className="space-y-4 mt-8 sm:mt-10 lg:mt-12">
@@ -26,9 +27,8 @@ export default function ProjectDetailPage() {
             ))}
           </div>  
         )}
-        </section>
-        <section>
-          <SectionTitle>Fonctionnalités principales</SectionTitle>
+        </Section>
+        <Section title="Fonctionnalités principales">
           {project.features && (
           <div className="mt-8 sm:mt-10 lg:mt-12">
             <ul className="list-disc list-inside space-y-2">
@@ -38,13 +38,10 @@ export default function ProjectDetailPage() {
             </ul>
           </div>
         )}
-        </section>
+        </Section>
        
-
-        <section>
-          { project.stack && 
-            <SectionTitle>Spécifications techniques</SectionTitle>
-          }
+       { project.stack && 
+        <Section title="Spécifications techniques">
           <div className="flex gap-4 flex-wrap mt-8 sm:mt-10 lg:mt-12">
             <div className="space-y-4">
               {project.stack && Object.entries(project.stack).map(([category, items]) =>
@@ -78,13 +75,11 @@ export default function ProjectDetailPage() {
               )}
             </div>  
           </div>
-        </section>
-     
+        </Section>
+        }
         {/* Section lien site */}
-
-        <section>
-          <SectionTitle>Démonstration et code source</SectionTitle>
-          {(project.demo || project.sourceCode || project.liveSite) && (
+         {(project.demo || project.sourceCode || project.liveSite) && (
+        <Section title="Démonstration et code source">
             <div className="flex flex-wrap justify-between gap-8 mt-8 sm:mt-10 lg:mt-12">
               
       
@@ -131,8 +126,8 @@ export default function ProjectDetailPage() {
                 </div>
               )}
           </div>
-        )}
-      </section>
+      </Section>
+      )}
     </>
   );
 }

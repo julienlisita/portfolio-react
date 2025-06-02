@@ -2,24 +2,24 @@
 
 import Button from "../components/common/Button";
 import PageTitle from "../components/common/PageTitle";
+import Section from "../components/common/Section";
 import SectionTitle from "../components/common/SectionTitle";
 
 export default function ServicesPage()
 {
   return (
     <>
-      <section>
-        <PageTitle>Mes services</PageTitle>
-        <p className="mt-8 sm:mt-10 lg:mt-12">
+      <PageTitle>Mes services</PageTitle>
+      <Section>
+        <p>
           Je conçois et développe des solutions web <strong>modernes</strong>, <strong>rapides</strong> et <strong>personnalisées</strong>,
           adaptées aux besoins des professionnels, indépendants, artisans ou entrepreneurs.
           Mon approche privilégie la clarté, la performance, et un accompagnement de bout en bout.
         </p>
-      </section>
+      </Section>
       
       {/* Sites vitrines */}
-      <section>
-        <SectionTitle id="vitrines">Sites vitrines modernes (sans WordPress)</SectionTitle>
+      <Section id="vitrines" title="Sites vitrines modernes (sans WordPress)">
         <h3 className="text-xl font-semibold mt-8 sm:mt-10 lg:mt-12 mb-2">Pour qui ?</h3>
         <p>
           Indépendants, artisans, commerçants, professions libérales ou petites structures ayant besoin d’un site
@@ -48,12 +48,11 @@ export default function ServicesPage()
         </p>
 
         {/* <p className="mt-2 font-semibold text-[#5AC8FA]">💰 Tarifs : à partir de 400 €, selon la structure du site et les contenus fournis.</p> */}
-      </section>
+      </Section>
 
       {/* Applications web sur mesure */}
-      <section>
-        <SectionTitle id="apps">Applications web sur mesure</SectionTitle>
-        <h3 className="text-xl font-semibold mt-8 sm:mt-10 lg:mt-12 mb-2">Pour qui ?</h3>
+      <Section id="apps" title="Applications web sur mesure">
+        <h3 className="text-xl font-semibold mb-2">Pour qui ?</h3>
         <p>
           Startups, entreprises, associations, ou porteurs de projet souhaitant développer une application web complète,
           un outil métier ou une plateforme SaaS.
@@ -88,12 +87,11 @@ export default function ServicesPage()
         <p className="mt-4 italic">
           Idéal pour celles et ceux qui cherchent un <strong>accompagnement global</strong>, de l'idée à la mise en ligne.
         </p>
-      </section>
+      </Section>
 
       {/* Maintenance */}
-      <section>
-        <SectionTitle id="maintenance">Suivi & maintenance</SectionTitle>
-        <p className="mt-8 sm:mt-10 lg:mt-12">
+      <Section id="maintenance" title="Suivi & maintenance">
+        <p>
           Une fois votre projet en ligne, je propose un <strong>accompagnement continu</strong> pour garantir la stabilité,
           la performance et l’évolution de votre site ou application.
         </p>
@@ -108,25 +106,24 @@ export default function ServicesPage()
         </ul>
 
         <p className="mt-4 italic">Disponible sous forme de forfait ou à la demande.</p>
-      </section>
+      </Section>
 
       {/* Stack */}
-      <section>
-        <SectionTitle>Stack & technologies utilisées</SectionTitle>
-        <p className="mt-8 sm:mt-10 lg:mt-12">
+      <Section title="Stack & technologies utilisées">
+        <p>
           React – Vite – Next.js – Tailwind CSS – Node.js – Express – MySQL – WebSocket – Git – Railway – Netlify – C / C++ / Java (backend serveur avancé)
         </p>
-      </section>
+      </Section>
 
       {/* Contact */}
-      <section className="text-center mt-12">
+      <Section className="text-center mt-12">
         <SectionTitle>Envie de collaborer ?</SectionTitle>
         <p className="mb-4 mt-8 sm:mt-10 lg:mt-12">
           Chaque projet commence par une discussion.<br />
           <strong>Expliquez-moi vos besoins</strong>, vos idées ou vos contraintes : je vous accompagne avec écoute, pédagogie et transparence.
         </p>
         <Button to="/contact"> Me contacter</Button>
-      </section>
+      </Section>
     </>
   )
 }
