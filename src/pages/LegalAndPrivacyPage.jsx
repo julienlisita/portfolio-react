@@ -8,14 +8,12 @@ export default function LegalAndPrivacyPage() {
       <>
         <PageTitle>Mentions légales & Politique de confidentialité</PageTitle>
 
-        <div className="space-y-1 leading-relaxed">
+        
 
           {/* Mentions légales */}
-
-          <SectionTitle>Mentions légales</SectionTitle>
-
-          <section className="mt-8 sm:mt-10 lg:mt-12">
-            <p>
+          <section>
+            <SectionTitle>Mentions légales</SectionTitle>
+            <p className="mt-8 sm:mt-10 lg:mt-12">
               <strong>Éditeur du site :</strong><br />
               Julien Lisita – Développeur web freelance<br />
               Adresse : 12 Avenue Pierre Mendes-France, 33700 Mérignac<br />
@@ -25,7 +23,7 @@ export default function LegalAndPrivacyPage() {
               TVA non applicable, article 293 B du CGI
             </p>
 
-            <p>
+            <p className="mt-8 sm:mt-10 lg:mt-12">
               <strong>Hébergement :</strong><br />
               Netlify, Inc.<br />
               2325 3rd Street, Suite 296, San Francisco, CA 94107, USA<br />
@@ -51,31 +49,29 @@ export default function LegalAndPrivacyPage() {
           </section>
 
           {/* Politique de confidentialité */}
-
-          <SectionTitle>Politique de confidentialité</SectionTitle>
-
-          <section className="mt-8 sm:mt-10 lg:mt-12">
-            <p>
+          <section>
+            <SectionTitle>Politique de confidentialité</SectionTitle>
+            <p className="mt-8 sm:mt-10 lg:mt-12">
               <strong>Collecte des données :</strong><br />
               Ce site ne collecte pas de données personnelles automatiquement. Les seules données enregistrées sont celles envoyées volontairement via le formulaire de contact (nom, email, message).
             </p>
 
-            <p>
+            <p className="mt-8 sm:mt-10 lg:mt-12">
               <strong>Utilisation des données :</strong><br />
               Les données sont utilisées uniquement pour répondre aux messages et ne sont jamais partagées avec des tiers.
             </p>
 
-            <p>
+            <p className="mt-8 sm:mt-10 lg:mt-12">
               <strong>Cookies :</strong><br />
               Ce site n’utilise pas de cookies de suivi ni de publicité.
             </p>
 
-            <p>
+            <p className="mt-8 sm:mt-10 lg:mt-12">
               <strong>Droits des utilisateurs :</strong><br />
               Vous pouvez demander l’accès, la modification ou la suppression de vos données en m’écrivant à julien.lisita@gmail.com.
             </p>
           </section>
-        </div>
+        
       </>
     );
   }

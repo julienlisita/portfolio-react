@@ -78,38 +78,46 @@ const technologies = [
   return (
     <>
       <PageTitle>Mes compétences techniques</PageTitle>
-      <SectionTitle>Langages de programmation</SectionTitle>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
-        {[...technologies].filter(tech => tech.category === "language").map((tech, idx) => (
-          <TechCard key={idx} {...tech} />
-
-        ))}
-      </div>
-      <SectionTitle>Front end</SectionTitle>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
-        {[...technologies].filter(tech => tech.category === "front").map((tech, idx) => (
-          <TechCard key={idx} {...tech} />
-        ))}
-      </div>
-      <SectionTitle>Back end</SectionTitle>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
-       {[...technologies].filter(tech => tech.category === "back").map((tech, idx) => (
-          <TechCard key={idx} {...tech} />
-        ))}
-      </div>
-      <SectionTitle>Test et deploiement</SectionTitle>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
-       {[...technologies].filter(tech => tech.category === "test").map((tech, idx) => (
-          <TechCard key={idx} {...tech} />
-        ))}
-      </div>
-
-      <SectionTitle>Gestion de projet</SectionTitle>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
-       {[...technologies].filter(tech => tech.category === "gestion").map((tech, idx) => (
-          <TechCard key={idx} {...tech} />
-        ))}
-      </div>
+      <section>
+        <SectionTitle>Langages de programmation</SectionTitle>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
+          {[...technologies].filter(tech => tech.category === "language").map((tech, idx) => (
+            <TechCard key={idx} {...tech} />
+          ))}
+        </div>
+      </section>
+      <section>
+        <SectionTitle>Front end</SectionTitle>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
+          {[...technologies].filter(tech => tech.category === "front").map((tech, idx) => (
+            <TechCard key={idx} {...tech} />
+          ))}
+        </div>
+      </section>
+      <section>
+        <SectionTitle>Back end</SectionTitle>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
+        {[...technologies].filter(tech => tech.category === "back").map((tech, idx) => (
+            <TechCard key={idx} {...tech} />
+          ))}
+        </div>
+      </section>
+      <section>
+        <SectionTitle>Test et deploiement</SectionTitle>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
+        {[...technologies].filter(tech => tech.category === "test").map((tech, idx) => (
+            <TechCard key={idx} {...tech} />
+          ))}
+        </div>
+      </section>
+      <section>
+        <SectionTitle>Gestion de projet</SectionTitle>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
+        {[...technologies].filter(tech => tech.category === "gestion").map((tech, idx) => (
+            <TechCard key={idx} {...tech} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }

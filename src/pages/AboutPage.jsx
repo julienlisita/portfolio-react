@@ -9,7 +9,7 @@ export default function AboutPage() {
     <>
       <PageTitle>A propos</PageTitle>
       {/* Photo + Intro */}
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 mt-8 sm:mt-10 lg:mt-12 max-w-3xl m-auto">
+      <section className="flex flex-col lg:flex-row items-center lg:items-start gap-10 mt-8 sm:mt-10 lg:mt-12 max-w-3xl m-auto">
         <img
           src="/assets/images/profile-pic.png" 
           alt="Julien Lisita"
@@ -23,10 +23,10 @@ export default function AboutPage() {
             je conçois des applications modernes, performantes et sur mesure. Basé à Mérignac, je travaille à distance ou sur site.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* Parcours */}
-      <div>
+      <section>
         <SectionTitle>Mon parcours</SectionTitle>
         <p className="mt-8 sm:mt-10 lg:mt-12 max-w-3xl m-auto">
           Après une première carrière dans l’ingénierie, j’ai choisi de me reconvertir dans le développement web.
@@ -44,7 +44,7 @@ export default function AboutPage() {
           Télécharger mon CV
           </Button>
         </div>
-      </div>
+      </section>
     </>
   );
 }
