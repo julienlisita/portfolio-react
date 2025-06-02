@@ -10,7 +10,7 @@ export default function ProjectDetailPage() {
   const project = projects.find((p) => p.slug === slug);
 
   return (
-      <div className="text-gray-200 bg-[#222222]  pt-14 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24">
+      <>
         <PageTitle>{project.title}</PageTitle>
         <img
           src={project.image}
@@ -120,6 +120,6 @@ export default function ProjectDetailPage() {
           )}
         </div>
       )}
-    </div>
+    </>
   );
 }

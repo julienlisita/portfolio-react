@@ -6,7 +6,7 @@ import SectionTitle from "../components/common/SectionTitle";
 
 export default function AboutPage() {
   return (
-    <section className="text-gray-200 pt-14 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24">
+    <>
       <PageTitle>A propos</PageTitle>
       {/* Photo + Intro */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 mt-8 sm:mt-10 lg:mt-12 max-w-3xl m-auto">
@@ -45,6 +45,6 @@ export default function AboutPage() {
           </Button>
         </div>
       </div>
-    </section>
+    </>
   );
 }

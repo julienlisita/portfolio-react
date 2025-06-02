@@ -76,7 +76,7 @@ const technologies = [
   ];
 
   return (
-    <section className="pt-14 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24">
+    <>
       <PageTitle>Mes compétences techniques</PageTitle>
       <SectionTitle>Langages de programmation</SectionTitle>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
@@ -110,6 +110,6 @@ const technologies = [
           <TechCard key={idx} {...tech} />
         ))}
       </div>
-    </section>
+    </>
   );
 }

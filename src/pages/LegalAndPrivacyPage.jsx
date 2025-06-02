@@ -5,7 +5,7 @@ import SectionTitle from "../components/common/SectionTitle";
 
 export default function LegalAndPrivacyPage() {
     return (
-      <section className="pt-14 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24 text-gray-200 max-w-4xl mx-auto">
+      <>
         <PageTitle>Mentions légales & Politique de confidentialité</PageTitle>
 
         <div className="space-y-1 leading-relaxed">
@@ -76,6 +76,6 @@ export default function LegalAndPrivacyPage() {
             </p>
           </section>
         </div>
-      </section>
+      </>
     );
   }

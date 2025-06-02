@@ -15,11 +15,10 @@ export default function BlogPage() {
   const totalPages = Math.ceil(articles.length / articlesPerPage);
 
   return (
-    <div className="pt-14 sm:pt-16 lg:pt-20 text-gray-200 pb-16 sm:pb-20 lg:pb-24">
-      
+    <>
       <PageTitle>Tout les articles</PageTitle>
 
-      <div className="space-y-4 mt-8 sm:mt-10 lg:mt-12">
+      <section className="space-y-4 mt-8 sm:mt-10 lg:mt-12">
         {paginatedArticles.map((article, index) => (
           <a
             key={index}
@@ -40,13 +39,13 @@ export default function BlogPage() {
             </div>
           </a>
         ))}
-      </div>
+      </section>
 
       <Pagination
         currentPage={currentPage}
         totalPages={totalPages}
         onPageChange={setCurrentPage}
       />
-    </div>
+    </>
   );
 }

@@ -7,7 +7,7 @@ import SectionTitle from "../components/common/SectionTitle";
 
 export default function Portfolio() {
   return (
-    <div className="pt-14 sm:pt-16 lg:pt-20 text-gray-300 pb-16 sm:pb-20 lg:pb-24">
+    <>
       {/* Titre de la page */}
       <PageTitle>Portfolio</PageTitle>
 
@@ -43,6 +43,6 @@ export default function Portfolio() {
               ))}
         </div>
       </div>
-  </div>
+  </>
   );
 }

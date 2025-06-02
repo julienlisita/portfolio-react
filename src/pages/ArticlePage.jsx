@@ -10,11 +10,11 @@ export default function ArticlePage() {
   const article = articles.find((a) => a.slug === slug)
 
   if (!article) {
-    return <p className="text-gray-200">Article non trouvé.</p>;
+    return <p>Article non trouvé.</p>;
   }
 
   return (
-    <article className="pt-14 sm:pt-16 lg:pt-20 ">
+    <> 
       <header className="mb-8">
         <PageTitle>{article.title}</PageTitle>
       </header>
@@ -25,6 +25,6 @@ export default function ArticlePage() {
         <p className="text-sm text-gray-400">{article.date}</p>
 
       </section>
-    </article>
+    </>
   );
 }

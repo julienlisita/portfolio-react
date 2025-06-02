@@ -7,7 +7,7 @@ import SectionTitle from "../components/common/SectionTitle";
 export default function ServicesPage()
 {
   return (
-    <div className="text-white pt-14 sm:pt-16 lg:pt-20  pb-16 sm:pb-20 lg:pb-24 px-6 space-y-12">
+    <>
       <section>
         <PageTitle>Mes services</PageTitle>
         <p className="mt-8 sm:mt-10 lg:mt-12">
@@ -127,6 +127,6 @@ export default function ServicesPage()
         </p>
         <Button to="/contact"> Me contacter</Button>
       </section>
-    </div>
+    </>
   )
 }
