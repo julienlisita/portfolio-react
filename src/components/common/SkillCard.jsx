@@ -1,3 +1,5 @@
+// src/components/common/SkillCard.jsx
+
 export default function SkillCard({title, icons, description})
 {
     return (

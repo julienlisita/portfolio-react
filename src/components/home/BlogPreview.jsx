@@ -1,3 +1,5 @@
+// src/components/home/BlogPreview.jsx
+
 import HomeSection from "./HomeSection";
 import {articles} from "../../data/articles"
 

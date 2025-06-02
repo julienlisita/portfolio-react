@@ -1,4 +1,8 @@
-import TechCard from "../components/TechCard";
+// src/pages/CompetencePage.jsx
+
+import TechCard from "../components/common/TechCard";
+import PageTitle from "../components/common/PageTitle";
+import SectionTitle from "../components/common/SectionTitle";
 
 import {
   FaReact,
@@ -34,8 +38,6 @@ import {
   SiSentry,
   SiGithubactions
 } from "react-icons/si";
-import PageTitle from "../components/PageTitle";
-import SectionTitle from "../components/SectionTitle";
 
 export default function CompetencePage() {
 const technologies = [

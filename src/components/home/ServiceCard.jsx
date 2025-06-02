@@ -1,3 +1,5 @@
+// src/components/home/ServiceCard.jsx
+
 import { motion } from "framer-motion";
 
 export default function ServiceCard({ icon, title, description, color }) {

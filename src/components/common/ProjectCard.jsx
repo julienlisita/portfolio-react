@@ -1,3 +1,5 @@
+// src/components/common/ProjectCard.jsx
+
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 

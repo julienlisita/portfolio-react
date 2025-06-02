@@ -1,7 +1,9 @@
+// src/pages/PortfolioPage.jsx
+
 import { projects } from "../data/projectsData";
-import PageTitle from "../components/PageTitle";
-import ProjectCard from "../components/home/ProjectCard";
-import SectionTitle from "../components/SectionTitle";
+import PageTitle from "../components/common/PageTitle";
+import ProjectCard from "../components/common/ProjectCard";
+import SectionTitle from "../components/common/SectionTitle";
 
 export default function Portfolio() {
   return (

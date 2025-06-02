@@ -1,3 +1,5 @@
+// src/components/home/AboutPreview.jsx
+
 import HomeSection from "./HomeSection";
 import '../../../src/index.css';
 

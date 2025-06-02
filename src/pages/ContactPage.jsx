@@ -1,8 +1,10 @@
-import ContactForm from "../components/ContactForm";
+// src/pages/ContactPage.jsx
+
+import ContactForm from "../components/common/ContactForm";
 import { Mail, Phone, Car, MapPin} from "lucide-react";
 import { LuLinkedin, LuGithub } from 'react-icons/lu';
-import SectionTitle from "../components/SectionTitle";
-import PageTitle from "../components/PageTitle";
+import SectionTitle from "../components/common/SectionTitle";
+import PageTitle from "../components/common/PageTitle";
 
 export default function ContactPage() {
   return (

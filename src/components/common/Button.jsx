@@ -1,3 +1,5 @@
+// src/components/home/SkillsPreview.jsxcomponents/common/Button.jsx
+
 import { Link } from "react-router-dom";
 
 export default function Button({ variant = "secondary", ...props }) {

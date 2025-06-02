@@ -1,3 +1,5 @@
+// src/components/common/FloatingInput.jsx
+
 export default function FloatingInput({ label, name, type = "text", required = false }) {
   return (
     <div className="relative z-0 w-full group">

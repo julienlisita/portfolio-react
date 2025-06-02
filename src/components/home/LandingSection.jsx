@@ -1,3 +1,5 @@
+// src/components/home/LandingSection.jsx
+
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { FaReact, FaJsSquare, FaNodeJs, FaCode } from "react-icons/fa";

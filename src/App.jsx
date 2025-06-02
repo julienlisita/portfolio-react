@@ -1,3 +1,5 @@
+// src/App.jsx
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -11,11 +13,11 @@ import ProjectDetailPage from "./pages/ProjectDetailPage";
 import BlogPage from "./pages/BlogPage";
 import ArticlePage from "./pages/ArticlePage";
 import ContactPage from "./pages/ContactPage";
-import LegalAndPrivacyPage from "./pages/LegalAndPrivacyPage"; // Mentions légales + politique de confidentialité
+import LegalAndPrivacyPage from "./pages/LegalAndPrivacyPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import Footer from "./components/Footer";
-import HeaderWrapper from "./components/HeaderWrapper";
-import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/common/Footer";
+import HeaderWrapper from "./components/common/HeaderWrapper";
+import ScrollToTop from "./components/common/ScrollToTop";
 import MerciPage from "./pages/MerciPage";
 
 import "@fontsource/inter/400.css";

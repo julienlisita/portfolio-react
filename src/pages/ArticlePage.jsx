@@ -1,6 +1,8 @@
+// src/pages/ArticlePage.jsx
+
 import { useParams } from "react-router-dom"; 
 import {articles} from "../data/articles"
-import PageTitle from "../components/PageTitle";
+import PageTitle from "../components/common/PageTitle";
 
 export default function ArticlePage() {
 

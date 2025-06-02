@@ -1,6 +1,8 @@
+// src/components/common/Header.jsx
+
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; 
-import useToggle from "../hooks/useToggle";
+import useToggle from "../../hooks/useToggle";
 
 export default function Header() {
   const { state: isOpen, toggleState } = useToggle(false);

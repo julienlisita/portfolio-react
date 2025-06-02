@@ -1,3 +1,5 @@
+// src/pages/HomePage.jsx
+
 import LandingSection from "../components/home/LandingSection";
 import AboutPreview from "../components/home/AboutPreview";
 import ServicesPreview from "../components/home/ServicesPreview";

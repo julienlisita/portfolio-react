@@ -1,3 +1,5 @@
+// src/components/home/ServicesPreview.jsx
+
 import { Monitor, Layers, LifeBuoy } from "lucide-react";
 import { Link } from "react-router-dom";
 import ServiceCard from "./ServiceCard";

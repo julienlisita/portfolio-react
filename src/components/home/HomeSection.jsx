@@ -1,6 +1,7 @@
-import Button from "../Button";
-import SectionTitle from "../SectionTitle";
+// src/components/home/HomeSection.jsx
 
+import Button from "../common/Button";
+import SectionTitle from "../common/SectionTitle";
 
 export default function HomeSection({ id, title, children, link, className }) {
     return (

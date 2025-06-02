@@ -1,9 +1,9 @@
-// src/pages/Project.jsx
+// src/pages/ProjectDetailsPages.jsx
 
-import PageTitle from '../components/PageTitle';
+import PageTitle from '../components/common/PageTitle';
 import { useParams } from "react-router-dom";
 import { projects } from "../data/projectsData";
-import SectionTitle from '../components/SectionTitle';
+import SectionTitle from '../components/common/SectionTitle';
 
 export default function ProjectDetailPage() {
   const { slug } = useParams();

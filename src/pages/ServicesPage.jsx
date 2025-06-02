@@ -1,6 +1,8 @@
-import Button from "../components/Button";
-import PageTitle from "../components/PageTitle";
-import SectionTitle from "../components/SectionTitle";
+// src/pages/ServicesPage.jsx
+
+import Button from "../components/common/Button";
+import PageTitle from "../components/common/PageTitle";
+import SectionTitle from "../components/common/SectionTitle";
 
 export default function ServicesPage()
 {

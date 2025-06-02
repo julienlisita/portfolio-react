@@ -1,6 +1,8 @@
+// src/pages/BlogPage.jsx
+
 import { useState } from "react";
-import Pagination from "../components/Pagination";
-import PageTitle from "../components/PageTitle";
+import Pagination from "../components/common/Pagination";
+import PageTitle from "../components/common/PageTitle";
 import {articles} from "../data/articles"
 
 export default function BlogPage() {

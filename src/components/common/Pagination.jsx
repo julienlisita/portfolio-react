@@ -1,4 +1,4 @@
-// components/Pagination.jsx
+// src/components/common/Pagination.jsx
 
 export default function Pagination({ currentPage, totalPages, onPageChange }) {
   return (

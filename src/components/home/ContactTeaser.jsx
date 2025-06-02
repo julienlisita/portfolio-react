@@ -1,4 +1,6 @@
-import ContactForm from "../ContactForm";
+// src/components/home/ContactTeaser.jsx
+
+import ContactForm from "../common/ContactForm";
 import HomeSection from "./HomeSection";
 
 export default function ContactTeaser()

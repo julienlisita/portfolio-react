@@ -1,5 +1,7 @@
+// src/components/home/ProjectsPreview.jsx
+
 import HomeSection from "./HomeSection";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../common/ProjectCard";
 import { projects } from "../../data/projectsData";
 
 export default function ProjectPreview()

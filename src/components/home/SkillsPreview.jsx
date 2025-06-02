@@ -1,3 +1,5 @@
+// src/components/home/SkillsPreview.jsx
+
 import HomeSection from "./HomeSection";
 import {
   FaReact,
@@ -15,7 +17,7 @@ import {
   SiNetlify,
   SiSequelize,
 } from "react-icons/si";
-import SkillCard from "../SkillCard";
+import SkillCard from "../common/SkillCard";
 
 export default function SkillesPreview() {
 

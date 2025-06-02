@@ -1,5 +1,6 @@
-import PageTitle from "../components/PageTitle";
+// src/pages/MerciPage.jsx
 
+import PageTitle from "../components/common/PageTitle";
 
 export default function MerciPage() {
   return (

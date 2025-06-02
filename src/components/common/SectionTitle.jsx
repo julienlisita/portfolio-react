@@ -1,3 +1,5 @@
+// src/components/common/SectionTitle.jsx
+
 export default function SectionTitle({ className, children,id }) {
     return (
       <h2 
