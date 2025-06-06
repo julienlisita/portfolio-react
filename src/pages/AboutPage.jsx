@@ -7,40 +7,69 @@ import Section from "../components/common/Section";
 export default function AboutPage() {
   return (
     <>
-      <PageTitle>A propos</PageTitle>
+      <PageTitle>À propos</PageTitle>
+
       {/* Photo + Intro */}
-      <Section className="flex flex-col lg:flex-row items-center lg:items-start gap-10 max-w-3xl m-auto">
+      <Section title="Une passion constante pour la technologie">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 max-w-4xl m-auto">
         <img
-          src="/assets/images/profile-pic.png" 
+          src="/assets/images/profile-pic.png"
           alt="Julien Lisita"
-          className="w-40 h-40 rounded-full object-cover shadow-lg"
+          className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 rounded-full object-cover shadow-lg"
         />
-        <div className="text-left lg:text-left">
-          <p className="text-3xl sm:text-4xl font-bold">Julien Lisita</p>
-          <p className="text-[#5AC8FA] text-xl mt-2">Développeur Full Stack Freelance</p>
-          <p className=" mt-4 ">
-            Passionné par le développement web et motivé par l'envie de créer des outils utiles,
-            je conçois des applications modernes, performantes et sur mesure. Basé à Mérignac, je travaille à distance ou sur site.
+        <div className="text-left">
+          <p>
+            Avant de me consacrer pleinement au développement web, j’ai exercé pendant plusieurs années dans le domaine de l’ingénierie logicielle embarquée. C’est dans ce contexte que j’ai découvert le langage C, un langage à la base de nombreux systèmes d’exploitation comme Windows ou Linux. Ce contact initial avec la programmation m’a passionné : le fait de pouvoir transformer des lignes de code en fonctionnalités concrètes, utiles au quotidien, m’est apparu comme une forme de création à part entière. La logique, la rigueur et la créativité qu’exige le développement logiciel ont immédiatement résonné avec ma personnalité.
           </p>
         </div>
+      </div>
+       <p className="mt-4 max-w-4xl m-auto">
+          J’ai eu l’opportunité de travailler sur des systèmes embarqués utilisés dans des domaines aussi sensibles que l’automobile ou la défense. L’un des projets qui m’a le plus marqué concernait un système de sécurité intelligent capable d’adapter le déploiement des airbags en fonction de la position des passagers en temps réel. Ce genre de mission m’a permis de mesurer l’impact que peut avoir un logiciel bien conçu sur la sécurité des personnes.
+        </p>
+      </Section>
+  
+
+      <Section title="De l’industrie aux applications web">
+        <p className="max-w-4xl m-auto">
+          Même si ces projets étaient stimulants, j’ai peu à peu ressenti le besoin de me rapprocher des utilisateurs finaux. Dans les grands groupes industriels, il peut y avoir plusieurs années entre la conception d’une solution et son déploiement, et souvent une certaine distance avec les personnes qui l’utiliseront.
+        </p>
+        <p className="mt-4 max-w-4xl m-auto">
+          C’est ce désir de proximité, de concrétisation plus rapide, et de polyvalence qui m’a poussé à me reconvertir dans le développement web. Grâce à l’essor de technologies comme Node.js (qui permet d’exécuter du JavaScript côté serveur), le web est devenu un terrain d’innovation illimité. On ne se contente plus d’afficher des pages statiques : on crée aujourd’hui de véritables applications interactives, ergonomiques et puissantes, accessibles depuis n’importe quel appareil.
+        </p>
       </Section>
 
-      {/* Parcours */}
-      <Section title="Parcour">
-        <p className="max-w-3xl m-auto">
-          Après une première carrière dans l’ingénierie, j’ai choisi de me reconvertir dans le développement web.
-          J’ai suivi un bootcamp intensif en développement full stack, où j’ai pu consolider mes compétences en JavaScript,
-          React et Node.js. Depuis, je développe des projets concrets en freelance et en auto-formation continue.
+      <Section title="Apprendre, créer, accompagner">
+        <p className="max-w-4xl m-auto">
+          Pour opérer ce virage, j’ai suivi un bootcamp intensif en développement full stack, où j’ai consolidé mes compétences en JavaScript, React, Node.js, HTML/CSS… Depuis, je n’ai jamais cessé d’apprendre et de créer. En parallèle de projets freelance, je continue à me former sur les frameworks les plus actuels, que je choisis en fonction des besoins de chaque client.
         </p>
-        <p className="mt-4 sm:mt-6 lg:mt-8 max-w-3xl m-auto">
-          Vous pouvez télécharger mon CV pour obtenir un aperçu complet de mon parcours professionnel.
+        <p className="mt-4 max-w-4xl m-auto">
+          Aujourd’hui, ce qui me plaît dans le web, c’est de pouvoir concevoir une application ou un site de A à Z : comprendre le besoin du client, modéliser la solution, choisir l’architecture technique, créer une interface fluide et attractive, et déployer l’ensemble en ligne. Le tout avec des cycles de développement courts, des échanges réguliers, et une vraie agilité.
         </p>
-        <div className="text-center mt-8 sm:mt-10 lg:mt-12">
-          <Button
-          href="/assets/docs/CV-Julien-Lisita.pdf"
-          download
-          >
-          Télécharger mon CV
+        <p className="mt-4 max-w-4xl m-auto">
+          Je travaille de façon structurée : découpage du projet en phases, priorisation par tickets (via Trello), validation à chaque étape. Cette méthode me permet de rester réactif, transparent, et d’aligner mes choix techniques avec les attentes du client. Si besoin, j’élabore des maquettes ou des modèles de données, et je propose toujours des solutions adaptées au budget et aux objectifs du projet.
+        </p>
+      </Section>
+
+      <Section title="Mon approche">
+        <p className="max-w-4xl m-auto">
+          Ma démarche est simple : je m’investis pleinement dans chaque projet, comme si c’était le mien. J’aime relever les défis, notamment lorsqu’il s’agit de concevoir une solution originale ou encore jamais réalisée. Mon goût pour la technique reste fort, mais toujours au service de l’humain. Car ce qui compte au final, ce n’est pas la complexité du code, mais l’utilité du résultat.
+        </p>
+        <p className="mt-4 max-w-4xl m-auto">
+          Je tiens aussi à rester accessible et pédagogue : que mes interlocuteurs soient à l’aise avec le numérique ou non, je m’assure de toujours expliquer mes choix de manière claire. Je crois qu’un bon développeur, c’est aussi quelqu’un qui sait écouter, vulgariser et accompagner.
+        </p>
+      </Section>
+
+      {/* Conclusion */}
+      <Section>
+        <p className="text-xl text-center max-w-2xl m-auto font-medium">
+          Envie de concrétiser votre projet ?
+        </p>
+        <p className="mt-2 text-center max-w-2xl m-auto">
+          Que vous ayez besoin d’un site vitrine, d’une application web sur mesure ou simplement de conseils techniques pour démarrer, je suis là pour vous accompagner.
+        </p>
+        <div className="text-center mt-6">
+          <Button href="/services">
+            Découvrez mes services
           </Button>
         </div>
       </Section>
