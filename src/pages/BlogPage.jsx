@@ -1,5 +1,6 @@
 // src/pages/BlogPage.jsx
 
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import Pagination from "../components/common/Pagination";
 import PageTitle from "../components/common/PageTitle";
@@ -17,13 +18,13 @@ export default function BlogPage() {
 
   return (
     <>
-      <PageTitle>Tout les articles</PageTitle>
+      <PageTitle>Tous les articles</PageTitle>
 
       <Section className="space-y-4">
         {paginatedArticles.map((article, index) => (
-          <a
+          <Link
             key={index}
-            href={`/blog/${article.slug}`}
+            to={`/blog/${article.slug}`}
             className="block bg-[#2a2a2a] rounded-xl p-6 hover:bg-[#333] transition group"
           >
             <div className="flex items-start gap-4">
@@ -38,7 +39,7 @@ export default function BlogPage() {
                 </p>
               </div>
             </div>
-          </a>
+          </Link>
         ))}
       </Section>
 

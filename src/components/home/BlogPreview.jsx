@@ -2,6 +2,7 @@
 
 import HomeSection from "./HomeSection";
 import {articles} from "../../data/articles"
+import { Link } from "react-router-dom";
 
 export default function BlogPreview() {
 
@@ -13,9 +14,9 @@ export default function BlogPreview() {
     >
       <div className="space-y-4">
         {articles.map((article, index) => (
-          <a
+          <Link
             key={index}
-            href={`/blog/${article.slug}`}
+            to={`/blog/${article.slug}`}
             className="block bg-[#2a2a2a] rounded-xl p-6 hover:bg-[#333] transition group"
           >
             <div className="flex items-start gap-4">
@@ -30,7 +31,7 @@ export default function BlogPreview() {
                 </p>
               </div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </HomeSection>
