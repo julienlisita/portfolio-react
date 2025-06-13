@@ -33,13 +33,13 @@ export default function AboutPreview() {
                     Après plusieurs années en ingénierie logicielle embarquée, j’ai choisi de me spécialiser dans le développement web pour me rapprocher des utilisateurs finaux et créer des outils concrets, utiles et interactifs.
                 </p>
                  <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
-                    Je conçois des sites vitrines et des applications web personnalisées, avec HTML, CSS et JavaScript, et j’utilise des <span class="font-bold">technologies modernes</span> comme <span class="font-bold">React</span> ou <span class="font-bold">Node.js</span> selon les besoins.
+                    Je conçois des sites vitrines et des applications web personnalisées, avec HTML, CSS et JavaScript, et j’utilise des <span className="font-bold">technologies modernes</span> comme <span className="font-bold">React</span> ou <span className="font-bold">Node.js</span> selon les besoins.
                 </p>
                  <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
-                    <span class="font-bold">Mon objectif :</span> partir de votre besoin, concevoir la bonne solution, et mener à bien notre projet avec clarté et efficacité.
+                    <span className="font-bold">Mon objectif :</span> partir de votre besoin, concevoir la bonne solution, et mener à bien notre projet avec clarté et efficacité.
                 </p>
                  <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
-                    <span class="font-bold">Mon obsession :</span> livrer dans les délais, avec un code fiable, clair et documenté.
+                    <span className="font-bold">Mon obsession :</span> livrer dans les délais, avec un code fiable, clair et documenté.
                 </p>
             </div>
         </div>
