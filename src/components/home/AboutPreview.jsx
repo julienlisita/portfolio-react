@@ -8,7 +8,7 @@ export default function AboutPreview() {
     <HomeSection
         id="about"
         title="Qui suis-je ?"
-        link={{href:"/about",text:"En savoir plus"}}
+        link={{href:"/about",text:"Mon parcours"}}
     >
         {/* Contenu : photo + biographie */}
         <div className="
@@ -27,10 +27,19 @@ export default function AboutPreview() {
             <div className="
                 w-full sm:w-1/2 flex flex-col justify-center items-center">
                 <p className="text-base sm:text-lg lg:text-xl leading-snug text-100">
-                    Bonjour, je suis Julien, développeur freelance passionné par la création de solutions web innovantes. Après une expérience en ingénierie logicielle embarquée, j’ai choisi de me spécialiser dans le développement web, attiré par la possibilité de transformer des idées en outils numériques concrets.
+                    Bonjour, je suis Julien, développeur web freelance passionné par la création de solutions numériques sur mesure.
                 </p>   
                 <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
-                  Grâce à une formation intensive, j’ai acquis des compétences solides en HTML, CSS, JavaScript, ainsi qu’avec des frameworks modernes comme React et Node.js. J’ai eu l’occasion de travailler sur des projets variés, allant de sites vitrines à des applications complexes. Mon objectif : produire un code fiable, clair, et livrer chaque projet dans les délais.
+                    Après plusieurs années en ingénierie logicielle embarquée, j’ai choisi de me spécialiser dans le développement web pour me rapprocher des utilisateurs finaux et créer des outils concrets, utiles et interactifs.
+                </p>
+                 <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
+                    Je conçois des sites vitrines et des applications web personnalisées, avec HTML, CSS et JavaScript, et j’utilise des <span class="font-bold">technologies modernes</span> comme <span class="font-bold">React</span> ou <span class="font-bold">Node.js</span> selon les besoins.
+                </p>
+                 <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
+                    <span class="font-bold">Mon objectif :</span> partir de votre besoin, concevoir la bonne solution, et mener à bien notre projet avec clarté et efficacité.
+                </p>
+                 <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
+                    <span class="font-bold">Mon obsession :</span> livrer dans les délais, avec un code fiable, clair et documenté.
                 </p>
             </div>
         </div>
