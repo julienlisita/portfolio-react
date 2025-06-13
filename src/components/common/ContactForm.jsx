@@ -23,6 +23,7 @@ export default function ContactForm()
           "0px 0px 12px rgba(90, 200, 250, 0.4), 0px 0px 12px rgba(90, 200, 250, 0.4)",
            }}
           transition={{ delay: 1 }}
+          viewport={{ once: true }} 
         >
           <input type="hidden" name="form-name" value="contact" />
           <p className="hidden">
