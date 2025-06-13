@@ -8,12 +8,14 @@ export default function Button({ variant = "secondary", ...props }) {
     px-6 py-3 text-sm                            
     sm:px-5 sm:py-2.5 sm:text-base         
     lg:px-6 lg:py-3 lg:text-lg  
+    text-center
     font-semibold 
     rounded-full 
     border 
     transition duration-300 transform 
     hover:scale-105 
     active:scale-105
+    min-w-32
   `;
 
   const variantStyles = {
