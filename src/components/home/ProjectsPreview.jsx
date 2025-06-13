@@ -10,7 +10,7 @@ export default function ProjectPreview()
         <HomeSection
             id="portfolio"
             title="Derniers projets"
-            link={{href:"/portfolio", text:"Voir le portfolio"}}
+            link={{href:"/portfolio", text:"Portfolio"}}
         > 
             <p className="text-base sm:text-lg lg:text-xl">Quelques exemples de projets sur lesquels j’ai travaillé récemment : applications web, sites vitrines et plus encore.</p>
             <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">

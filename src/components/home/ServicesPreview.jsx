@@ -37,8 +37,8 @@ export default function ServicesPreview()
     return (
         <HomeSection
             id="service"
-            title="Mes services"
-            link={{href:"/services", text:"En savoir plus"}}
+            title="Ce que je propose"
+            link={{href:"/services", text:"Services"}}
         > 
 
         <p className="text-base sm:text-lg lg:text-xl">

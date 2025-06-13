@@ -10,7 +10,7 @@ export default function BlogPreview() {
     <HomeSection
       id="blog"
       title="Derniers articles"
-      link={{ href: "/blog", text: "Voir le blog" }}
+      link={{ href: "/blog", text: "Blog" }}
     >
       <div className="space-y-4">
         {articles.map((article, index) => (

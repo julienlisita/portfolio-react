@@ -60,8 +60,8 @@ export default function SkillesPreview() {
   return (
     <HomeSection
     id="competences"
-    title="Mes compétences"
-    link={{ href: "/competences", text: "En savoir plus" }}
+    title="Les technologies utilisées"
+    link={{ href: "/competences", text: "Compétences" }}
   >
     <p className="text-base sm:text-lg lg:text-xl">
       Le choix des technologies jouant un rôle clé dans la réussite d’un projet, voici un aperçu des outils que j’utilise à chaque étape de réalisation.
