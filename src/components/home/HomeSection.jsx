@@ -18,7 +18,7 @@ export default function HomeSection({ id, title, children, link, className }) {
   
           {/* Lien */}
           {link && (
-            <div className="flex justify-center items-center my-4 sm:my-5 lg:my-6">
+            <div className="flex justify-center items-center">
               <Button to={link.href}>{link.text}</Button>
             </div>
           )}
