@@ -1,6 +1,5 @@
 // src/components/home/ContactTeaser.jsx
 
-import ContactForm from "../common/ContactForm";
 import HomeSection from "./HomeSection";
 
 export default function ContactTeaser()
@@ -8,13 +7,13 @@ export default function ContactTeaser()
     return (
         <HomeSection
             id="contact"
-            title="Contact"
-            link={{href:"/contact", text:"En savoir plus"}}
+            title="Parlons de votre projet "
+            link={{href:"/contact", text:"Me contacter"}}
         > 
-        <p className="max-w-2xl">
-           Une idée, un projet ou une question ? N’hésitez pas à me contacter via le formulaire ci-dessous. Je reviendrai vers vous dans les plus brefs délais.
+        <p className="text-base sm:text-lg lg:text-xl">
+          Une question, un projet à discuter ou un devis à demander ?<br/>
+        Rendez-vous sur la page Contact pour me joindre facilement via formulaire, mail ou téléphone.   
         </p>
-        <ContactForm/>
         </HomeSection>
     )
 }
