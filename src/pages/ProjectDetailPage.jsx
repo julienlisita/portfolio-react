@@ -15,11 +15,13 @@ export default function ProjectDetailPage() {
         <PageTitle>{project.title}</PageTitle>
         {/* Intro */}
         <Section>
-          <img
-          src={project.image}
-          alt={project.title}
-          className="w-full max-h-[400px] object-cover rounded-lg"
-          />
+          <div className="flex justify-center">
+            <img
+            src={project.image}
+            alt={project.title}
+            className="w-auto max-h-[200px] object-cover rounded-lg"
+            />
+          </div>
           {project.summary && (
           <div className="space-y-4 mt-8 sm:mt-10 lg:mt-12">
             {project.summary.map((paragraph, i) => (

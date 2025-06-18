@@ -41,7 +41,7 @@ export const projects = [
         title: "Planify",
         category: "web",
         description: "Application intuitive pour créer ses propres recettes et organiser ses repas au quotidien.",
-        image: "/assets/images/projects/planify.png",
+        image: "/assets/images/projects/planify.avif",
         technos: ["React", "Tailwind", "Node.js"],
         liveSite: null,
         sourceCode: [
@@ -70,6 +70,34 @@ export const projects = [
         }
     },
     {
+        slug: "brunchbordelais",
+        title: "Le Brunch Bordelais",
+        category: "vitrines",
+        description: "Site vitrine responsive pour un restaurant fictif.",
+        image: "/assets/images/projects/brunchbordelais.avif",
+        technos: ["JavaScript", "NextJS", "Tailwind"],
+        liveSite: "https://le-brunch-bordelais.vercel.app",
+        sourceCode: [
+        { label: "Client", url: "https://github.com/julienlisita/le-brunch-bordelais" },
+        ],
+        demo: null,
+        summary: ["Ce projet met en valeur un design soigné, une navigation fluide et une identité visuelle cohérente autour d’une charte graphique chaleureuse. La page d’accueil est structurée en sections distinctes : présentation du concept, engagements durables, ambiance, témoignages clients, informations pratiques et formulaire de contact."
+        ],
+        features: ["Présentation responsive et structurée du restaurant avec une navigation fluide entre les sections.",
+            "Mise en avant du concept, des engagements (produits locaux, faits maison), de l’ambiance et des spécialités proposées.",
+            "Section témoignages pour renforcer la crédibilité et créer une connexion émotionnelle.",
+            "Bloc “infos pratiques” clair : horaires, adresse, téléphone, bouton de contact et carte intégrée.",
+            "Formulaire de contact accessible depuis une page dédiée pour les demandes de réservation ou d’information."
+        ],
+        stack: {
+            frontend: ["JavaScript","NextJS", "Tailwind CSS"],
+            backend: null,
+            database: null,
+            test: null,
+            deployment: ["Vercel"]
+        }
+    },
+    {
         slug: "portfolio",
         title: "Portfolio React",
         category: "vitrines",
@@ -91,7 +119,7 @@ export const projects = [
             "Formulaire de contact pour faciliter la prise de contact professionnelle."
         ],
         stack: {
-            frontend: ["React", "React Router", "Tailwind CSS", "Framer Motion"],
+            frontend: ["Javascript", "React", "Tailwind CSS", "Framer Motion"],
             backend: null,
             database: null,
             test: null,
