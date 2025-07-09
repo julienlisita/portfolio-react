@@ -10,7 +10,7 @@ export default function Footer()
             
             {/* Logo à gauche */}
             <div>
-                <img src="/assets/logos/site/logo1.png" alt="Logo Julien Lisita" className="h-8 sm:h-10 lg:h-12 w-auto" />
+                <img src="/assets/logos/site/logo.png" alt="Logo Julien Lisita" className="h-8 sm:h-10 lg:h-12 w-auto" />
             </div>
             
             {/* Menu et mentions légales au centre */}

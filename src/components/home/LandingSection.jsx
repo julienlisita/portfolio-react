@@ -29,7 +29,7 @@ export default function LandingSection() {
 
       {/* Logo carré néon */}
       <motion.img
-        src="/assets/logos/site/logo1.png"
+        src="/assets/logos/site/logo.png"
         alt="Logo initiales Julien Lisita"
         className="h-32 w-32 sm:h-40 sm:w-40 md:h-48 md:w-48"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -40,7 +40,7 @@ export default function LandingSection() {
       {/* Nom */}
       <motion.h1
         className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-body text-transparent bg-clip-text"
-        style={{ backgroundImage: 'linear-gradient(to bottom, #5AC8FA 30%, #FF66B2 90%)' }}
+        style={{ backgroundImage: 'linear-gradient(to bottom, #7FDFFF 30%, #FF99CC 90%)' }}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -65,8 +65,8 @@ export default function LandingSection() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.3, duration: 2 }}
       >
-        Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure</span><br />
-        à l'image de <span className="text-[#FF66B2] font-semibold">votre projet</span>
+        Des solutions <span className="text-[#007AFF] font-semibold">sur mesure</span><br />
+        à l'image de <span className="text-[#9B59B6] font-semibold">votre projet</span>
       </motion.p>
 
       {/* Mots clés offre*/}

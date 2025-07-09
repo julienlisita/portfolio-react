@@ -11,7 +11,7 @@ export default function Header() {
     <header className="h-14 sm:h-16 lg:h-20 flex items-center justify-between px-4 bg-[#222222] sticky top-0 z-50 shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
       {/* Logo à gauche */}
       <div>
-        <img src="/assets/logos/site/logo1.png" alt="Logo Julien Lisita" className="h-8 sm:h-10 lg:h-12 w-auto" />
+        <img src="/assets/logos/site/logo.png" alt="Logo Julien Lisita" className="h-8 sm:h-10 lg:h-12 w-auto" />
       </div>
 
       {/* Menu desktop */}
