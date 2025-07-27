@@ -11,7 +11,7 @@ export default function ServicesPage()
     <>
       <PageTitle>Mes services</PageTitle>
       <nav className="mt-6 mb-10 text-sm sm:text-base text-center">
-        <ul className="flex flex-wrap justify-center gap-4 sm:gap-6 text-[#5AC8FA] font-medium">
+        <ul className="text-base sm:text-lg lg:text-xl flex flex-wrap justify-center gap-4 sm:gap-6 text-[#5AC8FA] font-medium">
           <li><a href="#vitrines" className="hover:underline">Sites vitrines</a></li>
           <li><a href="#apps" className="hover:underline">Applications web</a></li>
           <li><a href="#missions" className="hover:underline">Missions longues</a></li>
@@ -19,7 +19,7 @@ export default function ServicesPage()
           <li><a href="#method" className="hover:underline">Méthode de travail</a></li>
         </ul>
       </nav>
-      <Section>
+      <Section className="text-base sm:text-lg lg:text-xl">
         <p>
           Je conçois et développe des solutions web <strong>modernes</strong>, <strong>rapides</strong> et <strong>personnalisées</strong>,
           adaptées aux besoins des professionnels, indépendants, artisans ou entrepreneurs.
@@ -28,7 +28,7 @@ export default function ServicesPage()
       </Section>
       
       {/* Sites vitrines */}
-      <Section id="vitrines" title="Sites vitrines modernes (sans WordPress)">
+      <Section id="vitrines" title="Sites vitrines modernes (sans WordPress)" className="text-base sm:text-lg lg:text-xl">
         <h3 className="text-xl font-semibold mt-8 sm:mt-10 lg:mt-12 mb-2">Pour qui ?</h3>
         <p>
           Indépendants, artisans, commerçants, professions libérales ou petites structures ayant besoin d’un site
@@ -60,7 +60,7 @@ export default function ServicesPage()
       </Section>
 
       {/* Applications web sur mesure */}
-      <Section id="apps" title="Applications web sur mesure">
+      <Section id="apps" title="Applications web sur mesure" className="text-base sm:text-lg lg:text-xl">
         <h3 className="text-xl font-semibold mb-2">Pour qui ?</h3>
         <p>
           Startups, entreprises, associations, ou porteurs de projet souhaitant développer une application web complète,
@@ -90,7 +90,7 @@ export default function ServicesPage()
         </p>
       </Section>
 
-      <Section id="missions" title="Missions longues en entreprise">
+      <Section id="missions" title="Missions longues en entreprise" className="text-base sm:text-lg lg:text-xl">
         <p>
           Je propose également des <strong>prestations longues en entreprise</strong> pour renforcer vos équipes de développement sur la durée,
           en freelance, avec une intégration fluide à vos outils et méthodes.
@@ -118,7 +118,7 @@ export default function ServicesPage()
       </Section>
 
       {/* Maintenance */}
-      <Section id="maintenance" title="Suivi & maintenance">
+      <Section id="maintenance" title="Suivi & maintenance" className="text-base sm:text-lg lg:text-xl">
         <p>
           Une fois votre projet en ligne, je propose un <strong>accompagnement continu</strong> pour garantir la stabilité,
           la performance et l’évolution de votre site ou application.
@@ -136,7 +136,7 @@ export default function ServicesPage()
         <p className="mt-4 italic">Disponible sous forme de forfait ou à la demande.</p>
       </Section>
 
-      <Section id="method" title="Ma méthode de travail">
+      <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
         <p>
           Quel que soit votre projet, j’adopte une approche <strong>structurée, pédagogique et collaborative</strong>,
           du premier échange jusqu’à la mise en ligne, afin de garantir un livrable fiable et maintenable.
@@ -157,15 +157,15 @@ export default function ServicesPage()
       </Section>
 
       {/* Stack */}
-      <Section title="Stack & technologies utilisées">
-        <p>
-          React – Vite – Next.js – Tailwind CSS – Node.js – Express – MySQL – WebSocket – Git – Railway – Netlify – C / C++ / Java (backend serveur avancé) 
+      <Section title="Stack & technologies utilisées" className="text-center text-base sm:text-lg lg:text-xl">
+        <p className="text-center mb-4">
+          JavaScript - React – Next.js – Tailwind CSS – Node.js – Express – MySQL 
         </p>
-        <p>voir <a href="/competences" className="text-[#5AC8FA] underline"> ma stack complète</a></p>
+        <Button to="/competences">Voir ma stack complète</Button>
       </Section>
 
       {/* Contact */}
-      <Section className="text-center mt-12">
+      <Section className="text-center mt-12 text-base sm:text-lg lg:text-xl">
         <SectionTitle>Envie de collaborer ?</SectionTitle>
         <p className="mb-4 mt-8 sm:mt-10 lg:mt-12">
           Chaque projet commence par une discussion.<br />

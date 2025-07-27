@@ -19,3 +19,7 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+/* p {
+  @apply text-base sm:text-lg lg:text-xl;
+} */

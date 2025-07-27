@@ -12,7 +12,7 @@ export default function ContactPage() {
       <PageTitle>Contact</PageTitle>
 
       {/* Formulaire de contact*/}
-      <Section title="M'envoyer un mail">
+      <Section title="M'envoyer un mail " className="text-base sm:text-lg lg:text-xl">
         <p className="text-left max-w-5xl m-auto">
         Je suis toujours ravi de discuter de nouveaux projets ou d’échanger des idées. N’hésitez pas à me contacter pour discuter de vos besoins. Je suis basé à Mérignac, près de Bordeaux, et je suis toujours à la recherche de nouveaux défis. J’aime collaborer avec mes clients pour comprendre leurs besoins et leur fournir des solutions personnalisées qui répondent à leurs objectifs.
         </p>
@@ -22,7 +22,7 @@ export default function ContactPage() {
       </Section>  
       
       {/* Informations de contact */}
-      <Section title="Mes coordonnées">
+      <Section title="Mes coordonnées" className="text-base sm:text-lg lg:text-xl">
         <div className="flex justify-center">
           <div className="w-full m-x-auto grid grid-cols-1 sm:grid-cols-2 max-w-2xl gap-y-8">
             <div className="flex items-start gap-3">

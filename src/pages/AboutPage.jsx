@@ -10,7 +10,7 @@ export default function AboutPage() {
       <PageTitle>À propos</PageTitle>
 
       {/* Photo + Intro */}
-      <Section title="Une passion constante pour la technologie">
+      <Section title="Une passion constante pour la technologie" className="text-base sm:text-lg lg:text-xl">
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10  m-auto">
         <img
           src="/assets/images/profile-pic.png"
@@ -29,7 +29,7 @@ export default function AboutPage() {
       </Section>
   
 
-      <Section title="De l’industrie aux applications web">
+      <Section title="De l’industrie aux applications web" className="text-base sm:text-lg lg:text-xl">
         <p>
           Même si ces projets étaient stimulants, j’ai peu à peu ressenti le besoin de me rapprocher des utilisateurs finaux. Dans les grands groupes industriels, il peut y avoir plusieurs années entre la conception d’une solution et son déploiement, et souvent une certaine distance avec les personnes qui l’utiliseront.
         </p>
@@ -38,7 +38,7 @@ export default function AboutPage() {
         </p>
       </Section>
 
-      <Section title="Apprendre, créer, accompagner">
+      <Section title="Apprendre, créer, accompagner" className="text-base sm:text-lg lg:text-xl">
         <p>
           Pour opérer ce virage, j’ai suivi un bootcamp intensif en développement full stack, où j’ai consolidé mes compétences en JavaScript, React, Node.js, HTML/CSS… Depuis, je n’ai jamais cessé d’apprendre et de créer. En parallèle de projets freelance, je continue à me former sur les frameworks les plus actuels, que je choisis en fonction des besoins de chaque client.
         </p>
@@ -50,7 +50,7 @@ export default function AboutPage() {
         </p>
       </Section>
 
-      <Section title="Mon approche">
+      <Section title="Mon approche" className="text-base sm:text-lg lg:text-xl">
         <p>
           Ma démarche est simple : je m’investis pleinement dans chaque projet, comme si c’était le mien. J’aime relever les défis, notamment lorsqu’il s’agit de concevoir une solution originale ou encore jamais réalisée. Mon goût pour la technique reste fort, mais toujours au service de l’humain. Car ce qui compte au final, ce n’est pas la complexité du code, mais l’utilité du résultat.
         </p>
@@ -60,10 +60,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Conclusion */}
-      <Section>
-        <p className="text-xl text-center font-medium">
-          Envie de concrétiser votre projet ?
-        </p>
+      <Section title="Envie de concrétiser votre projet ?" className="text-base sm:text-lg lg:text-xl">
         <p className="mt-2 text-center">
           Que vous ayez besoin d’un site vitrine, d’une application web sur mesure ou simplement de conseils techniques pour démarrer, je suis là pour vous accompagner.
         </p>
