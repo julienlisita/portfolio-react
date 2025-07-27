@@ -25,10 +25,9 @@ export default function BlogPage() {
           <Link
             key={index}
             to={`/blog/${article.slug}`}
-            className="block bg-[#2a2a2a] rounded-xl p-6 hover:bg-[#333] transition group"
+            className="block bg-[#2a2a2a] rounded-xl p-6 hover:bg-[#333] transition group mx-auto max-w-5xl"
           >
             <div className="flex items-start gap-4">
-              <div className="w-1 rounded h-full bg-gradient-to-b from-[#9B59B6] to-[#007AFF] blur-[4px]" />
               <div>
                 <p className="text-xs text-gray-400">{article.date}</p>
                 <h3 className="text-gray-100 font-semibold text-lg group-hover:text-[#007AFF] transition">

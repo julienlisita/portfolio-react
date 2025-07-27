@@ -13,7 +13,7 @@ export default function ContactPage() {
 
       {/* Formulaire de contact*/}
       <Section title="M'envoyer un mail">
-        <p className="text-left max-w-2xl mx-auto">
+        <p className="text-left max-w-5xl m-auto">
         Je suis toujours ravi de discuter de nouveaux projets ou d’échanger des idées. N’hésitez pas à me contacter pour discuter de vos besoins. Je suis basé à Mérignac, près de Bordeaux, et je suis toujours à la recherche de nouveaux défis. J’aime collaborer avec mes clients pour comprendre leurs besoins et leur fournir des solutions personnalisées qui répondent à leurs objectifs.
         </p>
         <div className="mt-8 sm:mt-10 lg:mt-12 w-full flex justify-center">

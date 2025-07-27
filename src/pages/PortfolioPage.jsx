@@ -14,7 +14,7 @@ export default function Portfolio() {
 
       {/* Introduction*/}
       <Section>
-        <p className="text-left">
+        <p className="text-left max-w-5xl m-auto">
           Voici quelques-uns des projets sur lesquels j’ai travaillé. Vous y trouverez des applications web complètes, des sites vitrines modernes, ainsi que divers projets de développement mettant en avant des concepts de programmation procédurale, orientée objet et d’algorithmie. Cliquez sur chaque projet pour en savoir plus.
         </p>
       </Section>
