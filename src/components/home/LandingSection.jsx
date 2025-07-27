@@ -39,8 +39,7 @@ export default function LandingSection() {
 
       {/* Nom */}
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-body text-transparent bg-clip-text"
-        style={{ backgroundImage: 'linear-gradient(to bottom, #7FDFFF 30%, #FF99CC 90%)' }}
+        className="text-4xl text-gray-100 sm:text-5xl md:text-6xl font-extrabold font-body bg-clip-text"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -50,7 +49,7 @@ export default function LandingSection() {
 
       {/* Titre */}
       <motion.h2
-        className="text-gray-100 text-lg sm:text-xl md:text-2xl font-medium font-heading tracking-wide"
+        className="text-[#007AFF] text-lg sm:text-xl md:text-2xl font-medium font-heading tracking-wide"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 2 }}
@@ -65,14 +64,14 @@ export default function LandingSection() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.3, duration: 2 }}
       >
-        Des solutions <span className="text-[#007AFF] font-semibold">sur mesure</span><br />
-        à l'image de <span className="text-[#9B59B6] font-semibold">votre projet</span>
+        Des solutions <span className="text-[#FF66B2] font-semibold">sur mesure</span><br />
+        à l'image de <span className="text-[#5AC8FA] font-semibold">votre projet</span>
       </motion.p>
 
       {/* Mots clés offre*/}
 
       <motion.div
-          className="flex flex-col sm:flex-row sm:space-x-4 items-center text-white text-lg sm:text-xl md:text-2xl font-medium font-code tracking-wide"
+          className="flex flex-col sm:flex-row sm:space-x-4 items-center text-gray-400 text-lg sm:text-xl md:text-2xl font-medium font-code tracking-wide"
           initial="hidden"
           animate="visible"
           variants={{
