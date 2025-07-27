@@ -49,12 +49,12 @@ export default function LandingSection() {
 
       {/* Titre */}
       <motion.h2
-        className="text-[#007AFF] text-lg sm:text-xl md:text-2xl font-medium font-heading tracking-wide"
+        className="text-[#007AFF] text-3xl sm:text-4xl md:text-5xl font-medium font-heading tracking-wider"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 2 }}
       >
-        Développeur web & solutions digitales
+        Développeur web
       </motion.h2>
 
       {/* Phrase d'accroche */}
@@ -114,7 +114,7 @@ export default function LandingSection() {
 
       {/* Flèche scroll */}
       <motion.div
-        className="absolute bottom-10 flex flex-col items-center animate-pulse"
+        className="absolute bottom-5 flex flex-col items-center animate-pulse"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6, duration: 1 }}
