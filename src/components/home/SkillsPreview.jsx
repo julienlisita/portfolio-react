@@ -4,18 +4,21 @@ import HomeSection from "./HomeSection";
 import {
   FaReact,
   FaNodeJs,
-  FaFigma,
+  FaJsSquare,
+  
   FaGitAlt,
-  FaTrello,
+  FaFigma,
 } from "react-icons/fa";
 import {
+  SiTypescript,
   SiTailwindcss,
   SiNextdotjs,
   SiRailway,
   SiExpress,
-  SiMysql,
+  SiPostgresql,
   SiNetlify,
   SiSequelize,
+  SiVercel,
 } from "react-icons/si";
 import SkillCard from "../common/SkillCard";
 
@@ -23,36 +26,36 @@ export default function SkillesPreview() {
 
     const skillsData = [
     {
-      title: "Interfaces modernes",
+      title: " Interfaces modernes ",
       description:
-        "Création d’interfaces modernes et performantes grâce à HTML5, CSS3, Tailwind CSS, Sass, et JavaScript. Développement d’applications interactives avec React et Next.js, en s’appuyant sur Figma pour concevoir des maquettes et garantir une expérience utilisateur fluide.",
+        "Conception d’interfaces modernes, rapides et responsives à partir de maquettes Figma. Utilisation de technologies récentes comme TypeScript, Next.js et Tailwind CSS pour offrir une expérience fluide sur tous les écrans.",
       icons: [
-        <FaReact key="react" />,
+        <FaFigma key="Figma" />,
+        <SiTypescript key="typescript"/>,
         <SiNextdotjs key="next"/>,
         <SiTailwindcss key="tailwind" />,
-        <FaFigma key="figma"/>
       ],
     },
     {
-      title: "Back-end & bases de données",
+      title: "Services web & gestion des données",
       description:
-        "Développement de systèmes robustes et évolutifs avec Node.js et Express. Gestion efficace des données grâce à MySQL et l’ORM Sequelize, assurant des performances optimales et une maintenance simplifiée.",
+        "Mise en place d’un système back-end fiable et sécurisé, permettant de gérer les utilisateurs, les contenus et les données. Une base technique claire, pensée pour accompagner la croissance du projet.",
       icons: [
         <FaNodeJs key="node" />,
         <SiExpress key="express" />,
         <SiSequelize key="sequelize" />,
-        <SiMysql key="mysql" />,
+        <SiPostgresql key="postgres" />,
       ],
     },
     {
-      title: "Outils & déploiement",
+      title: "Collaboration & mise en production",
       description:
-        "Hébergement, mise en ligne, et automatisation avec Vercel, Netlify, et Firebase Hosting. Surveillance des performances et collaboration facilitée via Git, GitHub Actions, et outils de gestion comme Trello et Notion.",
+        "Mise en production simplifiée avec Vercel, Railway ou GitHub. Un environnement organisé pour livrer des projets fiables, maintenables et performants.",
       icons: [
         <SiNetlify key="netlify" />,
-         <SiRailway key="railway" />,
+        <SiRailway key="railway" />,
+        <SiVercel key="vercel" />,
         <FaGitAlt key="git" />,
-        <FaTrello key="trello" />,
       ],
     },
   ];
