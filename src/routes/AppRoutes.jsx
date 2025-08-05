@@ -14,6 +14,7 @@ import ContactPage from "../pages/ContactPage";
 import LegalAndPrivacyPage from "../pages/LegalAndPrivacyPage";
 import MerciPage from "../pages/MerciPage";
 import NotFoundPage from "../pages/NotFoundPage";
+import PricingPage from "../pages/PricingPage";
 
 export default function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ export default function AppRoutes() {
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/services" element={<ServicesPage />} />
+      <Route path="/pricing" element={<PricingPage />} />
       <Route path="/competences" element={<CompetencesPage />} />
       <Route path="/portfolio" element={<PortfolioPage />} />
       <Route path="/portfolio/:slug" element={<ProjectDetailPage />} />
