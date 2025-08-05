@@ -19,6 +19,7 @@ export default function Header() {
         <Link className="hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/">Accueil</Link>
         <Link className="hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/about">À propos</Link>
         <Link className="hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/services">Services</Link>
+        <Link className="hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/pricing">Tarifs</Link>
         <Link className="hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/competences">Compétences</Link>
         <Link className="hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/portfolio">Portfolio</Link>
         <Link className="hover:outline-1 hover:outline-[#5AC8FA]  px-2 py-1 rounded-md  hover:shadow-[0_0_8px_#5AC8FA] " to="/blog">Blog</Link>
@@ -52,6 +53,7 @@ export default function Header() {
         <Link to="/" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Accueil</Link>
         <Link to="/about" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">À propos</Link>
         <Link to="/services" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Services</Link>
+        <Link to="/pricing" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Tarifs</Link>
         <Link to="/competences" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Compétences</Link>
         <Link to="/portfolio" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Portfolio</Link>
         <Link to="/blog" onClick={toggleState} className="hover:bg-[#5AC8FA] hover:text-[#222222] w-full px-4 py-2 rounded-md text-center transition-all duration-300">Blog</Link>
