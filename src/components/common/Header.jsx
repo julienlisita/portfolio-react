@@ -46,7 +46,7 @@ export default function Header() {
       {/* Menu mobile/tablette déroulant */}
       <div className={[
         "absolute top-full left-0 w-full bg-[#222222] text-gray-100 flex flex-col items-center space-y-4 overflow-hidden transition-all duration-300 lg:hidden",
-        isOpen ? "max-h-[400px] opacity-100 translate-y-0 py-4" : "max-h-0 opacity-0 -translate-y-2 py-0"
+        isOpen ? "max-h-[480px] opacity-100 translate-y-0 py-4" : "max-h-0 opacity-0 -translate-y-2 py-0"
       ]
         .filter(Boolean)
         .join(" ")}>
