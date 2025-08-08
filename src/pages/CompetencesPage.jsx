@@ -13,8 +13,7 @@ import {
   FaJava,
   FaFigma,
   FaGitAlt,
-  FaArrowRight,
-  FaDatabase
+
 } from "react-icons/fa";
 import {
   SiCplusplus,
@@ -43,7 +42,7 @@ import {
   SiPostgresql,
   SiGraphql,
   SiRender,
-  // SiVisualstudiocode,
+  SiPrisma,
 } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
 import Section from "../components/common/Section";
@@ -65,10 +64,10 @@ const technologies = [
     { icon: FaSass, name: "Sass", description: "Préprocesseur CSS puissant", category: "framework" },
     { icon: SiTailwindcss, name: "Tailwind CSS", description: "Framework utilitaire CSS moderne", category: "framework" },
     { icon: SiGraphql, name: "GraphQL", description: "API flexible orientée requêtes", category: "framework" },
-    { icon: SiSequelize, name: "Sequelize", description: "ORM SQL pour Node.js", category: "database" },
     { icon: SiMysql, name: "MySQL", description: "Base de données relationnelle", category: "database" },
-    { icon: FaDatabase, name: "MariaDB", description: "Base de données relationnelle open source", category: "database" },
     { icon: SiPostgresql, name: "PostgreSQL", description: "Base de données relationnelle avancée", category: "database" },
+    { icon: SiSequelize, name: "Sequelize", description: "ORM SQL pour Node.js", category: "database" },
+    { icon: SiPrisma, name: "Prisma", description: "ORM moderne pour Node.js et TypeScript, rapide et type-safe.", category: "database" },
     { icon: SiDocker, name: "Docker", description: "Conteneurisation d'applications", category: "tool" },
     // { icon: SiFirebase, name: "Firebase", description: "Backend as a Service par Google", category: "mobile" },
     // { icon: SiExpo, name: "Expo", description: "Outils et services pour React Native", category: "mobile" },
