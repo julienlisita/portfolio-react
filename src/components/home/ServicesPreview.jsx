@@ -3,6 +3,7 @@
 import { Monitor, Layers, LifeBuoy } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 import HomeSection from "./HomeSection";
+import { motion } from "framer-motion";
 
 export default function ServicesPreview()
 {
@@ -47,9 +48,18 @@ export default function ServicesPreview()
         </p>
         
         <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
-          {services.map((service) => (
-              <ServiceCard key={service.title} {...service} />
-          ))}
+          {services.map((service, i) => (
+          <motion.div
+            key={service.title}
+            initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <ServiceCard {...service} />
+          </motion.div>
+        ))}
         </div>
       
         </HomeSection>

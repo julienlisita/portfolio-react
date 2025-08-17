@@ -1,23 +1,12 @@
 // ServiceCard.jsx
-import { motion } from "framer-motion";
+
 import Button from "../common/Button"; // ← adapte le chemin si ton Button est ailleurs
 
 export default function ServiceCard({ icon, title, description, color, link }) {
   const gradientStyle = { backgroundImage: `linear-gradient(135deg, ${color[0]}, ${color[1]})` };
-
+  const isMobile = window.innerWidth < 768;
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.03 }}
-      transition={{ 
-        y: { duration: 0.6, ease: "easeOut", delay: 0.2 }, 
-        scale: { duration: 0.25 } 
-      }}
-      viewport={{ once: true }}
-      className="w-72"
-    >
-      <div className="bg-[#2a2a2a] text-white rounded-2xl shadow-xl overflow-hidden h-full flex flex-col">
+      <div className="bg-[#2a2a2a] w-72 text-white rounded-2xl shadow-xl overflow-hidden h-full flex flex-col">
         {/* Bandeau haut */}
         <div 
           className="w-full h-24 flex flex-col items-center justify-center space-y-1" 
@@ -38,6 +27,5 @@ export default function ServiceCard({ icon, title, description, color, link }) {
           )}
         </div>
       </div>
-    </motion.div>
   );
 }
