@@ -1,177 +1,106 @@
 // src/pages/ServicesPage.jsx
 
+import { Link } from "react-router-dom";
 import Button from "../components/common/Button";
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
 import SectionTitle from "../components/common/SectionTitle";
+import ServiceCard from "../components/home/ServiceCard";
+import { Monitor, Layers, LifeBuoy } from "lucide-react";
 
 export default function ServicesPage()
 {
   return (
-    <>
-      <PageTitle>Mes services</PageTitle>
-      <nav className="mt-6 mb-10 text-sm sm:text-base text-center">
-        <ul className="text-base sm:text-lg lg:text-xl flex flex-wrap justify-center gap-4 sm:gap-6 text-[#5AC8FA] font-medium">
-          <li><a href="#vitrines" className="hover:underline">Sites vitrines</a></li>
-          <li><a href="#apps" className="hover:underline">Applications web</a></li>
-          <li><a href="#missions" className="hover:underline">Missions longues</a></li>
-          <li><a href="#maintenance" className="hover:underline">Suivi & maintenance</a></li>
-          <li><a href="#method" className="hover:underline">Méthode de travail</a></li>
-        </ul>
-      </nav>
-      <Section className="text-base sm:text-lg lg:text-xl">
-        <p>
-          Je conçois et développe des solutions web <strong>modernes</strong>, <strong>rapides</strong> et <strong>personnalisées</strong>,
-          adaptées aux besoins des professionnels, indépendants, artisans ou entrepreneurs.
-          Mon approche privilégie la clarté, la performance, et un accompagnement de bout en bout.
-        </p>
-      </Section>
-      
-      {/* Sites vitrines */}
-      <Section id="vitrines" title="Sites vitrines modernes (sans WordPress)" className="text-base sm:text-lg lg:text-xl">
-        <h3 className="text-xl font-semibold mt-8 sm:mt-10 lg:mt-12 mb-2">Pour qui ?</h3>
-        <p>
-          Indépendants, artisans, commerçants, professions libérales ou petites structures ayant besoin d’un site
-          <strong> simple</strong>, <strong> rapide</strong> et <strong> professionnel</strong> pour présenter leur activité.
-        </p>
+    <> 
+     <PageTitle>Mes services</PageTitle>
 
-        <h3 className="text-xl font-semibold mt-6 mb-2">Ce que je propose :</h3>
-        <ul className="list-disc ml-6 space-y-1">
-          <li>Site vitrine sur mesure avec <strong>React (Vite ou Next.js)</strong></li>
-          <li><strong>Design épuré</strong> et adapté à votre identité visuelle</li>
-          <li><strong>Performance optimale</strong> (pas de CMS lourd, pas de plugins inutiles)</li>
-          <li>Contenu typique : présentation, galerie, menu, carte, formulaire de contact</li>
-          <li><strong>Déploiement et mise en ligne compris</strong></li>
-        </ul>
-
-        <h3 className="text-xl font-semibold mt-6 mb-2 ">Pourquoi sans WordPress ?</h3>
-        <ul className="list-list-none ml-6 space-y-1">
-          <li>✔️ Aucun plugin à gérer</li>
-          <li>✔️ Code léger et sécurisé</li>
-          <li>✔️ Maintenance simplifiée</li>
-          <li>✔️ Expérience utilisateur rapide et fluide</li>
-        </ul>
-
-        <p className="mt-4 italic">
-          Idéal pour se démarquer avec un site moderne et sans contraintes techniques.
-        </p>
-
-        {/* <p className="mt-2 font-semibold text-[#5AC8FA]">💰 Tarifs : à partir de 400 €, selon la structure du site et les contenus fournis.</p> */}
-      </Section>
-
-      {/* Applications web sur mesure */}
-      <Section id="apps" title="Applications web sur mesure" className="text-base sm:text-lg lg:text-xl">
-        <h3 className="text-xl font-semibold mb-2">Pour qui ?</h3>
-        <p>
-          Startups, entreprises, associations, ou porteurs de projet souhaitant développer une application web complète,
-          un outil métier ou une plateforme SaaS.
-        </p>
-
-        <h3 className="text-xl font-semibold mt-6 mb-2">Exemples de projets :</h3>
-        <ul className="list-disc  ml-6 space-y-1">
-          <li>Application métier ou CRM personnalisé</li>
-          <li>Dashboard interactif ou outil d’administration</li>
-          <li>Plateforme SaaS (abonnements, gestion utilisateur, etc.)</li>
-          <li>Forum ou jeu en ligne connecté</li>
-          <li>Prototype technique ou MVP pour levée de fonds</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold mt-6 mb-2">Ce que je propose :</h3>
-        <ul className="list-disc ml-6 space-y-1">
-          <li><strong>Développement full stack</strong> : React, Node.js, Express, MongoDB, MySQL...</li>
-          <li><strong>Architecture solide et évolutive</strong>, pensée pour durer</li>
-          <li><strong>Design responsive</strong>, clair et fonctionnel</li>
-          <li><strong>Sécurité</strong>, authentification, logique métier, WebSocket si nécessaire</li>
-          <li><strong>Déploiement complet</strong> sur Netlify, Vercel, Railway ou hébergement dédié</li>
-        </ul>
-
-        <p className="mt-4 italic">
-          Idéal pour celles et ceux qui cherchent un <strong>accompagnement global</strong>, de l'idée à la mise en ligne.
+      {/* Intro courte */}
+      <Section>
+        <p className="text-center max-w-3xl mx-auto text-base sm:text-lg lg:text-xl text-gray-300">
+          Je conçois et développe des solutions web modernes, rapides et personnalisées.
+          Trois offres principales selon vos besoins : site vitrine, application web sur mesure,
+          et suivi & maintenance.
         </p>
       </Section>
 
-      <Section id="missions" title="Missions longues en entreprise" className="text-base sm:text-lg lg:text-xl">
-        <p>
-          Je propose également des <strong>prestations longues en entreprise</strong> pour renforcer vos équipes de développement sur la durée,
-          en freelance, avec une intégration fluide à vos outils et méthodes.
-        </p>
+     <Section title="Ce que je propose">
+        <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
+        <ServiceCard
+          variant="page"
+          icon={<Monitor />}
+          title="Sites vitrines modernes"
+          description="Création de sites professionnels rapides, responsive et sur mesure pour artisans, restaurants, freelances et indépendants. Pas besoin de WordPress : tout est optimisé, maintenable et élégant."
+          color={["#5AC8FA", "#007AFF"]}
+          link="/services/business-websites"
+        />
+        <ServiceCard
+          variant="page"
+          icon={<Layers />}
+          title="Applications web sur mesure"
+          description="Développement complet d’applications web sur mesure, front-end et back-end : SaaS, outils métiers, plateformes interactives, jeux en ligne. Solutions robustes, évolutives et sécurisées, adaptées à vos besoins."
+          color={["#007AFF", "#9B59B6"]}
+          link="/services/web-applications"
+        />
+        <ServiceCard
+          variant="page"
+          icon={<LifeBuoy />}
+          title="Suivi & maintenance"
+          description="Je vous accompagne après la mise en ligne : corrections, améliorations, ajout de fonctionnalités, mises à jour, sécurité, hébergement et assistance continue."
+          color={["#9B59B6", "#FF66B2"]}
+          link="/services/support"
+        />
+      </div>
+    </Section>
+    <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
+      <p>
+        Un parcours simple et transparent, avec des points de validation à chaque étape.
+      </p>
 
-        <h3 className="text-xl font-semibold mt-6 mb-2">Pour qui ?</h3>
-        <p>
-          ESN, agences web, startups ou entreprises tech à la recherche d’un développeur
-          <strong> React / Node.js</strong> capable de s’intégrer à un projet existant et de livrer des fonctionnalités
-          en autonomie ou en collaboration avec une équipe produit.
-        </p>
+      <div className="relative mt-6">
+        {/* ligne verticale */}
+        <div className="absolute left-4 top-0 bottom-0 w-px bg-[#2f2f2f]" />
 
-        <h3 className="text-xl font-semibold mt-6 mb-2">Ce que je propose :</h3>
-        <ul className="list-disc ml-6 space-y-1">
-          <li>Développement front-end (React, Next.js, Tailwind) ou fullstack JS</li>
-          <li>Participation à la conception technique et aux rituels agiles</li>
-          <li>Collaboration via Git, Jira, Notion, Slack…</li>
-          <li>Bonnes pratiques : composants réutilisables, code maintenable, documentation</li>
-          <li>Disponibilité en télétravail ou hybride (Bordeaux + remote)</li>
-        </ul>
+        {[
+          { t: "Échange initial", d: "nous discutons de vos besoins, de vos envies et de vos priorités." },
+          { t: "Conception", d: "je vous conseille sur la structure et le design, avec un plan clair." },
+          { t: "Développement", d: "je développe votre site et je vous montre l’avancement régulièrement." },
+          { t: "Mise en ligne", d: " votre site est prêt, accessible à vos clients et optimisé pour tous les supports." },
+          { t: "Suivi & maintenance", d: "je reste disponible pour des mises à jour ou des évolutions." },
+        ].map((s, i) => (
+          <div key={i} className="pl-12 pb-6">
+            <div className="relative">
+              <span className="absolute -left-8 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#2a2a2a] text-[#5AC8FA] text-xs font-semibold">
+                {i + 1}
+              </span>
+              <h4 className="text-gray-100 font-semibold">{s.t}</h4>
+            </div>
+            <p className="text-gray-400 text-sm mt-1">{s.d}</p>
+          </div>
+        ))}
+      </div>
 
-        <p className="mt-4 italic">
-          Idéal pour renforcer votre équipe de manière <strong>souple et fiable</strong>, sans charge administrative.
-        </p>
-      </Section>
-
-      {/* Maintenance */}
-      <Section id="maintenance" title="Suivi & maintenance" className="text-base sm:text-lg lg:text-xl">
-        <p>
-          Une fois votre projet en ligne, je propose un <strong>accompagnement continu</strong> pour garantir la stabilité,
-          la performance et l’évolution de votre site ou application.
-        </p>
-
-        <h3 className="text-xl font-semibold mt-6 mb-2">Ce qui est inclus :</h3>
-        <ul className="list-disc ml-6 space-y-1">
-          <li>Correction de bugs & support technique</li>
-          <li>Ajout de nouvelles fonctionnalités</li>
-          <li>Optimisations de performance</li>
-          <li>Mises à jour techniques (dépendances, sécurité...)</li>
-          <li>Conseil & suivi technique personnalisé</li>
-        </ul>
-
-        <p className="mt-4 italic">Disponible sous forme de forfait ou à la demande.</p>
-      </Section>
-
-      <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
-        <p>
-          Quel que soit votre projet, j’adopte une approche <strong>structurée, pédagogique et collaborative</strong>,
-          du premier échange jusqu’à la mise en ligne, afin de garantir un livrable fiable et maintenable.
-        </p>
-
-        <h3 className="text-xl font-semibold mt-6 mb-2">Étapes typiques :</h3>
-        <ol className="list-decimal ml-6 space-y-1">
-          <li><strong>Échange initial</strong> pour cerner vos besoins, vos priorités et vos contraintes</li>
-          <li><strong>Conception technique & maquettes</strong> (si besoin)</li>
-          <li><strong>Développement par itérations</strong> avec démonstrations intermédiaires</li>
-          <li><strong>Livraison avec documentation</strong> et accompagnement</li>
-          <li><strong>Support post-livraison</strong> et évolutions possibles</li>
-        </ol>
-
-        <p className="mt-4 italic">
-          Une méthode simple, adaptée à la taille de chaque projet, pour éviter les zones floues et garantir la qualité.
-        </p>
-      </Section>
-
-      {/* Stack */}
-      <Section title="Stack & technologies utilisées" className="text-center text-base sm:text-lg lg:text-xl">
-        <p className="text-center mb-4">
-          JavaScript - React – Next.js – Tailwind CSS – Node.js – Express – MySQL 
-        </p>
-        <Button to="/competences">Voir ma stack complète</Button>
-      </Section>
-
-      {/* Contact */}
-      <Section className="text-center mt-12 text-base sm:text-lg lg:text-xl">
+      <Section id="missions" title="Missions en entreprise (freelance)" className="text-center">
+      <p>
+        Renfort <strong>React / Node.js</strong> en équipe produit : intégration fluide à vos outils et rituels agiles,
+        avec un focus qualité (tests, docs, composants réutilisables).
+      </p>
+      <ul className="list-disc ml-6 mt-2 space-y-1 text-gray-300 mb-6">
+        <li>Front (React/Next.js/Tailwind) ou full-stack JS</li>
+        <li>Rituels agiles & conception technique</li>
+        <li>Collab : Git, Jira, Notion, Slack…</li>
+        <li>Mode : Bordeaux + remote/hybride</li>
+      </ul>
+      {/* <Button to="/services/missions">En savoir plus</Button> */}
+    </Section>
+    </Section>
+      {/* CTA final */}
+      <Section className="text-center">
         <SectionTitle>Envie de collaborer ?</SectionTitle>
-        <p className="mb-4 mt-8 sm:mt-10 lg:mt-12">
+        <p className="mt-4 mb-6 text-base sm:text-lg lg:text-xl text-gray-300">
           Chaque projet commence par une discussion.<br />
-          <strong>Expliquez-moi vos besoins</strong>, vos idées ou vos contraintes : je vous accompagne avec écoute, pédagogie et transparence.
+          Expliquez-moi vos besoins : je vous propose un devis personnalisé après un échange gratuit.
         </p>
-        <Button to="/contact"> Me contacter</Button>
+        <Button to="/contact">Me contacter</Button>
       </Section>
     </>
   )
