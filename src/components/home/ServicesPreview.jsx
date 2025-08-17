@@ -1,7 +1,6 @@
 // src/components/home/ServicesPreview.jsx
 
 import { Monitor, Layers, LifeBuoy } from "lucide-react";
-import { Link } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
 import HomeSection from "./HomeSection";
 
@@ -12,25 +11,27 @@ export default function ServicesPreview()
       title: "Sites vitrines modernes",
       icon: <Monitor />,
       description:
-        "Création de sites professionnels rapides, responsive et sur mesure pour artisans, restaurants, freelances et indépendants. Pas besoin de WordPress : tout est optimisé, maintenable et élégant.",
+        "Site clair, performant et responsive. Idéal indépendants, artisans, cabinets.",
       color: ["#5AC8FA", "#007AFF"],
-      link: "/services#vitrines",
+      link: "/services/business-websites",    
     },
     {
       title: "Applications web sur mesure",
       icon: <Layers />,
       description:
-        "Développement complet d’applications web sur mesure, front-end et back-end : SaaS, outils métiers, plateformes interactives, jeux en ligne. Solutions robustes, évolutives et sécurisées, adaptées à vos besoins.",
+        "Outils métier, SaaS, dashboards, auth. Dév. full stack React/Node.",
       color: ["#007AFF", "#9B59B6"],
-      link: "/services#apps",
+      link: "/services/web-applications",        
     },
     {
       title: "Suivi & maintenance",
       icon: <LifeBuoy />,
       description:
-        "Je vous accompagne après la mise en ligne : corrections, améliorations, ajout de fonctionnalités, mises à jour, sécurité, hébergement et assistance continue.",
+        "Mises à jour, sécurité, petites évolutions. Forfaits ou à la demande.",
       color: ["#9B59B6", "#FF66B2"],
-      link: "/services#maintenance",
+      link: "/services/support"
+
+                
     },
   ];
 
@@ -47,9 +48,7 @@ export default function ServicesPreview()
         
         <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
           {services.map((service) => (
-              <Link key={service.title} to={service.link} >
-                <ServiceCard {...service} />
-              </Link>
+              <ServiceCard key={service.title} {...service} />
           ))}
         </div>
       
