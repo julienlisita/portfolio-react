@@ -15,6 +15,11 @@ import LegalAndPrivacyPage from "../pages/LegalAndPrivacyPage";
 import MerciPage from "../pages/MerciPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import PricingPage from "../pages/PricingPage";
+import WebApplicationsPage from "../pages/WebApplicationsPage";
+import BusinessWebsitesPage from "../pages/BusinessWebsitesPage";
+import SupportPage from "../pages/SupportPage";
+
+
 
 export default function AppRoutes() {
   return (
@@ -22,6 +27,9 @@ export default function AppRoutes() {
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/services" element={<ServicesPage />} />
+      <Route path="/services/web-applications" element={<WebApplicationsPage />} />
+      <Route path="/services/business-websites" element={<BusinessWebsitesPage />} />
+      <Route path="/services/support" element={<SupportPage />} />
       <Route path="/pricing" element={<PricingPage />} />
       <Route path="/competences" element={<CompetencesPage />} />
       <Route path="/portfolio" element={<PortfolioPage />} />
