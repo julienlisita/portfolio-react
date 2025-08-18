@@ -1,6 +1,5 @@
 // src/pages/ServicesPage.jsx
 
-import { Link } from "react-router-dom";
 import Button from "../components/common/Button";
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
@@ -12,7 +11,7 @@ export default function ServicesPage()
 {
   return (
     <> 
-     <PageTitle>Mes services</PageTitle>
+      <PageTitle>Mes services</PageTitle>
 
       {/* Intro courte */}
       <Section>
@@ -23,7 +22,7 @@ export default function ServicesPage()
         </p>
       </Section>
 
-     <Section title="Ce que je propose">
+      <Section title="Ce que je propose">
         <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
         <ServiceCard
           variant="page"
@@ -45,13 +44,13 @@ export default function ServicesPage()
           variant="page"
           icon={<LifeBuoy />}
           title="Suivi & maintenance"
-          description="Je vous accompagne après la mise en ligne : corrections, améliorations, ajout de fonctionnalités, mises à jour, sécurité, hébergement et assistance continue."
+          description="Je vous accompagne après la mise en ligne : corrections, améliorations, ajout de fonctionnalités, mises à jour, sécurité, hébergement et assistance continue, avec un suivi régulier pour vos évolutions."
           color={["#9B59B6", "#FF66B2"]}
           link="/services/support"
         />
       </div>
-    </Section>
-    <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
+      </Section>
+      <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
       <p>
         Un parcours simple et transparent, avec des points de validation à chaque étape.
       </p>
@@ -78,27 +77,14 @@ export default function ServicesPage()
           </div>
         ))}
       </div>
+      </Section>
 
-      <Section id="missions" title="Missions en entreprise (freelance)" className="text-center">
-      <p>
-        Renfort <strong>React / Node.js</strong> en équipe produit : intégration fluide à vos outils et rituels agiles,
-        avec un focus qualité (tests, docs, composants réutilisables).
-      </p>
-      <ul className="list-disc ml-6 mt-2 space-y-1 text-gray-300 mb-6">
-        <li>Front (React/Next.js/Tailwind) ou full-stack JS</li>
-        <li>Rituels agiles & conception technique</li>
-        <li>Collab : Git, Jira, Notion, Slack…</li>
-        <li>Mode : Bordeaux + remote/hybride</li>
-      </ul>
-      {/* <Button to="/services/missions">En savoir plus</Button> */}
-    </Section>
-    </Section>
       {/* CTA final */}
       <Section className="text-center">
-        <SectionTitle>Envie de collaborer ?</SectionTitle>
+        <SectionTitle>Prêt à lancer votre projet ?</SectionTitle>
         <p className="mt-4 mb-6 text-base sm:text-lg lg:text-xl text-gray-300">
-          Chaque projet commence par une discussion.<br />
-          Expliquez-moi vos besoins : je vous propose un devis personnalisé après un échange gratuit.
+          Tout commence par un échange gratuit et sans engagement.<br />
+          Parlons de vos besoins et voyons ensemble la meilleure solution.
         </p>
         <Button to="/contact">Me contacter</Button>
       </Section>
