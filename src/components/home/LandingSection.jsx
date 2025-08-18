@@ -1,131 +1,178 @@
 // src/components/home/LandingSection.jsx
-
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
-import { FaReact, FaJsSquare, FaNodeJs, FaCode } from "react-icons/fa";
-import { SiCplusplus } from "react-icons/si";
+import { ArrowDown, Monitor, Layers } from "lucide-react";
+import Button from "../common/Button";
 
 export default function LandingSection() {
+  const [mode, setMode] = useState("vitrine"); // "vitrine" | "app"
 
-  const keywords = [
-    "Conception",
-    "Développement",
-    "Maintenance",
-  ];
+  const title = "Julien Lisita";
+  const subtitle = "Développeur web";
+  const line =
+    mode === "vitrine"
+      ? "Sites vitrines modernes, rapides et sans WordPress."
+      : "Applications web sur mesure, robustes et évolutives.";
+
+  // ✅ on reprend tes keywords
+  const keywords = ["Conception", "Développement", "Maintenance"];
 
   return (
     <section
       id="landing"
-      className="relative h-screen flex flex-col items-center justify-center gap-10 text-center bg-gradient-to-b from-[#000000] to-[#222222] px-4 overflow-hidden"
+      className="relative min-h-[92vh] flex flex-col items-center justify-center text-center bg-[#222222] px-4 overflow-hidden"
     >
-       {/* 🧠 Fond illustré avec react-icons */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        <FaReact className="text-[#5AC8FA] opacity-15 blur-sm absolute top-16 left-10 text-7xl rotate-12" />
-        <FaJsSquare className="text-yellow-300 opacity-15 blur-sm absolute bottom-16 right-10 text-6xl -rotate-6" />
-        <FaNodeJs className="text-green-400 opacity-15 blur-sm absolute top-1/3 right-10 text-5xl rotate-6" />
-        <SiCplusplus className="text-blue-400 opacity-15 blur-sm absolute bottom-20 left-14 text-6xl rotate-3" />
-        <FaCode className="text-white opacity-15 blur-sm absolute top-12 left-1/2 transform -translate-x-1/2 text-6xl pointer-events-none" />
-      </div>
+      {/* Spotlight discret */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(600px 300px at 50% 30%, rgba(90,200,250,0.10), transparent 60%)",
+        }}
+      />
 
-      {/* Logo carré néon */}
+      {/* Logo */}
       <motion.img
         src="/assets/logos/site/logo.png"
         alt="Logo initiales Julien Lisita"
-        className="h-32 w-32 sm:h-40 sm:w-40 md:h-48 md:w-48"
-        initial={{ opacity: 0, scale: 0.8 }}
+        className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 mb-4"
+        initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.6 }}
       />
 
       {/* Nom */}
       <motion.h1
-        className="text-4xl text-gray-100 sm:text-5xl md:text-6xl font-extrabold font-body bg-clip-text"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        className="text-gray-100 text-4xl sm:text-5xl md:text-6xl font-extrabold"
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
       >
-        Julien Lisita
+        {title}
       </motion.h1>
 
-      {/* Titre */}
+      {/* Sous-titre */}
       <motion.h2
-        className="text-[#007AFF] text-3xl sm:text-4xl md:text-5xl font-medium font-heading tracking-wider"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.7, duration: 2 }}
+        className="text-[#007AFF] text-2xl sm:text-3xl md:text-4xl font-medium tracking-wide mt-1"
+        initial={{ y: 16, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Développeur web
+        {subtitle}
       </motion.h2>
 
-      {/* Phrase d'accroche */}
-      <motion.p
-        className="text-gray-200 text-base sm:text-lg md:text-xl font-light font-body tracking-wide max-w-xl leading-relaxed"
+      {/* Toggle besoin */}
+      <motion.div
+        className="mt-5 flex items-center gap-2 bg-[#2a2a2a] rounded-full p-1"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.3, duration: 2 }}
+        transition={{ delay: 0.25 }}
       >
-        Des solutions <span className="text-[#FF66B2] font-semibold">sur mesure</span><br />
-        à l'image de <span className="text-[#5AC8FA] font-semibold">votre projet</span>
+        <button
+          onClick={() => setMode("vitrine")}
+          className={`flex items-center gap-2 px-4 py-2 rounded-full transition 
+            ${mode === "vitrine" ? "bg-[#007AFF] text-[#1e1e1e]" : "text-gray-200 hover:text-white"}`}
+        >
+          <Monitor className="w-4 h-4" />
+          <span>Site vitrine</span>
+        </button>
+        <button
+          onClick={() => setMode("app")}
+          className={`flex items-center gap-2 px-4 py-2 rounded-full transition 
+            ${mode === "app" ? "bg-[#007AFF] text-[#1e1e1e]" : "text-gray-200 hover:text-white"}`}
+        >
+          <Layers className="w-4 h-4" />
+          <span>Application web</span>
+        </button>
+      </motion.div>
+
+      {/* Accroche */}
+      <motion.p
+        key={mode}
+        className="text-gray-200 text-base sm:text-lg md:text-xl mt-4 max-w-2xl"
+        initial={{ opacity: 0, y: 4 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.35 }}
+      >
+        {line} <br className="hidden sm:block" />
+        Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure</span> à l’image de votre projet.
       </motion.p>
 
-      {/* Mots clés offre*/}
-
+      {/* Mots clés */}
       <motion.div
-          className="flex flex-col sm:flex-row sm:space-x-4 items-center text-gray-400 text-lg sm:text-xl md:text-2xl font-medium font-code tracking-wide"
-          initial="hidden"
-          animate="visible"
-          variants={{
-            visible: {
-              transition: {
-                staggerChildren: 0.6,
-              },
+        className="mt-6 flex flex-col sm:flex-row sm:space-x-4 items-center text-gray-400 text-lg sm:text-xl md:text-2xl font-medium font-code tracking-wide"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.35,
             },
-          }}
-        >
-          {keywords.map((word, i) => (
-            <motion.div
-              key={i}
-              className="flex space-x-1 sm:space-x-0 sm:mx-2"
-              variants={{
-                hidden: {},
-                visible: {
-                  transition: {
-                    delayChildren: 1.6 + i * 0.1,
-                    staggerChildren: 0.06,
-                  },
+          },
+        }}
+      >
+        {keywords.map((word, i) => (
+          <motion.div
+            key={i}
+            className="flex space-x-1 sm:space-x-0 sm:mx-2"
+            variants={{
+              hidden: {},
+              visible: {
+                transition: {
+                  delayChildren: 0.9 + i * 0.15,
+                  staggerChildren: 0.04,
                 },
-              }}
-            >
-              {[...word].map((char, j) => (
-                <motion.span
-                  key={j}
-                  variants={{
-                    hidden: { opacity: 0 },
-                    visible: { opacity: 1 },
-                  }}
-                  style={{ display: "inline-block" }}
-                >
-                  {char}
-                </motion.span>
-              ))}
-            </motion.div>
-          ))}
-        </motion.div>
+              },
+            }}
+          >
+            {[...word].map((char, j) => (
+              <motion.span
+                key={j}
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: { opacity: 1 },
+                }}
+                style={{ display: "inline-block" }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </motion.div>
+        ))}
+      </motion.div>
 
-      {/* Flèche scroll */}
+      {/* CTAs */}
       <motion.div
-        className="absolute bottom-5 flex flex-col items-center animate-pulse"
+        className="mt-6 flex flex-col sm:flex-row gap-3"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.6, duration: 1 }}
+        transition={{ delay: 0.45 }}
       >
-        <a href="#about"
-            onClick={(e) => {
+        <Button
+          to={mode === "vitrine" ? "/services/business-websites" : "/services/web-applications"}
+          variant="primary"
+        >
+          Découvrir {mode === "vitrine" ? "les vitrines" : "les applications"}
+        </Button>
+        <Button to="/contact" variant="secondary">Me contacter</Button>
+      </motion.div>
+
+      {/* Hint scroll */}
+      <motion.div
+        className="absolute bottom-5 flex flex-col items-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8 }}
+      >
+        <a
+          href="#about"
+          onClick={(e) => {
             e.preventDefault();
-                document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
-            }}
-            >
-          <ArrowDown className="h-10 w-10 sm:h-12 sm:w-12 text-[#5AC8FA]" />
+            document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="group"
+        >
+          <ArrowDown className="h-10 w-10 sm:h-12 sm:w-12 text-[#5AC8FA] group-hover:translate-y-0.5 transition-transform" />
         </a>
         <p className="text-gray-500 text-xs mt-1">Faites défiler ou cliquez</p>
       </motion.div>
