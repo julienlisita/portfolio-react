@@ -1,5 +1,6 @@
 // src/pages/VitrinePage.jsx
 
+import { CheckCircle, MonitorSmartphone, Wand2, ArrowRight, Users, Sparkles, Zap, Layout, GaugeCircle, MapPin, ShieldCheck, ListChecks } from "lucide-react";
 import Button from "../components/common/Button";
 import Section from "../components/common/Section";
 
@@ -11,30 +12,118 @@ export default function BusinessWebsitesPage() {
         title="Sites vitrines modernes (sans WordPress)"
         className="text-base sm:text-lg lg:text-xl"
       >
-        {/* Intro */}
-        <p className="mb-6">
-          Idéal pour <strong>indépendants, artisans, commerçants, professions libérales</strong> 
-          ou petites structures souhaitant un site <strong>simple</strong>, 
-          <strong> rapide</strong> et <strong>professionnel</strong> pour présenter leur activité.
+        {/* Intro  */}
+        <p className="text-base sm:text-lg lg:text-xl text-gray-300 mb-8">
+          Idéal pour les <strong>indépendants et petites structures</strong> qui souhaitent un site 
+          <strong> simple</strong>, <strong>rapide</strong> et <strong>professionnel</strong> pour mettre en valeur leur activité.
         </p>
 
+        {/* Pour qui ? */}
+         <h3 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
+          <Users className="w-5 h-5 text-[#007AFF]" />
+          Pour qui :
+        </h3>
+        <ul className="list-none ml-6 space-y-2">
+          <li className="flex items-center gap-2">
+            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+              Indépendants (artisans, freelances…)
+            </div>
+          </li>
+          <li className="flex items-center gap-2">
+            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+              Commerçants & petites boutiques locales
+            </div>
+          </li>
+          <li className="flex items-center gap-2">
+            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+              Professions libérales (coachs, consultants…)
+            </div>
+          </li>
+          <li className="flex items-center gap-2">
+            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+               Petites structures / associations
+            </div>
+          </li>
+          <li className="flex items-center gap-2">
+            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+              Créatifs (photographes, artistes…)
+            </div>
+          </li>
+        </ul>
+
         {/* Ce que je propose */}
-        <h3 className="text-xl font-semibold mt-8 mb-3">Ce que je propose :</h3>
-        <ul className="list-disc ml-6 space-y-2">
-          <li>Site vitrine sur mesure avec <strong>React (Vite ou Next.js)</strong></li>
-          <li><strong>Design épuré</strong>, moderne et adapté à votre identité visuelle</li>
-          <li><strong>Performance optimale</strong> (pas de CMS lourd, pas de plugins inutiles)</li>
-          <li>Contenus typiques : présentation, galerie, menu, carte, formulaire de contact</li>
-          <li><strong>Déploiement et mise en ligne inclus</strong></li>
+        <h3 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
+          <MonitorSmartphone className="w-5 h-5 text-[#007AFF]" />
+          Ce que je propose :
+        </h3>
+        <ul className="list-none ml-6 space-y-2">
+          <li className="flex items-center gap-2">
+            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+              Site vitrine sur mesure avec React (Vite ou Next.js)
+            </div>
+          </li>
+          <li className="flex items-center gap-2">
+            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+              Design épuré, moderne et adapté à votre identité visuelle
+            </div>
+          </li>
+          <li className="flex items-center gap-2">
+            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+              Performance optimale (pas de CMS lourd, pas de plugins inutiles)
+            </div>
+          </li>
+          <li className="flex items-center gap-2">
+            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+               Contenus typiques : présentation, galerie, menu, carte, formulaire de contact
+            </div>
+          </li>
+          <li className="flex items-center gap-2">
+            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <div className="flex-1">
+              Déploiement et mise en ligne inclus
+            </div>
+          </li>
         </ul>
 
         {/* Pourquoi sans WordPress */}
-        <h3 className="text-xl font-semibold mt-8 mb-3">Pourquoi sans WordPress ?</h3>
-        <ul className="list-none ml-1 space-y-1">
-          <li>✔️ Aucun plugin à gérer</li>
-          <li>✔️ Code léger et sécurisé</li>
-          <li>✔️ Maintenance simplifiée</li>
-          <li>✔️ Expérience utilisateur rapide et fluide</li>
+        <h3 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
+          <Wand2 className="w-5 h-5 text-[#9B59B6]" />
+          Pourquoi sans WordPress ?
+        </h3>
+        <ul className="list-none ml-6 space-y-2">
+          <li className="flex items-start gap-2">
+            <Zap className="w-5 h-5 text-[#9B59B6] mt-1" />
+            <div className="flex-1">
+              Aucun plugin à gérer
+            </div>
+          </li >
+          <li className="flex items-start gap-2">
+             <Zap className="w-5 h-5 text-[#9B59B6] mt-1" />
+             <div className="flex-1">
+              Code léger et sécurisé
+             </div>
+          </li>
+          <li className="flex items-start gap-2">
+             <Zap className="w-5 h-5 text-[#9B59B6] mt-1" />
+             <div className="flex-1">
+              Maintenance simplifiée
+             </div>
+          </li>
+          <li className="flex items-start gap-2">
+             <Zap className="w-5 h-5 text-[#9B59B6] mt-1" />
+             <div className="flex-1">
+                Expérience utilisateur rapide et fluide
+             </div>
+          </li>
         </ul>
 
         {/* Conclusion */}
