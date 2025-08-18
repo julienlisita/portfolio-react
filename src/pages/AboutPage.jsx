@@ -1,5 +1,4 @@
 // src/pages/AboutPage.jsx
-
 import Button from "../components/common/Button";
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
@@ -9,65 +8,96 @@ export default function AboutPage() {
     <>
       <PageTitle>À propos</PageTitle>
 
-      {/* Photo + Intro */}
-      <Section title="Une passion constante pour la technologie" className="text-base sm:text-lg lg:text-xl">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10  m-auto">
+      {/* Photo en tête */}
+      <div className="flex justify-center my-8">
         <img
           src="/assets/images/profile-pic.png"
-          alt="Julien Lisita"
+          alt="Portrait de Julien Lisita, développeur web"
           className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 rounded-full object-cover shadow-lg"
+          loading="lazy"
         />
-        <div className="text-left">
-          <p>
-            Avant de me consacrer pleinement au développement web, j’ai exercé pendant plusieurs années dans le domaine de l’ingénierie logicielle embarquée. C’est dans ce contexte que j’ai découvert le langage C, un langage à la base de nombreux systèmes d’exploitation comme Windows ou Linux. Ce contact initial avec la programmation m’a passionné : le fait de pouvoir transformer des lignes de code en fonctionnalités concrètes, utiles au quotidien, m’est apparu comme une forme de création à part entière. La logique, la rigueur et la créativité qu’exige le développement logiciel ont immédiatement résonné avec ma personnalité.
-          </p>
-        </div>
       </div>
-       <p className="mt-4">
-          J’ai eu l’opportunité de travailler sur des systèmes embarqués utilisés dans des domaines aussi sensibles que l’automobile ou la défense. L’un des projets qui m’a le plus marqué concernait un système de sécurité intelligent capable d’adapter le déploiement des airbags en fonction de la position des passagers en temps réel. Ce genre de mission m’a permis de mesurer l’impact que peut avoir un logiciel bien conçu sur la sécurité des personnes.
+
+      {/* En bref */}
+      <Section className="text-base sm:text-lg lg:text-xl">
+        <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-gray-300">
+          <li><strong>Spécialités :</strong> React, Next.js, Node.js</li>
+          <li><strong>Localisation :</strong> Mérignac – Bordeaux (remote possible)</li>
+          <li><strong>Clients :</strong> indépendants, TPE/PME, assoc.</li>
+          <li><strong>Approche :</strong> claire, itérative, orientée résultat</li>
+        </ul>
+      </Section>
+
+      {/* Parcours */}
+      <Section title="Une passion constante pour la technologie" className="text-base sm:text-lg lg:text-xl">
+        <p>
+          Avant de me consacrer pleinement au web, j’ai travaillé plusieurs années en
+          ingénierie logicielle embarquée. Ce contact initial avec le C et les systèmes
+          bas niveau m’a appris la rigueur, la fiabilité et l’exigence de performance.
+        </p>
+        <p className="mt-4">
+          J’ai notamment contribué à des systèmes critiques dans les secteurs de l’automobile
+          et de la défense. Ce genre de mission m’a permis de mesurer concrètement l’impact
+          qu’un logiciel bien conçu peut avoir sur la sécurité des personnes.
         </p>
       </Section>
-  
 
+      {/* Transition vers le web */}
       <Section title="De l’industrie aux applications web" className="text-base sm:text-lg lg:text-xl">
         <p>
-          Même si ces projets étaient stimulants, j’ai peu à peu ressenti le besoin de me rapprocher des utilisateurs finaux. Dans les grands groupes industriels, il peut y avoir plusieurs années entre la conception d’une solution et son déploiement, et souvent une certaine distance avec les personnes qui l’utiliseront.
+          Avec le temps, j’ai voulu me rapprocher des utilisateurs finaux et réduire le délai
+          entre idée et impact. Le développement web s’est imposé naturellement : créer des
+          outils concrets, utiles et accessibles sur tous les appareils.
         </p>
         <p className="mt-4">
-          C’est ce désir de proximité, de concrétisation plus rapide, et de polyvalence qui m’a poussé à me reconvertir dans le développement web. Grâce à l’essor de technologies comme Node.js (qui permet d’exécuter du JavaScript côté serveur), le web est devenu un terrain d’innovation illimité. On ne se contente plus d’afficher des pages statiques : on crée aujourd’hui de véritables applications interactives, ergonomiques et puissantes, accessibles depuis n’importe quel appareil.
+          Porté par l’écosystème JavaScript (React, Next.js, Node.js), je conçois aujourd’hui des
+          sites vitrines modernes et des applications web sur mesure.
         </p>
       </Section>
 
+      {/* Méthode + philosophie (fusion de l'ancienne section "Mon approche") */}
       <Section title="Apprendre, créer, accompagner" className="text-base sm:text-lg lg:text-xl">
         <p>
-          Pour opérer ce virage, j’ai suivi un bootcamp intensif en développement full stack, où j’ai consolidé mes compétences en JavaScript, React, Node.js, HTML/CSS… Depuis, je n’ai jamais cessé d’apprendre et de créer. En parallèle de projets freelance, je continue à me former sur les frameworks les plus actuels, que je choisis en fonction des besoins de chaque client.
+          Formé via un bootcamp full-stack, je continue à me tenir à jour et à choisir les
+          technologies en fonction des besoins réels. Mon objectif : livrer des interfaces
+          fluides, des architectures saines et un code maintenable — avec une communication
+          claire à chaque étape.
         </p>
-        <p className="mt-4">
-          Aujourd’hui, ce qui me plaît dans le web, c’est de pouvoir concevoir une application ou un site de A à Z : comprendre le besoin du client, modéliser la solution, choisir l’architecture technique, créer une interface fluide et attractive, et déployer l’ensemble en ligne. Le tout avec des cycles de développement courts, des échanges réguliers, et une vraie agilité.
-        </p>
-        <p className="mt-4">
-          Je travaille de façon structurée : découpage du projet en phases, priorisation par tickets (via Trello), validation à chaque étape. Cette méthode me permet de rester réactif, transparent, et d’aligner mes choix techniques avec les attentes du client. Si besoin, j’élabore des maquettes ou des modèles de données, et je propose toujours des solutions adaptées au budget et aux objectifs du projet.
-        </p>
-      </Section>
 
-      <Section title="Mon approche" className="text-base sm:text-lg lg:text-xl">
-        <p>
-          Ma démarche est simple : je m’investis pleinement dans chaque projet, comme si c’était le mien. J’aime relever les défis, notamment lorsqu’il s’agit de concevoir une solution originale ou encore jamais réalisée. Mon goût pour la technique reste fort, mais toujours au service de l’humain. Car ce qui compte au final, ce n’est pas la complexité du code, mais l’utilité du résultat.
+        {/* Étapes de collaboration */}
+        <ul className="list-disc ml-6 mt-4 space-y-2 text-gray-300">
+          <li>Analyse du besoin & cadrage</li>
+          <li>Maquettes et choix d’architecture</li>
+          <li>Développement par itérations courtes (démos régulières)</li>
+          <li>Mise en ligne, documentation et transfert</li>
+        </ul>
+
+        {/* Piliers d'approche (ex-« Mon approche ») */}
+        <p className="mt-6">
+          Ma méthode s’appuie sur quatre piliers simples:
         </p>
-        <p className="mt-4">
-          Je tiens aussi à rester accessible et pédagogue : que mes interlocuteurs soient à l’aise avec le numérique ou non, je m’assure de toujours expliquer mes choix de manière claire. Je crois qu’un bon développeur, c’est aussi quelqu’un qui sait écouter, vulgariser et accompagner.
-        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+          {[
+            { t: "Écoute", d: "comprendre vos objectifs et contraintes" },
+            { t: "Conception", d: "des choix techniques expliqués" },
+            { t: "Itérations", d: "démos régulières, ajustements rapides" },
+            { t: "Soutien", d: "documentation, suivi et évolutions" },
+          ].map((s, i) => (
+            <div key={i} className="bg-[#2a2a2a] rounded-lg p-4">
+              <p className="font-semibold text-gray-100">{s.t}</p>
+              <p className="text-gray-300 text-sm mt-1">{s.d}</p>
+            </div>
+          ))}
+        </div>
       </Section>
 
       {/* Conclusion */}
       <Section title="Envie de concrétiser votre projet ?" className="text-base sm:text-lg lg:text-xl">
         <p className="mt-2 text-center">
-          Que vous ayez besoin d’un site vitrine, d’une application web sur mesure ou simplement de conseils techniques pour démarrer, je suis là pour vous accompagner.
+          Site vitrine, application web ou simple conseil : discutons de votre besoin et bâtissons une solution utile.
         </p>
         <div className="text-center mt-6">
-          <Button href="/services">
-            Découvrez mes services
-          </Button>
+          <Button to="/services">Découvrir mes services</Button>
         </div>
       </Section>
     </>
