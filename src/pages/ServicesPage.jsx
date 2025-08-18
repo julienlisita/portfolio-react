@@ -68,7 +68,7 @@ export default function ServicesPage()
         ].map((s, i) => (
           <div key={i} className="pl-12 pb-6">
             <div className="relative">
-              <span className="absolute -left-8 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#2a2a2a] text-[#5AC8FA] text-xs font-semibold">
+              <span className="absolute -left-8 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#2a2a2a] text-[#007AFF] text-xs font-semibold">
                 {i + 1}
               </span>
               <h4 className="text-gray-100 font-semibold">{s.t}</h4>

@@ -25,23 +25,23 @@ export default function SupportPage() {
         </h3>
         <ul className="list-disc ml-6 space-y-2">
           <li className="flex items-start gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1 shrink-0" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1 shrink-0" />
             Correction de bugs & support technique
           </li>
           <li className="flex items-start gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1 shrink-0" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1 shrink-0" />
             Ajout de fonctionnalités et petites évolutions
             </li>
           <li className="flex items-start gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1 shrink-0" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1 shrink-0" />
             Optimisations de performance
           </li>
           <li className="flex items-start gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1 shrink-0" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1 shrink-0" />
             Mises à jour techniques (dépendances, sécurité…)
             </li>
           <li className="flex items-start gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1 shrink-0" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1 shrink-0" />
             Conseil & suivi technique personnalisé
             </li>
         </ul>
@@ -53,19 +53,19 @@ export default function SupportPage() {
         </h3>
         <ul className="list-disc ml-6 space-y-2">
           <li className="flex items-start gap-2">
-            <CalendarCheck className="w-5 h-5 text-[#5AC8FA] mt-1 shrink-0" />
+            <CalendarCheck className="w-5 h-5 text-[#007AFF] mt-1 shrink-0" />
             <div className="flex-1">
               <strong>Forfait mensuel</strong> pour la tranquillité (préventif + support prioritaire)
             </div>
           </li>
           <li className="flex items-start gap-2">
-            <Ticket className="w-5 h-5 text-[#5AC8FA] mt-1 shrink-0" />
+            <Ticket className="w-5 h-5 text-[#007AFF] mt-1 shrink-0" />
             <div className="flex-1">
               <strong>Intervention à la demande</strong> sur ticket (au besoin, sans engagement)
             </div>
           </li>
           <li className="flex items-start gap-2">
-            <FileText className="w-5 h-5 text-[#5AC8FA] mt-1 shrink-0" />
+            <FileText className="w-5 h-5 text-[#007AFF] mt-1 shrink-0" />
             <div className="flex-1">
                Rapport synthétique sur les actions menées (si forfait)
             </div>

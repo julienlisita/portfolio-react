@@ -71,7 +71,7 @@ export default function LandingSection() {
         <button
           onClick={() => setMode("vitrine")}
           className={`flex items-center gap-2 px-4 py-2 rounded-full transition 
-            ${mode === "vitrine" ? "bg-[#007AFF] text-[#1e1e1e]" : "text-gray-200 hover:text-white"}`}
+            ${mode === "vitrine" ? "bg-[#5AC8FA] text-[#1e1e1e]" : "text-gray-200 hover:text-white"}`}
         >
           <Monitor className="w-4 h-4" />
           <span>Site vitrine</span>
@@ -79,7 +79,7 @@ export default function LandingSection() {
         <button
           onClick={() => setMode("app")}
           className={`flex items-center gap-2 px-4 py-2 rounded-full transition 
-            ${mode === "app" ? "bg-[#007AFF] text-[#1e1e1e]" : "text-gray-200 hover:text-white"}`}
+            ${mode === "app" ? "bg-[#5AC8FA] text-[#1e1e1e]" : "text-gray-200 hover:text-white"}`}
         >
           <Layers className="w-4 h-4" />
           <span>Application web</span>
@@ -95,7 +95,7 @@ export default function LandingSection() {
         transition={{ duration: 0.35 }}
       >
         {line} <br className="hidden sm:block" />
-        Des solutions <span className="text-[#5AC8FA] font-semibold">sur mesure</span> à l’image de votre projet.
+        Des solutions <span className="text-[#007AFF] font-semibold">sur mesure</span> à l’image de votre projet.
       </motion.p>
 
       {/* Mots clés */}

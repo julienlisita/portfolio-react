@@ -51,10 +51,10 @@ export default function ServicesPreview()
           {services.map((service, i) => (
           <motion.div
             key={service.title}
-            initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
+            initial={{ opacity: 0, x: i % 2 === 0 ? -80 : 80 }}
             whileInView={{ opacity: 1, x: 0 }}
             whileHover={{ scale: 1.03 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.35 }}
             viewport={{ once: true }}
           >
             <ServiceCard {...service} />

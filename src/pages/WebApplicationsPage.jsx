@@ -27,25 +27,25 @@ export default function WebApplicationsPage() {
         </h3>
         <ul className="list-none ml-6 space-y-2">
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Startups en phase de lancement ou de levée de fonds
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               PME cherchant à digitaliser leurs process
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Associations souhaitant une plateforme de gestion interne
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Porteurs de projet voulant un prototype (MVP)
             </div>
@@ -59,38 +59,38 @@ export default function WebApplicationsPage() {
         </h3>
         <ul className="list-disc ml-6 space-y-2">
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               <strong>Développement full-stack</strong> : Next.js / React, Node.js / Express,
             Prisma, PostgreSQL ou MongoDB
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               <strong>Architecture évolutive</strong> (modulaire, maintenable, prête à grandir)
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               <strong>UX/UI responsive</strong> et adaptée aux usages réels
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               <strong>Sécurité intégrée</strong> : authentification, rôles, API protégées
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               <strong>Temps réel</strong> (WebSocket) si nécessaire : chat, notifications, collaboration
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               <strong>Déploiement</strong> sur Vercel, Railway, Docker ou hébergement dédié
             </div>

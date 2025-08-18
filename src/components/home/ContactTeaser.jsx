@@ -18,15 +18,15 @@ export default function ContactTeaser()
             {/* Coordonnées rapides */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 text-base">
                 <div className="flex items-center gap-2">
-                <Phone className="text-[#5AC8FA]" />
+                <Phone className="text-[#007AFF]" />
                 <span>+33 6 23 00 04 49</span>
                 </div>
                 <div className="flex items-center gap-2">
-                <Mail className="text-[#5AC8FA]" />
+                <Mail className="text-[#007AFF]" />
                 <span>julien.lisita@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
-                <MapPin className="text-[#5AC8FA]" />
+                <MapPin className="text-[#007AFF]" />
                 <span>Mérignac – Bordeaux</span>
                 </div>
             </div>

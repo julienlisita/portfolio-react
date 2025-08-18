@@ -26,20 +26,20 @@ export default function ContactPage() {
         <div className="flex justify-center">
           <div className="w-full m-x-auto grid grid-cols-1 sm:grid-cols-2 max-w-2xl gap-y-8">
             <div className="flex items-start gap-3">
-              <Phone className="text-[#5AC8FA]" />
+              <Phone className="text-[#007AFF]" />
               <a href="tel:+33612345678" className="hover:underline">+33 6 23 00 04 49</a>
             </div>
 
             <div className="flex items-start gap-3">
-              <Mail className="text-[#5AC8FA]" />
+              <Mail className="text-[#007AFF]" />
               <a href="mailto:julien@example.com" className="hover:underline">julien.lisita@gmail.com</a>
             </div>
             <div className="flex items-start gap-3">
-              <MapPin className="text-[#5AC8FA]" />
+              <MapPin className="text-[#007AFF]" />
               <span>33700 Mérignac</span>
             </div>
             <div className="flex items-start gap-3">
-              <Car className="text-[#5AC8FA]" />
+              <Car className="text-[#007AFF]" />
               <span>Permis B, véhiculé</span>
             </div>
           </div>

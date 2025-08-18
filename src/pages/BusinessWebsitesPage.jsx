@@ -25,31 +25,31 @@ export default function BusinessWebsitesPage() {
         </h3>
         <ul className="list-none ml-6 space-y-2">
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Indépendants (artisans, freelances…)
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Commerçants & petites boutiques locales
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Professions libérales (coachs, consultants…)
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
                Petites structures / associations
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Créatifs (photographes, artistes…)
             </div>
@@ -63,31 +63,31 @@ export default function BusinessWebsitesPage() {
         </h3>
         <ul className="list-none ml-6 space-y-2">
           <li className="flex items-center gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Site vitrine sur mesure avec React (Vite ou Next.js)
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Design épuré, moderne et adapté à votre identité visuelle
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Performance optimale (pas de CMS lourd, pas de plugins inutiles)
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
                Contenus typiques : présentation, galerie, menu, carte, formulaire de contact
             </div>
           </li>
           <li className="flex items-center gap-2">
-            <ListChecks className="w-5 h-5 text-[#5AC8FA] mt-1" />
+            <ListChecks className="w-5 h-5 text-[#007AFF] mt-1" />
             <div className="flex-1">
               Déploiement et mise en ligne inclus
             </div>

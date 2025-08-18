@@ -30,10 +30,10 @@ export default function BlogPage() {
             <div className="flex items-start gap-4">
               <div>
                 <p className="text-xs text-gray-400">{article.date}</p>
-                <h3 className="text-gray-100 font-semibold text-lg group-hover:text-[#007AFF] transition">
+                <h3 className="text-gray-100 font-semibold text-lg group-hover:text-[#5AC8FA] transition">
                   {article.title}
                 </h3>
-                <p className="text-gray-300 text-sm group-hover:text-[#007AFF] transition">
+                <p className="text-gray-300 text-sm group-hover:text-[#5AC8FA] transition">
                   {article.excerpt}
                 </p>
               </div>
