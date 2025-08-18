@@ -1,6 +1,6 @@
 // ServiceCard.jsx
 
-import Button from "../common/Button"; // ← adapte le chemin si ton Button est ailleurs
+import Button from "../common/Button";
 
 export default function ServiceCard({ icon, title, description, color, link }) {
   const gradientStyle = { backgroundImage: `linear-gradient(135deg, ${color[0]}, ${color[1]})` };
@@ -22,7 +22,7 @@ export default function ServiceCard({ icon, title, description, color, link }) {
 
           {link && (
             <div className="mt-4 flex justify-center">
-              <Button to={link}>Découvrir</Button>
+              <Button to={link} variant="primary">Découvrir</Button>
             </div>
           )}
         </div>
