@@ -2,7 +2,7 @@
 
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
-import Button from "../components/common/Button";
+import CtaFinal from "../components/common/CtaFinal";
 
 export default function PricingPage() {
   return (
@@ -98,11 +98,11 @@ export default function PricingPage() {
           </div>
         </div>
 
-        <div className="flex justify-center mt-6">
-          <Button href="/contact">
-            Demander un devis
-          </Button>
-        </div>
+        <CtaFinal
+          title="Un projet à chiffrer ?"
+          tagline="Chaque besoin est unique, je vous propose un devis adapté à votre projet."
+          link={{ href: "/contact", text: "Demander un devis" }}
+        />
       </Section>
     </>
   );

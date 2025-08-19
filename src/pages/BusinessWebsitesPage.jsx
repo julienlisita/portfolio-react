@@ -1,8 +1,8 @@
 // src/pages/VitrinePage.jsx
 
-import { CheckCircle, MonitorSmartphone, Wand2, ArrowRight, Users, Sparkles, Zap, Layout, GaugeCircle, MapPin, ShieldCheck, ListChecks } from "lucide-react";
-import Button from "../components/common/Button";
+import { CheckCircle, MonitorSmartphone, Wand2, Users, Zap, ListChecks } from "lucide-react";
 import Section from "../components/common/Section";
+import CtaFinal from "../components/common/CtaFinal";
 
 export default function BusinessWebsitesPage() {
   return (
@@ -134,10 +134,12 @@ export default function BusinessWebsitesPage() {
           Idéal pour se démarquer avec un site moderne et sans contraintes techniques.
         </p>
 
-        <div className="mt-6 flex gap-4 justify-center">
-          <Button to="/contact" variant="primary">Me contacter</Button>
-          <Button to="/pricing">Voir les tarifs</Button>
-        </div>
+        {/* CTA final */}
+        <CtaFinal
+          title="Votre vitrine en ligne commence ici"
+          tagline="Un site professionnel, rapide et élégant pour mettre en valeur votre activité."
+          link={{ href: "/contact", text: "Parlons de votre projet" }}
+        />
       </Section>
     </>
   );

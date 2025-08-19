@@ -1,5 +1,6 @@
 // src/pages/AboutPage.jsx
-import Button from "../components/common/Button";
+
+import CtaFinal from "../components/common/CtaFinal";
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
 
@@ -91,15 +92,12 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      {/* Conclusion */}
-      <Section title="Envie de concrétiser votre projet ?" className="text-base sm:text-lg lg:text-xl">
-        <p className="mt-2 text-center">
-          Site vitrine, application web ou simple conseil : discutons de votre besoin et bâtissons une solution utile.
-        </p>
-        <div className="text-center mt-6">
-          <Button to="/services">Découvrir mes services</Button>
-        </div>
-      </Section>
+      {/* CTA final */}
+      <CtaFinal
+        title="Envie de collaborer ?"
+        tagline="Je suis disponible pour échanger sur vos projets et partager mon expertise."
+        link={{ href: "/contact", text: "Discutons ensemble" }}
+      />
     </>
   );
 }

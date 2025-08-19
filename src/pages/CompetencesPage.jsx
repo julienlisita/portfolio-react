@@ -39,6 +39,7 @@ import {
   SiPrisma,
 } from "react-icons/si";
 import Section from "../components/common/Section";
+import CtaFinal from "../components/common/CtaFinal";
 
 export default function CompetencePage() {
 const technologies = [
@@ -149,6 +150,12 @@ const technologies = [
           ))}
         </div>
       </Section>
+
+      <CtaFinal
+        title="Mettons mes compétences au service de votre projet"
+        tagline="De la conception au déploiement, je mets tout en œuvre pour réussir votre solution."
+        link={{ href: "/contact", text: "Collaborer avec moi" }}
+      />
     </>
   );
 }

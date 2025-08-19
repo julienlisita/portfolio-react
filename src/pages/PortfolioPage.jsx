@@ -3,8 +3,8 @@
 import { projects } from "../data/projectsData";
 import PageTitle from "../components/common/PageTitle";
 import ProjectCard from "../components/common/ProjectCard";
-import SectionTitle from "../components/common/SectionTitle";
 import Section from "../components/common/Section";
+import CtaFinal from "../components/common/CtaFinal";
 
 export default function Portfolio() {
   return (
@@ -45,6 +45,12 @@ export default function Portfolio() {
               ))}
         </div>
       </Section>
+
+      <CtaFinal
+        title="Votre projet, le prochain à mettre en valeur ?"
+        tagline="Après ces réalisations, pourquoi pas la vôtre ?"
+        link={{ href: "/contact", text: "Lancer mon projet" }}
+      />
   </>
   );
 }

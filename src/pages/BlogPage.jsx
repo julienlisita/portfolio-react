@@ -6,6 +6,7 @@ import Pagination from "../components/common/Pagination";
 import PageTitle from "../components/common/PageTitle";
 import {articles} from "../data/articles"
 import Section from "../components/common/Section";
+import CtaFinal from "../components/common/CtaFinal";
 
 export default function BlogPage() {
 
@@ -46,6 +47,12 @@ export default function BlogPage() {
         currentPage={currentPage}
         totalPages={totalPages}
         onPageChange={setCurrentPage}
+      />
+
+      <CtaFinal
+        title="Restons en contact"
+        tagline="Vous avez aimé mes articles ? Discutons de vos idées ou de vos besoins."
+        link={{ href: "/contact", text: "Me contacter" }}
       />
     </>
   );

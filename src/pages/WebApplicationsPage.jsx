@@ -1,8 +1,8 @@
 // pages/WebApplicationsPage.jsx 
 
+import CtaFinal from "../components/common/CtaFinal";
 import Section from "../components/common/Section";
-import Button from "../components/common/Button";
-import { CheckCircle, Users, Boxes, Layers, ListChecks, Briefcase, BarChart3, Server, Package, Rocket } from "lucide-react";
+import { CheckCircle, Users, Layers, Briefcase, BarChart3, Server, Package, Rocket } from "lucide-react";
 
 export default function WebApplicationsPage() {
   return (
@@ -141,10 +141,11 @@ export default function WebApplicationsPage() {
           de l’idée au prototype, jusqu’à la mise en production.
         </p>
 
-        <div className="mt-6 flex gap-4 justify-center">
-          <Button to="/contact" variant="primary">Me contacter</Button>
-          <Button to="/pricing">Voir les tarifs</Button>
-        </div>
+        <CtaFinal
+          title="Construisons votre application sur mesure"
+          tagline="Des solutions robustes et évolutives, adaptées à vos besoins métiers."
+          link={{ href: "/contact", text: "Parlons de votre projet" }}
+        />
       </Section>
     </>
   );

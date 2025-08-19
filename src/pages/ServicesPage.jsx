@@ -1,9 +1,8 @@
 // src/pages/ServicesPage.jsx
 
-import Button from "../components/common/Button";
+import CtaFinal from "../components/common/CtaFinal";
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
-import SectionTitle from "../components/common/SectionTitle";
 import ServiceCard from "../components/home/ServiceCard";
 import { Monitor, Layers, LifeBuoy } from "lucide-react";
 
@@ -80,14 +79,11 @@ export default function ServicesPage()
       </Section>
 
       {/* CTA final */}
-      <Section className="text-center">
-        <SectionTitle>Prêt à lancer votre projet ?</SectionTitle>
-        <p className="mt-4 mb-6 text-base sm:text-lg lg:text-xl text-gray-300">
-          Tout commence par un échange gratuit et sans engagement.<br />
-          Parlons de vos besoins et voyons ensemble la meilleure solution.
-        </p>
-        <Button to="/contact">Me contacter</Button>
-      </Section>
+      <CtaFinal
+        title="Choisissons ensemble la bonne solution"
+        tagline="Que ce soit un site vitrine, une application sur mesure ou un suivi technique, je vous accompagne à chaque étape."
+        link={{ href: "/contact", text: "Obtenir un devis gratuit" }}
+      />
     </>
   )
 }

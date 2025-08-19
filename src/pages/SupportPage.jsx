@@ -1,8 +1,8 @@
 // src/pages/SupportPage.jsx
 
 import Section from "../components/common/Section";
-import Button from "../components/common/Button";
-import { CalendarCheck, ClipboardList, FileText, LifeBuoy, ListChecks, ShieldCheck, Ticket, Wrench } from "lucide-react";
+import { CalendarCheck, ClipboardList, FileText, LifeBuoy, ListChecks, Ticket } from "lucide-react";
+import CtaFinal from "../components/common/CtaFinal";
 
 export default function SupportPage() {
   return (
@@ -76,11 +76,12 @@ export default function SupportPage() {
         <p className="mt-6 italic">
           L’objectif : garder votre outil <strong>fiable</strong> et <strong>à jour</strong>, au rythme de votre activité.
         </p>
-
-        <div className="mt-6 flex gap-4 justify-center">
-          <Button to="/contact" variant="primary">Me contacter</Button>
-          <Button to="/pricing">Voir les tarifs</Button>
-        </div>
+        
+        <CtaFinal
+          title="Un suivi technique fiable"
+          tagline="Gardez votre site ou application toujours à jour, sécurisé et performant."
+          link={{ href: "/contact", text: "Demander un suivi" }}
+        />
       </Section>
     </>
   );
