@@ -1,7 +1,6 @@
 // src/components/common/ProjectCard.jsx
-
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Button from "./Button";
 
 export default function ProjectCard({ slug, image, title, description, technos }) {
   return (
@@ -15,36 +14,47 @@ export default function ProjectCard({ slug, image, title, description, technos }
       }}
       whileHover={{ scale: 1.05 }}
       transition={{
-      boxShadow: { duration: 1.6, ease: "easeOut", delay: 0.6 },
-      scale: { duration: 0.3, ease: "easeOut" }
+        boxShadow: { duration: 1.6, ease: "easeOut", delay: 0.6 },
+        scale: { duration: 0.3, ease: "easeOut" },
       }}
       viewport={{ once: true }}
-      className="w-72 h-96 rounded-xl"
+      className="w-72 rounded-xl bg-[#2a2a2a] overflow-hidden flex flex-col"
     >
-      <Link
-        to={`/portfolio/${slug}`}
-        className="bg-[#2a2a2a] w-full h-full rounded-xl overflow-hidden block transition"
-      >
-        <img
-          src={image}
-          alt={`Aperçu du projet ${title}`}
-          className="h-48 w-full object-cover"
-        />
-        <div className="p-4">
-          <h3 className="text-base sm:text-lg text-white font-semibold mb-2">{title}</h3>
-          <p className="text-sm sm:text-base text-gray-200 mb-4">{description}</p>
-          <div className="flex flex-wrap gap-2 pb-2">
-            {technos.map((tech, i) => (
-              <span
-                key={i}
-                className="text-xs bg-[#9B59B6] text-white px-2 py-1 rounded-md"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+      {/* Image */}
+      <img
+        src={image}
+        alt={`Aperçu du projet ${title}`}
+        className="h-48 w-full object-cover"
+      />
+
+      {/* Contenu */}
+      <div className="p-4 flex flex-col flex-1">
+        <h3 className="text-base sm:text-lg text-white font-semibold mb-2">
+          {title}
+        </h3>
+        <p className="text-sm sm:text-base text-gray-200 mb-4 flex-1">
+          {description}
+        </p>
+
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 pb-3">
+          {technos.map((tech, i) => (
+            <span
+              key={i}
+              className="text-xs bg-[#9B59B6] text-white px-2 py-1 rounded-md"
+            >
+              {tech}
+            </span>
+          ))}
         </div>
-      </Link>
+
+        {/* Bouton centré */}
+        <div className="mt-4 flex justify-center">
+          <Button to={`/portfolio/${slug}`} variant="primary">
+            Découvrir
+          </Button>
+        </div>
+      </div>
     </motion.div>
   );
 }
