@@ -144,7 +144,8 @@ export default function WebApplicationsPage() {
         <CtaFinal
           title="Construisons votre application sur mesure"
           tagline="Des solutions robustes et évolutives, adaptées à vos besoins métiers."
-          link={{ href: "/contact", text: "Parlons de votre projet" }}
+          primary={{ href: "/contact", text: "Contact" }}
+          secondary={{href: "/portofio", text: "Portfolio"}}
         />
       </Section>
     </>

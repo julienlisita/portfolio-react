@@ -49,7 +49,8 @@ export default function Portfolio() {
       <CtaFinal
         title="Votre projet, le prochain à mettre en valeur ?"
         tagline="Après ces réalisations, pourquoi pas la vôtre ?"
-        link={{ href: "/contact", text: "Lancer mon projet" }}
+        primary={{ href: "/contact", text: "Contact" }}
+        secondary={{href: "/pricing", text: "Tarifs"}}
       />
   </>
   );

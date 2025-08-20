@@ -80,7 +80,8 @@ export default function SupportPage() {
         <CtaFinal
           title="Un suivi technique fiable"
           tagline="Gardez votre site ou application toujours à jour, sécurisé et performant."
-          link={{ href: "/contact", text: "Demander un suivi" }}
+          primary={{ href: "/contact", text: "Contact" }}
+          secondary={{href: "/pricing", text: "Tarifs"}}
         />
       </Section>
     </>

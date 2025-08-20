@@ -1,5 +1,6 @@
 // src/pages/AboutPage.jsx
 
+import { href } from "react-router-dom";
 import CtaFinal from "../components/common/CtaFinal";
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
@@ -96,7 +97,8 @@ export default function AboutPage() {
       <CtaFinal
         title="Envie de collaborer ?"
         tagline="Je suis disponible pour échanger sur vos projets et partager mon expertise."
-        link={{ href: "/contact", text: "Discutons ensemble" }}
+        primary={{ href: "/contact", text: "Contact" }}
+        secondary={{href:"/services", text: "Services" }}
       />
     </>
   );

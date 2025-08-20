@@ -82,7 +82,8 @@ export default function ServicesPage()
       <CtaFinal
         title="Choisissons ensemble la bonne solution"
         tagline="Que ce soit un site vitrine, une application sur mesure ou un suivi technique, je vous accompagne à chaque étape."
-        link={{ href: "/contact", text: "Obtenir un devis gratuit" }}
+        primary={{ href: "/contact", text: "Contact" }}
+        secondary={{href: "/portfolio", text: "Portfolio"}}
       />
     </>
   )

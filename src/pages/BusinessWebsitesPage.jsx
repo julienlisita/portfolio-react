@@ -138,7 +138,8 @@ export default function BusinessWebsitesPage() {
         <CtaFinal
           title="Votre vitrine en ligne commence ici"
           tagline="Un site professionnel, rapide et élégant pour mettre en valeur votre activité."
-          link={{ href: "/contact", text: "Parlons de votre projet" }}
+          primary={{ href: "/contact", text: "Contact" }}
+          secondary={{href: "/pricing", text: "Tarifs"}}
         />
       </Section>
     </>

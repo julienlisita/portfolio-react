@@ -101,7 +101,8 @@ export default function PricingPage() {
         <CtaFinal
           title="Un projet à chiffrer ?"
           tagline="Chaque besoin est unique, je vous propose un devis adapté à votre projet."
-          link={{ href: "/contact", text: "Demander un devis" }}
+          primary={{ href: "/contact", text: "Contact" }}
+          secondary={{href: "/portfolio", text: "Portfolio"}}
         />
       </Section>
     </>

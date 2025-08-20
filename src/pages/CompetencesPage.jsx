@@ -154,7 +154,8 @@ const technologies = [
       <CtaFinal
         title="Mettons mes compétences au service de votre projet"
         tagline="De la conception au déploiement, je mets tout en œuvre pour réussir votre solution."
-        link={{ href: "/contact", text: "Collaborer avec moi" }}
+        primary={{ href: "/contact", text: "Contact" }}
+        secondary={{href: "/services", text: "Services"}}
       />
     </>
   );

@@ -52,7 +52,8 @@ export default function BlogPage() {
       <CtaFinal
         title="Restons en contact"
         tagline="Vous avez aimé mes articles ? Discutons de vos idées ou de vos besoins."
-        link={{ href: "/contact", text: "Me contacter" }}
+        primary={{ href: "/contact", text: "Contact" }}
+        secondary={{href: "/portfolio", text: "Portfolio"}}
       />
     </>
   );
