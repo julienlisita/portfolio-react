@@ -143,7 +143,7 @@ export default function LandingSection() {
 
       {/* CTAs */}
       <motion.div
-        className="mt-6 flex flex-col sm:flex-row gap-3"
+        className="mt-6 flex flex-row flex-wrap gap-3 justify-center items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.45 }}
@@ -152,7 +152,7 @@ export default function LandingSection() {
           to={mode === "vitrine" ? "/services/business-websites" : "/services/web-applications"}
           variant="primary"
         >
-          Découvrir {mode === "vitrine" ? "les vitrines" : "les applications"}
+          Découvrir
         </Button>
         <Button to="/contact" variant="secondary">Me contacter</Button>
       </motion.div>
