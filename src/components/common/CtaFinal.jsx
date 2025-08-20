@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Section from "./Section";
 import Button from "./Button";
 
-export default function CtaFinal({title, tagline, link}) {
+export default function CtaFinal({title, tagline, primary, secondary}) {
   return (
     <motion.div
       // Apparition identique au ContactForm
@@ -32,9 +32,16 @@ export default function CtaFinal({title, tagline, link}) {
         <p className="mt-4 mb-6 text-base sm:text-lg lg:text-xl text-gray-300">
          {tagline}
         </p>
-        <Button to={link.href} variant="primary">
-          {link.text}
-        </Button>
+        <div className="flex flex-row gap-4 flex-wrap justify-center  items-center">
+            <Button to={primary.href} variant="primary" className="w-auto">
+            {primary.text}
+            </Button>
+            {secondary && (
+            <Button to={secondary.href} variant="secondary" className="w-auto">
+                {secondary.text}
+            </Button>
+            )}
+        </div>
       </Section>
     </motion.div>
   );
