@@ -32,21 +32,26 @@ export default function PricingPage() {
 
           <div className="bg-[#1e1e1e] p-4 rounded-md text-gray-200">
             <h3 className="font-semibold mb-1">Page supplémentaire</h3>
-            <p className="text-sm text-gray-400">+60 € / page</p>
+            <p className="text-sm text-gray-400">+90 à 120 € / page</p>
           </div>
 
           <div className="bg-[#1e1e1e] p-4 rounded-md text-gray-200">
             <h3 className="font-semibold mb-1">Formulaire personnalisé</h3>
-            <p className="text-sm text-gray-400">+80 à 120 €</p>
+            <p className="text-sm text-gray-400">+60 à 100 €</p>
+          </div>
+
+          <div className="bg-[#1e1e1e] p-4 rounded-md text-gray-200">
+            <h3 className="font-semibold mb-1">Design & maquettes personnalisées</h3>
+            <p className="text-sm text-gray-400">+200 à 400 €</p>
           </div>
 
           <div className="bg-[#1e1e1e] p-4 rounded-md text-gray-200">
             <h3 className="font-semibold mb-1">Aide au contenu (texte, images, logo)</h3>
-            <p className="text-sm text-gray-400">+100 à 300 €</p>
+            <p className="text-sm text-gray-400">+50 à 150 €</p>
           </div>
 
           <div className="bg-[#1e1e1e] p-4 rounded-md text-gray-200">
-            <h3 className="font-semibold mb-1">Zone de contenu dynamique</h3>
+            <h3 className="font-semibold mb-1">Zone de contenu dynamique (blog, actus, etc.)</h3>
             <p className="text-sm text-gray-400">+250 à 400 €</p>
           </div>
 
@@ -59,7 +64,6 @@ export default function PricingPage() {
             <h3 className="font-semibold mb-1">Maintenance mensuelle</h3>
             <p className="text-sm text-gray-400">+30 à 50 € / mois</p>
           </div>
-
         </div>
       </Section>
       <Section title="Exemples de projets & fourchettes de prix">
