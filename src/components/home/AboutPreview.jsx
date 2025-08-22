@@ -27,19 +27,13 @@ export default function AboutPreview() {
             <div className="
                 w-full sm:w-1/2 flex flex-col justify-center items-center">
                 <p className="text-base sm:text-lg lg:text-xl leading-snug text-100">
-                    Bonjour, je suis Julien, développeur web freelance passionné par la création la création de sites et d’applications utiles et efficaces.
-                </p>   
+                    Je suis Julien, développeur web freelance à Bordeaux, spécialisé dans la création de sites vitrines modernes et d’applications web sur mesure.
+                </p>
                 <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
-                    Après plusieurs années en ingénierie logicielle embarquée, j’ai choisi de me spécialiser dans le développement web pour me rapprocher des utilisateurs finaux et créer des outils concrets, utiles et interactifs.
-                </p>
+                   Après plusieurs années en ingénierie logicielle embarquée, j’ai choisi de me tourner vers le web afin de me rapprocher des utilisateurs finaux et de créer des solutions concrètes, utiles et accessibles.
+                </p> 
                  <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
-                    Je conçois des sites vitrines et des applications web personnalisées, en utilisant des <span className="font-bold">technologies modernes</span> comme <span className="font-bold">React</span> ou <span className="font-bold">Node.js</span> selon les besoins.
-                </p>
-                 <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
-                    <span className="font-bold">Mon objectif :</span> partir de votre besoin, concevoir la bonne solution, et mener à bien notre projet avec clarté et efficacité.
-                </p>
-                 <p className="text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 md:mt-10">
-                    <span className="font-bold">Mon obsession :</span> livrer site fiable, évolutif et toujours dans les délais.
+                    <span className="font-bold">Mon objectif :</span> comprendre vos besoins, concevoir la bonne solution et livrer un site rapide, fiable et évolutif, toujours dans les délais.
                 </p>
             </div>
         </div>
