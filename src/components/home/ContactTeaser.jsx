@@ -1,6 +1,6 @@
 // src/components/home/ContactTeaser.jsx
 
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Car } from "lucide-react";
 import HomeSection from "./HomeSection";
 
 export default function ContactTeaser()
@@ -16,18 +16,22 @@ export default function ContactTeaser()
                 Contactez-moi facilement par mail, téléphone ou via le formulaire.  
             </p>
             {/* Coordonnées rapides */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 text-base">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 text-base">
                 <div className="flex items-center gap-2">
-                <Phone className="text-[#007AFF]" />
-                <span>+33 6 23 00 04 49</span>
+                    <Phone className="text-[#007AFF]" />
+                    <span>+33 6 23 00 04 49</span>
                 </div>
                 <div className="flex items-center gap-2">
-                <Mail className="text-[#007AFF]" />
-                <span>julien.lisita@gmail.com</span>
+                    <Mail className="text-[#007AFF]" />
+                    <span>julien.lisita@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
-                <MapPin className="text-[#007AFF]" />
-                <span>Mérignac – Bordeaux</span>
+                    <MapPin className="text-[#007AFF]" />
+                    <span>Mérignac – Bordeaux</span>
+                </div>
+                <div className="flex items-center gap-2">
+                    <Car className="text-[#007AFF]" />
+                    <span>Mobile en Gironde</span>
                 </div>
             </div>
         </HomeSection>

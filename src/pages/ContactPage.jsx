@@ -24,23 +24,23 @@ export default function ContactPage() {
       {/* Informations de contact */}
       <Section title="Mes coordonnées" className="text-base sm:text-lg lg:text-xl">
         <div className="flex justify-center">
-          <div className="w-full m-x-auto grid grid-cols-1 sm:grid-cols-2 max-w-2xl gap-y-8">
-            <div className="flex items-start gap-3">
+          <div className="w-full m-x-auto flex items-center justify-center flex-wrap gap-6">
+            <div className="flex items-start gap-3 w-[360px]">
               <Phone className="text-[#007AFF]" />
               <a href="tel:+33612345678" className="hover:underline">+33 6 23 00 04 49</a>
             </div>
 
-            <div className="flex items-start gap-3">
+            <div className="flex items-start gap-3 w-[360px]">
               <Mail className="text-[#007AFF]" />
               <a href="mailto:julien@example.com" className="hover:underline">julien.lisita@gmail.com</a>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-start gap-3 w-[360px]">
               <MapPin className="text-[#007AFF]" />
-              <span>33700 Mérignac</span>
+              <span>12 avenue Pierre Mendes-France,<br/> 33700 Mérignac</span>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-start gap-3 w-[360px]">
               <Car className="text-[#007AFF]" />
-              <span>Permis B, véhiculé</span>
+              <span>Mobile en Gironde <br/>ou disponible à distance en France</span>
             </div>
           </div>
         </div>
