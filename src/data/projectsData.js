@@ -73,7 +73,7 @@ export const projects = [
         slug: "brunchbordelais",
         title: "Le Brunch Bordelais",
         category: "vitrines",
-        description: "Site vitrine responsive pour un restaurant fictif.",
+        description: "Site vitrine développé pour un restaurant bordelais.",
         image: "/assets/images/projects/brunchbordelais.avif",
         technos: ["JavaScript", "NextJS", "Tailwind"],
         liveSite: "https://le-brunch-bordelais.vercel.app",
