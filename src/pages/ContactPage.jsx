@@ -2,6 +2,7 @@
 
 import ContactForm from "../components/common/ContactForm";
 import { Mail, Phone, Car, MapPin} from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { LuLinkedin, LuGithub } from 'react-icons/lu';
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
@@ -24,21 +25,34 @@ export default function ContactPage() {
       {/* Informations de contact */}
       <Section title="Mes coordonnées" className="text-base sm:text-lg lg:text-xl">
         <div className="flex justify-center">
-          <div className="w-full m-x-auto flex items-center justify-center flex-wrap gap-6">
-            <div className="flex items-start gap-3 w-[360px]">
-              <Phone className="text-[#007AFF]" />
-              <a href="tel:+33612345678" className="hover:underline">+33 6 23 00 04 49</a>
-            </div>
 
-            <div className="flex items-start gap-3 w-[360px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex items-start gap-3">
+              <Phone className="text-[#007AFF]" />
+              <a href="tel:+33612345678" className="hover:underline">06 23 00 04 49</a>
+            </div>
+            <div className="flex items-start gap-3">
+              <FaWhatsapp className="text-green-500" size={24} />
+              <a
+                href="https://wa.me/33623000449?text=Bonjour%20Julien%2C%20je%20souhaite%20des%20informations%20sur%20la%20création%20d%27un%20site%20internet"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Discuter sur WhatsApp
+              </a>
+            </div>
+            <div className="flex items-start gap-3">
               <Mail className="text-[#007AFF]" />
               <a href="mailto:julien@example.com" className="hover:underline">julien.lisita@gmail.com</a>
             </div>
-            <div className="flex items-start gap-3 w-[360px]">
+            <div className="flex items-start gap-3 ">
               <MapPin className="text-[#007AFF]" />
-              <span>12 avenue Pierre Mendes-France,<br/> 33700 Mérignac</span>
+              <p className="break-words max-w-xs">
+                12 avenue Pierre Mendes-France,<br />33700 Mérignac
+              </p>
             </div>
-            <div className="flex items-start gap-3 w-[360px]">
+            <div className="flex items-start gap-3">
               <Car className="text-[#007AFF]" />
               <span>Mobile en Gironde <br/>ou disponible à distance en France</span>
             </div>
