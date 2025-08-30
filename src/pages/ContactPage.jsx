@@ -25,7 +25,6 @@ export default function ContactPage() {
       {/* Informations de contact */}
       <Section title="Mes coordonnées" className="text-base sm:text-lg lg:text-xl">
         <div className="flex justify-center">
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="flex items-start gap-3">
               <Phone className="text-[#007AFF]" />
@@ -46,33 +45,35 @@ export default function ContactPage() {
               <Mail className="text-[#007AFF]" />
               <a href="mailto:julien@example.com" className="hover:underline">julien.lisita@gmail.com</a>
             </div>
-            <div className="flex items-start gap-3 ">
-              <MapPin className="text-[#007AFF]" />
-              <p className="break-words max-w-xs">
-                12 avenue Pierre Mendes-France,<br />33700 Mérignac
-              </p>
-            </div>
-            <div className="flex items-start gap-3">
-              <Car className="text-[#007AFF]" />
-              <span>Mobile en Gironde <br/>ou disponible à distance en France</span>
-            </div>
           </div>
         </div>
       </Section>
 
-      {/* Carte Google Maps */}
-      <Section className="flex justify-center mx-auto max-w-2xl">
-        <iframe
-          title="Carte"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90544.70913754782!2d-0.8377950902134641!3d44.83129852447797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da1f33de99fd%3A0x1c06651a91af85b0!2s33700%20M%C3%A9rignac!5e0!3m2!1sfr!2sfr!4v1747995234719!5m2!1sfr!2sfr"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="rounded-lg shadow-lg"
-        ></iframe>
+      {/* Localisation */}
+      <Section title="Localisation" className="text-base sm:text-lg lg:text-xl">
+        <div className="flex justify-center">
+          <div className="w-full max-w-2xl px-4 space-y-3">
+            <div className="flex items-start gap-3">
+              <p className="break-words">
+                Mérignac – Bordeaux<br />
+                Disponible en Gironde et à distance dans toute la France
+              </p>
+            </div>
+            <div className="rounded-lg shadow-lg overflow-hidden">
+              <iframe
+                title="Carte"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.3707843589267!2d-0.6778420236379075!3d44.82758167107082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d9e123456789%3A0xabcdef123456789!2s12%20Av.%20Pierre%20Mend%C3%A8s%20France%2C%2033700%20M%C3%A9rignac!5e0!3m2!1sfr!2sfr!4v1735577600000!5m2!1sfr!2sfr"
+                width="100%"
+                height="420"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="block"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </Section>
 
       {/*Réseaux sociaux*/}

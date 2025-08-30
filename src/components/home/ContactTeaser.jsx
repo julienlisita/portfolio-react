@@ -17,33 +17,34 @@ export default function ContactTeaser()
                 Contactez-moi facilement par mail, téléphone ou via le formulaire.  
             </p>
             {/* Coordonnées rapides */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 text-base">
-                <div className="flex items-center gap-2">
-                    <Phone className="text-[#007AFF]" />
-                    <span>06 23 00 04 49</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 text-base text-center">
+                {/* Téléphone */}
+                <div className="flex flex-col items-center gap-2">
+                    <Phone className="text-[#007AFF]" size={32} aria-hidden />
+                    <a href="tel:+33623000449" className="hover:underline font-medium">
+                    06 23 00 04 49
+                    </a>
                 </div>
-                <div className="flex items-center gap-2">
-                    <FaWhatsapp className="text-green-500" size={24} />
+
+                {/* WhatsApp */}
+                <div className="flex flex-col items-center gap-2">
+                    <FaWhatsapp className="text-green-500" size={32} aria-hidden />
                     <a
                     href="https://wa.me/33623000449?text=Bonjour%20Julien%2C%20je%20souhaite%20des%20informations%20sur%20la%20cr%C3%A9ation%20d%27un%20site%20internet"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="hover:underline font-medium"
                     >
                     Discuter sur WhatsApp
                     </a>
                 </div>
-                <div className="flex items-center gap-2">
-                    <Mail className="text-[#007AFF]" />
-                    <span>julien.lisita@gmail.com</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <MapPin className="text-[#007AFF]" />
-                    <span>Mérignac – Bordeaux</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Car className="text-[#007AFF]" />
-                    <span>Mobile en Gironde</span>
+
+                {/* Email */}
+                <div className="flex flex-col items-center gap-2">
+                    <Mail className="text-[#007AFF]" size={32} aria-hidden />
+                    <a href="mailto:julien.lisita@gmail.com" className="hover:underline font-medium">
+                    julien.lisita@gmail.com
+                    </a>
                 </div>
             </div>
         </HomeSection>
