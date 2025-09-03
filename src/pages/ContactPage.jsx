@@ -53,10 +53,13 @@ export default function ContactPage() {
       <Section title="Localisation" className="text-base sm:text-lg lg:text-xl">
         <div className="flex justify-center">
           <div className="w-full max-w-2xl px-4 space-y-3">
-            <div className="flex items-start gap-3">
-              <p className="break-words">
-                Mérignac – Bordeaux<br />
-                Disponible en Gironde et à distance dans toute la France
+            <div className="text-center leading-relaxed">
+              <p >Mérignac - Bordeaux Métropole</p>
+              <p>
+                À distance partout en France 
+              </p>
+              <p>
+                Déplacements possibles en Gironde sur demande
               </p>
             </div>
             <div className="rounded-lg shadow-lg overflow-hidden">
