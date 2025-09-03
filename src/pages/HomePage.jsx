@@ -8,6 +8,7 @@ import ProjectsPreview from "../components/home/ProjectsPreview";
 import BlogPreview from "../components/home/BlogPreview";
 import ContactTeaser from "../components/home/ContactTeaser";
 import { MapPin } from "lucide-react";
+import HomeSection from "../components/home/HomeSection";
 
 export default function HomePage() {
   return (
@@ -15,15 +16,18 @@ export default function HomePage() {
       <LandingSection />
       <AboutPreview />
       <ServicesPreview />
-      <SkillsPreview />
+      {/* <SkillsPreview /> */}
       <ProjectsPreview />
       <BlogPreview />
       <ContactTeaser />
       {/* Localisation */}
-      <div className="flex justify-center items-center gap-2 px-4 mt-10 text-sm sm:text-base text-slate-300">
-          <MapPin className="text-[#007AFF]" size={20} />
-          <span>Mérignac · Disponible en Gironde & à distance</span>
-      </div>
+      <HomeSection className="text-base sm:text-lg lg:text-xl">
+        <p className="flex flex-col items-center text-center max-w-5xl m-auto gap-2">
+          <MapPin className="text-[#007AFF] mx-auto" size={32} />
+          <span>Mérignac</span>
+          <span>Disponible sur Bordeaux Métropole & à distance</span>
+        </p>
+      </HomeSection>
     </>
   );
 }
