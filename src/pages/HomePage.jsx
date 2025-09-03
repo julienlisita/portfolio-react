@@ -16,7 +16,7 @@ export default function HomePage() {
       <LandingSection />
       <AboutPreview />
       <ServicesPreview />
-      {/* <SkillsPreview /> */}
+      <SkillsPreview />
       <ProjectsPreview />
       <BlogPreview />
       <ContactTeaser />
