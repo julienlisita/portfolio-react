@@ -16,7 +16,7 @@ export default function AboutPreview() {
             {/* Photo de profil */}
             <div className=" w-full sm:w-2/5 lg:w-1/3 rounded-lg overflow-hidden relative">
                 <img
-                    src="/assets/images/workingProfile.jpg" 
+                    src="/assets/images/workingProfile.avif" 
                     alt="Julien LISITA"
                     className="w-full h-full object-cover"
                 />

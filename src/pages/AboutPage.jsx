@@ -13,7 +13,7 @@ export default function AboutPage() {
       {/* Photo en tête */}
       <div className="flex justify-center my-8">
         <img
-          src="/assets/images/profile-pic.png"
+          src="/assets/images/profile-pic.avif"
           alt="Portrait de Julien Lisita, développeur web"
           className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 rounded-full object-cover shadow-lg"
           loading="lazy"
