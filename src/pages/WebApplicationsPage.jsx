@@ -1,10 +1,35 @@
 // pages/WebApplicationsPage.jsx 
 
 import CtaFinal from "../components/common/CtaFinal";
+import FaqSection from "../components/common/FaqSection";
 import Section from "../components/common/Section";
 import { CheckCircle, Users, Layers, Briefcase, BarChart3, Server, Package, Rocket } from "lucide-react";
 
 export default function WebApplicationsPage() {
+
+const faq = [
+  {
+    q: "C’est quoi une application web sur mesure ?",
+    a: "Un outil métier ou une plateforme (SaaS, back-office, espace client) adapté à votre process, pas un modèle générique."
+  },
+  {
+    q: "Quelles technologies utilisez-vous ?",
+    a: "Stack moderne : Next.js/React, Node.js/Express, Prisma, PostgreSQL/MongoDB, déploiement Vercel/Railway/Docker."
+  },
+  {
+    q: "Développez-vous des MVP rapides pour tester un marché ?",
+    a: "Oui, je conçois des MVP itératifs pour valider vite et limiter les risques."
+  },
+  {
+    q: "Mon application sera-t-elle sécurisée ?",
+    a: "Oui : authentification, rôles, API protégées, bonnes pratiques OWASP, logs & monitoring."
+  },
+  {
+    q: "Proposez-vous des fonctionnalités temps réel ?",
+    a: "Oui (si besoin) : WebSocket pour chat, notifications et collaboration."
+  }
+];
+
   return (
     <>
       <Section
@@ -140,6 +165,9 @@ export default function WebApplicationsPage() {
           Idéal si vous cherchez un <strong>accompagnement global</strong> :
           de l’idée au prototype, jusqu’à la mise en production.
         </p>
+
+        {/* FAQ Applications Web */}
+        <FaqSection title="FAQ — Applications web" faq={faq} ariaLabelledby="faq-apps-title" />
 
         <CtaFinal
           title="Construisons votre application sur mesure"

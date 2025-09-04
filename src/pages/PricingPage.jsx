@@ -3,8 +3,32 @@
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
 import CtaFinal from "../components/common/CtaFinal";
+import FaqSection from "../components/common/FaqSection";
 
 export default function PricingPage() {
+
+const faq = [
+  {
+    q: "Combien coûte un site vitrine ?",
+    a: "À partir de 800 €, selon les pages, le design et les options (formulaire, blog, réservation…)."
+  },
+  {
+    q: "Quel est le délai moyen pour un site vitrine ?",
+    a: "Généralement 2 à 4 semaines, selon la complexité et la disponibilité du contenu."
+  },
+  {
+    q: "Puis-je ajouter des options plus tard ?",
+    a: "Oui : pages, formulaires, blog/actus, réservation, espace client… tout est évolutif."
+  },
+  {
+    q: "Comment obtenir un devis précis ?",
+    a: "Expliquez votre besoin (pages, objectifs, exemples). Un devis personnalisé suit un échange gratuit."
+  },
+  {
+    q: "Proposez-vous la maintenance ? À quel prix ?",
+    a: "Oui : 30 à 50 €/mois selon le périmètre (préventif + support)."
+  }
+];
   return (
     <>
       <PageTitle>Tarifs</PageTitle>
@@ -101,6 +125,9 @@ export default function PricingPage() {
             <p className="text-[#5AC8FA] font-bold mt-1">≈ 1500 à 2200 €</p>
           </div>
         </div>
+
+        {/* FAQ Tarifs */}
+        <FaqSection title="FAQ — Tarifs" faq={faq} ariaLabelledby="faq-pricing-title" />
 
         <CtaFinal
           title="Un projet à chiffrer ?"

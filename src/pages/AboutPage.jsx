@@ -1,11 +1,27 @@
 // src/pages/AboutPage.jsx
 
-import { href } from "react-router-dom";
 import CtaFinal from "../components/common/CtaFinal";
+import FaqSection from "../components/common/FaqSection";
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
 
 export default function AboutPage() {
+
+const faq = [
+  {
+    q: "Travaillez-vous uniquement à Bordeaux ?",
+    a: "Je suis basé à Mérignac (Bordeaux) et j’accompagne des clients localement et à distance partout en France."
+  },
+  {
+    q: "Avec quels types de clients travaillez-vous ?",
+    a: "Indépendants, petites entreprises, associations et startups — avec des solutions modernes et adaptées."
+  },
+  {
+    q: "Proposez-vous un premier échange gratuit ?",
+    a: "Oui, premier échange gratuit et sans engagement pour cadrer votre projet et vos besoins."
+  }
+];
+
   return (
     <>
       <PageTitle>À propos</PageTitle>
@@ -92,6 +108,9 @@ export default function AboutPage() {
           ))}
         </div>
       </Section>
+
+      {/* FAQ A propos */}
+      <FaqSection title="FAQ — A propos" faq={faq} ariaLabelledby="faq-about-title" />
 
       {/* CTA final */}
       <CtaFinal

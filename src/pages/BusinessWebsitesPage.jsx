@@ -3,8 +3,33 @@
 import { CheckCircle, MonitorSmartphone, Wand2, Users, Zap, ListChecks } from "lucide-react";
 import Section from "../components/common/Section";
 import CtaFinal from "../components/common/CtaFinal";
+import FaqSection from "../components/common/FaqSection";
 
 export default function BusinessWebsitesPage() {
+
+const faq = [
+  {
+    q: "Combien coûte un site vitrine à Bordeaux ?",
+    a: "À partir de 800 €, selon le nombre de pages, le design et les options (formulaire, réservation, blog…)."
+  },
+  {
+    q: "Un site vitrine sans WordPress, c’est mieux ?",
+    a: "Souvent oui : plus rapide, plus sécurisé, moins de plugins et une maintenance simplifiée."
+  },
+  {
+    q: "Mon site sera-t-il responsive et optimisé SEO ?",
+    a: "Oui : mobile-first, rapide, balises SEO de base et bonnes pratiques techniques."
+  },
+  {
+    q: "Pouvez-vous m’aider pour le contenu (textes, images) ?",
+    a: "Oui, je propose une aide au contenu et des maquettes si besoin."
+  },
+  {
+    q: "Hébergement et nom de domaine : vous vous en occupez ?",
+    a: "Je conseille et j’accompagne la mise en ligne (hébergeur, domaine, e-mail pro)."
+  }
+];
+
   return (
     <>
       <Section
@@ -130,9 +155,9 @@ export default function BusinessWebsitesPage() {
         <p className="mt-6 italic">
           Une solution idéale pour se démarquer avec un site moderne, rapide et sans contraintes techniques.
         </p>
-        <p className="mt-4 italic">
-          Idéal pour se démarquer avec un site moderne et sans contraintes techniques.
-        </p>
+
+       {/* FAQ Sites vitrines */}
+        <FaqSection title="FAQ — Sites vitrines" faq={faq} ariaLabelledby="faq-vitrine-title" />
 
         {/* CTA final */}
         <CtaFinal

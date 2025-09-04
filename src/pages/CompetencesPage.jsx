@@ -40,8 +40,25 @@ import {
 } from "react-icons/si";
 import Section from "../components/common/Section";
 import CtaFinal from "../components/common/CtaFinal";
+import FaqSection from "../components/common/FaqSection";
 
 export default function CompetencePage() {
+
+const faq = [
+  {
+    q: "Travaillez-vous avec WordPress ou d’autres CMS ?",
+    a: "Je privilégie React et Next.js pour des sites rapides et sécurisés (sans plugins lourds). Intervention possible sur WordPress si nécessaire."
+  },
+  {
+    q: "Quelles technologies utilisez-vous pour vos projets web ?",
+    a: "Front-end : React/Next.js. Back-end : Node.js (Express), avec Prisma/PostgreSQL ou MongoDB."
+  },
+  {
+    q: "Pourquoi choisir une solution sur mesure plutôt qu’un site clé-en-main ?",
+    a: "Le sur-mesure est plus rapide, évolutif et sécurisé qu’un CMS générique, et colle vraiment à vos besoins."
+  }
+];
+
 const technologies = [
    
     { icon: FaJsSquare, name: "JavaScript", description: "Langage dynamique pour le web", category: "langages web" },
@@ -150,6 +167,9 @@ const technologies = [
           ))}
         </div>
       </Section>
+
+      {/* FAQ Compétences */}
+      <FaqSection title="FAQ — Comptétences" faq={faq} ariaLabelledby="faq-skills-title" />
 
       <CtaFinal
         title="Mettons mes compétences au service de votre projet"

@@ -1,6 +1,7 @@
 // src/pages/ServicesPage.jsx
 
 import CtaFinal from "../components/common/CtaFinal";
+import FaqSection from "../components/common/FaqSection";
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
 import ServiceCard from "../components/home/ServiceCard";
@@ -8,6 +9,29 @@ import { Monitor, Layers, LifeBuoy } from "lucide-react";
 
 export default function ServicesPage()
 {
+
+  const faq = [
+    {
+      q: "Développeur web à Bordeaux : que proposez-vous concrètement ?",
+      a: "Je crée des sites vitrines modernes, des applications web sur mesure et j’assure le suivi & maintenance (performances, sécurité, évolutions)"
+    },
+    {
+      q: "Site vitrine ou application web : comment choisir ?",
+      a: "Un site vitrine présente votre activité. Une application web gère des fonctionnalités métiers (CRM, espace client, SaaS). On clarifie ensemble selon vos objectifs."
+    },
+    {
+      q: "Travaillez-vous avec des indépendants et petites entreprises ?",
+      a: "Oui, c’est mon cœur de cible : indépendants, artisans, TPE/PME à Bordeaux et à distance partout en France."
+    },
+    {
+      q: "Utilisez-vous WordPress ?",
+      a: "Je privilégie des sites sans WordPress (React/Next) pour des sites rapides, sécurisés et faciles à maintenir. WordPress possible si cas spécifique."
+    },
+    {
+      q: "Comment se passe un projet ?",
+      a: "Échange initial → conception → développement itératif (démos) → mise en ligne → maintenance si besoin."
+    },
+  ];
   return (
     <> 
       <PageTitle>Mes services</PageTitle>
@@ -77,6 +101,9 @@ export default function ServicesPage()
         ))}
       </div>
       </Section>
+
+      {/* FAQ Services */}
+      <FaqSection title="FAQ — Services" faq={faq} ariaLabelledby="faq-services"/>
 
       {/* CTA final */}
       <CtaFinal

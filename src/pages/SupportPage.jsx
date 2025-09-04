@@ -3,8 +3,33 @@
 import Section from "../components/common/Section";
 import { CalendarCheck, ClipboardList, FileText, LifeBuoy, ListChecks, Ticket } from "lucide-react";
 import CtaFinal from "../components/common/CtaFinal";
+import FaqSection from "../components/common/FaqSection";
 
 export default function SupportPage() {
+
+const faq = [
+  {
+    q: "Pourquoi prendre une maintenance pour mon site ?",
+    a: "Pour garder un site rapide, sécurisé et à jour (dépendances, correctifs, sauvegardes)."
+  },
+  {
+    q: "Proposez-vous un forfait mensuel ?",
+    a: "Oui : préventif + support prioritaire. Intervention à la demande possible également."
+  },
+  {
+    q: "Que couvre la maintenance ?",
+    a: "Bugs, mises à jour, optimisations, petites évolutions et conseil technique."
+  },
+  {
+    q: "Mon site n’a pas été réalisé par vous : vous pouvez le maintenir ?",
+    a: "Oui, après un audit technique rapide pour valider la prise en charge."
+  },
+  {
+    q: "Aurez-vous un suivi des actions réalisées ?",
+    a: "Oui, un rapport synthétique est possible (mensuel si forfait)."
+  }
+];
+
   return (
     <>
       <Section
@@ -76,6 +101,9 @@ export default function SupportPage() {
         <p className="mt-6 italic">
           L’objectif : garder votre outil <strong>fiable</strong> et <strong>à jour</strong>, au rythme de votre activité.
         </p>
+
+        {/* FAQ  Maintenance */}
+        <FaqSection title="FAQ — Maintenance" faq={faq} ariaLabelledby="faq-support-title" />
         
         <CtaFinal
           title="Un suivi technique fiable"
