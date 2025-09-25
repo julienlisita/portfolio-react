@@ -93,7 +93,7 @@ export default function LandingSection() {
       <div className="mt-6 h-px w-44 bg-gradient-to-r from-transparent via-[#007AFF] to-transparent" />
 
       {/* Toggle besoin */}
-      <motion.div
+      {/* <motion.div
         role="tablist"
         aria-label="Type de projet"
         className="mt-6 flex items-center gap-2 bg-[#2a2a2a] rounded-full p-1"
@@ -124,17 +124,17 @@ export default function LandingSection() {
           <Layers className="w-4 h-4" aria-hidden />
           <span>Application web</span>
         </button>
-      </motion.div>
+      </motion.div> */}
 
       {/* Accroche liée au toggle */}
-      <motion.p
+      {/* <motion.p
         id="pitch"
         key={mode}
         className="text-gray-300 text-base sm:text-lg md:text-xl mt-4 sm:mt-5 max-w-2xl"
         {...fade}
       >
         {line}
-      </motion.p>
+      </motion.p> */}
 
       {/* Mots-clés visibles MOBILE uniquement */}
       <motion.div
