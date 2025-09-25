@@ -7,16 +7,16 @@ import Button from "../common/Button";
 import styles from "./LandingSection.module.css";
 
 export default function LandingSection() {
-  const [mode, setMode] = useState("vitrine");
+  // const [mode, setMode] = useState("vitrine");
   const reduce = useReducedMotion();
 
   const title = "Julien Lisita";
   const subtitle = "Développeur web à Bordeaux";
 
-  const line =
-    mode === "vitrine"
-      ? "Charge ultra-rapide, SEO propre, sans WordPress."
-      : "Architecture robuste, évolutive et testée.";
+  // const line =
+  //   mode === "vitrine"
+  //     ? "Charge ultra-rapide, SEO propre, sans WordPress."
+  //     : "Architecture robuste, évolutive et testée.";
 
   const keywords = ["Conception", "Développement", "Maintenance"];
 
@@ -138,7 +138,7 @@ export default function LandingSection() {
 
       {/* Mots-clés visibles MOBILE uniquement */}
       <motion.div
-        className="mt-6 sm:hidden flex flex-col items-center text-gray-400 text-base font-medium tracking-wide"
+        className="mt-6 flex flex-col items-center text-gray-400 text-base font-medium tracking-wide"
         initial={reduce ? undefined : "hidden"}
         animate={reduce ? undefined : "visible"}
         variants={reduce ? undefined : { visible: { transition: { staggerChildren: 0.35 } } }}
