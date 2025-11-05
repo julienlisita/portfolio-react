@@ -2,6 +2,94 @@
 
 export const projects = [
     {
+        slug: "thomas-delaunay",
+        title: "Thomas Delaunay – Coach Sportif & Nutrition",
+        category: "vitrines",
+        description: "Site vitrine pour un coach indépendant : programmes d’entraînement personnalisés et optimisation diététique.",
+        image: "/assets/images/projects/thomas-delaunay.png",
+        technos: ["NextJS", "TypeScript", "Tailwind", "Framer Motion"],
+        liveSite: "https://thomas-delaunay-coaching.vercel.app",
+        sourceCode: [{ label: "Client", url: "https://github.com/julienlisita/thomas-delaunay-website.git" }],
+        demo: null,
+        summary: [
+            "Site vitrine moderne présentant l’offre de coaching sportif et nutritionnel de Thomas Delaunay, avec mise en avant des programmes, témoignages clients et un parcours de prise de contact simple.",
+            "Architecture prévue pour évoluer vers une plateforme multi-coachs (prise de rendez-vous, comptes clients) tout en restant légère et performante à ce stade."
+        ],
+        features: [
+            "Pages : Accueil (hero + offres), À propos, Programmes, Témoignages, Contact",
+            "Formulaire de contact avec validation côté client",
+            "Animations discrètes (Framer Motion) pour dynamiser les sections",
+            "Optimisation des images et balisage SEO de base",
+            "Composants UI réutilisables (pricing cards, testimonial slider, FAQ accordions)",
+            "Responsive design (grid et flex adaptatifs)"
+        ],
+        stack: {
+            frontend: ["NextJS", "TypeScript", "Tailwind CSS", "Framer Motion"],
+            backend: null,
+            database: null,
+            test: null,
+            deployment: ["Vercel"]
+        }
+    },
+    {
+        slug: "ccs",
+        title: "Compagnie Care Services (CCS)",
+        category: "vitrines",
+        description: "Site vitrine professionnel pour une entreprise d’aide à domicile (personnes âgées et handicapées) en Charente et Gironde.",
+        image: "/assets/images/projects/ccs.jpg",
+        technos: ["NextJS", "TypeScript", "Tailwind"],
+        liveSite: "https://compagnie-careandservices.vercel.app",
+        sourceCode: [{ label: "Client", url: "https://github.com/julienlisita/ccs-website.git" }],
+        demo: null,
+        summary: [
+            "Site vitrine statique et soigné présentant l’activité de CCS : services d’aide à domicile, valeurs humaines et informations pratiques. La structure met l’accent sur la lisibilité, l’accessibilité et un parcours de contact clair.",
+            "Les pages sont mises à jour ponctuellement sur demande (pas d’interface d’administration), avec une mise en page responsive et des visuels libres de droits sélectionnés pour illustrer chaque service."
+        ],
+        features: [
+            "7 pages statiques : Accueil, À propos, Services, Informations légales, Actualités (liens), Recrutement, Contact",
+            "Sections claires avec appels à l’action (téléphone, email, formulaire de contact)",
+            "Mise en avant des valeurs et de la zone d’intervention",
+            "Composants réutilisables (Header, Footer, Section, Card, Button)",
+            "Performances et SEO de base (balises meta, titres hiérarchisés)",
+            "Responsive design complet (mobile, tablette, desktop)"
+        ],
+        stack: {
+            frontend: ["NextJS", "TypeScript", "Tailwind CSS"],
+            backend: null,
+            database: null,
+            test: null,
+            deployment: ["Vercel"]
+        }
+    },
+    {
+        slug: "brunchbordelais",
+        title: "Le Brunch Bordelais",
+        category: "vitrines",
+        description: "Site vitrine développé pour un restaurant bordelais.",
+        image: "/assets/images/projects/brunchbordelais.avif",
+        technos: ["JavaScript", "NextJS", "Tailwind"],
+        liveSite: "https://le-brunch-bordelais.vercel.app",
+        sourceCode: [
+        { label: "Client", url: "https://github.com/julienlisita/le-brunch-bordelais" },
+        ],
+        demo: null,
+        summary: ["Ce projet met en valeur un design soigné, une navigation fluide et une identité visuelle cohérente autour d’une charte graphique chaleureuse. La page d’accueil est structurée en sections distinctes : présentation du concept, engagements durables, ambiance, témoignages clients, informations pratiques et formulaire de contact."
+        ],
+        features: ["Présentation responsive et structurée du restaurant avec une navigation fluide entre les sections.",
+            "Mise en avant du concept, des engagements (produits locaux, faits maison), de l’ambiance et des spécialités proposées.",
+            "Section témoignages pour renforcer la crédibilité et créer une connexion émotionnelle.",
+            "Bloc “infos pratiques” clair : horaires, adresse, téléphone, bouton de contact et carte intégrée.",
+            "Formulaire de contact accessible depuis une page dédiée pour les demandes de réservation ou d’information."
+        ],
+        stack: {
+            frontend: ["JavaScript","NextJS", "Tailwind CSS"],
+            backend: null,
+            database: null,
+            test: null,
+            deployment: ["Vercel"]
+        }
+    },
+    {
         slug: "shogiconnect",
         title: "ShogiConnect",
         category: "web",
@@ -37,6 +125,35 @@ export const projects = [
         }
     },
     {
+        slug: "portfolio",
+        title: "Portfolio React",
+        category: "vitrines",
+        description: "Site vitrine responsive pour présenter mes projets et mes services de développeur.",
+        image: "/assets/images/projects/portfolio.png",
+        technos: ["React", "Tailwind", "Framer Motion"],
+        liveSite: "https://julienlisita.com",
+        sourceCode: [
+        { label: "Client", url: "https://github.com/julienlisita/portfolio-react" },
+        ],
+        demo: null,
+        summary: [
+            "Ce portfolio a pour objectif de présenter mon parcours, mes compétences et mes projets en tant que développeur web full stack. Il vise à offrir une vitrine professionnelle claire, moderne et évolutive, que ce soit pour des recruteurs, des entreprises ou des clients potentiels. L’accent est mis à la fois sur l’ergonomie, l’accessibilité et la qualité du code."
+        ],
+        features: [
+            "Présentation claire et responsive du parcours, des services et des compétences techniques.",
+            "Affichage dynamique des projets avec description détaillée, visuels, stacks utilisés et liens vers le code source.",
+            "Section blog intégrée pour partager des articles autour du développement web et des retours d’expérience.",
+            "Formulaire de contact pour faciliter la prise de contact professionnelle."
+        ],
+        stack: {
+            frontend: ["Javascript", "React", "Tailwind CSS", "Framer Motion"],
+            backend: null,
+            database: null,
+            test: null,
+            deployment: ["Netlify"]
+        }
+    },
+    {
         slug: "planify",
         title: "Planify",
         category: "web",
@@ -67,63 +184,6 @@ export const projects = [
             database: ["mySQL"],
             test: null,
             deployment: null
-        }
-    },
-    {
-        slug: "brunchbordelais",
-        title: "Le Brunch Bordelais",
-        category: "vitrines",
-        description: "Site vitrine développé pour un restaurant bordelais.",
-        image: "/assets/images/projects/brunchbordelais.avif",
-        technos: ["JavaScript", "NextJS", "Tailwind"],
-        liveSite: "https://le-brunch-bordelais.vercel.app",
-        sourceCode: [
-        { label: "Client", url: "https://github.com/julienlisita/le-brunch-bordelais" },
-        ],
-        demo: null,
-        summary: ["Ce projet met en valeur un design soigné, une navigation fluide et une identité visuelle cohérente autour d’une charte graphique chaleureuse. La page d’accueil est structurée en sections distinctes : présentation du concept, engagements durables, ambiance, témoignages clients, informations pratiques et formulaire de contact."
-        ],
-        features: ["Présentation responsive et structurée du restaurant avec une navigation fluide entre les sections.",
-            "Mise en avant du concept, des engagements (produits locaux, faits maison), de l’ambiance et des spécialités proposées.",
-            "Section témoignages pour renforcer la crédibilité et créer une connexion émotionnelle.",
-            "Bloc “infos pratiques” clair : horaires, adresse, téléphone, bouton de contact et carte intégrée.",
-            "Formulaire de contact accessible depuis une page dédiée pour les demandes de réservation ou d’information."
-        ],
-        stack: {
-            frontend: ["JavaScript","NextJS", "Tailwind CSS"],
-            backend: null,
-            database: null,
-            test: null,
-            deployment: ["Vercel"]
-        }
-    },
-    {
-        slug: "portfolio",
-        title: "Portfolio React",
-        category: "vitrines",
-        description: "Site vitrine responsive pour présenter mes projets et mes services de développeur.",
-        image: "/assets/images/projects/portfolio.png",
-        technos: ["React", "Tailwind", "Framer Motion"],
-        liveSite: "https://julienlisita.com",
-        sourceCode: [
-        { label: "Client", url: "https://github.com/julienlisita/portfolio-react" },
-        ],
-        demo: null,
-        summary: [
-            "Ce portfolio a pour objectif de présenter mon parcours, mes compétences et mes projets en tant que développeur web full stack. Il vise à offrir une vitrine professionnelle claire, moderne et évolutive, que ce soit pour des recruteurs, des entreprises ou des clients potentiels. L’accent est mis à la fois sur l’ergonomie, l’accessibilité et la qualité du code."
-        ],
-        features: [
-            "Présentation claire et responsive du parcours, des services et des compétences techniques.",
-            "Affichage dynamique des projets avec description détaillée, visuels, stacks utilisés et liens vers le code source.",
-            "Section blog intégrée pour partager des articles autour du développement web et des retours d’expérience.",
-            "Formulaire de contact pour faciliter la prise de contact professionnelle."
-        ],
-        stack: {
-            frontend: ["Javascript", "React", "Tailwind CSS", "Framer Motion"],
-            backend: null,
-            database: null,
-            test: null,
-            deployment: ["Netlify"]
         }
     },
     {
