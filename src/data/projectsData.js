@@ -2,78 +2,93 @@
 
 export const projects = [
     {
-        slug: "thomas-delaunay",
-        title: "Thomas Delaunay – Coach Sportif & Nutrition",
-        category: "vitrines",
-        description: "Site vitrine pour un coach indépendant : programmes d’entraînement personnalisés et optimisation diététique.",
-        image: "/assets/images/projects/thomas-delaunay.png",
-        technos: ["NextJS", "TypeScript", "Tailwind", "Framer Motion"],
-        liveSite: "https://thomas-delaunay-coaching.vercel.app",
-        sourceCode: [{ label: "Client", url: "https://github.com/julienlisita/thomas-delaunay-website.git" }],
-        demo: null,
-        summary: [
-            "Site vitrine moderne présentant l’offre de coaching sportif et nutritionnel de Thomas Delaunay, avec mise en avant des programmes, témoignages clients et un parcours de prise de contact simple.",
-            "Architecture prévue pour évoluer vers une plateforme multi-coachs (prise de rendez-vous, comptes clients) tout en restant légère et performante à ce stade."
-        ],
-        features: [
-            "Pages : Accueil (hero + offres), À propos, Programmes, Témoignages, Contact",
-            "Formulaire de contact avec validation côté client",
-            "Animations discrètes (Framer Motion) pour dynamiser les sections",
-            "Optimisation des images et balisage SEO de base",
-            "Composants UI réutilisables (pricing cards, testimonial slider, FAQ accordions)",
-            "Responsive design (grid et flex adaptatifs)"
-        ],
-        stack: {
-            frontend: ["NextJS", "TypeScript", "Tailwind CSS", "Framer Motion"],
-            backend: null,
-            database: null,
-            test: null,
-            deployment: ["Vercel"]
-        }
-    },
-    {
-        slug: "ccs",
-        title: "Compagnie Care Services (CCS)",
-        category: "vitrines",
-        description: "Site vitrine professionnel pour une entreprise d’aide à domicile (personnes âgées et handicapées) en Charente et Gironde.",
-        image: "/assets/images/projects/ccs.jpg",
-        technos: ["NextJS", "TypeScript", "Tailwind"],
-        liveSite: "https://compagnie-careandservices.vercel.app",
-        sourceCode: [{ label: "Client", url: "https://github.com/julienlisita/ccs-website.git" }],
-        demo: null,
-        summary: [
-            "Site vitrine statique et soigné présentant l’activité de CCS : services d’aide à domicile, valeurs humaines et informations pratiques. La structure met l’accent sur la lisibilité, l’accessibilité et un parcours de contact clair.",
-            "Les pages sont mises à jour ponctuellement sur demande (pas d’interface d’administration), avec une mise en page responsive et des visuels libres de droits sélectionnés pour illustrer chaque service."
-        ],
-        features: [
-            "7 pages statiques : Accueil, À propos, Services, Informations légales, Actualités (liens), Recrutement, Contact",
-            "Sections claires avec appels à l’action (téléphone, email, formulaire de contact)",
-            "Mise en avant des valeurs et de la zone d’intervention",
-            "Composants réutilisables (Header, Footer, Section, Card, Button)",
-            "Performances et SEO de base (balises meta, titres hiérarchisés)",
-            "Responsive design complet (mobile, tablette, desktop)"
-        ],
-        stack: {
-            frontend: ["NextJS", "TypeScript", "Tailwind CSS"],
-            backend: null,
-            database: null,
-            test: null,
-            deployment: ["Vercel"]
-        }
-    },
+    slug: "thomas-delaunay",
+    title: "Plateforme Coaching – Thomas Delaunay",
+    category: "web",
+    description:
+        "Application web complète : site vitrine moderne, réservation en ligne et espace administrateur sécurisé pour la gestion des créneaux.",
+    image: "/assets/images/projects/thomas-delaunay.png",
+    technos: ["Next.js", "TypeScript", "Prisma"],
+    liveSite: "https://thomas-delaunay-coaching.vercel.app",
+    sourceCode: [
+        { label: "Client & Serveur", url: "https://github.com/julienlisita/thomas-delaunay-website.git" }
+    ],
+    demo: null,
+    summary: [
+        "Plateforme fullstack construite pour un coach sportif et nutrition : présentation de l’activité, prise de rendez-vous automatisée et gestion interne.",
+        "L’utilisateur peut réserver un créneau en temps réel, reçoit un email de confirmation, tandis que l’administrateur gère les créneaux, les réservations et ses paramètres via un back-office sécurisé.",
+    ],
+    features: [
+        "Site vitrine moderne : Accueil, À propos, Programmes, Témoignages, Contact",
+        "Système de réservation en ligne : créneaux disponibles, validation automatique, email de confirmation client + email interne admin",
+        "Espace administrateur sécurisé (authentification JWT)",
+        "Gestion des créneaux : création, activation/désactivation, suppression, détection des conflits",
+        "Gestion des réservations : consultation, filtrage, annulation",
+        "Sécurité : server actions sécurisées, validation Zod, anti-spam (honeypot), rate limiting",
+        "Emails transactionnels via Brevo (confirmation client + notification admin)",
+        "Backend Next.js App Router + Prisma (PostgreSQL)",
+        "Design responsive, animations Framer Motion",
+        "Architecture extensible pouvant évoluer en plateforme multi-coachs",
+    ],
+    stack: {
+        frontend: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+        backend: ["Next.js Server Actions", "Prisma", "JWT Authentication"],
+        database: ["PostgreSQL"],
+        deployment: ["Vercel"],
+        emails: ["Brevo (Mail Transactionnel)"],
+    }
+},
+{
+    slug: "ccs",
+    title: "Compagnie Care Services (CCS)",
+    category: "vitrines",
+    description:
+        "Site professionnel pour une entreprise d’aide à domicile, incluant pages informatives, actualités, formulaire de contact et candidature avec CV.",
+    image: "/assets/images/projects/ccs.jpg",
+    technos: ["Next.js", "TypeScript", "Tailwind"],
+    liveSite: "https://compagnie-careandservices.vercel.app",
+    sourceCode: [
+        { label: "Client", url: "https://github.com/julienlisita/ccs-website.git" }
+    ],
+    demo: null,
+    summary: [
+        "Site vitrine complet destiné à une entreprise d’aide à domicile opérant en Charente et Gironde. L’accent est mis sur la clarté, la confiance et l’accessibilité, avec des contenus structurés pour des publics variés : bénéficiaires, familles, partenaires et candidats.",
+        "Bien que le site soit statique (sans interface d’administration), il inclut plusieurs formulaires dynamiques, dont un espace Recrutement permettant d’envoyer une candidature avec CV joint. Le site est entièrement responsive et pensé pour être facilement maintenu."
+    ],
+    features: [
+        "7 pages : Accueil, À propos, Services, Informations légales, Actualités, Recrutement, Contact",
+        "Formulaire de contact complet avec validation et envoi email",
+        "Formulaire de candidature avec upload de CV (PDF/Doc) et message personnalisé",
+        "Page Actualités permettant de présenter des articles externes ou internes",
+        "Présentation des valeurs de l’entreprise et de la zone d’intervention",
+        "Design lisible et accessible pour un public senior",
+        "Composants UI réutilisables : Header, Footer, Section, Cards, Buttons",
+        "Optimisation SEO de base : titres, meta descriptions, balises structurées",
+        "Responsive design mobile → desktop"
+    ],
+    stack: {
+        frontend: ["Next.js", "TypeScript", "Tailwind CSS"],
+        backend: ["Next.js Server Actions (formulaire contact & recrutement)"],
+        database: null,
+        test: null,
+        deployment: ["Vercel"]
+    }
+},
     {
         slug: "brunchbordelais",
         title: "Le Brunch Bordelais",
         category: "vitrines",
-        description: "Site vitrine développé pour un restaurant bordelais.",
+        description: "Site vitrine moderne et chaleureux conçu pour présenter l’univers culinaire et l’ambiance du restaurant.",
         image: "/assets/images/projects/brunchbordelais.avif",
-        technos: ["JavaScript", "NextJS", "Tailwind"],
+        technos: ["Next.js", "JavaScript", "Tailwind"],
         liveSite: "https://le-brunch-bordelais.vercel.app",
         sourceCode: [
         { label: "Client", url: "https://github.com/julienlisita/le-brunch-bordelais" },
         ],
         demo: null,
-        summary: ["Ce projet met en valeur un design soigné, une navigation fluide et une identité visuelle cohérente autour d’une charte graphique chaleureuse. La page d’accueil est structurée en sections distinctes : présentation du concept, engagements durables, ambiance, témoignages clients, informations pratiques et formulaire de contact."
+        summary: [
+        "Site vitrine moderne conçu pour un restaurant bordelais, avec un soin particulier apporté à l’identité visuelle, à l’ergonomie et à l’expérience utilisateur.",
+        "La page d’accueil est structurée en sections claires — présentation du concept, engagements, ambiance, témoignages et informations pratiques — afin d'offrir une navigation fluide et une mise en avant efficace du positionnement du restaurant."
         ],
         features: ["Présentation responsive et structurée du restaurant avec une navigation fluide entre les sections.",
             "Mise en avant du concept, des engagements (produits locaux, faits maison), de l’ambiance et des spécialités proposées.",
@@ -95,7 +110,7 @@ export const projects = [
         category: "web",
         description: "Plateforme communautaire dédiée au shogi, avec profils, forum et interface de jeu en ligne.",
         image: "/assets/images/projects/shogiconnect.png",
-        technos: ["React", "CSS", "Node.js", "Socket.io"],
+        technos: ["React", "Node.js", "Sequelize"],
         liveSite: "https://shogiconnect.netlify.app",
         sourceCode: [
         { label: "Client", url: "https://github.com/julienlisita/shogiconnect-client" },
@@ -159,7 +174,7 @@ export const projects = [
         category: "web",
         description: "Application intuitive pour créer ses propres recettes et organiser ses repas au quotidien.",
         image: "/assets/images/projects/planify.avif",
-        technos: ["React", "Tailwind", "Node.js"],
+        technos: ["React", "Node.js", "Tailwind"],
         liveSite: null,
         sourceCode: [
         { label: "Client", url: "https://github.com/julienlisita/planify-frontend" },

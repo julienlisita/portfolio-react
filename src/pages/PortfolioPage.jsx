@@ -20,7 +20,7 @@ export default function Portfolio() {
       </Section>
 
       {/* Liste des projets sites vitrines */}
-      <Section title="Sites vitrines et templates">
+      <Section title="Sites vitrines">
         <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-7 lg:gap-8">
           {[...projects].filter(project => project.category === "vitrines").map((project) => (
               <ProjectCard key={project.title} {...project} />
