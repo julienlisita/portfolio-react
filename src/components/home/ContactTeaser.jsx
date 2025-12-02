@@ -42,8 +42,8 @@ export default function ContactTeaser()
                 {/* Email */}
                 <div className="flex flex-col items-center gap-2">
                     <Mail className="text-[#007AFF]" size={32} aria-hidden />
-                    <a href="mailto:julien.lisita@gmail.com" className="hover:underline font-medium">
-                    julien.lisita@gmail.com
+                    <a href="mailto:contact@julienlisita.com" className="hover:underline font-medium">
+                    contact@julienlisita.com
                     </a>
                 </div>
             </div>

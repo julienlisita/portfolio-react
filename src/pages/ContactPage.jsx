@@ -43,7 +43,7 @@ export default function ContactPage() {
             </div>
             <div className="flex items-start gap-3">
               <Mail className="text-[#007AFF]" />
-              <a href="mailto:julien@example.com" className="hover:underline">julien.lisita@gmail.com</a>
+              <a href="mailto:contact@julienlisita.com" className="hover:underline">contact@julienlisita.com</a>
             </div>
           </div>
         </div>
