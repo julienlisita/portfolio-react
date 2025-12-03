@@ -15,7 +15,7 @@ export default function Portfolio() {
       {/* Introduction*/}
       <Section>
         <p className="text-left max-w-5xl m-auto">
-          Voici quelques-uns des projets sur lesquels j’ai travaillé. Vous y trouverez des sites vitrines modernes, des applications web complètes, ainsi que divers projets de développement mettant en avant des concepts de programmation procédurale, orientée objet et d’algorithmie. Cliquez sur chaque projet pour en savoir plus.
+          Voici quelques-uns des projets sur lesquels j’ai travaillé. Vous y trouverez des sites vitrines modernes, des applications web complètes. Cliquez sur chaque projet pour en savoir plus.
         </p>
       </Section>
 
@@ -38,13 +38,13 @@ export default function Portfolio() {
       </Section>
       
       {/* Listes des autres projets de développement */}
-      <Section title="Autres projets de développement">
+      {/* <Section title="Autres projets de développement">
         <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-7 lg:gap-8">
           {[...projects].filter(project => project.category === "dev").map((project) => (
               <ProjectCard key={project.title} {...project} />
               ))}
         </div>
-      </Section>
+      </Section> */}
 
       <CtaFinal
         title="Votre projet, le prochain à mettre en valeur ?"
