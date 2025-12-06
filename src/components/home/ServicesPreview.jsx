@@ -12,7 +12,7 @@ export default function ServicesPreview()
       title: "Sites vitrines modernes",
       icon: <Monitor />,
       description:
-        "Site clair, performant et responsive. Idéal indépendants, artisans, cabinets.",
+        "Un site clair, professionnel et adapté au mobile pour présenter votre activité, rassurer vos visiteurs et faciliter la prise de contact.",
       color: ["#5AC8FA", "#007AFF"],
       link: "/services/business-websites",    
     },
@@ -20,7 +20,7 @@ export default function ServicesPreview()
       title: "Applications web sur mesure",
       icon: <Layers />,
       description:
-        "Outils métier, SaaS, dashboards, auth. Dév. full stack React/Node.",
+        "Outils métier, espace client, gestion interne… Je conçois des applications adaptées à votre façon de travailler, pour vous faire gagner du temps.",
       color: ["#007AFF", "#9B59B6"],
       link: "/services/web-applications",        
     },
@@ -28,7 +28,7 @@ export default function ServicesPreview()
       title: "Suivi & maintenance",
       icon: <LifeBuoy />,
       description:
-        "Mises à jour, sécurité, petites évolutions. Forfaits ou à la demande.",
+        "Mises à jour, sécurité, petites évolutions : je peux assurer le suivi pour que votre site reste fiable dans le temps.",
       color: ["#9B59B6", "#FF66B2"],
       link: "/services/support"
 
@@ -44,7 +44,7 @@ export default function ServicesPreview()
         > 
 
         <p className="text-base sm:text-lg lg:text-xl">
-          De l’idée initiale à la mise en ligne, je vous accompagne à chaque étape pour construire des solutions web performantes et durables.
+          De l’idée initiale à la mise en ligne, je vous accompagne à chaque étape pour construire une présence en ligne qui met en valeur votre activité et parle à vos clients.
         </p>
         
         <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
