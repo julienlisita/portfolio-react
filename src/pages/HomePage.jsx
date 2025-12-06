@@ -9,13 +9,17 @@ import BlogPreview from "../components/home/BlogPreview";
 import ContactTeaser from "../components/home/ContactTeaser";
 import { MapPin } from "lucide-react";
 import HomeSection from "../components/home/HomeSection";
+import AudiencePreview from "../components/home/AudiencePreview";
+import WhyWorkWithMe from "../components/home/WhyWorkWithMe";
 
 export default function HomePage() {
   return (
     <>
       <LandingSection />
+      <AudiencePreview />
       <AboutPreview />
       <ServicesPreview />
+      <WhyWorkWithMe />
       <SkillsPreview />
       <ProjectsPreview />
       <BlogPreview />
