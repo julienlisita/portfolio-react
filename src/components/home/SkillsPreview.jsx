@@ -28,7 +28,7 @@ export default function SkillesPreview() {
     {
       title: " Interfaces modernes ",
       description:
-        "Conception d’interfaces modernes, rapides et responsives à partir de maquettes Figma. Utilisation de technologies récentes comme TypeScript, Next.js et Tailwind CSS pour offrir une expérience fluide sur tous les écrans.",
+        "Je conçois des interfaces modernes, rapides et adaptées à tous les écrans, à partir de maquettes Figma, pour que vos visiteurs aient une expérience fluide et agréable.",
       icons: [
         <FaFigma key="Figma" />,
         <SiTypescript key="typescript"/>,
@@ -37,9 +37,9 @@ export default function SkillesPreview() {
       ],
     },
     {
-      title: "Services web & gestion des données",
+      title: "Services web & données",
       description:
-        "Mise en place d’un système back-end fiable et sécurisé, permettant de gérer les utilisateurs, les contenus et les données. Une base technique claire, pensée pour accompagner la croissance du projet.",
+        "Je mets en place une base technique claire pour gérer vos contenus, utilisateurs et formulaires de manière sécurisée et évolutive.",
       icons: [
         <FaNodeJs key="node" />,
         <SiExpress key="express" />,
@@ -48,9 +48,9 @@ export default function SkillesPreview() {
       ],
     },
     {
-      title: "Collaboration & mise en production",
+      title: "Mise en ligne & fiabilité",
       description:
-        "Mise en production simplifiée avec Vercel, Railway ou GitHub. Un environnement organisé pour livrer des projets fiables, maintenables et performants.",
+        "Je m’occupe de la mise en production sur des plateformes fiables (Vercel, Railway…) pour que votre site soit accessible, rapide et simple à maintenir.",
       icons: [
         <SiNetlify key="netlify" />,
         <SiRailway key="railway" />,
