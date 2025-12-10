@@ -141,7 +141,7 @@ export const projects = [
     },
     {
         slug: "portfolio",
-        title: "Portfolio React",
+        title: "Julien Lisita – Site professionnel",
         category: "vitrines",
         description: "Site vitrine responsive pour présenter mes projets et mes services de développeur.",
         image: "/assets/images/projects/portfolio.png",
