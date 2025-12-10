@@ -1,7 +1,7 @@
 // src/components/common/Footer.jsx
 
 import { Link } from "react-router-dom";
-import { LuLinkedin, LuGithub } from 'react-icons/lu';
+import { LuLinkedin, LuGithub, LuFacebook } from 'react-icons/lu';
 
 export default function Footer()
 {
@@ -24,6 +24,9 @@ export default function Footer()
 
             {/* Réseaux sociaux à droite */}
            <div className="flex items-center space-x-2 sm:space-x-3 lg:space-x-4">
+                <a href="https://www.facebook.com/profile.php?id=61584478395151" target="_blank" rel="noopener noreferrer">
+                    <LuFacebook className="h-7 sm:h-8 lg:h-11 w-auto text-white px-1 py-1 hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]" />
+                </a>
                 <a href="https://www.linkedin.com/in/julienlisita/" target="_blank" rel="noopener noreferrer">
                     <LuLinkedin className="h-7 sm:h-8 lg:h-11 w-auto text-white px-1 py-1 hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]" />
                 </a>

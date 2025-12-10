@@ -1,9 +1,9 @@
 // src/pages/ContactPage.jsx
 
 import ContactForm from "../components/common/ContactForm";
-import { Mail, Phone, Car, MapPin} from "lucide-react";
+import { Mail, Phone} from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { LuLinkedin, LuGithub } from 'react-icons/lu';
+import { LuLinkedin, LuGithub, LuFacebook } from 'react-icons/lu';
 import PageTitle from "../components/common/PageTitle";
 import Section from "../components/common/Section";
 
@@ -81,6 +81,14 @@ export default function ContactPage() {
 
       {/*Réseaux sociaux*/}
       <Section className="flex justify-center gap-20">
+        <a 
+        href="https://www.facebook.com/profile.php?id=61584478395151" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-1 py-1 hover:outline-1 hover:outline-[#5AC8FA] rounded-md hover:shadow-[0_0_10px_#5AC8FA]"
+        >
+            <LuFacebook size={40}/>
+        </a>
         <a
           href="https://www.linkedin.com/in/julienlisita"
           target="_blank"
