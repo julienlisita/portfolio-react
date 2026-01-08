@@ -2,8 +2,46 @@
 
 export const projects = [
     {
+    slug: "lumiere-darcachon",
+    title: "Lumière d’Arcachon",
+    category: "web",
+    description:
+        "Projet personnel mêlant photographie et développement web : un site éditorial dédié aux lumières du Bassin d’Arcachon.",
+    image: "/assets/images/projects/lumieredarcachon.png", 
+    technos: ["Next.js", "TypeScript", "Tailwind CSS"],
+    liveSite: "https://lumieredarcachon.fr", 
+    sourceCode: [
+        {
+        label: "Site",
+        url: "https://github.com/julienlisita/lumieredarcachon",
+        },
+    ],
+    demo: null,
+    summary: [
+        "Lumière d’Arcachon est un projet personnel né de ma passion pour la photographie et le Bassin d’Arcachon. Il s’agit d’un site éditorial et photographique mettant en valeur les ambiances lumineuses du littoral à travers une galerie soignée et un carnet d’articles.",
+        "Ce projet me permet également de démontrer mes compétences en développement web moderne : architecture claire, composants réutilisables, accessibilité, performance et expérience utilisateur. Il a vocation à évoluer vers une plateforme plus complète (journal enrichi, navigation avancée, éventuellement espace communautaire).",
+    ],
+    features: [
+        "Galerie photographique immersive avec lightbox plein écran",
+        "Filtres par ambiances lumineuses et par lieux",
+        "Pagination optimisée côté client",
+        "Carnet d’articles (journal) autour des spots, ambiances et pratiques photo",
+        "Design sobre et élégant avec mode clair / sombre",
+        "Navigation fluide et animations discrètes",
+        "Site responsive (mobile → desktop)",
+        "Structure évolutive pensée pour de futurs contenus",
+    ],
+    stack: {
+        frontend: ["Next.js (App Router)", "TypeScript", "Tailwind CSS"],
+        backend: null,
+        database: null,
+        test: null,
+        deployment: ["Vercel"],
+    },
+    },
+    {
     slug: "thomas-delaunay",
-    title: "Plateforme Coaching – Thomas Delaunay",
+    title: "Thomas Delaunay Coaching",
     category: "web",
     description:
         "Application web complète : site vitrine moderne, réservation en ligne et espace administrateur sécurisé pour la gestion des créneaux.",
