@@ -78,7 +78,7 @@ export const projects = [
 },
 {
     slug: "ccs",
-    title: "Compagnie Care Services (CCS)",
+    title: "Compagnie Care & Services",
     category: "vitrines",
     description:
         "Site professionnel pour une entreprise d’aide à domicile, incluant pages informatives, actualités, formulaire de contact et candidature avec CV.",
@@ -206,86 +206,37 @@ export const projects = [
             deployment: ["Netlify"]
         }
     },
-    {
-        slug: "planify",
-        title: "Planify",
-        category: "web",
-        description: "Application intuitive pour créer ses propres recettes et organiser ses repas au quotidien.",
-        image: "/assets/images/projects/planify.avif",
-        technos: ["React", "Node.js", "Tailwind"],
-        liveSite: null,
-        sourceCode: [
-        { label: "Client", url: "https://github.com/julienlisita/planify-frontend" },
-        { label: "API", url: "https://github.com/julienlisita/planify-backend" },
-        ],
-        demo: null,
-        summary: [
-            "Planify est un projet de plateforme web collaborative qui permet aux utilisateurs d’accéder un large de choix de recettes de cuisine classées par catégorie, d'interagir avec celles-ci, et de publier leurs propres recettes. Le projet vise également à simplifier la planification des repas hebdomadaires et à encourager la contribution d’articles sur l’actualité culinaire. Le projet s’inscrit dans un contexte de bien-être alimentaire et de convivialité dans le but d’apporter une solution moderne et intuitive pour découvrir de nouvelles idées culinaires et organiser leur repas de façon efficace."
-        ],
-        features: [
-            "Consultation d’un catalogue de recettes classées par catégories (entrées, plats, desserts, etc.).",
-            "Création, modification et suppression de recettes personnelles avec photo, ingrédients et étapes détaillées.",
-            "Planification hebdomadaire des repas à l’aide d’un calendrier interactif.",
-            "Générations de liste de courses.",
-            "Recherche de recettes par mots-clés ou par ingrédients.",
-            "Ajout de recettes à une liste de favoris pour un accès rapide.",
-            "Section blog avec des articles culinaires collaboratifs (nutrition, astuces, tendances)."
-],
-        stack: {
-            frontend: ["React", "React Router", "Tailwind CSS"],
-            backend: ["Node.js","Express", "Sequelize", "JWT (JSON Web Token)"],
-            database: ["mySQL"],
-            test: null,
-            deployment: null
-        }
-    },
-    {
-        slug: "shellchess",
-        title: "Shell Chess",
-        category: "dev",
-        description: "Jeu d'échec en console",
-        image: "/assets/images/projects/shellchess.png",
-        technos: ["c", "socket"],
-        liveSite: null,
-        sourceCode: [
-        { label: "Projet complet", url: "https://github.com/julienlisita/Shell_Chess" },
-        ],
-        demo: null,
-        summary: [
-            "L'objectif est de créer un jeux complet d'échec avec gestion des coups valides"
-        ],
-        features: [
-            "Système de choix de mode online ou local",
-            "utilisation de commande en console déplacer les pieces",
-            "Vérification des mouvements valides",
-            "Vérifification de l'état échec, échec et mat",
-            "Affichage du plateau de l'échiquier en console",
-        ],
-        stack: null
-    },
-    {
-        slug: "klondikegame",
-        title: "Klondike game",
-        category: "dev",
-        description: "Jeu de solitaire en console",
-        image: "/assets/images/projects/klondike.png",
-        technos: ["java"],
-        liveSite: null,
-        sourceCode: [
-        { label: "Projet complet", url: "https://github.com/julienlisita/Klondike_game" },
-        ],
-        demo: null,
-        summary: [
-            "L'objectif est de répoduire en console "
-        ],
-        features: [
-
-            "Initilisation du jeu aléatoire",
-            "Utilisation de commande en console pour saisir une carte, une pile, la poser etc",
-            "Vérification des poses de cartes valides",
-            "Affichage du plateau de jeu en console"
-            
-        ],
-        stack: null
-    },
+//     {
+//         slug: "planify",
+//         title: "Planify",
+//         category: "web",
+//         description: "Application intuitive pour créer ses propres recettes et organiser ses repas au quotidien.",
+//         image: "/assets/images/projects/planify.avif",
+//         technos: ["React", "Node.js", "Tailwind"],
+//         liveSite: null,
+//         sourceCode: [
+//         { label: "Client", url: "https://github.com/julienlisita/planify-frontend" },
+//         { label: "API", url: "https://github.com/julienlisita/planify-backend" },
+//         ],
+//         demo: null,
+//         summary: [
+//             "Planify est un projet de plateforme web collaborative qui permet aux utilisateurs d’accéder un large de choix de recettes de cuisine classées par catégorie, d'interagir avec celles-ci, et de publier leurs propres recettes. Le projet vise également à simplifier la planification des repas hebdomadaires et à encourager la contribution d’articles sur l’actualité culinaire. Le projet s’inscrit dans un contexte de bien-être alimentaire et de convivialité dans le but d’apporter une solution moderne et intuitive pour découvrir de nouvelles idées culinaires et organiser leur repas de façon efficace."
+//         ],
+//         features: [
+//             "Consultation d’un catalogue de recettes classées par catégories (entrées, plats, desserts, etc.).",
+//             "Création, modification et suppression de recettes personnelles avec photo, ingrédients et étapes détaillées.",
+//             "Planification hebdomadaire des repas à l’aide d’un calendrier interactif.",
+//             "Générations de liste de courses.",
+//             "Recherche de recettes par mots-clés ou par ingrédients.",
+//             "Ajout de recettes à une liste de favoris pour un accès rapide.",
+//             "Section blog avec des articles culinaires collaboratifs (nutrition, astuces, tendances)."
+// ],
+//         stack: {
+//             frontend: ["React", "React Router", "Tailwind CSS"],
+//             backend: ["Node.js","Express", "Sequelize", "JWT (JSON Web Token)"],
+//             database: ["mySQL"],
+//             test: null,
+//             deployment: null
+//         }
+//     },
 ];
