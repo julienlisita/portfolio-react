@@ -7,6 +7,7 @@ import PageTitle from "../components/common/PageTitle";
 import {articles} from "../data/articles"
 import Section from "../components/common/Section";
 import CtaFinal from "../components/common/CtaFinal";
+import Button from "../components/common/Button";
 
 export default function BlogPage() {
 
@@ -23,23 +24,30 @@ export default function BlogPage() {
 
       <Section className="space-y-4">
         {paginatedArticles.map((article, index) => (
-          <Link
+          <div
             key={index}
-            to={`/blog/${article.slug}`}
-            className="block bg-[#2a2a2a] rounded-xl p-6 hover:bg-[#333] transition group mx-auto max-w-5xl"
+            className="bg-[#2a2a2a] rounded-xl p-6 transition mx-auto max-w-5xl"
           >
             <div className="flex items-start gap-4">
-              <div>
+              <div className="space-y-1">
                 <p className="text-xs text-gray-400">{article.date}</p>
-                <h3 className="text-gray-100 font-semibold text-lg group-hover:text-[#5AC8FA] transition">
+
+                <h3 className="text-gray-100 font-semibold text-lg">
                   {article.title}
                 </h3>
-                <p className="text-gray-300 text-sm group-hover:text-[#5AC8FA] transition">
+
+                <p className="text-gray-300 text-sm">
                   {article.excerpt}
                 </p>
+
+                <div className="pt-3">
+                  <Button to={`/blog/${article.slug}`} variant="text">
+                  Lire l’article →
+                  </Button>
+                </div>
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </Section>
 
