@@ -22,7 +22,7 @@ export default function ServiceCard({ icon, title, description, color, link }) {
 
           {link && (
             <div className="mt-4 flex justify-center">
-              <Button to={link} variant="primary">Découvrir</Button>
+              <Button to={link} variant="text">Découvrir →</Button>
             </div>
           )}
         </div>

@@ -38,6 +38,20 @@ export default function Button({ variant = "secondary", ...props }) {
       hover:shadow-[0_0_8px_2px_#5AC8FA]
       active:bg-[#3FCBFF]
       active:text-[#222222]
+    `,
+    text: 
+    `
+      px-0 py-0
+      min-w-0
+      border-none
+      rounded-none
+      bg-transparent
+      text-[#5AC8FA]
+      font-medium
+      hover:text-[#3FCBFF]
+      hover:shadow-none
+      hover:scale-100
+      transition-colors
     `
   };
 

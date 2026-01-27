@@ -50,8 +50,8 @@ export default function ProjectCard({ slug, image, title, description, technos }
 
         {/* Bouton centré */}
         <div className="mt-4 flex justify-center">
-          <Button to={`/portfolio/${slug}`} variant="primary">
-            Découvrir
+          <Button to={`/portfolio/${slug}`} variant="text">
+            Voir le projet →
           </Button>
         </div>
       </div>
