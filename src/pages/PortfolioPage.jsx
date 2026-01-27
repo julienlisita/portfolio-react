@@ -21,7 +21,7 @@ export default function Portfolio() {
 
       {/* Liste des projets sites vitrines */}
       <Section title="Sites vitrines">
-        <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-7 lg:gap-8">
+        <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[...projects].filter(project => project.category === "vitrines").map((project) => (
               <ProjectCard key={project.title} {...project} />
               ))}
@@ -30,7 +30,7 @@ export default function Portfolio() {
 
       {/* Liste des projets Web */}
       <Section title="Applications web">
-        <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-7 lg:gap-8">
+        <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[...projects].filter(project => project.category === "web").map((project) => (
               <ProjectCard key={project.title} {...project} />
               ))}

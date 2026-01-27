@@ -18,7 +18,7 @@ export default function ProjectCard({ slug, image, title, description, technos }
         scale: { duration: 0.3, ease: "easeOut" },
       }}
       viewport={{ once: true }}
-      className="w-full max-w-sm rounded-xl bg-[#2a2a2a] overflow-hidden flex flex-col"
+      className="w-full rounded-xl bg-[#2a2a2a] overflow-hidden flex flex-col"
     >
       {/* Image */}
       <img
