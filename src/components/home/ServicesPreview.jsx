@@ -47,7 +47,7 @@ export default function ServicesPreview()
           De l’idée initiale à la mise en ligne, je vous accompagne à chaque étape pour construire une présence en ligne qui met en valeur votre activité et parle à vos clients.
         </p>
         
-        <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
+        <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => (
           <motion.div
             key={service.title}

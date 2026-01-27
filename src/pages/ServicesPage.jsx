@@ -38,7 +38,7 @@ export default function ServicesPage()
 
       {/* Intro courte */}
       <Section>
-        <p className="text-center max-w-3xl mx-auto text-base sm:text-lg lg:text-xl text-gray-300">
+        <p className="text-center text-base sm:text-lg lg:text-xl text-gray-300">
           Je conçois et développe des solutions web modernes, rapides et personnalisées.
           Trois offres principales selon vos besoins : site vitrine, application web sur mesure,
           et suivi & maintenance.
@@ -46,32 +46,32 @@ export default function ServicesPage()
       </Section>
 
       <Section title="Ce que je propose">
-        <div className="w-full flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-7 lg:gap-8">
-        <ServiceCard
-          variant="page"
-          icon={<Monitor />}
-          title="Sites vitrines modernes"
-          description="Création de sites professionnels rapides, responsive et sur mesure pour artisans, restaurants, freelances et indépendants. Pas besoin de WordPress : tout est optimisé, maintenable et élégant."
-          color={["#5AC8FA", "#007AFF"]}
-          link="/services/business-websites"
-        />
-        <ServiceCard
-          variant="page"
-          icon={<Layers />}
-          title="Applications web sur mesure"
-          description="Développement complet d’applications web sur mesure, front-end et back-end : SaaS, outils métiers, plateformes interactives, jeux en ligne. Solutions robustes, évolutives et sécurisées, adaptées à vos besoins."
-          color={["#007AFF", "#9B59B6"]}
-          link="/services/web-applications"
-        />
-        <ServiceCard
-          variant="page"
-          icon={<LifeBuoy />}
-          title="Suivi & maintenance"
-          description="Je vous accompagne après la mise en ligne : corrections, améliorations, ajout de fonctionnalités, mises à jour, sécurité, hébergement et assistance continue, avec un suivi régulier pour vos évolutions."
-          color={["#9B59B6", "#FF66B2"]}
-          link="/services/support"
-        />
-      </div>
+        <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <ServiceCard
+            variant="page"
+            icon={<Monitor />}
+            title="Sites vitrines modernes"
+            description="Création de sites professionnels rapides, responsive et sur mesure pour artisans, restaurants, freelances et indépendants. Pas besoin de WordPress : tout est optimisé, maintenable et élégant."
+            color={["#5AC8FA", "#007AFF"]}
+            link="/services/business-websites"
+          />
+          <ServiceCard
+            variant="page"
+            icon={<Layers />}
+            title="Applications web sur mesure"
+            description="Développement complet d’applications web sur mesure, front-end et back-end : SaaS, outils métiers, plateformes interactives, jeux en ligne. Solutions robustes, évolutives et sécurisées, adaptées à vos besoins."
+            color={["#007AFF", "#9B59B6"]}
+            link="/services/web-applications"
+          />
+          <ServiceCard
+            variant="page"
+            icon={<LifeBuoy />}
+            title="Suivi & maintenance"
+            description="Je vous accompagne après la mise en ligne : corrections, améliorations, ajout de fonctionnalités, mises à jour, sécurité, hébergement et assistance continue, avec un suivi régulier pour vos évolutions."
+            color={["#9B59B6", "#FF66B2"]}
+            link="/services/support"
+          />
+        </div>
       </Section>
       <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
       <p>
