@@ -163,6 +163,10 @@ export default function CompetencePage() {
             src="/assets/images/me-working.avif"
             alt="Julien Lisita en train de travailler"
             className="rounded-xl shadow-lg w-full max-w-[420px] h-auto object-cover"
+            width="420"
+            height="280"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </Section>
