@@ -16,7 +16,7 @@ export default function Footer()
             {/* Menu et mentions légales au centre */}
             <div className="flex flex-col items-center">
                 <nav className="text-sm sm:text-sm lg:text-sm flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4 lg:space-x-6 mb-2  text-white">
-                    <Link className="text-center hover:underline" to="/about">A propos</Link>
+                    <Link className="text-center hover:underline" to="/a-propos">A propos</Link>
                     <Link className="text-center hover:underline" to="/mentions-legales">Mentions légales et politique de confidentialité</Link>
                 </nav>
                 <p className=" text-xs sm:text-sm text-center text-gray-400">© 2025 Tout droit réservés Julien LISITA – Développeur Web – Entreprise Individuelle (EI)</p>

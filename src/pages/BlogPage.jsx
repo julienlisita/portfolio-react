@@ -61,7 +61,7 @@ export default function BlogPage() {
         title="Restons en contact"
         tagline="Vous avez aimé mes articles ? Discutons de vos idées ou de vos besoins."
         primary={{ href: "/contact", text: "Contact" }}
-        secondary={{href: "/portfolio", text: "Portfolio"}}
+        secondary={{href: "/realisations", text: "Portfolio"}}
       />
     </>
   );

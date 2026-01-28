@@ -133,7 +133,7 @@ const faq = [
           title="Un projet à chiffrer ?"
           tagline="Chaque besoin est unique, je vous propose un devis adapté à votre projet."
           primary={{ href: "/contact", text: "Contact" }}
-          secondary={{href: "/portfolio", text: "Portfolio"}}
+          secondary={{href: "/realisations", text: "Portfolio"}}
         />
       </Section>
     </>

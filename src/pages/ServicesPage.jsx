@@ -53,7 +53,7 @@ export default function ServicesPage()
             title="Sites vitrines modernes"
             description="Création de sites professionnels rapides, responsive et sur mesure pour artisans, restaurants, freelances et indépendants. Pas besoin de WordPress : tout est optimisé, maintenable et élégant."
             color={["#5AC8FA", "#007AFF"]}
-            link="/services/business-websites"
+            link="/services/creation-site-internet"
           />
           <ServiceCard
             variant="page"
@@ -61,7 +61,7 @@ export default function ServicesPage()
             title="Applications web sur mesure"
             description="Développement complet d’applications web sur mesure, front-end et back-end : SaaS, outils métiers, plateformes interactives, jeux en ligne. Solutions robustes, évolutives et sécurisées, adaptées à vos besoins."
             color={["#007AFF", "#9B59B6"]}
-            link="/services/web-applications"
+            link="/services/creation-site-internet-fonctionnalites-sur-mesure"
           />
           <ServiceCard
             variant="page"
@@ -69,7 +69,7 @@ export default function ServicesPage()
             title="Suivi & maintenance"
             description="Je vous accompagne après la mise en ligne : corrections, améliorations, ajout de fonctionnalités, mises à jour, sécurité, hébergement et assistance continue, avec un suivi régulier pour vos évolutions."
             color={["#9B59B6", "#FF66B2"]}
-            link="/services/support"
+            link="/services/suivi-et-evolutions"
           />
         </div>
       </Section>
@@ -110,7 +110,7 @@ export default function ServicesPage()
         title="Choisissons ensemble la bonne solution"
         tagline="Que ce soit un site vitrine, une application sur mesure ou un suivi technique, je vous accompagne à chaque étape."
         primary={{ href: "/contact", text: "Contact" }}
-        secondary={{href: "/portfolio", text: "Portfolio"}}
+        secondary={{href: "/realisations", text: "Portfolio"}}
       />
     </>
   )

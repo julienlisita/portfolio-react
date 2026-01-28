@@ -173,7 +173,7 @@ const faq = [
           title="Construisons votre application sur mesure"
           tagline="Des solutions robustes et évolutives, adaptées à vos besoins métiers."
           primary={{ href: "/contact", text: "Contact" }}
-          secondary={{href: "/portofio", text: "Portfolio"}}
+          secondary={{href: "/realisations", text: "Portfolio"}}
         />
       </Section>
     </>

@@ -109,7 +109,7 @@ const faq = [
           title="Un suivi technique fiable"
           tagline="Gardez votre site ou application toujours à jour, sécurisé et performant."
           primary={{ href: "/contact", text: "Contact" }}
-          secondary={{href: "/pricing", text: "Tarifs"}}
+          secondary={{href: "/tarifs", text: "Tarifs"}}
         />
       </Section>
     </>

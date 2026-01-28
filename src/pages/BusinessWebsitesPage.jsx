@@ -164,7 +164,7 @@ const faq = [
           title="Votre vitrine en ligne commence ici"
           tagline="Un site professionnel, rapide et élégant pour mettre en valeur votre activité."
           primary={{ href: "/contact", text: "Contact" }}
-          secondary={{href: "/pricing", text: "Tarifs"}}
+          secondary={{href: "/tarifs", text: "Tarifs"}}
         />
       </Section>
     </>

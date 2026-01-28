@@ -39,11 +39,11 @@ export default function Header() {
           {/* Menu desktop */}
           <nav className="hidden lg:flex items-center space-x-6 text-gray-100">
             <Link to="/" className={`${baseLink} ${isActive("/") ? activeLink : ""}`}>Accueil</Link>
-            <Link to="/about" className={`${baseLink} ${isActive("/about") ? activeLink : ""}`}>À propos</Link>
+            <Link to="/a-propos" className={`${baseLink} ${isActive("/about") ? activeLink : ""}`}>À propos</Link>
             <Link to="/services" className={`${baseLink} ${isActive("/services") ? activeLink : ""}`}>Services</Link>
-            <Link to="/pricing" className={`${baseLink} ${isActive("/pricing") ? activeLink : ""}`}>Tarifs</Link>
+            <Link to="/tarifs" className={`${baseLink} ${isActive("/pricing") ? activeLink : ""}`}>Tarifs</Link>
             <Link to="/competences" className={`${baseLink} ${isActive("/competences") ? activeLink : ""}`}>Compétences</Link>
-            <Link to="/portfolio" className={`${baseLink} ${isActive("/portfolio") ? activeLink : ""}`}>Portfolio</Link>
+            <Link to="/realisations" className={`${baseLink} ${isActive("/portfolio") ? activeLink : ""}`}>Portfolio</Link>
             <Link to="/blog" className={`${baseLink} ${isActive("/blog") ? activeLink : ""}`}>Blog</Link>
             <Link to="/contact" className={`${baseLink} ${isActive("/contact") ? activeLink : ""}`}>Contact</Link>
           </nav>
@@ -84,7 +84,7 @@ export default function Header() {
               Accueil
             </Link>
             <Link to="/about" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/about") ? activeLink : ""}`}>
+              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/a-propos") ? activeLink : ""}`}>
               À propos
             </Link>
             <Link to="/services" onClick={toggleState}
@@ -92,7 +92,7 @@ export default function Header() {
               Services
             </Link>
             <Link to="/pricing" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/pricing") ? activeLink : ""}`}>
+              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/tarifs") ? activeLink : ""}`}>
               Tarifs
             </Link>
             <Link to="/competences" onClick={toggleState}
@@ -100,7 +100,7 @@ export default function Header() {
               Compétences
             </Link>
             <Link to="/portfolio" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/portfolio") ? activeLink : ""}`}>
+              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/realisations") ? activeLink : ""}`}>
               Portfolio
             </Link>
             <Link to="/blog" onClick={toggleState}

@@ -50,7 +50,7 @@ export default function Portfolio() {
         title="Votre projet, le prochain à mettre en valeur ?"
         tagline="Après ces réalisations, pourquoi pas la vôtre ?"
         primary={{ href: "/contact", text: "Contact" }}
-        secondary={{href: "/pricing", text: "Tarifs"}}
+        secondary={{href: "/tarifs", text: "Tarifs"}}
       />
   </>
   );

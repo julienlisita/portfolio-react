@@ -8,7 +8,7 @@ export default function AboutPreview() {
     <HomeSection
         id="about"
         title="Qui suis-je ?"
-        link={{href:"/about",text:"Mon parcours"}}
+        link={{href:"/a-propos",text:"Mon parcours"}}
     >
         {/* Contenu : photo + biographie */}
         <div className="
