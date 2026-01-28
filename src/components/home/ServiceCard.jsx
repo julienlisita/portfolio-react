@@ -18,7 +18,7 @@ export default function ServiceCard({ icon, title, description, color, link }) {
 
         {/* Corps */}
         <div className="p-6 pt-4 flex flex-col flex-1">
-          <p className="text-base text-center text-gray-200 flex-1">{description}</p>
+          <p className="text-base text-left text-gray-200 flex-1">{description}</p>
 
           {link && (
             <div className="mt-4 flex justify-center">
