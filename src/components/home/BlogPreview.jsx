@@ -17,7 +17,7 @@ export default function BlogPreview() {
         {articles.map((article, index) => (
           <div
             key={index}
-            className="bg-[#2a2a2a] rounded-xl p-6 transition hover:bg-[#333] mx-auto max-w-5xl"
+            className="bg-[#2a2a2a] rounded-xl p-6 transition hover:bg-[#333]"
           >
             <div className="flex items-start gap-4">
               <div className="space-y-1">

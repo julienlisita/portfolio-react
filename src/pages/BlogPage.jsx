@@ -26,7 +26,7 @@ export default function BlogPage() {
         {paginatedArticles.map((article, index) => (
           <div
             key={index}
-            className="bg-[#2a2a2a] rounded-xl p-6 transition mx-auto max-w-5xl"
+            className="bg-[#2a2a2a] rounded-xl p-6 transition"
           >
             <div className="flex items-start gap-4">
               <div className="space-y-1">

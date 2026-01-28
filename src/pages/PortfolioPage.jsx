@@ -14,7 +14,7 @@ export default function Portfolio() {
 
       {/* Introduction*/}
       <Section>
-        <p className="text-left max-w-5xl m-auto">
+        <p className="text-left text-base sm:text-lg lg:text-xl">
           Voici quelques-uns des projets sur lesquels j’ai travaillé. Vous y trouverez des sites vitrines modernes, des applications web complètes. Cliquez sur chaque projet pour en savoir plus.
         </p>
       </Section>

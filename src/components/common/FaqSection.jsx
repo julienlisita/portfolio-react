@@ -20,7 +20,7 @@ export default function FaqSection({
         {title}
       </h2>
 
-      <div className="max-w-3xl mx-auto space-y-3">
+      <div className="space-y-3">
         {faq.map((item, idx) => (
           <details
             key={idx}

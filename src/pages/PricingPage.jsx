@@ -33,8 +33,8 @@ const faq = [
     <>
       <PageTitle>Tarifs</PageTitle>
 
-      <Section>
-        <p className="text-center text-gray-300 max-w-2xl mx-auto mt-4 mb-4">
+      <Section >
+        <p className="text-left text-base sm:text-lg lg:text-xl mt-4 mb-4">
           Chaque projet étant unique, ces tarifs sont donnés à titre indicatif. Un devis personnalisé vous sera proposé après un échange gratuit.
         </p>
 
