@@ -38,7 +38,7 @@ export default function ServicesPage()
 
       {/* Intro courte */}
       <Section>
-        <p className="text-center text-base sm:text-lg lg:text-xl text-gray-300">
+        <p className="text-left text-base sm:text-lg lg:text-xl text-gray-300">
           Je conçois et développe des solutions web modernes, rapides et personnalisées.
           Trois offres principales selon vos besoins : site vitrine, application web sur mesure,
           et suivi & maintenance.
