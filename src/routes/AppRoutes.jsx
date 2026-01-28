@@ -25,15 +25,15 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/about" element={<AboutPage />} />
+      <Route path="/a-propos" element={<AboutPage />} />
       <Route path="/services" element={<ServicesPage />} />
-      <Route path="/services/web-applications" element={<WebApplicationsPage />} />
-      <Route path="/services/business-websites" element={<BusinessWebsitesPage />} />
-      <Route path="/services/support" element={<SupportPage />} />
-      <Route path="/pricing" element={<PricingPage />} />
+      <Route path="/services/creation-site-internet" element={<BusinessWebsitesPage />} />
+      <Route path="/services/creation-site-internet-fonctionnalites-sur-mesure" element={<WebApplicationsPage />} />
+      <Route path="/services/suivi-et-evolutions" element={<SupportPage />} />
+      <Route path="/tarifs" element={<PricingPage />} />
       <Route path="/competences" element={<CompetencesPage />} />
-      <Route path="/portfolio" element={<PortfolioPage />} />
-      <Route path="/portfolio/:slug" element={<ProjectDetailPage />} />
+      <Route path="/realisations" element={<PortfolioPage />} />
+      <Route path="/realisations/:slug" element={<ProjectDetailPage />} />
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/blog/:slug" element={<ArticlePage />} />
       <Route path="/contact" element={<ContactPage />} />
