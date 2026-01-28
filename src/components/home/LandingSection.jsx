@@ -7,18 +7,11 @@ import Button from "../common/Button";
 import styles from "./LandingSection.module.css";
 
 export default function LandingSection() {
-  // const [mode, setMode] = useState("vitrine");
   const reduce = useReducedMotion();
 
   const title = "Julien Lisita";
-  const subtitle = "Développeur web à Bordeaux";
-
-  // const line =
-  //   mode === "vitrine"
-  //     ? "Charge ultra-rapide, SEO propre, sans WordPress."
-  //     : "Architecture robuste, évolutive et testée.";
-
-  const keywords = ["Conception", "Développement", "Maintenance"];
+  const subtitle = "Création de sites web professionnels à Bordeaux";
+  const keywords = ["Site vitrine", "Fonctionnalités sur mesure", "Suivi & maintenance"];
 
   const fadeUp = useMemo(
     () =>
@@ -82,63 +75,15 @@ export default function LandingSection() {
         {...fade}
         {...(!reduce && { transition: { ...fade.transition, delay: 0.28 } })}
       >
-        <span className="font-semibold">Des solutions</span>{" "}
-        <span className="font-semibold" style={{ color: "#007AFF" }}>
-          sur mesure
-        </span>{" "}
-        <span className="font-semibold">à votre image.</span>
+        Un site web clair, rapide et adapté à votre activité.
       </motion.p>
 
       {/* Séparateur */}
       <div className="mt-6 h-px w-44 bg-gradient-to-r from-transparent via-[#007AFF] to-transparent" />
 
-      {/* Toggle besoin */}
-      {/* <motion.div
-        role="tablist"
-        aria-label="Type de projet"
-        className="mt-6 flex items-center gap-2 bg-[#2a2a2a] rounded-full p-1"
-        {...fade}
-        {...(!reduce && { transition: { ...fade.transition, delay: 0.35 } })}
-      >
-        <button
-          role="tab"
-          aria-selected={mode === "vitrine"}
-          aria-controls="pitch"
-          onClick={() => setMode("vitrine")}
-          className={`flex items-center gap-2 px-4 py-2 rounded-full transition ${
-            mode === "vitrine" ? "bg-[#5AC8FA] text-[#1e1e1e]" : "text-gray-200 hover:text-white"
-          }`}
-        >
-          <Monitor className="w-4 h-4" aria-hidden />
-          <span>Site vitrine</span>
-        </button>
-        <button
-          role="tab"
-          aria-selected={mode === "app"}
-          aria-controls="pitch"
-          onClick={() => setMode("app")}
-          className={`flex items-center gap-2 px-4 py-2 rounded-full transition ${
-            mode === "app" ? "bg-[#5AC8FA] text-[#1e1e1e]" : "text-gray-200 hover:text-white"
-          }`}
-        >
-          <Layers className="w-4 h-4" aria-hidden />
-          <span>Application web</span>
-        </button>
-      </motion.div> */}
-
-      {/* Accroche liée au toggle */}
-      {/* <motion.p
-        id="pitch"
-        key={mode}
-        className="text-gray-300 text-base sm:text-lg md:text-xl mt-4 sm:mt-5 max-w-2xl"
-        {...fade}
-      >
-        {line}
-      </motion.p> */}
-
       {/* Mots-clés visibles MOBILE uniquement */}
       <motion.div
-        className="mt-6 flex flex-col items-center text-gray-400 text-base font-medium tracking-wide"
+        className="mt-6 flex flex-col items-center text-gray-400 text-base sm:text-xl lg:text-2xl font-medium tracking-wide"
         initial={reduce ? undefined : "hidden"}
         animate={reduce ? undefined : "visible"}
         variants={reduce ? undefined : { visible: { transition: { staggerChildren: 0.35 } } }}
@@ -168,7 +113,7 @@ export default function LandingSection() {
         {...fade}
         {...(!reduce && { transition: { ...fade.transition, delay: 0.45 } })}
       >
-        <Button to="/contact" variant="secondary" aria-label="Me contacter pour un projet web">
+        <Button to="/contact" variant="primary" aria-label="Me contacter pour un projet web">
           Me contacter
         </Button>
       </motion.div>
