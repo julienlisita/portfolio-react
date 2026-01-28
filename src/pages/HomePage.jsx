@@ -26,7 +26,7 @@ export default function HomePage() {
       <ContactTeaser />
       {/* Localisation */}
       <HomeSection className="text-base sm:text-lg lg:text-xl">
-        <p className="flex flex-col items-center text-center max-w-5xl m-auto gap-2">
+        <p className="flex flex-col items-center text-center gap-2">
           <MapPin className="text-[#007AFF] mx-auto" size={32} />
           <span>Mérignac</span>
           <span>Disponible sur Bordeaux Métropole & à distance</span>
