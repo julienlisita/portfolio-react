@@ -14,7 +14,7 @@ export default function ServicesPreview()
       description:
         "Un site clair, professionnel et adapté au mobile pour présenter votre activité, rassurer vos visiteurs et faciliter la prise de contact.",
       color: ["#5AC8FA", "#007AFF"],
-      link: "/services/business-websites",    
+      link: "/services/creation-site-internet ",    
     },
     {
       title: "Applications web sur mesure",
@@ -22,7 +22,7 @@ export default function ServicesPreview()
       description:
         "Outils métier, espace client, gestion interne… Je conçois des applications adaptées à votre façon de travailler, pour vous faire gagner du temps.",
       color: ["#007AFF", "#9B59B6"],
-      link: "/services/web-applications",        
+      link: "/services/creation-site-internet-fonctionnalites-sur-mesure",        
     },
     {
       title: "Suivi & maintenance",
@@ -30,7 +30,7 @@ export default function ServicesPreview()
       description:
         "Mises à jour, sécurité, petites évolutions : je peux assurer le suivi pour que votre site reste fiable dans le temps.",
       color: ["#9B59B6", "#FF66B2"],
-      link: "/services/support"
+      link: "/services/suivi-et-evolutions"
 
                 
     },
