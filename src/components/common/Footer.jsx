@@ -32,7 +32,7 @@ export default function Footer() {
             <Link className="hover:underline" to="/realisations">Réalisations</Link>
             <Link className="hover:underline" to="/tarifs">Tarifs</Link>
             <Link className="hover:underline" to="/a-propos">A propos</Link>
-            <Link className="hover:underline" to="/competence">Compétences</Link>
+            <Link className="hover:underline" to="/comment-je-travaille">Comment je travaille</Link>
             <Link className="hover:underline" to="/blog">Blog</Link>
             <Link className="hover:underline" to="/contact">Contact</Link>
           </nav>

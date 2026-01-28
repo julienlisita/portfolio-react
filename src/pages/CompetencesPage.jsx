@@ -145,7 +145,7 @@ export default function CompetencePage() {
 
   return (
     <>
-      <PageTitle>Mes compétences</PageTitle>
+      <PageTitle>Comment je travaille</PageTitle>
 
         {/* Intro orientée TPE / indépendants */}
       <Section title="Mettre le web au service de votre activité">

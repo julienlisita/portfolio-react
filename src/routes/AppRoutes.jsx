@@ -31,7 +31,7 @@ export default function AppRoutes() {
       <Route path="/services/creation-site-internet-fonctionnalites-sur-mesure" element={<WebApplicationsPage />} />
       <Route path="/services/suivi-et-evolutions" element={<SupportPage />} />
       <Route path="/tarifs" element={<PricingPage />} />
-      <Route path="/competences" element={<CompetencesPage />} />
+      <Route path="/comment-je-travaille" element={<CompetencesPage />} />
       <Route path="/realisations" element={<PortfolioPage />} />
       <Route path="/realisations/:slug" element={<ProjectDetailPage />} />
       <Route path="/blog" element={<BlogPage />} />
