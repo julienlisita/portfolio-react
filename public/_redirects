@@ -1,6 +1,14 @@
 /robots.txt   /robots.txt   200
 /sitemap.xml  /sitemap.xml  200
 
+# 301: anciennes routes EN -> nouvelles routes FR
+/about                           /a-propos                              301
+/pricing                         /tarifs                                301
+/portfolio                        /realisations                           301
+/services/business-websites      /services/creation-site-internet                  301
+/services/web-applications       /services/creation-site-internet-fonctionnalites-sur-mesure               301
+/services/support                /services/suivi-et-evolutions            301
+
 /merci  /index.html   200
 /contact   /index.html    200
 /*         /index.html    200
