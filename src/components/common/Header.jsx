@@ -39,11 +39,11 @@ export default function Header() {
           {/* Menu desktop */}
           <nav className="hidden lg:flex items-center space-x-6 text-gray-100">
             <Link to="/" className={`${baseLink} ${isActive("/") ? activeLink : ""}`}>Accueil</Link>
-            <Link to="/a-propos" className={`${baseLink} ${isActive("/about") ? activeLink : ""}`}>À propos</Link>
             <Link to="/services" className={`${baseLink} ${isActive("/services") ? activeLink : ""}`}>Services</Link>
+            <Link to="/realisations" className={`${baseLink} ${isActive("/portfolio") ? activeLink : ""}`}>Réalisations</Link>
             <Link to="/tarifs" className={`${baseLink} ${isActive("/pricing") ? activeLink : ""}`}>Tarifs</Link>
+            <Link to="/a-propos" className={`${baseLink} ${isActive("/about") ? activeLink : ""}`}>À propos</Link>
             <Link to="/competences" className={`${baseLink} ${isActive("/competences") ? activeLink : ""}`}>Compétences</Link>
-            <Link to="/realisations" className={`${baseLink} ${isActive("/portfolio") ? activeLink : ""}`}>Portfolio</Link>
             <Link to="/blog" className={`${baseLink} ${isActive("/blog") ? activeLink : ""}`}>Blog</Link>
             <Link to="/contact" className={`${baseLink} ${isActive("/contact") ? activeLink : ""}`}>Contact</Link>
           </nav>
