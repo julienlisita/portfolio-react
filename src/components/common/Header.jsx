@@ -1,6 +1,7 @@
 // src/components/common/Header.jsx
 
 import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react"
 import { Menu, X } from "lucide-react";
 import useToggle from "../../hooks/useToggle";
 
@@ -15,6 +16,34 @@ export default function Header() {
     "hover:outline-1 hover:outline-[#5AC8FA] hover:shadow-[0_0_8px_#5AC8FA]";
 
   const activeLink = "text-[#5AC8FA] font-semibold shadow-[0_0_8px_#5AC8FA]";
+
+  // Bloquer le scroll quand le menu mobile est ouvert (comme ton template)
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+
+    if (!isOpen) return;
+
+    const scrollY = window.scrollY;
+
+    html.style.overflow = "hidden";
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.width = "100%";
+
+    return () => {
+      html.style.overflow = "";
+      body.style.position = "";
+      body.style.top = "";
+      body.style.width = "";
+      window.scrollTo(0, scrollY);
+    };
+  }, [isOpen]);
+
+   useEffect(() => {
+    if (isOpen) toggleState(); // ferme le menu si navigation
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname]);
 
   return (
     <header
@@ -43,7 +72,7 @@ export default function Header() {
             <Link to="/realisations" className={`${baseLink} ${isActive("/realisations") ? activeLink : ""}`}>Réalisations</Link>
             <Link to="/tarifs" className={`${baseLink} ${isActive("/tarifs") ? activeLink : ""}`}>Tarifs</Link>
             <Link to="/a-propos" className={`${baseLink} ${isActive("/a-propos") ? activeLink : ""}`}>À propos</Link>
-            <Link to="/Comment-je-travaille" className={`${baseLink} ${isActive("/comment-je-travaille") ? activeLink : ""}`}>Comment je travaille</Link>
+            <Link to="/comment-je-travaille" className={`${baseLink} ${isActive("/comment-je-travaille") ? activeLink : ""}`}>Comment je travaille</Link>
             <Link to="/blog" className={`${baseLink} ${isActive("/blog") ? activeLink : ""}`}>Blog</Link>
             <Link to="/contact" className={`${baseLink} ${isActive("/contact") ? activeLink : ""}`}>Contact</Link>
           </nav>
