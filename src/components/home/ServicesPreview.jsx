@@ -5,64 +5,68 @@ import ServiceCard from "./ServiceCard";
 import HomeSection from "./HomeSection";
 import { motion } from "framer-motion";
 
-export default function ServicesPreview()
-{
+export default function ServicesPreview() {
   const services = [
     {
-      title: "Sites vitrines modernes",
+      title: "Création de site internet",
+      subtitle: "Site vitrine clair & pro",
       icon: <Monitor />,
       description:
-        "Un site clair, professionnel et adapté au mobile pour présenter votre activité, rassurer vos visiteurs et faciliter la prise de contact.",
+        "Un site moderne (mobile-first) pour présenter votre activité, inspirer confiance et générer des prises de contact.",
       color: ["#5AC8FA", "#007AFF"],
-      link: "/services/creation-site-internet ",    
+      link: "/services/creation-site-internet",
     },
     {
-      title: "Applications web sur mesure",
+      title: "Fonctionnalités & outils sur mesure",
+      subtitle: "Réservation, admin, outils métiers",
       icon: <Layers />,
       description:
-        "Outils métier, espace client, gestion interne… Je conçois des applications adaptées à votre façon de travailler, pour vous faire gagner du temps.",
+        "Réservation en ligne, espace admin, formulaires avancés… Une solution adaptée à votre activité, évolutive et sécurisée.",
       color: ["#007AFF", "#9B59B6"],
-      link: "/services/creation-site-internet-fonctionnalites-sur-mesure",        
+      link: "/services/creation-site-internet-fonctionnalites-sur-mesure",
     },
     {
-      title: "Suivi & maintenance",
+      title: "Suivi & maintenance du site",
+      subtitle: "Sécurité & évolutions",
       icon: <LifeBuoy />,
       description:
-        "Mises à jour, sécurité, petites évolutions : je peux assurer le suivi pour que votre site reste fiable dans le temps.",
+        "Mises à jour, sécurité, corrections et petites évolutions : votre site reste fiable et performant dans le temps.",
       color: ["#9B59B6", "#FF66B2"],
-      link: "/services/suivi-et-evolutions"
-
-                
+      link: "/services/suivi-et-evolutions",
     },
   ];
 
-    return (
-        <HomeSection
-            id="service"
-            title="Ce que je propose"
-            link={{href:"/services", text:"Services"}}
-        > 
+  return (
+    <HomeSection
+      id="service"
+      title="Ce que je propose"
+      link={{ href: "/services", text: "Voir les services ›" }}
+    >
+      <p className="text-base sm:text-lg lg:text-xl">
+        Un accompagnement simple : on clarifie le besoin, je
+        développe, je mets en ligne,et je
+        peux assurer le suivi si besoin.
+      </p>
 
-        <p className="text-base sm:text-lg lg:text-xl">
-          De l’idée initiale à la mise en ligne, je vous accompagne à chaque étape pour construire une présence en ligne qui met en valeur votre activité et parle à vos clients.
-        </p>
-        
-        <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, i) => (
+      <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {services.map((service, i) => (
           <motion.div
             key={service.title}
-            className="overflow-x-clip"           // ← clip local
-            initial={{ opacity: 0, x: i % 2 === 0 ? -15 : 15 }}  // ← offset réduit
+            className="overflow-x-clip"
+            initial={{ opacity: 0, x: i % 2 === 0 ? -15 : 15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.15 + i * 0.1 }}
+            transition={{
+              duration: 0.5,
+              ease: "easeOut",
+              delay: 0.15 + i * 0.1,
+            }}
             viewport={{ once: true, amount: 0.2 }}
-            whileHover={{ scale: 1.02 }}          // évite 1.03 si la carte touche le bord
+            whileHover={{ scale: 1.02 }}
           >
             <ServiceCard {...service} />
           </motion.div>
         ))}
-        </div>
-      
-        </HomeSection>
-    )
+      </div>
+    </HomeSection>
+  );
 }
