@@ -44,7 +44,7 @@ export default function ServicesPreview() {
     >
       <p className="text-base sm:text-lg lg:text-xl">
         Un accompagnement simple : on clarifie le besoin, je
-        développe, je mets en ligne,et je
+        développe, je mets en ligne, et je
         peux assurer le suivi si besoin.
       </p>
 
