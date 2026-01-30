@@ -20,7 +20,7 @@ export default function TarifsTeaser() {
         <TeaserCard
           icon={<BadgeEuro className="text-[#007AFF]" size={22} aria-hidden />}
           title="Site vitrine"
-          desc="Dès 800 € (selon pages & design)"
+          desc="À partir de 650 € (selon contenu & personnalisation))"
         />
         <TeaserCard
           icon={<Wrench className="text-[#007AFF]" size={22} aria-hidden />}
