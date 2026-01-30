@@ -11,17 +11,19 @@ import { MapPin } from "lucide-react";
 import HomeSection from "../components/home/HomeSection";
 import AudiencePreview from "../components/home/AudiencePreview";
 import WhyWorkWithMe from "../components/home/WhyWorkWithMe";
+import TarifsTeaser from "../components/home/TarifsTeaser";
 
 export default function HomePage() {
   return (
     <>
       <LandingSection />
       <AudiencePreview />
-      <AboutPreview />
       <ServicesPreview />
+      <AboutPreview />
       <WhyWorkWithMe />
-      <SkillsPreview />
       <ProjectsPreview />
+      <TarifsTeaser/>
+      <SkillsPreview />
       <BlogPreview />
       <ContactTeaser />
       {/* Localisation */}
