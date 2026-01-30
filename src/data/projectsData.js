@@ -74,7 +74,20 @@ export const projects = [
         database: ["PostgreSQL"],
         deployment: ["Vercel"],
         emails: ["Brevo (Mail Transactionnel)"],
-    }
+    },
+    clientType: "Coach sportif & nutrition",
+    context: "Objectif : automatiser la réservation et centraliser la gestion via un espace admin.",
+    goals: [
+    "Permettre la réservation en ligne en temps réel",
+    "Réduire les échanges manuels (emails / créneaux)",
+    "Donner un back-office simple pour gérer créneaux et réservations",
+    ],
+    results: [
+    "Réservation + confirmations email automatisées",
+    "Back-office sécurisé pour gérer créneaux et réservations",
+    "Solution prête à évoluer vers une plateforme multi-coachs",
+    ],
+    myRole: "Conception, développement fullstack, sécurité, emailing transactionnel, déploiement.",
 },
 {
     slug: "ccs",
@@ -110,7 +123,20 @@ export const projects = [
         database: null,
         test: null,
         deployment: ["Vercel"]
-    }
+    },
+    clientType: "Entreprise d’aide à domicile (Charente & Gironde)",
+    context: "Objectif : inspirer confiance, clarifier les services et faciliter la prise de contact + recrutement.",
+    goals: [
+    "Présenter clairement l’activité et la zone d’intervention",
+    "Rassurer un public varié (bénéficiaires, familles, partenaires)",
+    "Faciliter les demandes via formulaire + candidatures avec CV",
+    ],
+    results: [
+    "Navigation plus claire par profils (familles / bénéficiaires / candidats)",
+    "Formulaires fiables (contact + candidature avec pièces jointes)",
+    "Base SEO propre + site responsive, lisible et accessible",
+    ],
+    myRole: "Design UI, intégration, développement des formulaires, optimisation perf/SEO, déploiement.",
 },
     {
         slug: "brunchbordelais",
