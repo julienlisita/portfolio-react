@@ -7,22 +7,22 @@ const points = [
   {
     title: "Un seul interlocuteur",
     description:
-      "Je gère tout de A à Z : design, développement, mise en ligne et petites mises à jour.",
+      "Je vous accompagne de A à Z : conception, développement, mise en ligne et évolutions.",
   },
   {
     title: "Un site qui parle à vos clients",
     description:
-      "Contenu clair, design moderne, navigation intuitive : votre site devient un vrai outil de confiance.",
+      "Structure claire, design moderne et navigation intuitive pour inspirer confiance.",
   },
   {
-    title: "Référencement naturel (SEO) efficace",
+    title: "Référencement naturel intégré",
     description:
-      "Code propre, chargement rapide et bonnes pratiques SEO pour être plus visible sur Google.",
+      "Code propre, rapidité et bonnes pratiques SEO pour une meilleure visibilité.",
   },
   {
     title: "Transparence & simplicité",
     description:
-      "Un langage clair, des échanges fluides et un budget défini dès le départ.",
+      "Des échanges clairs, des choix expliqués et un budget défini dès le départ.",
   },
 ];
 
@@ -32,23 +32,26 @@ export default function WhyWorkWithMe() {
       id="pourquoi"
       title="Pourquoi travailler avec moi ?"
     >
-      <p className="text-base sm:text-lg lg:text-xl">
-        Un accompagnement simple, clair et efficace pour vous aider à obtenir un site moderne,
-        professionnel et adapté à votre activité.
+      <p className="text-base sm:text-lg lg:text-xl text-gray-300">
+        Un accompagnement simple et efficace pour obtenir un site professionnel
+        qui inspire confiance et soutient votre activité.
       </p>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
         {points.map((point) => (
           <div
             key={point.title}
-            className="flex items-start gap-3 bg-[#1f1f1f] rounded-2xl p-5 shadow-lg"
+            className="flex items-start gap-3 bg-[#1f1f1f] rounded-2xl p-4 sm:p-5"
           >
-            <CheckCircle2 className="mt-1 flex-shrink-0 text-[#007AFF]" />
+            <CheckCircle2
+              className="mt-1 flex-shrink-0 text-[#007AFF]"
+              size={20}
+            />
             <div>
-              <h3 className="text-base sm:text-lg font-semibold mb-1">
+              <h3 className="text-base sm:text-lg font-semibold mb-1 text-gray-100">
                 {point.title}
               </h3>
-              <p className="text-sm sm:text-base text-gray-200">
+              <p className="text-sm sm:text-base text-gray-300">
                 {point.description}
               </p>
             </div>
