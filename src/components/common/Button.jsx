@@ -1,22 +1,34 @@
-// src/components/home/SkillsPreview.jsxcomponents/common/Button.jsx
-
+// src/components/common/Button.jsx
 import { Link } from "react-router-dom";
 
-export default function Button({ variant = "secondary", ...props }) {
+export default function Button({
+  variant = "secondary",
+  size = "default",
+  className = "",
+  ...props
+}) {
   const baseStyles = `
-    inline-block 
-    px-6 py-3 text-sm                            
-    sm:px-5 sm:py-2.5 sm:text-base         
-    lg:px-6 lg:py-3 lg:text-lg  
-    text-center
-    font-semibold 
-    rounded-full 
-    border 
-    transition duration-300 transform 
-    hover:scale-105 
-    active:scale-105
-    min-w-32
+    inline-flex items-center justify-center
+    text-center font-semibold
+    rounded-full border
+    transition duration-300 transform
   `;
+
+  const sizes = {
+    default: `
+      px-6 py-3 text-sm
+      sm:px-5 sm:py-2.5 sm:text-base
+      lg:px-6 lg:py-3 lg:text-lg
+      min-w-32
+      hover:scale-105 active:scale-105
+    `,
+    sm: `
+      px-3 py-1.5 text-sm
+      sm:px-4 sm:py-2 sm:text-sm
+      min-w-0
+      hover:scale-100 active:scale-100
+    `,
+  };
 
   const variantStyles = {
     primary: `
@@ -39,8 +51,7 @@ export default function Button({ variant = "secondary", ...props }) {
       active:bg-[#3FCBFF]
       active:text-[#222222]
     `,
-    text: 
-    `
+    text: `
       px-0 py-0
       min-w-0
       border-none
@@ -52,21 +63,18 @@ export default function Button({ variant = "secondary", ...props }) {
       hover:shadow-none
       hover:scale-100
       transition-colors
-    `
+    `,
   };
+
+  const mergedClassName = `${baseStyles} ${sizes[size]} ${variantStyles[variant]} ${className}`;
 
   const newProps = {
     ...props,
-    className: `${baseStyles} ${variantStyles[variant]} ${props.className || ""}`
+    className: mergedClassName,
   };
 
-  if (props.href) {
-    return <a href={props.href} download={props.download} {...newProps} />;
-  }
-
-  if (props.to) {
-    return <Link {...newProps} />;
-  }
+  if (props.href) return <a href={props.href} download={props.download} {...newProps} />;
+  if (props.to) return <Link {...newProps} />;
 
   return <button {...newProps} />;
 }

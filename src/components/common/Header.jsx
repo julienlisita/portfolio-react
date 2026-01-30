@@ -1,9 +1,8 @@
-// src/components/common/Header.jsx
-
 import { Link, useLocation } from "react-router-dom";
-import { useEffect } from "react"
+import { useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import useToggle from "../../hooks/useToggle";
+import Button from "./Button";
 
 export default function Header() {
   const { state: isOpen, toggleState } = useToggle(false);
@@ -17,13 +16,12 @@ export default function Header() {
 
   const activeLink = "text-[#5AC8FA] font-semibold shadow-[0_0_8px_#5AC8FA]";
 
-  // Bloquer le scroll quand le menu mobile est ouvert (comme ton template)
+  // Bloquer le scroll quand le menu mobile est ouvert
   useEffect(() => {
-    const html = document.documentElement;
-    const body = document.body;
-
     if (!isOpen) return;
 
+    const html = document.documentElement;
+    const body = document.body;
     const scrollY = window.scrollY;
 
     html.style.overflow = "hidden";
@@ -40,107 +38,159 @@ export default function Header() {
     };
   }, [isOpen]);
 
-   useEffect(() => {
-    if (isOpen) toggleState(); // ferme le menu si navigation
+  // Ferme le menu si navigation
+  useEffect(() => {
+    if (isOpen) toggleState();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
 
   return (
-    <header
-      className="
-        sticky top-0 z-50
-        backdrop-blur bg-[#1e1e1e]/90 border-b border-[#2f2f2f]
-        shadow-[0_6px_20px_rgba(0,0,0,0.25)]
-      "
-    >
-      {/* Barre du header */}
-      <div className="h-16 sm:h-18 lg:h-20">
-        <div className="max-w-screen-xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+    <header className="fixed top-3 left-0 right-0 z-50">
+      <div className="mx-auto max-w-screen-xl px-3 sm:px-4">
+        {/* Capsule flottante */}
+        <div
+          className="
+            h-14 sm:h-16
+            flex items-center justify-between
+            px-3 sm:px-4
+            backdrop-blur
+            bg-[#1e1e1e]/85
+            border border-[#2f2f2f]
+            rounded-2xl
+            shadow-[0_8px_30px_rgba(0,0,0,0.35)]
+          "
+        >
           {/* Logo */}
-          <div className="shrink-0">
+          <Link to="/" aria-label="Retour à l’accueil" className="shrink-0">
             <img
               src="/assets/logos/site/logo.png"
               alt="Logo Julien Lisita"
-              className="h-10 sm:h-12 lg:h-14 w-auto"
+              className="h-9 sm:h-10 w-auto"
+              loading="eager"
+              decoding="async"
             />
-          </div>
+          </Link>
 
-          {/* Menu desktop */}
+          {/* Navigation desktop */}
           <nav className="hidden lg:flex items-center space-x-6 text-gray-100">
-            <Link to="/" className={`${baseLink} ${isActive("/") ? activeLink : ""}`}>Accueil</Link>
-            <Link to="/services" className={`${baseLink} ${isActive("/services") ? activeLink : ""}`}>Services</Link>
-            <Link to="/realisations" className={`${baseLink} ${isActive("/realisations") ? activeLink : ""}`}>Réalisations</Link>
-            <Link to="/tarifs" className={`${baseLink} ${isActive("/tarifs") ? activeLink : ""}`}>Tarifs</Link>
-            <Link to="/a-propos" className={`${baseLink} ${isActive("/a-propos") ? activeLink : ""}`}>À propos</Link>
-            <Link to="/comment-je-travaille" className={`${baseLink} ${isActive("/comment-je-travaille") ? activeLink : ""}`}>Comment je travaille</Link>
-            <Link to="/blog" className={`${baseLink} ${isActive("/blog") ? activeLink : ""}`}>Blog</Link>
-            <Link to="/contact" className={`${baseLink} ${isActive("/contact") ? activeLink : ""}`}>Contact</Link>
-          </nav>
-
-          {/* Burger menu */}
-          <button
-            className="lg:hidden p-2 rounded-full transition hover:ring-2 hover:ring-[#5AC8FA]/50 hover:shadow-[0_0_8px_#5AC8FA] focus-visible:ring-2 focus-visible:ring-[#5AC8FA]"
-            onClick={toggleState}
-            aria-label="Basculer le menu"
-            aria-expanded={isOpen}
-            aria-controls="mobile-menu"
-          >
-            {isOpen ? (
-              <X className="h-8 w-8 text-gray-100 duration-300" />
-            ) : (
-              <Menu className="h-8 w-8 text-gray-100 duration-300" />
-            )}
-          </button>
-        </div>
-      </div>
-
-      {/* Menu mobile */}
-      <div
-        id="mobile-menu"
-        className={[
-          "lg:hidden absolute top-full left-0 w-full",
-          "bg-[#1e1e1e]/95 backdrop-blur border-b border-[#2f2f2f]",
-          "overflow-hidden transition-[max-height,opacity,transform] duration-300",
-          isOpen
-            ? "max-h-[520px] opacity-100 translate-y-0 py-4"
-            : "max-h-0 opacity-0 -translate-y-1 py-0",
-        ].join(" ")}
-      >
-        <div className="max-w-screen-xl mx-auto px-4">
-          <div className="flex flex-col text-gray-100">
-            <Link to="/" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/") ? activeLink : ""}`}>
+            <Link to="/" className={`${baseLink} ${isActive("/") ? activeLink : ""}`}>
               Accueil
             </Link>
-            <Link to="/services" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/services") ? activeLink : ""}`}>
+            <Link to="/services" className={`${baseLink} ${isActive("/services") ? activeLink : ""}`}>
               Services
             </Link>
-            <Link to="/realisations" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/realisations") ? activeLink : ""}`}>
-              Réalisation
+            <Link
+              to="/realisations"
+              className={`${baseLink} ${isActive("/realisations") ? activeLink : ""}`}
+            >
+              Réalisations
             </Link>
-            <Link to="/tarifs" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/tarifs") ? activeLink : ""}`}>
+            <Link to="/tarifs" className={`${baseLink} ${isActive("/tarifs") ? activeLink : ""}`}>
               Tarifs
             </Link>
-             <Link to="/a-propos" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/a-propos") ? activeLink : ""}`}>
+            <Link to="/a-propos" className={`${baseLink} ${isActive("/a-propos") ? activeLink : ""}`}>
               À propos
             </Link>
-            <Link to="/comment-je-travaille" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/comment-je-travaille") ? activeLink : ""}`}>
-              Comment je travaille
-            </Link>
-            <Link to="/blog" onClick={toggleState}
-              className={`text-center py-3 rounded-md border-b border-[#2a2a2a] ${baseLink} ${isActive("/blog") ? activeLink : ""}`}>
-              Blog
-            </Link>
-            <Link to="/contact" onClick={toggleState}
-              className={`text-center py-3 rounded-md ${baseLink} ${isActive("/contact") ? activeLink : ""}`}>
+          </nav>
+
+          {/* Actions à droite */}
+          <div className="flex items-center gap-2">
+            {/* CTA Contact – taille maîtrisée */}
+            <Button
+              to="/contact"
+              variant="primary" size="sm"
+              aria-label="Me contacter"
+            >
               Contact
-            </Link>
+            </Button>
+
+            {/* Burger menu (mobile) */}
+            <button
+              type="button"
+              className="
+                lg:hidden
+                p-2
+                rounded-full
+                transition
+                hover:ring-2 hover:ring-[#5AC8FA]/50
+                hover:shadow-[0_0_8px_#5AC8FA]
+                focus-visible:ring-2 focus-visible:ring-[#5AC8FA]
+              "
+              onClick={toggleState}
+              aria-label="Ouvrir le menu"
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+            >
+              {isOpen ? (
+                <X className="h-7 w-7 text-gray-100" />
+              ) : (
+                <Menu className="h-7 w-7 text-gray-100" />
+              )}
+            </button>
           </div>
+        </div>
+
+        {/* Menu mobile */}
+        <div
+          id="mobile-menu"
+          className={[
+            "lg:hidden mt-2",
+            "bg-[#1e1e1e]/95 backdrop-blur",
+            "border border-[#2f2f2f]",
+            "rounded-2xl",
+            "overflow-hidden transition-[max-height,opacity,transform] duration-300",
+            isOpen
+              ? "max-h-[520px] opacity-100 translate-y-0 py-3"
+              : "max-h-0 opacity-0 -translate-y-1 py-0",
+          ].join(" ")}
+        >
+          <nav className="flex flex-col text-gray-100 px-3">
+            <Link
+              to="/"
+              onClick={toggleState}
+              className={`text-center py-3 border-b border-[#2a2a2a] ${baseLink} ${
+                isActive("/") ? activeLink : ""
+              }`}
+            >
+              Accueil
+            </Link>
+            <Link
+              to="/services"
+              onClick={toggleState}
+              className={`text-center py-3 border-b border-[#2a2a2a] ${baseLink} ${
+                isActive("/services") ? activeLink : ""
+              }`}
+            >
+              Services
+            </Link>
+            <Link
+              to="/realisations"
+              onClick={toggleState}
+              className={`text-center py-3 border-b border-[#2a2a2a] ${baseLink} ${
+                isActive("/realisations") ? activeLink : ""
+              }`}
+            >
+              Réalisations
+            </Link>
+            <Link
+              to="/tarifs"
+              onClick={toggleState}
+              className={`text-center py-3 border-b border-[#2a2a2a] ${baseLink} ${
+                isActive("/tarifs") ? activeLink : ""
+              }`}
+            >
+              Tarifs
+            </Link>
+            <Link
+              to="/a-propos"
+              onClick={toggleState}
+              className={`text-center py-3 ${baseLink} ${
+                isActive("/a-propos") ? activeLink : ""
+              }`}
+            >
+              À propos
+            </Link>
+          </nav>
         </div>
       </div>
     </header>
