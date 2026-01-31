@@ -1,5 +1,6 @@
 // src/pages/ServicesPage.jsx
 
+import Button from "../components/common/Button";
 import CtaFinal from "../components/common/CtaFinal";
 import FaqSection from "../components/common/FaqSection";
 import PageTitle from "../components/common/PageTitle";
@@ -39,35 +40,43 @@ export default function ServicesPage()
       {/* Intro courte */}
       <Section>
         <p className="text-left text-base sm:text-lg lg:text-xl text-gray-300">
-          Je conçois et développe des solutions web modernes, rapides et personnalisées.
-          Trois offres principales selon vos besoins : site vitrine, application web sur mesure,
-          et suivi & maintenance.
+          Sites vitrines et fonctionnalités sur mesure pour artisans, indépendants et petites entreprises.
+          3 offres selon vos besoins: site vitrine, sur mesure et suivi & maintenance.
         </p>
       </Section>
 
       <Section title="Ce que je propose">
+        <p className="text-base sm:text-lg text-gray-300 mb-6">
+          Deux types de projets selon vos besoins, avec un <strong>suivi possible dans la durée</strong>.
+        </p>
+
         <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
           <ServiceCard
             variant="page"
             icon={<Monitor />}
-            title="Sites vitrines modernes"
-            description="Création de sites professionnels rapides, responsive et sur mesure pour artisans, restaurants, freelances et indépendants. Pas besoin de WordPress : tout est optimisé, maintenable et élégant."
+            title="Création de site internet"
+            subtitle="Sites vitrines pour artisans & indépendants"
+            description="Un site vitrine clair et professionnel pour présenter votre activité, inspirer confiance et faciliter la prise de contact. Design soigné, mobile-first, rapide et prêt pour le référencement."
             color={["#5AC8FA", "#007AFF"]}
             link="/services/creation-site-internet"
           />
+
           <ServiceCard
             variant="page"
             icon={<Layers />}
-            title="Applications web sur mesure"
-            description="Développement complet d’applications web sur mesure, front-end et back-end : SaaS, outils métiers, plateformes interactives, jeux en ligne. Solutions robustes, évolutives et sécurisées, adaptées à vos besoins."
+            title="Fonctionnalités & outils sur mesure"
+            subtitle="Réservation, admin, outils métiers"
+            description="Réservation en ligne, espace administrable, formulaires avancés, candidatures, espace client… Je développe les fonctionnalités adaptées à votre activité, avec une solution évolutive et sécurisée."
             color={["#007AFF", "#9B59B6"]}
             link="/services/creation-site-internet-fonctionnalites-sur-mesure"
           />
+
           <ServiceCard
             variant="page"
             icon={<LifeBuoy />}
-            title="Suivi & maintenance"
-            description="Je vous accompagne après la mise en ligne : corrections, améliorations, ajout de fonctionnalités, mises à jour, sécurité, hébergement et assistance continue, avec un suivi régulier pour vos évolutions."
+            title="Suivi & maintenance du site"
+            subtitle="Sécurité, mises à jour et évolutions"
+            description="Après la mise en ligne : corrections, mises à jour, sécurité, optimisations et petites évolutions. Pour garder un site fiable, rapide et à jour, au rythme de votre activité."
             color={["#9B59B6", "#FF66B2"]}
             link="/services/suivi-et-evolutions"
           />
@@ -76,6 +85,12 @@ export default function ServicesPage()
       <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
       <p>
         Un parcours simple et transparent, avec des points de validation à chaque étape.
+      </p>
+      <p className="text-sm text-gray-400 mt-2">
+        Pour les plus curieux, je détaille mon approche et mes choix techniques ici :{" "}
+        <Button variant="text" to={`/comment-je-travaille`} > 
+          voir comment je travaille ›
+        </Button>
       </p>
 
       <div className="relative mt-6">
