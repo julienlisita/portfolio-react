@@ -3,13 +3,7 @@
 import TechCard from "../components/common/TechCard";
 import PageTitle from "../components/common/PageTitle";
 
-import {
-  FaReact,
-  FaNodeJs,
-  FaFigma,
-  FaGitAlt,
-  FaJava
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaFigma, FaGitAlt, FaJava } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -23,232 +17,249 @@ import {
   SiC,
   SiCplusplus,
 } from "react-icons/si";
+
 import Section from "../components/common/Section";
 import CtaFinal from "../components/common/CtaFinal";
 import FaqSection from "../components/common/FaqSection";
+import Button from "../components/common/Button";
 
 export default function CompetencePage() {
   const faq = [
     {
-      q: "Travaillez-vous avec des petites entreprises et indépendants ?",
-      a: "Oui, c’est même mon cœur de cible. Je conçois des sites vitrines et des applications web légères pour des TPE, indépendants et petites structures qui ont besoin d’un site professionnel, clair et moderne.",
+      q: "Est-ce que je dois comprendre la technique ?",
+      a: "Non. Je vous explique uniquement ce qui est utile pour décider. Mon rôle : transformer votre besoin en un site clair, fiable et évolutif, sans jargon inutile.",
     },
     {
-      q: "Quelles technologies utilisez-vous pour développer les sites web ?",
-      a: "Pour le front-end : React et Next.js avec Tailwind CSS et TypeScript. Pour le back-end : Node.js (Express) avec Prisma et PostgreSQL, selon les besoins du projet.",
+      q: "Travaillez-vous avec des artisans, indépendants et commerces ?",
+      a: "Oui, c’est mon cœur de cible : artisans, indépendants, commerces et petites entreprises à Bordeaux et à distance partout en France.",
     },
     {
-      q: "Pouvez-vous reprendre un site existant pour une refonte ?",
-      a: "Oui. Je peux analyser votre site actuel, proposer une structure plus claire, moderniser le design et améliorer les performances, tout en conservant votre identité visuelle.",
+      q: "Proposez-vous des maquettes ?",
+      a: "Oui si besoin : soit une structure simple validée ensemble, soit une maquette Figma plus poussée avant le développement.",
+    },
+    {
+      q: "Et après la mise en ligne ?",
+      a: "Je peux assurer le suivi : corrections, mises à jour, sécurité, optimisations et petites évolutions.",
     },
   ];
 
   const technologies = [
     // Frontend
-    {
-      icon: FaReact,
-      name: "React",
-      description: "Interfaces dynamiques et réactives",
-      category: "frontend",
-    },
-    {
-      icon: SiNextdotjs,
-      name: "Next.js",
-      description: "Framework React moderne (SSR/SSG)",
-      category: "frontend",
-    },
-    {
-      icon: SiTypescript,
-      name: "TypeScript",
-      description: "JavaScript typé pour plus de fiabilité",
-      category: "frontend",
-    },
-    {
-      icon: SiTailwindcss,
-      name: "Tailwind CSS",
-      description: "Framework utilitaire moderne",
-      category: "frontend",
-    },
+    { icon: FaReact, name: "React", description: "Interfaces dynamiques", category: "frontend" },
+    { icon: SiNextdotjs, name: "Next.js", description: "Performance & SEO (SSR/SSG)", category: "frontend" },
+    { icon: SiTypescript, name: "TypeScript", description: "Plus fiable, moins de bugs", category: "frontend" },
+    { icon: SiTailwindcss, name: "Tailwind CSS", description: "UI rapide à itérer", category: "frontend" },
 
     // Backend & data
-    {
-      icon: FaNodeJs,
-      name: "Node.js",
-      description: "Back-end rapide et léger",
-      category: "backend",
-    },
-    {
-      icon: SiExpress,
-      name: "Express",
-      description: "Framework minimaliste pour API",
-      category: "backend",
-    },
-    {
-      icon: SiPrisma,
-      name: "Prisma",
-      description: "ORM moderne et type-safe",
-      category: "backend",
-    },
-    {
-      icon: SiPostgresql,
-      name: "PostgreSQL",
-      description: "Base de données relationnelle fiable",
-      category: "backend",
-    },
+    { icon: FaNodeJs, name: "Node.js", description: "Logique serveur", category: "backend" },
+    { icon: SiExpress, name: "Express", description: "API & logique métier", category: "backend" },
+    { icon: SiPrisma, name: "Prisma", description: "ORM moderne et type-safe", category: "backend" },
+    { icon: SiPostgresql, name: "PostgreSQL", description: "Base fiable", category: "backend" },
 
     // Déploiement & outils
-    {
-      icon: SiVercel,
-      name: "Vercel",
-      description: "Hébergement optimisé pour Next.js",
-      category: "deployment",
-    },
-    {
-      icon: SiNetlify,
-      name: "Netlify",
-      description: "Déploiement de sites statiques",
-      category: "deployment",
-    },
-    {
-      icon: SiRender,
-      name: "Render",
-      description: "Déploiement d’applications full-stack",
-      category: "deployment",
-    },
-    {
-      icon: FaGitAlt,
-      name: "Git / GitHub",
-      description: "Versionnage et collaboration",
-      category: "deployment",
-    },
+    { icon: SiVercel, name: "Vercel", description: "Hébergement optimisé", category: "deployment" },
+    { icon: SiNetlify, name: "Netlify", description: "Déploiement statique", category: "deployment" },
+    { icon: SiRender, name: "Render", description: "Déploiement full-stack", category: "deployment" },
+    { icon: FaGitAlt, name: "Git / GitHub", description: "Versionnage & suivi", category: "deployment" },
 
     // Complémentaires
-    {
-      icon: SiC,
-      name: "C",
-      description: "Langage bas niveau puissant",
-      category: "complementary",
-    },
-    {
-      icon: SiCplusplus,
-      name: "C++",
-      description: "Extension orientée objet du C",
-      category: "complementary",
-    },
-    {
-      icon: FaJava,
-      name: "Java",
-      description: "Langage orienté objet robuste",
-      category: "complementary",
-    },
+    { icon: SiC, name: "C", description: "Rigueur & performance", category: "complementary" },
+    { icon: SiCplusplus, name: "C++", description: "Logique applicative", category: "complementary" },
+    { icon: FaJava, name: "Java", description: "Conception robuste", category: "complementary" },
   ];
 
   return (
     <>
-      <PageTitle>Comment je travaille</PageTitle>
+      <PageTitle>Ma méthode & mes choix techniques</PageTitle>
 
-        {/* Intro orientée TPE / indépendants */}
-      <Section title="Mettre le web au service de votre activité">
-        <p className="text-base sm:text-lg lg:text-xl">
-          Je conçois et développe des sites web modernes et performants pour des petites
-          entreprises, indépendants et structures locales. Mon objectif : vous aider à
-          présenter clairement votre activité, gagner en crédibilité en ligne et faciliter
-          la prise de contact avec vos futurs clients.
+      <Section>
+        <p className="text-base sm:text-lg lg:text-xl text-gray-300">
+          De l’échange initial à la mise en ligne, je vous explique comment je travaille et en quoi mes choix techniques permettent d’obtenir un site fiable, performant et évolutif.
         </p>
       </Section>
 
+      {/* Image */}
       <Section>
         <div className="flex justify-center mt-6">
           <img
             src="/assets/images/me-working.avif"
             alt="Julien Lisita en train de travailler"
-            className="rounded-xl shadow-lg w-full max-w-[420px] h-auto object-cover"
-            width="420"
-            height="280"
+            className="rounded-xl shadow-lg w-full max-w-[520px] h-auto object-cover"
+            width="520"
+            height="320"
             loading="lazy"
             decoding="async"
           />
         </div>
       </Section>
-{/* 
-      <Section title="Conception & maquettes">
-        <p className="text-base sm:text-lg lg:text-xl">
-          Avant la phase de développement, j’utilise Figma pour définir la structure des pages,
-          organiser les contenus et valider l’apparence générale du site. Cela permet d’avoir
-          une vision claire du résultat et d’éviter les allers-retours inutiles.
+
+      {/* Méthode = même trame que Services */}
+      <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
+        <p className="text-gray-300">
+          Un parcours simple, avec des points de validation à chaque étape.
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
+        <div className="relative mt-6">
+          <div className="absolute left-4 top-0 bottom-0 w-px bg-[#2f2f2f]" />
+
+          {[
+            {
+              t: "Échange initial",
+              d: "On clarifie vos objectifs, votre cible, vos pages et vos priorités (et votre budget).",
+              bonus: "Livrable : un mini-cadrage (plan + périmètre + prochaines étapes).",
+            },
+            {
+              t: "Conception",
+              d: "Je vous conseille sur la structure et le design. Soit à partir de votre maquette, soit je propose une base simple et cohérente.",
+              bonus: "Livrable : structure de page + contenu conseillé (et maquette Figma si besoin).",
+            },
+            {
+              t: "Développement",
+              d: "Je développe votre site et je vous montre l’avancement régulièrement, par petites itérations.",
+              bonus: "Livrable : démos / validations progressives.",
+            },
+            {
+              t: "Mise en ligne",
+              d: "Votre site est accessible à vos clients, optimisé pour mobile et prêt pour le référencement.",
+              bonus: "Livrable : mise en ligne + réglages SEO de base + conseils.",
+            },
+            {
+              t: "Suivi & maintenance",
+              d: "Je reste disponible pour les corrections, mises à jour, optimisations et petites évolutions.",
+              bonus: "Option : forfait mensuel ou interventions ponctuelles.",
+            },
+          ].map((s, i) => (
+            <div key={i} className="pl-12 pb-6">
+              <div className="relative">
+                <span className="absolute -left-8 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#2a2a2a] text-[#007AFF] text-xs font-semibold">
+                  {i + 1}
+                </span>
+                <h4 className="text-gray-100 font-semibold">{s.t}</h4>
+              </div>
+              <p className="text-gray-400 text-sm mt-1">{s.d}</p>
+              <p className="text-gray-500 text-xs mt-2">{s.bonus}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-4 flex justify-center">
+          <Button to="/services" variant="primary" size="sm">
+            Voir mes services
+          </Button>
+        </div>
+      </Section>
+
+      {/* Comparaison no-code / plateformes */}
+      <Section title="Pourquoi ne pas utiliser un outil clé en main ?">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-300">
+          Des solutions comme Wix, WordPress.com ou des offres tout-en-un
+          peuvent convenir pour démarrer rapidement.  
+          Mais dès qu’un site doit être clair, bien référencé et évoluer dans le temps,
+          leurs limites apparaissent.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6 mt-6">
+          {/* Plateformes */}
+          <div className="bg-[#1e1e1e] border border-[#2f2f2f] rounded-xl p-5">
+            <h3 className="text-gray-100 font-semibold mb-3">
+              Solutions clé en main
+            </h3>
+            <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
+              <li>• Structure souvent figée</li>
+              <li>• SEO limité ou peu maîtrisable</li>
+              <li>• Performances variables</li>
+              <li>• Dépendance à une plateforme</li>
+              <li>• Évolutions parfois coûteuses ou bloquées</li>
+            </ul>
+          </div>
+
+          {/* Ta méthode */}
+          <div className="bg-[#1e1e1e] border border-[#2f2f2f] rounded-xl p-5">
+            <h3 className="text-gray-100 font-semibold mb-3">
+              Ma méthode
+            </h3>
+            <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
+              <li>• Structure pensée pour vos clients</li>
+              <li>• SEO propre dès la base</li>
+              <li>• Site rapide et léger</li>
+              <li>• Vous êtes propriétaire de votre site</li>
+              <li>• Évolutif sans tout refaire</li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="text-sm text-gray-400 mt-6">
+          L’objectif n’est pas d’utiliser “plus de technique”, mais la bonne solution
+          pour un site fiable, durable et adapté à votre activité.
+        </p>
+      </Section>
+
+      {/* Ce que vous obtenez = reprend About */}
+      <Section title="Ce que vous obtenez">
+        <ul className="list-disc ml-6 space-y-2 text-gray-300 text-base sm:text-lg lg:text-xl">
+          <li>Un site clair et professionnel qui inspire confiance</li>
+          <li>Une navigation simple et agréable sur mobile</li>
+          <li>Une base SEO propre (structure, titres, performance)</li>
+          <li>Un site sur mesure qui peut évoluer (pages, fonctionnalités, SEO)</li>
+          <li>Mise en ligne incluse + accompagnement</li>
+        </ul>
+      </Section>
+
+      {/* Maquettes = cohérent avec ton discours tarifs */}
+      <Section title="Maquettes (si besoin)">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-300">
+          Selon le projet, on peut valider le rendu via une maquette avant de développer (utile si vous voulez figer un design précis).
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
           <TechCard icon={FaFigma} name="Figma" description="Maquettes & structure du site" color="#5AC8FA" />
         </div>
-      </Section> */}
+      </Section>
 
-      <Section title="Développement web moderne">
-        <p className="text-base sm:text-lg lg:text-xl">
-          Côté interface, j’utilise principalement React, Next.js, TypeScript et Tailwind
-          CSS pour créer des sites rapides, lisibles et adaptés au mobile. Ces technologies
-          me permettent de construire des pages claires, qui mettent en valeur votre
-          activité sans sacrifier les performances ni la simplicité.
+      {/* Tech = discret, pour les curieux / recruteurs */}
+      <Section title="Choix techniques (pour les curieux)" className="text-base sm:text-lg lg:text-xl">
+        <p className="text-gray-300">
+          Pour garantir performance, SEO et maintenabilité, j’utilise une stack moderne.
+          Si vous n’êtes pas “tech”, vous pouvez ignorer cette partie.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
-          {technologies
-            .filter((tech) => tech.category === "frontend")
-            .map((tech, idx) => (
-              <TechCard key={idx} color="#007AFF" {...tech} />
-            ))}
+      </Section>
+
+      <Section title="Front-end">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
+          {technologies.filter((t) => t.category === "frontend").map((t, idx) => (
+            <TechCard key={idx} color="#007AFF" {...t} />
+          ))}
         </div>
       </Section>
 
-      <Section title="Backend & gestion des données">
-        <p className="text-base sm:text-lg lg:text-xl">
-          Au-delà de l’interface, je mets en place tout ce qui se passe “derrière”
-          votre site : gestion des formulaires de contact, stockage des contenus,
-          zones d’administration simples à utiliser. L’idée est d’avoir une base
-          technique fiable, pour que votre site reste facile à faire évoluer sans
-          tout refaire.
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
-          {technologies
-            .filter((tech) => tech.category === "backend")
-            .map((tech, idx) => (
-              <TechCard key={idx} color="#9B59B6" {...tech} />
-            ))}
+      <Section title="Back-end & données">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
+          {technologies.filter((t) => t.category === "backend").map((t, idx) => (
+            <TechCard key={idx} color="#9B59B6" {...t} />
+          ))}
         </div>
       </Section>
 
-      <Section title="Déploiement, performance & outils du quotidien">
-        <p className="text-base sm:text-lg lg:sm:text-xl">
-          J’utilise des plateformes de déploiement modernes pour que votre site soit
-          rapide, disponible en permanence et simple à mettre à jour. Vous n’avez pas
-          à vous soucier de la technique : je gère l’hébergement, les mises en ligne
-          et les optimisations de performance.
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
-          {technologies
-            .filter((tech) => tech.category === "deployment")
-            .map((tech, idx) => (
-              <TechCard key={idx} color="#5AC8FA" {...tech} />
-            ))}
+      <Section title="Déploiement & outils">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
+          {technologies.filter((t) => t.category === "deployment").map((t, idx) => (
+            <TechCard key={idx} color="#5AC8FA" {...t} />
+          ))}
         </div>
       </Section>
 
-      <Section title="Compétences techniques complémentaires">
-        <p className="text-base sm:text-lg lg:text-xl">
-          Avant de me spécialiser dans le web, j’ai travaillé sur des projets plus
-          techniques (C, C++, Java) orientés algorithmique, jeux en console et logique
-          applicative. Ces expériences renforcent ma rigueur et ma capacité à concevoir des
-          solutions robustes, même si aujourd’hui je me concentre sur le développement web.
-          Certains de ces projets sont visibles sur mon profil GitHub.
+      <Section title="Complément (profil technique)">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-300">
+          Avant le web, j’ai travaillé sur des projets plus techniques (C, C++, Java). Ça renforce ma rigueur
+          et ma capacité à concevoir des solutions robustes.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 sm:mt-10 lg:mt-12">
-          {technologies
-            .filter((tech) => tech.category === "complementary")
-            .map((tech, idx) => (
-              <TechCard key={idx} color="#FF66B2" {...tech} />
-            ))}
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
+          {technologies.filter((t) => t.category === "complementary").map((t, idx) => (
+            <TechCard key={idx} color="#FF66B2" {...t} />
+          ))}
         </div>
+
         <p className="text-sm text-center text-gray-500 mt-6">
-          🔗 Voir mes projets techniques sur GitHub :
+          🔗 GitHub :
           <a
             href="https://github.com/julienlisita"
             target="_blank"
@@ -260,17 +271,13 @@ export default function CompetencePage() {
         </p>
       </Section>
 
-      <FaqSection
-        title="FAQ — Compétences"
-        faq={faq}
-        ariaLabelledby="faq-skills-title"
-      />
+      <FaqSection title="FAQ — Méthode" faq={faq} ariaLabelledby="faq-skills-title" />
 
       <CtaFinal
-        title="Mettons ces compétences au service de votre projet"
-        tagline="Que ce soit pour un site vitrine ou une application web légère, je peux vous accompagner de la conception à la mise en ligne."
+        title="On en parle ?"
+        tagline="Expliquez-moi votre activité et vos objectifs : je vous propose la bonne approche."
         primary={{ href: "/contact", text: "Discuter de votre projet" }}
-        secondary={{ href: "/services", text: "Voir mes services" }}
+        secondary={{ href: "/tarifs", text: "Voir les tarifs" }}
       />
     </>
   );
