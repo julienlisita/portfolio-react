@@ -1,5 +1,6 @@
 // src/pages/AboutPage.jsx
 
+import Button from "../components/common/Button";
 import CtaFinal from "../components/common/CtaFinal";
 import FaqSection from "../components/common/FaqSection";
 import PageTitle from "../components/common/PageTitle";
@@ -80,7 +81,7 @@ export default function AboutPage() {
         </ul>
 
         <p className="mt-4">
-          L’objectif est simple : un site <strong>rapide, bien référencé et pensé pour durer</strong>.
+          L’objectif est simple : un site rapide, bien référencé et pensé pour durer.
         </p>
       </Section>
 
@@ -112,20 +113,17 @@ export default function AboutPage() {
 
       {/* Méthode */}
       <Section title="Une méthode simple et transparente" className="text-base sm:text-lg lg:text-xl">
-         <p>
-            Mon rôle est de vous guider et de transformer votre besoin en un site clair et efficace,
-            sans jargon inutile. Vous suivez l’avancement et validez chaque étape.
-            <br />
-            <span className="text-sm text-gray-400">
-              Pour les plus curieux, je détaille ma façon de travailler et mes choix techniques sur une page dédiée :{" "}
-              <a
-                href="/comment-je-travaille"
-                className="text-blue-500 hover:underline"
-              >
-                voir comment je travaille
-              </a>.
-            </span>
-          </p>
+        <p>
+          Mon rôle est de vous guider et de transformer votre besoin en un site clair et efficace,
+          sans jargon inutile. Vous suivez l’avancement et validez chaque étape.
+        </p>
+
+        <p className="text-sm text-gray-400 mt-2">
+          Pour aller plus loin sur ma méthode de travail :
+          <Button variant="text" to="/comment-je-travaille">
+            voir comment je travaille ›
+          </Button>
+        </p>
 
         <ul className="list-disc ml-6 mt-4 space-y-2 text-gray-300">
           <li>Analyse du besoin et cadrage du projet</li>
