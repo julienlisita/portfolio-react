@@ -1,179 +1,129 @@
-// pages/WebApplicationsPage.jsx 
+// src/pages/WebApplicationsPage.jsx
 
 import CtaFinal from "../components/common/CtaFinal";
 import FaqSection from "../components/common/FaqSection";
 import Section from "../components/common/Section";
-import { CheckCircle, Users, Layers, Briefcase, BarChart3, Server, Package, Rocket } from "lucide-react";
+import {
+  CheckCircle,
+  Users,
+  Layers,
+  Briefcase,
+  BarChart3,
+  Lock,
+  Rocket,
+  Wrench,
+} from "lucide-react";
 
 export default function WebApplicationsPage() {
-
-const faq = [
-  {
-    q: "C’est quoi une application web sur mesure ?",
-    a: "Un outil métier ou une plateforme (SaaS, back-office, espace client) adapté à votre process, pas un modèle générique."
-  },
-  {
-    q: "Quelles technologies utilisez-vous ?",
-    a: "Stack moderne : Next.js/React, Node.js/Express, Prisma, PostgreSQL/MongoDB, déploiement Vercel/Railway/Docker."
-  },
-  {
-    q: "Développez-vous des MVP rapides pour tester un marché ?",
-    a: "Oui, je conçois des MVP itératifs pour valider vite et limiter les risques."
-  },
-  {
-    q: "Mon application sera-t-elle sécurisée ?",
-    a: "Oui : authentification, rôles, API protégées, bonnes pratiques OWASP, logs & monitoring."
-  },
-  {
-    q: "Proposez-vous des fonctionnalités temps réel ?",
-    a: "Oui (si besoin) : WebSocket pour chat, notifications et collaboration."
-  }
-];
+  const faq = [
+    {
+      q: "Qu’est-ce que vous appelez “sur mesure” ?",
+      a: "Des fonctionnalités adaptées à votre activité : réservation, espace admin, gestion de contenus, candidatures, espace client…",
+    },
+    {
+      q: "Pouvez-vous développer une première version rapidement ?",
+      a: "Oui. On avance par itérations : une première version utile, puis des améliorations selon les retours.",
+    },
+    {
+      q: "Est-ce sécurisé ?",
+      a: "Oui : authentification, rôles, accès protégés et bonnes pratiques de sécurité dès la conception.",
+    },
+    {
+      q: "Est-ce que ça peut évoluer dans le temps ?",
+      a: "Oui. Le projet est conçu pour grandir : nouvelles fonctionnalités, nouveaux modules, sans tout refaire.",
+    },
+    {
+      q: "Vous vous occupez de la mise en ligne ?",
+      a: "Oui : déploiement, configuration, et accompagnement après mise en production.",
+    },
+  ];
 
   return (
     <>
       <Section
-        id="apps"
-        title="Applications web sur mesure"
+        id="fonctionnalites-sur-mesure"
+        title="Fonctionnalités & outils sur mesure"
         className="text-base sm:text-lg lg:text-xl"
       >
-       {/* Intro */}
+        {/* Intro */}
         <p className="mb-6 text-gray-300">
-          Pensées pour les <strong>startups, PME, associations</strong> ou
-          <strong> porteurs de projet</strong> ayant besoin d’un outil métier,
-          d’une <strong>plateforme SaaS</strong> ou d’un
-          <strong> back-office sécurisé</strong>.
+          Pour les structures qui ont besoin d’un outil ou de
+          fonctionnalités spécifiques : réservation, espace administrable, gestion de contenus,
+          candidatures, dashboard, espace client…
         </p>
 
-        {/* Pour qui ? */}
+        {/* Pour qui */}
         <h3 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
           <Users className="w-5 h-5 text-[#007AFF]" />
-          Pour qui :
+          Pour qui ?
         </h3>
         <ul className="list-none ml-6 space-y-2">
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              Startups en phase de lancement ou de levée de fonds
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              PME cherchant à digitaliser leurs process
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              Associations souhaitant une plateforme de gestion interne
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              Porteurs de projet voulant un prototype (MVP)
-            </div>
-          </li>
+          {[
+            "PME/TPE qui veulent digitaliser un process",
+            "Associations avec besoins de gestion interne",
+            "Porteurs de projet (prototype / MVP)",
+            "Structures avec besoin d’un espace admin / espace client",
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
+              <div className="flex-1">{item}</div>
+            </li>
+          ))}
         </ul>
 
         {/* Ce que je propose */}
-        <h3 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
+        <h3 className="text-xl font-semibold mt-10 mb-3 flex items-center gap-2">
           <Layers className="w-5 h-5 text-[#007AFF]" />
           Ce que je propose
         </h3>
-        <ul className="list-disc ml-6 space-y-2">
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              <strong>Développement full-stack</strong> : Next.js / React, Node.js / Express,
-            Prisma, PostgreSQL ou MongoDB
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              <strong>Architecture évolutive</strong> (modulaire, maintenable, prête à grandir)
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              <strong>UX/UI responsive</strong> et adaptée aux usages réels
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              <strong>Sécurité intégrée</strong> : authentification, rôles, API protégées
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              <strong>Temps réel</strong> (WebSocket) si nécessaire : chat, notifications, collaboration
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-[#007AFF] mt-1" />
-            <div className="flex-1">
-              <strong>Déploiement</strong> sur Vercel, Railway, Docker ou hébergement dédié
-            </div>
-          </li>
+        <ul className="list-none ml-6 space-y-2">
+          {[
+            "Développement full-stack (front + back) selon votre besoin",
+            "Espace d’administration simple (ajout/modification de contenus, gestion…)",
+            "UX responsive (mobile/desktop) adaptée aux usages réels",
+            "Sécurité : accès protégés, rôles, API sécurisées",
+            "Déploiement + accompagnement en production",
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-2">
+              <Wrench className="w-5 h-5 text-[#007AFF] mt-1" />
+              <div className="flex-1">{item}</div>
+            </li>
+          ))}
         </ul>
 
-        {/* Cas d’usage */}
-        <h3 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
-           <Package className="w-5 h-5 text-[#9B59B6]" />
+        {/* Exemples d’usage */}
+        <h3 className="text-xl font-semibold mt-10 mb-3 flex items-center gap-2">
+          <Briefcase className="w-5 h-5 text-[#9B59B6]" />
           Exemples de cas d’usage
         </h3>
-        <ul className="list-disc ml-6 space-y-2">
-          <li className="flex items-center gap-2">
-            <Briefcase className="w-5 h-5 text-[#9B59B6] mt-1" />
-            <div className="flex-1">
-               CRM / outil métier sur mesure
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <BarChart3 className="w-5 h-5 text-[#9B59B6] mt-1" />
-            <div className="flex-1">
-              Dashboard interactif ou back-office sécurisé
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <Server className="w-5 h-5 text-[#9B59B6] mt-1" />
-            <div className="flex-1">
-              Plateforme SaaS (abonnements, gestion des utilisateurs, etc.)
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <Users className="w-5 h-5 text-[#9B59B6] mt-1" />
-            <div className="flex-1">
-              Espace client, forum communautaire, fonctionnalités temps réel
-            </div>
-          </li>
-          <li className="flex items-center gap-2">
-            <Rocket className="w-5 h-5 text-[#9B59B6] mt-1" />
-            <div className="flex-1">
-              MVP / prototype pour tests marché ou levée de fonds
-            </div>
-          </li>
+        <ul className="list-none ml-6 space-y-2">
+          {[
+            { icon: Briefcase, text: "Outil métier (CRM léger, gestion interne, planning…)" },
+            { icon: BarChart3, text: "Dashboard / back-office sécurisé" },
+            { icon: Lock, text: "Espace client (documents, suivi, messages…)" },
+            { icon: Rocket, text: "Prototype / MVP pour valider une idée" },
+          ].map((it) => (
+            <li key={it.text} className="flex items-start gap-2">
+              <it.icon className="w-5 h-5 text-[#9B59B6] mt-1" />
+              <div className="flex-1">{it.text}</div>
+            </li>
+          ))}
         </ul>
 
-        {/* Conclusion + CTA */}
-        <p className="mt-6 italic">
-          Idéal si vous cherchez un <strong>accompagnement global</strong> :
-          de l’idée au prototype, jusqu’à la mise en production.
+        <p className="mt-6 italic text-gray-300">
+          L’objectif : un outil <strong>utile</strong> dès la première version, puis{" "}
+          <strong>améliorable</strong> au fil du temps.
         </p>
 
-        {/* FAQ Applications Web */}
-        <FaqSection title="FAQ — Applications web" faq={faq} ariaLabelledby="faq-apps-title" />
+        {/* FAQ */}
+        <FaqSection title="FAQ — Fonctionnalités sur mesure" faq={faq} ariaLabelledby="faq-apps-title" />
 
+        {/* CTA */}
         <CtaFinal
-          title="Construisons votre application sur mesure"
-          tagline="Des solutions robustes et évolutives, adaptées à vos besoins métiers."
-          primary={{ href: "/contact", text: "Contact" }}
-          secondary={{href: "/realisations", text: "Portfolio"}}
+          title="Construisons votre solution sur mesure"
+          tagline="Un accompagnement global : cadrage, développement, mise en ligne et évolutions."
+          primary={{ href: "/contact", text: "Discuter du besoin" }}
+          secondary={{ href: "/realisations", text: "Voir des projets" }}
         />
       </Section>
     </>
