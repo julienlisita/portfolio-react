@@ -142,8 +142,8 @@ export default function CompetencePage() {
           ))}
         </div>
         <div className="mt-4 flex justify-center">
-          <Button to="/services" variant="primary" size="sm">
-            Voir mes services
+          <Button to="/services" variant="text">
+            Voir mes services ›
           </Button>
         </div>
       </Section>
@@ -210,7 +210,7 @@ export default function CompetencePage() {
           Selon le projet, on peut valider le rendu via une maquette avant de développer (utile si vous voulez figer un design précis).
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
-          <TechCard icon={FaFigma} name="Figma" description="Maquettes & structure du site" color="#5AC8FA" />
+          <TechCard icon={FaFigma} name="Figma" description="Maquettes & structure du site" color="#007AFF" />
         </div>
       </Section>
 
@@ -233,7 +233,7 @@ export default function CompetencePage() {
       <Section title="Back-end & données">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
           {technologies.filter((t) => t.category === "backend").map((t, idx) => (
-            <TechCard key={idx} color="#9B59B6" {...t} />
+            <TechCard key={idx} color="#007AFF" {...t} />
           ))}
         </div>
       </Section>
@@ -241,7 +241,7 @@ export default function CompetencePage() {
       <Section title="Déploiement & outils">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
           {technologies.filter((t) => t.category === "deployment").map((t, idx) => (
-            <TechCard key={idx} color="#5AC8FA" {...t} />
+            <TechCard key={idx} color="#007AFF" {...t} />
           ))}
         </div>
       </Section>
@@ -254,7 +254,7 @@ export default function CompetencePage() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
           {technologies.filter((t) => t.category === "complementary").map((t, idx) => (
-            <TechCard key={idx} color="#FF66B2" {...t} />
+            <TechCard key={idx} color="#5AC8FA" {...t} />
           ))}
         </div>
 
@@ -264,7 +264,7 @@ export default function CompetencePage() {
             href="https://github.com/julienlisita"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline ml-1"
+            className="text-[#007AFF] hover:underline ml-1"
           >
             github.com/julienlisita
           </a>
