@@ -16,7 +16,7 @@ export default function SkillCard({ title, icons = [], description = "" }) {
     <div className="relative pl-10 text-gray-200">
       {/* Lueur subtile (s'anime) */}
       <motion.div
-        className="absolute left-0 top-0 h-full w-1 bg-gradient-to-t from-[#9B59B6] to-[#007AFF] blur-[6px] z-10 pointer-events-none origin-top"
+        className="absolute left-0 top-0 h-full w-1 bg-gradient-to-t from-[#007AFF] to-[#5AC8FA] blur-[6px] z-10 pointer-events-none origin-top"
         initial={{ scaleY: 0, opacity: 0.6 }}
         whileInView={{ scaleY: 1, opacity: 1 }}
         transition={
@@ -27,7 +27,7 @@ export default function SkillCard({ title, icons = [], description = "" }) {
 
       {/* Trait net (s'anime légèrement après la lueur) */}
       <motion.div
-        className="absolute left-0 top-0 h-full w-1 bg-gradient-to-t from-[#9B59B6] to-[#007AFF] z-20 origin-top"
+        className="absolute left-0 top-0 h-full w-1 bg-gradient-to-t from-[#007AFF] to-[#5AC8FA] z-20 origin-top"
         initial={{ scaleY: 0 }}
         whileInView={{ scaleY: 1 }}
         transition={
@@ -48,7 +48,7 @@ export default function SkillCard({ title, icons = [], description = "" }) {
           ))}
         </div>
 
-        <div className="flex flex-wrap items-center gap-4 text-[#9B59B6] text-[28px]">
+        <div className="flex flex-wrap items-center gap-4 text-[#007AFF] text-[28px]">
           {icons.map((Icon, i) => (
             <span key={i}>{Icon}</span>
           ))}
