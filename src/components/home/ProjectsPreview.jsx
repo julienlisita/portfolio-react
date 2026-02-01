@@ -5,7 +5,7 @@ import ProjectCard from "../common/ProjectCard";
 import { projects } from "../../data/projectsData";
 
 export default function ProjectsPreview() {
-  const featuredSlugs = ["ccs", "thomas-delaunay", "brunchbordelais"];
+  const featuredSlugs = ["ccs", "lumiere-darcachon", "thomas-delaunay"];
 
   const featuredProjects = featuredSlugs
     .map((slug) => projects.find((p) => p.slug === slug))
