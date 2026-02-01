@@ -67,7 +67,7 @@ export default function ServicesPage()
             title="Fonctionnalités & outils sur mesure"
             subtitle="Réservation, admin, outils métiers"
             description="Réservation en ligne, espace administrable, formulaires avancés, candidatures, espace client… Je développe les fonctionnalités adaptées à votre activité, avec une solution évolutive et sécurisée."
-            color={["#007AFF", "#9B59B6"]}
+            color={["#007AFF", "#5AC8FA"]}
             link="/services/creation-site-internet-fonctionnalites-sur-mesure"
           />
 
@@ -77,7 +77,7 @@ export default function ServicesPage()
             title="Suivi & maintenance du site"
             subtitle="Sécurité, mises à jour et évolutions"
             description="Après la mise en ligne : corrections, mises à jour, sécurité, optimisations et petites évolutions. Pour garder un site fiable, rapide et à jour, au rythme de votre activité."
-            color={["#9B59B6", "#FF66B2"]}
+            color={["#5AC8FA", "#007AFF"]}
             link="/services/suivi-et-evolutions"
           />
         </div>
