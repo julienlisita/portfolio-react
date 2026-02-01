@@ -13,7 +13,7 @@ export default function ContactPage() {
       <PageTitle>Contact</PageTitle>
 
       <Section title="Discutons de vos besoins">
-        <div className="grid gap-10 lg:grid-cols-3">
+        <div className="grid gap-6 sm:gap-8 lg:gap-10 lg:grid-cols-3">
           {/* Colonne gauche : intro + formulaire */}
           <div className="lg:col-span-2">
             <p className="text-left text-base sm:text-lg lg:text-xl">
