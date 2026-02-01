@@ -32,7 +32,7 @@ export default function ContactTeaser()
 
             {/* WhatsApp */}
             <div className="flex items-center gap-3">
-                <FaWhatsapp className="text-green-500" size={26} aria-hidden />
+                <FaWhatsapp className="text-[#007AFF]" size={26} aria-hidden />
                 <a
                 href="https://wa.me/33623000449?text=Bonjour%20Julien%2C%20je%20souhaite%20des%20informations%20sur%20la%20cr%C3%A9ation%20d%27un%20site%20internet"
                 target="_blank"

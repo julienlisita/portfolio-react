@@ -51,7 +51,7 @@ export default function ContactPage() {
 
                 {/* WhatsApp */}
                 <div className="flex items-center gap-3">
-                  <FaWhatsapp className="text-green-500" size={22} />
+                  <FaWhatsapp className="text-[#007AFF]" size={22} />
                   <a
                     href="https://wa.me/33623000449?text=Bonjour%20Julien%2C%20je%20souhaite%20des%20informations%20sur%20la%20cr%C3%A9ation%20d%27un%20site%20internet"
                     target="_blank"
