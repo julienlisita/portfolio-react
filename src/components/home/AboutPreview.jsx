@@ -1,10 +1,10 @@
 // src/components/home/AboutPreview.jsx
 
-import HomeSection from "./HomeSection";
+import HomeSectionWrapper from "./HomeSectionWrapper";
 
 export default function AboutPreview() {
   return (
-    <HomeSection
+    <HomeSectionWrapper
       id="about"
       title="Qui suis-je ?"
       link={{ href: "/a-propos", text: "Découvrir mon parcours" }}
@@ -41,6 +41,6 @@ export default function AboutPreview() {
           </p>
         </div>
       </div>
-    </HomeSection>
+    </HomeSectionWrapper>
   );
 }

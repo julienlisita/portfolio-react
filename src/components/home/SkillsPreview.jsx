@@ -1,6 +1,6 @@
 // src/components/home/SkillsPreview.jsx
 
-import HomeSection from "./HomeSection";
+import HomeSectionWrapper from "./HomeSectionWrapper";
 import {
   FaReact,
   FaNodeJs,
@@ -61,7 +61,7 @@ export default function SkillesPreview() {
   ];
 
   return (
-    <HomeSection
+    <HomeSectionWrapper
     id="competences"
     title="Une base technique solide"
     link={{ href: "/comment-je-travaille", text: "Ma méthode de travail" }}
@@ -80,6 +80,6 @@ export default function SkillesPreview() {
      />
       ))}
     </div>
-  </HomeSection>
+  </HomeSectionWrapper>
   );
 }

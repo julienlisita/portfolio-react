@@ -3,7 +3,7 @@
 import Button from "../common/Button";
 import SectionTitle from "../common/SectionTitle";
 
-export default function HomeSection({ id, title, children, link, className }) {
+export default function HomeSectionWrapper({ id, title, children, link, className }) {
     return (
       <section id={id} className="bg-[#222222] text-gray-200 scroll-mt-14 sm:scroll-mt-16 lg:scroll-mt-20">
         <div className="

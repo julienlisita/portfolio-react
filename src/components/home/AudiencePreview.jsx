@@ -1,10 +1,10 @@
 // src/components/home/AudiencePreview.jsx
 
-import HomeSection from "./HomeSection";
+import HomeSectionWrapper from "./HomeSectionWrapper";
 
 export default function AudiencePreview() {
   return (
-    <HomeSection id="pour-qui" title="Pour qui c’est fait ?">
+    <HomeSectionWrapper id="pour-qui" title="Pour qui c’est fait ?">
       <p className="text-base sm:text-lg lg:text-xl">
         J’aide les <strong>artisans, indépendants, commerces et
         petites entreprises</strong> à avoir un site clair, fiable et
@@ -25,7 +25,7 @@ export default function AudiencePreview() {
           description="Services à la personne, accompagnement… Infos accessibles, navigation simple, contact immédiat."
         />
       </div>
-    </HomeSection>
+    </HomeSectionWrapper>
   );
 }
 

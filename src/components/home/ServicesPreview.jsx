@@ -2,7 +2,7 @@
 
 import { Monitor, Layers, LifeBuoy } from "lucide-react";
 import ServiceCard from "./ServiceCard";
-import HomeSection from "./HomeSection";
+import HomeSectionWrapper from "./HomeSectionWrapper";
 import { motion } from "framer-motion";
 
 export default function ServicesPreview() {
@@ -37,7 +37,7 @@ export default function ServicesPreview() {
   ];
 
   return (
-    <HomeSection
+    <HomeSectionWrapper
       id="service"
       title="Ce que je propose"
       link={{ href: "/services", text: "Voir les services ›" }}
@@ -67,6 +67,6 @@ export default function ServicesPreview() {
           </motion.div>
         ))}
       </div>
-    </HomeSection>
+    </HomeSectionWrapper>
   );
 }

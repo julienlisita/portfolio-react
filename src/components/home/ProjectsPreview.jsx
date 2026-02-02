@@ -1,6 +1,6 @@
 // src/components/home/ProjectsPreview.jsx
 
-import HomeSection from "./HomeSection";
+import HomeSectionWrapper from "./HomeSectionWrapper";
 import ProjectCard from "../common/ProjectCard";
 import { projects } from "../../data/projectsData";
 
@@ -12,7 +12,7 @@ export default function ProjectsPreview() {
     .filter(Boolean);
 
   return (
-    <HomeSection
+    <HomeSectionWrapper
       id="portfolio"
       title="Derniers projets"
       link={{ href: "/realisations", text: "Voir d'autres projets" }}
@@ -26,6 +26,6 @@ export default function ProjectsPreview() {
           <ProjectCard key={project.slug} {...project} />
         ))}
       </div>
-    </HomeSection>
+    </HomeSectionWrapper>
   );
 }

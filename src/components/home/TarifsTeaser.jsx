@@ -1,12 +1,11 @@
 // src/components/home/TarifsTeaser.jsx
 
-import HomeSection from "./HomeSection";
-import Button from "../common/Button";
+import HomeSectionWrapper from "./HomeSectionWrapper";
 import { BadgeEuro, Clock, Wrench } from "lucide-react";
 
 export default function TarifsTeaser() {
   return (
-    <HomeSection
+    <HomeSectionWrapper
       id="tarifs"
       title="Tarifs (repères simples)"
       link={{ href: "/tarifs", text: "Voir les tarifs" }}
@@ -33,7 +32,7 @@ export default function TarifsTeaser() {
           desc="En général 2 à 4 semaines"
         />
       </div>
-    </HomeSection>
+    </HomeSectionWrapper>
   );
 }
 

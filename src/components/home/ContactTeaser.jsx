@@ -2,12 +2,12 @@
 
 import { Mail, Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import HomeSection from "./HomeSection";
+import HomeSectionWrapper from "./HomeSectionWrapper";
 
 export default function ContactTeaser()
 {
     return (
-        <HomeSection
+        <HomeSectionWrapper
             id="contact"
             title="Parlons de votre projet "
             link={{href:"/contact", text:"Page de contact"}}
@@ -54,6 +54,6 @@ export default function ContactTeaser()
                 </a>
             </div>
             </div>
-        </HomeSection>
+        </HomeSectionWrapper>
     )
 }

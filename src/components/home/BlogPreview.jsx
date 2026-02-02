@@ -1,6 +1,6 @@
 // src/components/home/BlogPreview.jsx
 
-import HomeSection from "./HomeSection";
+import HomeSectionWrapper from "./HomeSectionWrapper";
 import {articles} from "../../data/articles"
 import Button from "../common/Button";
 
@@ -14,7 +14,7 @@ function estimateReadingTime(text = "") {
 export default function BlogPreview() {
 
   return (
-    <HomeSection
+    <HomeSectionWrapper
       id="blog"
       title="Derniers articles"
       link={{ href: "/blog", text: "Voir tous les articles" }}
@@ -61,6 +61,6 @@ export default function BlogPreview() {
                   );
                 })}
       </div>
-    </HomeSection>
+    </HomeSectionWrapper>
   );
 }

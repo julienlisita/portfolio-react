@@ -1,6 +1,6 @@
 // src/components/home/WhyWorkWithMe.jsx
 
-import HomeSection from "./HomeSection";
+import HomeSectionWrapper from "./HomeSectionWrapper";
 import { CheckCircle2 } from "lucide-react";
 
 const points = [
@@ -28,7 +28,7 @@ const points = [
 
 export default function WhyWorkWithMe() {
   return (
-    <HomeSection
+    <HomeSectionWrapper
       id="pourquoi"
       title="Pourquoi travailler avec moi ?"
     >
@@ -58,6 +58,6 @@ export default function WhyWorkWithMe() {
           </div>
         ))}
       </div>
-    </HomeSection>
+    </HomeSectionWrapper>
   );
 }
