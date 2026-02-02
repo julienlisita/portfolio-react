@@ -1,4 +1,4 @@
-// src/pages/SupportPage.jsx
+// src/pages/MaintenancePage.jsx
 
 import Section from "../components/common/Section";
 import {
@@ -15,7 +15,7 @@ import {
 import CtaFinal from "../components/common/CtaFinal";
 import FaqSection from "../components/common/FaqSection";
 
-export default function SupportPage() {
+export default function MaintenancePage() {
   const faq = [
     {
       q: "Pourquoi prendre une maintenance ?",

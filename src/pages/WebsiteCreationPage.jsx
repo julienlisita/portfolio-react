@@ -1,4 +1,4 @@
-// src/pages/BusinessWebsitesPage.jsx
+// src/pages/WebsiteCreationPage.jsx
 
 import {
   CheckCircle,
@@ -12,7 +12,7 @@ import Section from "../components/common/Section";
 import CtaFinal from "../components/common/CtaFinal";
 import FaqSection from "../components/common/FaqSection";
 
-export default function BusinessWebsitesPage() {
+export default function WebsiteCreationPage() {
   const faq = [
     {
       q: "Combien coûte un site vitrine à Bordeaux ?",

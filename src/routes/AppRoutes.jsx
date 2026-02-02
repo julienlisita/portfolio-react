@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import ServicesPage from "../pages/ServicesPage";
-import CompetencesPage from "../pages/CompetencesPage";
+import HowIWorkPage from "../pages/HowIWorkPage";
 import PortfolioPage from "../pages/PortfolioPage";
 import ProjectDetailPage from "../pages/ProjectDetailPage";
 import BlogPage from "../pages/BlogPage";
@@ -15,10 +15,9 @@ import LegalAndPrivacyPage from "../pages/LegalAndPrivacyPage";
 import MerciPage from "../pages/MerciPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import PricingPage from "../pages/PricingPage";
-import WebApplicationsPage from "../pages/WebApplicationsPage";
-import BusinessWebsitesPage from "../pages/BusinessWebsitesPage";
-import SupportPage from "../pages/SupportPage";
-
+import CustomFeaturesPage from "../pages/CustomFeaturesPage";
+import WebsiteCreationPage from "../pages/WebsiteCreationPage";
+import MaintenancePage from "../pages/MaintenancePage";
 
 
 export default function AppRoutes() {
@@ -27,11 +26,11 @@ export default function AppRoutes() {
       <Route path="/" element={<HomePage />} />
       <Route path="/a-propos" element={<AboutPage />} />
       <Route path="/services" element={<ServicesPage />} />
-      <Route path="/services/creation-site-internet" element={<BusinessWebsitesPage />} />
-      <Route path="/services/creation-site-internet-fonctionnalites-sur-mesure" element={<WebApplicationsPage />} />
-      <Route path="/services/suivi-et-evolutions" element={<SupportPage />} />
+      <Route path="/services/creation-site-internet" element={<WebsiteCreationPage />} />
+      <Route path="/services/creation-site-internet-fonctionnalites-sur-mesure" element={<CustomFeaturesPage />} />
+      <Route path="/services/suivi-et-evolutions" element={<MaintenancePage />} />
       <Route path="/tarifs" element={<PricingPage />} />
-      <Route path="/comment-je-travaille" element={<CompetencesPage />} />
+      <Route path="/comment-je-travaille" element={<HowIWorkPage />} />
       <Route path="/realisations" element={<PortfolioPage />} />
       <Route path="/realisations/:slug" element={<ProjectDetailPage />} />
       <Route path="/blog" element={<BlogPage />} />

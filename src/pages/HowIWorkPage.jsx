@@ -1,4 +1,4 @@
-// src/pages/CompetencePage.jsx
+// src/pages/HowIWorkPage.jsx
 
 import TechCard from "../components/common/TechCard";
 import PageTitle from "../components/common/PageTitle";
@@ -23,7 +23,7 @@ import CtaFinal from "../components/common/CtaFinal";
 import FaqSection from "../components/common/FaqSection";
 import Button from "../components/common/Button";
 
-export default function CompetencePage() {
+export default function HowIWorkPage() {
   const faq = [
     {
       q: "Est-ce que je dois comprendre la technique ?",

@@ -1,4 +1,4 @@
-// src/pages/WebApplicationsPage.jsx
+// src/pages/CustomFeaturesPage.jsx
 
 import CtaFinal from "../components/common/CtaFinal";
 import FaqSection from "../components/common/FaqSection";
@@ -14,7 +14,7 @@ import {
   Wrench,
 } from "lucide-react";
 
-export default function WebApplicationsPage() {
+export default function CustomFeaturesPage() {
   const faq = [
     {
       q: "Qu’est-ce que vous appelez “sur mesure” ?",
