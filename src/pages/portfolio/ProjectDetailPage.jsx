@@ -1,10 +1,10 @@
 // src/pages/ProjectDetailsPages.jsx
 
-import PageTitle from "../components/common/PageTitle";
+import PageTitle from "../../components/common/PageTitle";
 import { useParams, Link } from "react-router-dom";
-import { projects } from "../data/projectsData";
-import Section from "../components/common/Section";
-import CtaFinal from "../components/common/CtaFinal";
+import { projects } from "../../data/projectsData";
+import Section from "../../components/common/Section";
+import CtaFinal from "../../components/common/CtaFinal";
 
 export default function ProjectDetailPage() {
   const { slug } = useParams();

@@ -4,20 +4,20 @@ import { Routes, Route } from "react-router-dom";
 
 import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
-import ServicesPage from "../pages/ServicesPage";
 import HowIWorkPage from "../pages/HowIWorkPage";
-import PortfolioPage from "../pages/PortfolioPage";
-import ProjectDetailPage from "../pages/ProjectDetailPage";
-import BlogPage from "../pages/BlogPage";
-import ArticlePage from "../pages/ArticlePage";
+import PortfolioPage from "../pages/portfolio/PortfolioPage";
+import ProjectDetailPage from "../pages/portfolio/ProjectDetailPage";
+import BlogPage from "../pages/blog/BlogPage";
+import ArticlePage from "../pages/blog/ArticlePage";
 import ContactPage from "../pages/ContactPage";
-import LegalAndPrivacyPage from "../pages/LegalAndPrivacyPage";
+import LegalAndPrivacyPage from "../pages/legal/LegalAndPrivacyPage";
 import MerciPage from "../pages/MerciPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import PricingPage from "../pages/PricingPage";
-import CustomFeaturesPage from "../pages/CustomFeaturesPage";
-import WebsiteCreationPage from "../pages/WebsiteCreationPage";
-import MaintenancePage from "../pages/MaintenancePage";
+import ServicesPage from "../pages/services/ServicesPage";
+import WebsiteCreationPage from "../pages/services/WebsiteCreationPage";
+import CustomFeaturesPage from "../pages/services/CustomFeaturesPage";
+import MaintenancePage from "../pages/services/MaintenancePage";
 
 
 export default function AppRoutes() {

@@ -1,11 +1,11 @@
 // src/pages/BlogPage.jsx
 
 import { useState } from "react";
-import Pagination from "../components/common/Pagination";
-import PageTitle from "../components/common/PageTitle";
-import { articles } from "../data/articles";
-import Section from "../components/common/Section";
-import Button from "../components/common/Button";
+import Pagination from "../../components/common/Pagination";
+import PageTitle from "../../components/common/PageTitle";
+import { articles } from "../../data/articles";
+import Section from "../../components/common/Section";
+import Button from "../../components/common/Button";
 
 function estimateReadingTime(text = "") {
   // ~200 mots/minute (approx)

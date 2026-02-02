@@ -1,10 +1,10 @@
 // src/pages/PortfolioPage.jsx
 
-import { projects } from "../data/projectsData";
-import PageTitle from "../components/common/PageTitle";
-import ProjectCard from "../components/common/ProjectCard";
-import Section from "../components/common/Section";
-import CtaFinal from "../components/common/CtaFinal";
+import { projects } from "../../data/projectsData";
+import PageTitle from "../../components/common/PageTitle";
+import ProjectCard from "../../components/common/ProjectCard";
+import Section from "../../components/common/Section";
+import CtaFinal from "../../components/common/CtaFinal";
 
 export default function Portfolio() {
   const vitrines = projects.filter((p) => p.category === "vitrines");

@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import frontMatter from "front-matter";
-import { articles } from "../data/articles";
-import PageTitle from "../components/common/PageTitle";
+import { articles } from "../../data/articles";
+import PageTitle from "../../components/common/PageTitle";
 
 export default function ArticlePage() {
   const { slug } = useParams();

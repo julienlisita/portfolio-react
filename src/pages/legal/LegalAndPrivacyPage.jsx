@@ -1,8 +1,7 @@
 // src/pages/LegalAndPrivacyPage.jsx
 
-import PageTitle from "../components/common/PageTitle";
-import Section from "../components/common/Section";
-import SectionTitle from "../components/common/SectionTitle";
+import PageTitle from "../../components/common/PageTitle";
+import Section from "../../components/common/Section";
 
 export default function LegalAndPrivacyPage() {
     return (

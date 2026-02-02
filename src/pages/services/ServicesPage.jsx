@@ -1,11 +1,11 @@
 // src/pages/ServicesPage.jsx
 
-import Button from "../components/common/Button";
-import CtaFinal from "../components/common/CtaFinal";
-import FaqSection from "../components/common/FaqSection";
-import PageTitle from "../components/common/PageTitle";
-import Section from "../components/common/Section";
-import ServiceCard from "../components/home/ServiceCard";
+import Button from "../../components/common/Button";
+import CtaFinal from "../../components/common/CtaFinal";
+import FaqSection from "../../components/common/FaqSection";
+import PageTitle from "../../components/common/PageTitle";
+import Section from "../../components/common/Section";
+import ServiceCard from "../../components/home/ServiceCard";
 import { Monitor, Layers, LifeBuoy } from "lucide-react";
 
 export default function ServicesPage()

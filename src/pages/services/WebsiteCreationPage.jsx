@@ -8,9 +8,9 @@ import {
   Search,
   Layout,
 } from "lucide-react";
-import Section from "../components/common/Section";
-import CtaFinal from "../components/common/CtaFinal";
-import FaqSection from "../components/common/FaqSection";
+import Section from "../../components/common/Section";
+import CtaFinal from "../../components/common/CtaFinal";
+import FaqSection from "../../components/common/FaqSection";
 
 export default function WebsiteCreationPage() {
   const faq = [
