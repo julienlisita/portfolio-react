@@ -1,4 +1,4 @@
-// src/pages/WebsiteCreationPage.jsx
+// src/pages/services/WebsiteCreationPage.jsx
 
 import Section from "../../components/common/Section";
 import FaqSection from "../../components/common/FaqSection";

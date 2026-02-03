@@ -1,4 +1,4 @@
-// src/pages/CustomFeaturesPage.jsx
+// src/pages/services/CustomFeaturesPage.jsx
 
 import Section from "../../components/common/Section";
 import FaqSection from "../../components/common/FaqSection";

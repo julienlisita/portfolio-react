@@ -1,4 +1,4 @@
-// src/pages/ServicesPage.jsx
+// src/pages/services/ServicesPage.jsx
 
 import PageTitle from "../../components/common/PageTitle";
 import FaqSection from "../../components/common/FaqSection";
