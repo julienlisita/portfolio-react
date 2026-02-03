@@ -1,6 +1,7 @@
 // src/components/portfolio/ProjectCard.jsx
 
 import { motion } from "framer-motion";
+import Button from "../UI/Button";
 
 export default function ProjectCard({
   slug,

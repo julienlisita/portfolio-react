@@ -1,6 +1,6 @@
 // src/components/common/Section.jsx
 
-import SectionTitle from "../common/SectionTitle";
+import SectionTitle from "../UI/SectionTitle";
 
 export default function Section({ id, title, children, className }) {
 return (

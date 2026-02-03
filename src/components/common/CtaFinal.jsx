@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Section from "./Section";
-import Button from "./Button";
+import Button from "../UI/Button";
 
 export default function CtaFinal({title, tagline, primary, secondary}) {
   return (

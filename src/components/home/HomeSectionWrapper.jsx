@@ -1,7 +1,7 @@
 // src/components/home/HomeSection.jsx
 
-import Button from "../common/Button";
-import SectionTitle from "../common/SectionTitle";
+import Button from "../UI/Button";
+import SectionTitle from "../UI/SectionTitle";
 
 export default function HomeSectionWrapper({ id, title, children, link, className }) {
     return (

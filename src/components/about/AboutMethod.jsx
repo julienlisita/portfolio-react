@@ -1,7 +1,7 @@
 // src/components/about/AboutMethod.jsx
 
 import Section from "../common/Section";
-import Button from "../common/Button";
+import Button from "../UI/Button";
 
 const pillars = [
   { t: "Écoute", d: "comprendre vos objectifs et contraintes" },

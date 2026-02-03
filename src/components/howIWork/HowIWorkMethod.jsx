@@ -1,7 +1,7 @@
 // src/components/howIWork/HowIWorkMethod.jsx
 
 import Section from "../common/Section";
-import Button from "../common/Button";
+import Button from "../UI/Button";
 
 const steps = [
   {

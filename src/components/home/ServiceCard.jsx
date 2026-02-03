@@ -1,6 +1,6 @@
 // ServiceCard.jsx
 
-import Button from "../common/Button";
+import Button from "../UI/Button";
 
 export default function ServiceCard({
   icon,

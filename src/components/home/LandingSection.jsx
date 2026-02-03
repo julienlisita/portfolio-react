@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, Monitor, Layers } from "lucide-react";
-import Button from "../common/Button";
+import Button from "../UI/Button";
 import styles from "./LandingSection.module.css";
 
 export default function LandingSection() {

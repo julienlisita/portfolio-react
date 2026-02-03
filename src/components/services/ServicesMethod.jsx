@@ -1,7 +1,7 @@
 // src/components/services/ServicesMethod.jsx
 
 import Section from "../common/Section";
-import Button from "../common/Button";
+import Button from "../UI/Button";
 
 const steps = [
   { t: "Échange initial", d: "nous discutons de vos besoins, de vos envies et de vos priorités." },

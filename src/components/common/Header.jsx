@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import useToggle from "../../hooks/useToggle";
-import Button from "./Button";
+import Button from "../UI/Button";
 
 export default function Header() {
   const { state: isOpen, toggleState } = useToggle(false);

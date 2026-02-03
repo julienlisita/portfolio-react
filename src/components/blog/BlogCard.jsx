@@ -1,6 +1,6 @@
 // src/components/blog/BlogCard.jsx
 
-import Button from "../common/Button";
+import Button from "../UI/Button";
 import { estimateReadingTime } from "../../utils/readingTime";
 
 export default function BlogCard({ article }) {
