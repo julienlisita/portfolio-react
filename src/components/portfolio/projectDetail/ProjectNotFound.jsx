@@ -1,7 +1,7 @@
 // src/components/portfolio/projectDetail/ProjectNotFound.jsx
 
 import PageTitle from "../../common/PageTitle";
-import Section from "../../common/Section";
+import Section from "../../layout/Section";
 import { Link } from "react-router-dom";
 
 export default function ProjectNotFound() {

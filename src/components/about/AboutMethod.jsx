@@ -1,6 +1,6 @@
 // src/components/about/AboutMethod.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 import Button from "../UI/Button";
 
 const pillars = [

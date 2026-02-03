@@ -1,6 +1,6 @@
 // src/components/services/ServicesIntro.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 
 export default function ServicesIntro() {
   return (

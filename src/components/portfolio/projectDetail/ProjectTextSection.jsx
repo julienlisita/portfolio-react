@@ -1,6 +1,6 @@
 // src/components/portfolio/projectDetail/ProjectTextSection.jsx
 
-import Section from "../../common/Section";
+import Section from "../../layout/Section";
 
 export default function ProjectTextSection({ title, text }) {
   if (!text) return null;

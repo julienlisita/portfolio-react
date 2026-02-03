@@ -1,4 +1,4 @@
-// src/components/common/HeaderWrapper.jsx
+// src/components/layout/HeaderWrapper.jsx
 
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";

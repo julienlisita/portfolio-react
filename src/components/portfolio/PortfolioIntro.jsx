@@ -1,6 +1,6 @@
 // src/components/portfolio/PortfolioIntro.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 
 export default function PortfolioIntro() {
   return (

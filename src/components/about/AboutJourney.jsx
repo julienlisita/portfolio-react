@@ -1,6 +1,6 @@
 // src/components/about/AboutJourney.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 
 export default function AboutJourney() {
   return (

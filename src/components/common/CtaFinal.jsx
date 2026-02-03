@@ -1,8 +1,8 @@
 // src/components/common/CtaFinal.jsx
 
 import { motion } from "framer-motion";
-import Section from "./Section";
 import Button from "../UI/Button";
+import Section from "../layout/Section";
 
 export default function CtaFinal({title, tagline, primary, secondary}) {
   return (

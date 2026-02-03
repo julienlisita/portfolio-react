@@ -1,6 +1,6 @@
 // src/components/blog/BlogList.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 import BlogCard from "./BlogCard";
 
 export default function BlogList({ articles }) {

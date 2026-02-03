@@ -1,6 +1,6 @@
 // src/components/portfolio/projectDetail/ProjectHero.jsx
 
-import Section from "../../common/Section";
+import Section from "../../layout/Section";
 
 export default function ProjectHero({ project }) {
   return (

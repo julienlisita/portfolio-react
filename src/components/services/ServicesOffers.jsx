@@ -1,6 +1,6 @@
 // src/components/services/ServicesOffers.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 import ServiceCard from "../home/ServiceCard";
 import { Monitor, Layers, LifeBuoy } from "lucide-react";
 

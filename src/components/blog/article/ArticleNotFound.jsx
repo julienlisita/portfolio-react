@@ -1,6 +1,6 @@
 // src/components/blog/article/ArticleNotFound.jsx
 
-import Section from "../../common/Section";
+import Section from "../../layout/Section";
 import { Link } from "react-router-dom";
 
 export default function ArticleNotFound() {

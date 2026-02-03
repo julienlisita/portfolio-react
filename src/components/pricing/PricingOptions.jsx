@@ -1,6 +1,6 @@
 // src/components/pricing/PricingOptions.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 
 export default function PricingOptions({ commonOptions, advancedOptions }) {
   return (

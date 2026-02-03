@@ -1,6 +1,6 @@
 // src/components/blog/BlogCta.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 import Button from "../UI/Button";
 
 export default function BlogCta() {

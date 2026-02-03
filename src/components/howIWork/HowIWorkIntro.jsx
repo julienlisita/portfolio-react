@@ -1,6 +1,6 @@
 // src/components/howIWork/HowIWorkIntro.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 
 export default function HowIWorkIntro() {
   return (

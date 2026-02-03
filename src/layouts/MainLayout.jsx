@@ -1,8 +1,8 @@
 // src/layouts/MainLayout.jsx
 
 import { useLocation } from "react-router-dom";
-import HeaderWrapper from "../components/common/HeaderWrapper";
-import Footer from "../components/common/Footer";
+import HeaderWrapper from "../components/layout/HeaderWrapper";
+import Footer from "../components/layout/Footer";
 
 export default function MainLayout({ children }) {
   const { pathname } = useLocation();

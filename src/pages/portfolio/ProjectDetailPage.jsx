@@ -3,7 +3,7 @@
 import PageTitle from "../../components/common/PageTitle";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../../data/projectsData";
-import Section from "../../components/common/Section";
+import Section from "../../components/layout/Section";
 import CtaFinal from "../../components/common/CtaFinal";
 
 import ProjectNotFound from "../../components/portfolio/projectDetail/ProjectNotFound";

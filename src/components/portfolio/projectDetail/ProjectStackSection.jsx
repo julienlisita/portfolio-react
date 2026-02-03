@@ -1,6 +1,6 @@
 // src/components/portfolio/projectDetail/ProjectStackSection.jsx
 
-import Section from "../../common/Section";
+import Section from "../../layout/Section";
 
 const labelByCategory = (category) => {
   if (category === "frontend") return "Front-end";

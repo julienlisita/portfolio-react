@@ -1,7 +1,7 @@
 // src/pages/ContactPage.jsx
 
 import PageTitle from "../components/common/PageTitle";
-import Section from "../components/common/Section";
+import Section from "../components/layout/Section";
 
 import ContactIntro from "../components/contact/ContactIntro";
 import ContactDetails from "../components/contact/ContactDetails";

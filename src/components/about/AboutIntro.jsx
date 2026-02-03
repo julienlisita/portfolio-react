@@ -1,6 +1,6 @@
 // src/components/about/AboutIntro.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 
 export default function AboutIntro() {
   return (

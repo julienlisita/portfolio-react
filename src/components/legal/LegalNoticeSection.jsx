@@ -1,6 +1,6 @@
 // src/components/legal/LegalNoticeSection.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 
 export default function LegalNoticeSection() {
   return (

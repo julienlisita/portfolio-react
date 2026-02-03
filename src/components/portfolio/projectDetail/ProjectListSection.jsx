@@ -1,6 +1,6 @@
 // src/components/portfolio/projectDetail/ProjectListSection.jsx
 
-import Section from "../../common/Section";
+import Section from "../../layout/Section";
 
 export default function ProjectListSection({ title, items }) {
   if (!items || items.length === 0) return null;

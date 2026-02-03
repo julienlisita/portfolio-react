@@ -1,6 +1,6 @@
 // src/components/howIWork/HowIWorkMockups.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 import TechCard from "./TechCard";
 import { FaFigma } from "react-icons/fa";
 

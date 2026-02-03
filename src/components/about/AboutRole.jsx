@@ -1,6 +1,6 @@
 // src/components/about/AboutRole.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 
 export default function AboutRole() {
   return (

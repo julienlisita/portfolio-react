@@ -1,7 +1,7 @@
 // src/components/common/FaqSection.jsx
 
 import { HelpCircle, ChevronRight } from "lucide-react";
-import Section from "./Section";
+import Section from "../layout/Section";
 
 export default function FaqSection({ 
   id, 

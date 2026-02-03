@@ -1,6 +1,6 @@
 // src/components/howIWork/HowIWorkOutcomes.jsx
 
-import Section from "../common/Section";
+import Section from "../layout/Section";
 
 export default function HowIWorkOutcomes() {
   return (

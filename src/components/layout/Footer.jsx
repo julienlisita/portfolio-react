@@ -1,4 +1,5 @@
-// src/components/common/Footer.jsx
+// src/components/layout/Footer.jsx
+
 import { Link } from "react-router-dom";
 import { LuLinkedin, LuGithub, LuFacebook } from "react-icons/lu";
 

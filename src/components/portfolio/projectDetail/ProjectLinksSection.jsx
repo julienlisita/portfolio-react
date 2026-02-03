@@ -1,6 +1,6 @@
 // src/components/portfolio/projectDetail/ProjectLinksSection.jsx
 
-import Section from "../../common/Section";
+import Section from "../../layout/Section";
 
 export default function ProjectLinksSection({ project }) {
   const hasLinks = Boolean(
