@@ -2,6 +2,7 @@
 
 import HomeSectionWrapper from "./HomeSectionWrapper";
 import {articles} from "../../data/articles"
+import BlogCard from "../blog/BlogCard";
 
 export default function BlogPreview() {
 
