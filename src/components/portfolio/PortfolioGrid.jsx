@@ -1,7 +1,7 @@
 // src/components/portfolio/PortfolioGrid.jsx
 
 import Section from "../common/Section";
-import ProjectCard from "../common/ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export default function PortfolioGrid({ title, projects }) {
   return (

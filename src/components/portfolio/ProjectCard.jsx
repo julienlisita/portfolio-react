@@ -1,6 +1,6 @@
-// src/components/common/ProjectCard.jsx
+// src/components/portfolio/ProjectCard.jsx
+
 import { motion } from "framer-motion";
-import Button from "./Button";
 
 export default function ProjectCard({
   slug,
@@ -82,7 +82,8 @@ export default function ProjectCard({
 
         {/* Bouton */}
         <div className="mt-4 flex justify-center">
-          <Button to={`/realisations/${slug}`} variant="text">
+          <Button
+           to={`/realisations/${slug}`} variant="text">
             Voir le projet ›
           </Button>
         </div>

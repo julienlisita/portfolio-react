@@ -1,8 +1,8 @@
 // src/components/home/ProjectsPreview.jsx
 
 import HomeSectionWrapper from "./HomeSectionWrapper";
-import ProjectCard from "../common/ProjectCard";
 import { projects } from "../../data/projectsData";
+import ProjectCard from "../portfolio/ProjectCard";
 
 export default function ProjectsPreview() {
   const featuredSlugs = ["ccs", "lumiere-darcachon", "thomas-delaunay"];
