@@ -1,51 +1,38 @@
-// src/pages/ArticlePage.jsx
+// src/pages/blog/ArticlePage.jsx
 
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
-import frontMatter from "front-matter";
 import { articles } from "../../data/articles";
-import PageTitle from "../../components/common/PageTitle";
+
+import useArticleMarkdown from "../../hooks/useArticleMarkdown";
+
+import ArticleHeader from "../../components/blog/article/ArticleHeader";
+import ArticleContent from "../../components/blog/article/ArticleContent";
+import ArticleNotFound from "../../components/blog/article/ArticleNotFound";
+import ArticleLoadError from "../../components/blog/article/ArticleLoadError";
 
 export default function ArticlePage() {
   const { slug } = useParams();
   const article = articles.find((a) => a.slug === slug);
-  const [markdown, setMarkdown] = useState("");
-  const [error, setError] = useState(false);
 
-  useEffect(() => {
-    if (!slug) return;
+  const { markdown, error, isLoading } = useArticleMarkdown(slug);
 
-    fetch(`/content/blog/${slug}.md`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Fichier introuvable");
-        return res.text();
-      })
-      .then((text) => {
-        const { body } = frontMatter(text);
-        setMarkdown(body);
-        setError(false);
-      })
-      .catch(() => {
-        setMarkdown("");
-        setError(true);
-      });
-  }, [slug]);
-
-  if (!article) {
-    return <p className="text-red-400">Article non trouvé.</p>;
-  }
+  if (!article) return <ArticleNotFound />;
 
   return (
     <>
-      <header className="mb-8">
-        <PageTitle>{article.title}</PageTitle>
-        <p className="mt-4 text-sm text-gray-400">{article.date}</p>
-      </header>
+      <ArticleHeader
+        title={article.title}
+        date={article.date}
+        category={article.category}
+      />
 
-      <section className="prose prose-invert max-w-none text-gray-200">
-        <ReactMarkdown>{markdown}</ReactMarkdown>
-      </section>
+      {error && <ArticleLoadError />}
+
+      {!error && !isLoading && <ArticleContent markdown={markdown} />}
+
+      {!error && isLoading && (
+        <p className="text-sm text-gray-400">Chargement…</p>
+      )}
     </>
   );
 }
