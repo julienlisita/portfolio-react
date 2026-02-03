@@ -1,4 +1,4 @@
-// src/pages/ProjectDetailsPages.jsx
+// src/pages/portfolio/ProjectDetailsPages.jsx
 
 import PageTitle from "../../components/common/PageTitle";
 import { useParams, Link } from "react-router-dom";
