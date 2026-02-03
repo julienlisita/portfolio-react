@@ -1,7 +1,7 @@
 // src/components/howIWork/HowIWorkTechStack.jsx
 
 import Section from "../common/Section";
-import TechCard from "../common/TechCard";
+import TechCard from "./TechCard";
 
 export default function HowIWorkTechStack({ technologies }) {
   return (

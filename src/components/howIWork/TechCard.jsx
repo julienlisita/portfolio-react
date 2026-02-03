@@ -1,3 +1,5 @@
+// src/components/howIWork/TechCard.jsx
+
 export default function TechnologyCard({ icon: Icon, name, description, color }) {
   return (
     <div
