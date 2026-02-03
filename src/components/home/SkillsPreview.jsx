@@ -20,7 +20,7 @@ import {
   SiSequelize,
   SiVercel,
 } from "react-icons/si";
-import SkillCard from "../common/SkillCard";
+import SkillCard from "../home/SkillCard";
 
 export default function SkillesPreview() {
 
