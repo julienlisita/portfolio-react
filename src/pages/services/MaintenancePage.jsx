@@ -1,6 +1,5 @@
 // src/pages/services/MaintenancePage.jsx
 
-import Section from "../../components/layout/Section";
 import FaqSection from "../../components/patterns/FaqSection";
 import CtaFinal from "../../components/patterns/CtaFinal";
 
@@ -34,11 +33,8 @@ export default function MaintenancePage() {
   ];
 
   return (
-    <Section
-      id="suivi-et-maintenance"
-      title="Suivi & maintenance du site"
-      className="text-base sm:text-lg lg:text-xl"
-    >
+    <>
+      <PageTitle>Suivi & maintenance du site</PageTitle>
       <MaintenanceIntro />
       <MaintenanceIncluded />
       <MaintenanceTerms />
@@ -52,6 +48,6 @@ export default function MaintenancePage() {
         primary={{ href: "/contact", text: "Demander un suivi" }}
         secondary={{ href: "/tarifs", text: "Voir les tarifs" }}
       />
-    </Section>
+    </>
   );
 }

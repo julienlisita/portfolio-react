@@ -1,6 +1,7 @@
 // src/components/services/maintenance/MaintenanceIncluded.jsx
 
 import { LifeBuoy, Wrench, Shield, Gauge, ListChecks, ClipboardList } from "lucide-react";
+import Section from "../../layout/Section";
 
 const items = [
   { icon: Wrench, text: "Correction de bugs & support technique" },
@@ -12,11 +13,11 @@ const items = [
 
 export default function MaintenanceIncluded() {
   return (
-    <>
-      <h3 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
+     <Section className="text-base sm:text-lg lg:text-xl">
+      <h2 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
         <LifeBuoy className="w-5 h-5 text-[#007AFF]" />
         Ce qui est inclus
-      </h3>
+      </h2>
 
       <ul className="list-none ml-6 space-y-2">
         {items.map((it) => (
@@ -26,6 +27,6 @@ export default function MaintenanceIncluded() {
           </li>
         ))}
       </ul>
-    </>
+    </Section>
   );
 }
