@@ -1,7 +1,7 @@
 // src/App.jsx
 
 import { BrowserRouter as Router } from "react-router-dom";
-import ScrollToTop from "./components/common/ScrollToTop";
+import ScrollToTop from "./components/navigation/ScrollToTop";
 import MainLayout from "./layouts/MainLayout";
 import AppRoutes from "./routes/AppRoutes";
 import AnalyticsTracker from "./components/analytics/AnalyticsTracker";

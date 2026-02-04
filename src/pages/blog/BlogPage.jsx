@@ -1,7 +1,7 @@
 // src/pages/blog/BlogPage.jsx
 
 import { useState } from "react";
-import Pagination from "../../components/common/Pagination";
+import Pagination from "../../components/navigation/Pagination";
 import PageTitle from "../../components/common/PageTitle";
 import { articles } from "../../data/articles";
 

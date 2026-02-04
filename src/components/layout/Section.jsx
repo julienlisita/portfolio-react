@@ -1,4 +1,4 @@
-// src/components/common/Section.jsx
+// src/components/layout/Section.jsx
 
 import SectionTitle from "../UI/SectionTitle";
 
