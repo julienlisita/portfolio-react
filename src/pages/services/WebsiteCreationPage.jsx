@@ -1,6 +1,5 @@
 // src/pages/services/WebsiteCreationPage.jsx
 
-import Section from "../../components/layout/Section";
 import FaqSection from "../../components/patterns/FaqSection";
 import CtaFinal from "../../components/patterns/CtaFinal";
 
@@ -8,6 +7,7 @@ import WebsiteCreationIntro from "../../components/services/websiteCreation/Webs
 import WebsiteCreationAudience from "../../components/services/websiteCreation/WebsiteCreationAudience";
 import WebsiteCreationDeliverables from "../../components/services/websiteCreation/WebsiteCreationDeliverables";
 import WebsiteCreationWhyAndSeo from "../../components/services/websiteCreation/WebsiteCreationWhyAndSeo";
+import PageTitle from "../../components/UI/PageTitle";
 
 export default function WebsiteCreationPage() {
   const faq = [
@@ -34,11 +34,8 @@ export default function WebsiteCreationPage() {
   ];
 
   return (
-    <Section
-      id="creation-site-internet"
-      title="Création de site internet"
-      className="text-base sm:text-lg lg:text-xl"
-    >
+    <>
+      <PageTitle>Création de site internet</PageTitle>
       <WebsiteCreationIntro />
       <WebsiteCreationAudience />
       <WebsiteCreationDeliverables />
@@ -52,6 +49,6 @@ export default function WebsiteCreationPage() {
         primary={{ href: "/contact", text: "Demander un échange" }}
         secondary={{ href: "/tarifs", text: "Voir les tarifs" }}
       />
-    </Section>
+    </>
   );
 }

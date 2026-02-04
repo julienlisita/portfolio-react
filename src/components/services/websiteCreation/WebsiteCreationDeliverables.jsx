@@ -1,6 +1,7 @@
 // src/components/services/websiteCreation/WebsiteCreationDeliverables.jsx
 
 import { ListChecks, Layout } from "lucide-react";
+import Section from "../../layout/Section";
 
 const items = [
   "Un design propre et cohérent avec votre identité",
@@ -13,11 +14,11 @@ const items = [
 
 export default function WebsiteCreationDeliverables() {
   return (
-    <>
-      <h3 className="text-xl font-semibold mt-10 mb-3 flex items-center gap-2">
+    <Section className="text-base sm:text-lg lg:text-xl">
+      <h2 className="text-xl font-semibold mt-10 mb-3 flex items-center gap-2">
         <ListChecks className="w-5 h-5 text-[#007AFF]" />
         Ce que vous obtenez
-      </h3>
+      </h2>
 
       <ul className="list-none ml-6 space-y-2">
         {items.map((item) => (
@@ -27,6 +28,6 @@ export default function WebsiteCreationDeliverables() {
           </li>
         ))}
       </ul>
-    </>
+    </Section>
   );
 }

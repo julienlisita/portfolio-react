@@ -1,6 +1,7 @@
 // src/components/services/websiteCreation/WebsiteCreationAudience.jsx
 
 import { Users, CheckCircle } from "lucide-react";
+import Section from "../../layout/Section";
 
 const items = [
   "Artisans (bâtiment, services, métiers de bouche…)",
@@ -11,11 +12,11 @@ const items = [
 
 export default function WebsiteCreationAudience() {
   return (
-    <>
-      <h3 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
+    <Section className="text-base sm:text-lg lg:text-xl">
+      <h2 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
         <Users className="w-5 h-5 text-[#007AFF]" />
         Pour qui ?
-      </h3>
+      </h2>
 
       <ul className="list-none ml-6 space-y-2">
         {items.map((item) => (
@@ -25,6 +26,6 @@ export default function WebsiteCreationAudience() {
           </li>
         ))}
       </ul>
-    </>
+    </Section>
   );
 }
