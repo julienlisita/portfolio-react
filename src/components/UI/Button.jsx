@@ -1,4 +1,5 @@
-// src/components/common/Button.jsx
+// src/components/UI/Button.jsx
+
 import { Link } from "react-router-dom";
 
 export default function Button({

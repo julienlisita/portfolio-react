@@ -1,6 +1,6 @@
 // src/components/portfolio/projectDetail/ProjectNotFound.jsx
 
-import PageTitle from "../../common/PageTitle";
+import PageTitle from "../../UI/PageTitle";
 import Section from "../../layout/Section";
 import { Link } from "react-router-dom";
 

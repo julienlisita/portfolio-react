@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Pagination from "../../components/navigation/Pagination";
-import PageTitle from "../../components/common/PageTitle";
+import PageTitle from "../../components/UI/PageTitle";
 import { articles } from "../../data/articles";
 
 import BlogIntro from "../../components/blog/BlogIntro";

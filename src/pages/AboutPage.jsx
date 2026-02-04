@@ -6,7 +6,7 @@ import AboutMethod from "../components/about/AboutMethod";
 import AboutRole from "../components/about/AboutRole";
 import CtaFinal from "../components/common/CtaFinal";
 import FaqSection from "../components/common/FaqSection";
-import PageTitle from "../components/common/PageTitle";
+import PageTitle from "../components/UI/PageTitle";
 
 export default function AboutPage() {
   const faq = [

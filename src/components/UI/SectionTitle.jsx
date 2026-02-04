@@ -1,4 +1,4 @@
-// src/components/common/SectionTitle.jsx
+// src/components/UI/SectionTitle.jsx
 
 export default function SectionTitle({ className, children,id }) {
     return (

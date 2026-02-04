@@ -1,6 +1,6 @@
 // src/pages/legal/LegalAndPrivacyPage.jsx
 
-import PageTitle from "../../components/common/PageTitle";
+import PageTitle from "../../components/UI/PageTitle";
 import LegalNoticeSection from "../../components/legal/LegalNoticeSection";
 import PrivacyPolicySection from "../../components/legal/PrivacyPolicySection";
 

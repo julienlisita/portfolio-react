@@ -1,6 +1,6 @@
 // src/pages/portfolio/ProjectDetailPage.jsx
 
-import PageTitle from "../../components/common/PageTitle";
+import PageTitle from "../../components/UI/PageTitle";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../../data/projectsData";
 import Section from "../../components/layout/Section";

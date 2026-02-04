@@ -1,4 +1,4 @@
-// src/components/common/PageTitle.jsx
+// src/components/UI/PageTitle.jsx
 
 export default function PageTitle({ children }) {
     return (

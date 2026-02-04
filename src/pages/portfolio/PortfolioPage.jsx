@@ -1,7 +1,7 @@
 // src/pages/portfolio/PortfolioPage.jsx
 
 import { projects } from "../../data/projectsData";
-import PageTitle from "../../components/common/PageTitle";
+import PageTitle from "../../components/UI/PageTitle";
 import CtaFinal from "../../components/common/CtaFinal";
 
 import PortfolioIntro from "../../components/portfolio/PortfolioIntro";

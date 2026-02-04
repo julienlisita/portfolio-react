@@ -1,6 +1,6 @@
 // src/pages/services/ServicesPage.jsx
 
-import PageTitle from "../../components/common/PageTitle";
+import PageTitle from "../../components/UI/PageTitle";
 import FaqSection from "../../components/common/FaqSection";
 import CtaFinal from "../../components/common/CtaFinal";
 

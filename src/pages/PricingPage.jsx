@@ -1,6 +1,6 @@
 // src/pages/PricingPage.jsx
 
-import PageTitle from "../components/common/PageTitle";
+import PageTitle from "../components/UI/PageTitle";
 
 import PricingIntroAndPacks from "../components/pricing/PricingIntroAndPacks";
 import PricingOptions from "../components/pricing/PricingOptions";

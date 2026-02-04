@@ -1,6 +1,6 @@
 // src/components/blog/article/ArticleHeader.jsx
 
-import PageTitle from "../../common/PageTitle";
+import PageTitle from "../../UI/PageTitle";
 
 export default function ArticleHeader({ title, date, category }) {
   return (

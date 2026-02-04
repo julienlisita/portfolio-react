@@ -1,6 +1,6 @@
 // src/pages/NotFoundPage.jsx
 
-import PageTitle from "../components/common/PageTitle";
+import PageTitle from "../components/UI/PageTitle";
 
 export default function NotFoundPage() {
     return (
