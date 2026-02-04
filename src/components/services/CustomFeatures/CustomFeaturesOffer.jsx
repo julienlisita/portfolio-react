@@ -1,6 +1,7 @@
 // src/components/services/customFeatures/CustomFeaturesOffer.jsx
 
 import { Layers, Wrench } from "lucide-react";
+import Section from "../../layout/Section";
 
 const items = [
   "Développement full-stack (front + back) selon votre besoin",
@@ -12,11 +13,11 @@ const items = [
 
 export default function CustomFeaturesOffer() {
   return (
-    <>
-      <h3 className="text-xl font-semibold mt-10 mb-3 flex items-center gap-2">
-        <Layers className="w-5 h-5 text-[#007AFF]" />
-        Ce que je propose
-      </h3>
+     <Section className="text-base sm:text-lg lg:text-xl">
+        <h2 className="text-xl font-semibold mt-10 mb-3 flex items-center gap-2">
+          <Layers className="w-5 h-5 text-[#007AFF]" />
+          Ce que je propose
+        </h2>
 
       <ul className="list-none ml-6 space-y-2">
         {items.map((item) => (
@@ -26,6 +27,6 @@ export default function CustomFeaturesOffer() {
           </li>
         ))}
       </ul>
-    </>
+    </Section>
   );
 }

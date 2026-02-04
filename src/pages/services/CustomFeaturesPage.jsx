@@ -1,12 +1,12 @@
 // src/pages/services/CustomFeaturesPage.jsx
 
-import Section from "../../components/layout/Section";
 import FaqSection from "../../components/patterns/FaqSection";
 import CtaFinal from "../../components/patterns/CtaFinal";
 import CustomFeaturesIntro from "../../components/services/CustomFeatures/CustomFeaturesIntro";
 import CustomFeaturesAudience from "../../components/services/CustomFeatures/CustomFeaturesAudience";
 import CustomFeaturesOffer from "../../components/services/CustomFeatures/CustomFeaturesOffer";
 import CustomFeaturesUseCases from "../../components/services/CustomFeatures/CustomFeaturesUseCases";
+import PageTitle from "../../components/UI/PageTitle";
 
 export default function CustomFeaturesPage() {
   const faq = [
@@ -33,11 +33,8 @@ export default function CustomFeaturesPage() {
   ];
 
   return (
-    <Section
-      id="fonctionnalites-sur-mesure"
-      title="Fonctionnalités & outils sur mesure"
-      className="text-base sm:text-lg lg:text-xl"
-    >
+    <>
+      <PageTitle>Fonctionnalités & outils sur mesure</PageTitle>
       <CustomFeaturesIntro />
       <CustomFeaturesAudience />
       <CustomFeaturesOffer />
@@ -51,6 +48,6 @@ export default function CustomFeaturesPage() {
         primary={{ href: "/contact", text: "Discuter du besoin" }}
         secondary={{ href: "/realisations", text: "Voir des projets" }}
       />
-    </Section>
+    </>
   );
 }
