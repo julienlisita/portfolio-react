@@ -1,4 +1,4 @@
-// src/components/common/FloatingInput.jsx
+// src/components/form/FloatingInput.jsx
 
 export default function FloatingInput({ label, name, type = "text", required = false }) {
   return (

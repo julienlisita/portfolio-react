@@ -1,4 +1,4 @@
-// src/components/common/FloatingTextarea.jsx
+// src/components/form/FloatingTextarea.jsx
 
 export default function FloatingTextarea({ label, name, required = false, rows = 5 }) {
   return (

@@ -1,8 +1,8 @@
-// src/components/common/ContactForm.jsx
+// src/components/contact/ContactForm.jsx
 
 import Button from "../UI/Button";
-import FloatingInput from "./FloatingInput";
-import FloatingTextarea from "./FloatingTextarea";
+import FloatingInput from "../form/FloatingInput";
+import FloatingTextarea from "../form/FloatingTextarea";
 
 export default function ContactForm() {
   return (

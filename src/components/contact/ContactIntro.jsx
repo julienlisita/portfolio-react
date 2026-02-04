@@ -1,6 +1,6 @@
 // src/components/contact/ContactIntro.jsx
 
-import ContactForm from "../common/ContactForm";
+import ContactForm from "./ContactForm";
 
 export default function ContactIntro() {
   return (
