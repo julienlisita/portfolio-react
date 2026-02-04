@@ -2,7 +2,7 @@
 
 import { projects } from "../../data/projectsData";
 import PageTitle from "../../components/UI/PageTitle";
-import CtaFinal from "../../components/common/CtaFinal";
+import CtaFinal from "../../components/patterns/CtaFinal";
 
 import PortfolioIntro from "../../components/portfolio/PortfolioIntro";
 import PortfolioGrid from "../../components/portfolio/PortfolioGrid";

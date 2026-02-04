@@ -4,7 +4,7 @@ import PageTitle from "../../components/UI/PageTitle";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../../data/projectsData";
 import Section from "../../components/layout/Section";
-import CtaFinal from "../../components/common/CtaFinal";
+import CtaFinal from "../../components/patterns/CtaFinal";
 
 import ProjectNotFound from "../../components/portfolio/projectDetail/ProjectNotFound";
 import ProjectHero from "../../components/portfolio/projectDetail/ProjectHero";

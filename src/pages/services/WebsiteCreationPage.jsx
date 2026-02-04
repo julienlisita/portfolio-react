@@ -1,8 +1,8 @@
 // src/pages/services/WebsiteCreationPage.jsx
 
 import Section from "../../components/layout/Section";
-import FaqSection from "../../components/common/FaqSection";
-import CtaFinal from "../../components/common/CtaFinal";
+import FaqSection from "../../components/patterns/FaqSection";
+import CtaFinal from "../../components/patterns/CtaFinal";
 
 import WebsiteCreationIntro from "../../components/services/websiteCreation/WebsiteCreationIntro";
 import WebsiteCreationAudience from "../../components/services/websiteCreation/WebsiteCreationAudience";

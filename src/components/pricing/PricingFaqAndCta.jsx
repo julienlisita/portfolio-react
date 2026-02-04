@@ -1,7 +1,7 @@
 // src/components/pricing/PricingFaqAndCta.jsx
 
-import FaqSection from "../common/FaqSection";
-import CtaFinal from "../common/CtaFinal";
+import FaqSection from "../patterns/FaqSection";
+import CtaFinal from "../patterns/CtaFinal";
 
 export default function PricingFaqAndCta({ faq }) {
   return (

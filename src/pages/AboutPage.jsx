@@ -4,8 +4,8 @@ import AboutIntro from "../components/about/AboutIntro";
 import AboutJourney from "../components/about/AboutJourney";
 import AboutMethod from "../components/about/AboutMethod";
 import AboutRole from "../components/about/AboutRole";
-import CtaFinal from "../components/common/CtaFinal";
-import FaqSection from "../components/common/FaqSection";
+import CtaFinal from "../components/patterns/CtaFinal";
+import FaqSection from "../components/patterns/FaqSection";
 import PageTitle from "../components/UI/PageTitle";
 
 export default function AboutPage() {

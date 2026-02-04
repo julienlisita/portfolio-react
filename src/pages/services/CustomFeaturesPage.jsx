@@ -1,8 +1,8 @@
 // src/pages/services/CustomFeaturesPage.jsx
 
 import Section from "../../components/layout/Section";
-import FaqSection from "../../components/common/FaqSection";
-import CtaFinal from "../../components/common/CtaFinal";
+import FaqSection from "../../components/patterns/FaqSection";
+import CtaFinal from "../../components/patterns/CtaFinal";
 import CustomFeaturesIntro from "../../components/services/CustomFeatures/CustomFeaturesIntro";
 import CustomFeaturesAudience from "../../components/services/CustomFeatures/CustomFeaturesAudience";
 import CustomFeaturesOffer from "../../components/services/CustomFeatures/CustomFeaturesOffer";

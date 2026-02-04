@@ -17,8 +17,8 @@ import {
   SiCplusplus,
 } from "react-icons/si";
 
-import CtaFinal from "../components/common/CtaFinal";
-import FaqSection from "../components/common/FaqSection";
+import CtaFinal from "../components/patterns/CtaFinal";
+import FaqSection from "../components/patterns/FaqSection";
 import HowIWorkIntro from "../components/howIWork/HowIWorkIntro";
 import HowIWorkMethod from "../components/howIWork/HowIWorkMethod";
 import HowIWorkNoCodeComparison from "../components/howIWork/HowIWorkNoCodeComparison";
