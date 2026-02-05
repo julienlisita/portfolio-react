@@ -7,7 +7,8 @@ export const projects = [
     category: "web",
     description:
         "Projet personnel mêlant photographie et développement web : un site éditorial dédié aux lumières du Bassin d’Arcachon.",
-    image: "/assets/images/projects/lumieredarcachon.png", 
+    cardImage: "/assets/images/projects/lumieredarcachon.png",
+    heroImage: "/assets/images/projects/lumieredarcachon-hero.avif",
     technos: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveSite: "https://lumieredarcachon.fr", 
     sourceCode: [
@@ -45,7 +46,8 @@ export const projects = [
     category: "web",
     description:
         "Application web complète : site vitrine moderne, réservation en ligne et espace administrateur sécurisé pour la gestion des créneaux.",
-    image: "/assets/images/projects/thomas-delaunay.png",
+    cardImage: "/assets/images/projects/thomas-delaunay.png", 
+    heroImage: "/assets/images/projects/thomas-delaunay-hero.avif",
     technos: ["Next.js", "TypeScript", "Prisma"],
     liveSite: "https://thomas-delaunay-coaching.vercel.app",
     sourceCode: [
@@ -95,7 +97,8 @@ export const projects = [
     category: "vitrines",
     description:
         "Site professionnel pour une entreprise d’aide à domicile, incluant pages informatives, actualités, formulaire de contact et candidature avec CV.",
-    image: "/assets/images/projects/ccs.jpg",
+    cardImage: "/assets/images/projects/ccs.jpg",
+    heroImage: "/assets/images/projects/ccs-hero.avif",
     technos: ["Next.js", "TypeScript", "Tailwind"],
     liveSite: "https://compagnie-careandservices.vercel.app",
     sourceCode: [
@@ -143,7 +146,8 @@ export const projects = [
         title: "Le Brunch Bordelais",
         category: "vitrines",
         description: "Site vitrine moderne et chaleureux conçu pour présenter l’univers culinaire et l’ambiance du restaurant.",
-        image: "/assets/images/projects/brunchbordelais.avif",
+        cardImage: "/assets/images/projects/brunchbordelais.avif",
+        heroImage: "/assets/images/projects/brunchbordelais-hero.avif",
         technos: ["Next.js", "JavaScript", "Tailwind"],
         liveSite: "https://le-brunch-bordelais.vercel.app",
         sourceCode: [
@@ -173,7 +177,8 @@ export const projects = [
         title: "ShogiConnect",
         category: "web",
         description: "Plateforme communautaire dédiée au shogi, avec profils, forum et interface de jeu en ligne.",
-        image: "/assets/images/projects/shogiconnect.png",
+        cardImage: "/assets/images/projects/shogiconnect.png",
+        heroImage: "/assets/images/projects/shogiconnect-hero.avif",
         technos: ["React", "Node.js", "Sequelize"],
         liveSite: "https://shogiconnect.netlify.app",
         sourceCode: [
@@ -208,7 +213,8 @@ export const projects = [
         title: "Julien Lisita – Site professionnel",
         category: "vitrines",
         description: "Site vitrine responsive pour présenter mes projets et mes services de développeur.",
-        image: "/assets/images/projects/portfolio.png",
+        cardImage: "/assets/images/projects/portfolio.png",
+        heroImage: "/assets/images/projects/portfolio-hero.avif",
         technos: ["React", "Tailwind", "Framer Motion"],
         liveSite: "https://julienlisita.com",
         sourceCode: [
@@ -232,37 +238,4 @@ export const projects = [
             deployment: ["Netlify"]
         }
     },
-//     {
-//         slug: "planify",
-//         title: "Planify",
-//         category: "web",
-//         description: "Application intuitive pour créer ses propres recettes et organiser ses repas au quotidien.",
-//         image: "/assets/images/projects/planify.avif",
-//         technos: ["React", "Node.js", "Tailwind"],
-//         liveSite: null,
-//         sourceCode: [
-//         { label: "Client", url: "https://github.com/julienlisita/planify-frontend" },
-//         { label: "API", url: "https://github.com/julienlisita/planify-backend" },
-//         ],
-//         demo: null,
-//         summary: [
-//             "Planify est un projet de plateforme web collaborative qui permet aux utilisateurs d’accéder un large de choix de recettes de cuisine classées par catégorie, d'interagir avec celles-ci, et de publier leurs propres recettes. Le projet vise également à simplifier la planification des repas hebdomadaires et à encourager la contribution d’articles sur l’actualité culinaire. Le projet s’inscrit dans un contexte de bien-être alimentaire et de convivialité dans le but d’apporter une solution moderne et intuitive pour découvrir de nouvelles idées culinaires et organiser leur repas de façon efficace."
-//         ],
-//         features: [
-//             "Consultation d’un catalogue de recettes classées par catégories (entrées, plats, desserts, etc.).",
-//             "Création, modification et suppression de recettes personnelles avec photo, ingrédients et étapes détaillées.",
-//             "Planification hebdomadaire des repas à l’aide d’un calendrier interactif.",
-//             "Générations de liste de courses.",
-//             "Recherche de recettes par mots-clés ou par ingrédients.",
-//             "Ajout de recettes à une liste de favoris pour un accès rapide.",
-//             "Section blog avec des articles culinaires collaboratifs (nutrition, astuces, tendances)."
-// ],
-//         stack: {
-//             frontend: ["React", "React Router", "Tailwind CSS"],
-//             backend: ["Node.js","Express", "Sequelize", "JWT (JSON Web Token)"],
-//             database: ["mySQL"],
-//             test: null,
-//             deployment: null
-//         }
-//     },
 ];

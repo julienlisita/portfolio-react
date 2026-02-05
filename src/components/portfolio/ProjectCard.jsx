@@ -5,7 +5,7 @@ import Button from "../UI/Button";
 
 export default function ProjectCard({
   slug,
-  image,
+  cardImage,
   title,
   description,
   technos,
@@ -37,7 +37,7 @@ export default function ProjectCard({
       {/* Image */}
       <div className="relative">
         <img
-          src={image}
+          src={cardImage}
           alt={`Aperçu du projet ${title}`}
           className="h-48 w-full object-cover"
           loading="lazy"

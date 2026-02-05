@@ -7,9 +7,9 @@ export default function ProjectHero({ project }) {
     <Section>
       <div className="flex justify-center">
         <img
-          src={project.image}
+          src={project.heroImage}
           alt={project.title}
-          className="w-full max-w-[820px] max-h-[360px] object-cover rounded-lg"
+          className="w-full max-w-[820px] object-cover rounded-lg"
           loading="lazy"
           decoding="async"
         />
