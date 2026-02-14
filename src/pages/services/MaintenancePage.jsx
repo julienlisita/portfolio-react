@@ -2,7 +2,7 @@
 
 import FaqSection from "../../components/patterns/FaqSection";
 import CtaFinal from "../../components/patterns/CtaFinal";
-
+import PageTitle from "../../components/UI/PageTitle";
 import MaintenanceIntro from "../../components/services/maintenance/MaintenanceIntro";
 import MaintenanceIncluded from "../../components/services/maintenance/MaintenanceIncluded";
 import MaintenanceTerms from "../../components/services/maintenance/MaintenanceTerms";
