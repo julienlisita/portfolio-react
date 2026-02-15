@@ -45,7 +45,7 @@ export default function HowIWorkTechStack({ technologies }) {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
           {technologies.filter((t) => t.category === "complementary").map((t) => (
-            <TechCard key={t.name} color="#5AC8FA" {...t} />
+            <TechCard key={t.name} color="#9B59B6" {...t} />
           ))}
         </div>
 

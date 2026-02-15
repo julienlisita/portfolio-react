@@ -22,7 +22,7 @@ export default function ServicesPreview() {
       icon: <Layers />,
       description:
         "Réservation en ligne, espace admin, formulaires avancés… Une solution adaptée à votre activité, évolutive et sécurisée.",
-      color: ["#007AFF", "#5AC8FA"],
+      color: ["#007AFF", "#9B59B6"],
       link: "/services/creation-site-internet-fonctionnalites-sur-mesure",
     },
     {
@@ -31,7 +31,7 @@ export default function ServicesPreview() {
       icon: <LifeBuoy />,
       description:
         "Mises à jour, sécurité, corrections et petites évolutions : votre site reste fiable et performant dans le temps.",
-      color: ["#5AC8FA", "#007AFF"],
+      color: ["#9B59B6", "#FF66B2"],
       link: "/services/suivi-et-evolutions",
     },
   ];
