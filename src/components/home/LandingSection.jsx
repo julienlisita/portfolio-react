@@ -106,9 +106,10 @@ const spotlightStyleDesktop = {
               height={112}
               className="
                 mx-auto lg:mx-0
-                h-12 w-12
+                h-[72px] w-[72px]
                 sm:h-20 sm:w-20
                 md:h-24 md:w-24
+                mb-2 sm:mb-3
               "
               {...(!reduce && {
                 initial: { opacity: 0, scale: 0.94 },
