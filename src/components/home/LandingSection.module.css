@@ -4,8 +4,8 @@
 .neonTitleStrong {
   text-shadow:
     0 1px 0 rgba(0,0,0,.35),
-    0 0 8px rgba(90,200,250,.4),
-    0 0 22px rgba(90,200,250,.25);
+    0 0 6px rgba(90,200,250,.25),
+    0 0 14px rgba(90,200,250,.15);
 }
 
 /* Sous-titre H2 */
