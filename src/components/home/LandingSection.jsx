@@ -13,9 +13,11 @@ export default function LandingSection() {
   const name = "Julien Lisita";
   const eyebrow = "Pour indépendants, artisans et petites entreprises";
   const location = "Bordeaux & à distance";
-  const title = "Sites web & outils sur mesure pour votre activité";
+  const title = `Sites web & outils
+sur mesure
+pour votre activité`;   
 
-  const tagline = "Des sites clairs, rapides et évolutifs, avec des fonctionnalités utiles (réservation, gestion, formulaires) pour vous faire gagner du temps et générer plus de clients.";
+  const tagline = "Des sites clairs et rapides, avec des fonctionnalités utiles comme la réservation en ligne, la gestion ou des formulaires, pour vous faire gagner du temps et générer plus de clients.";
 
   const VISUAL_SRC = "/assets/mockups/portfolio-services-ipad.png";
 
@@ -111,7 +113,7 @@ const spotlightStyleDesktop = {
             />
 
             <motion.p
-              className="text-base sm:text-lg lg:text-xl font-semibold text-white/80 tracking-tight"
+              className="text-lg sm:text-xl lg:text-2xl font-semibold text-white tracking-tight"
               {...(!reduce && { transition: { ...fade.transition, delay: 0.05 } })}
             >
               {name}
@@ -131,7 +133,7 @@ const spotlightStyleDesktop = {
             </motion.div>
 
             <motion.h1
-              className={`text-white text-3xl sm:text-4xl lg:text-[3rem] xl:text-[3.2rem] font-extrabold leading-[1.18] tracking-[-0.025em] ${styles.neonTitleStrong}`}
+              className={`text-white text-3xl sm:text-4xl lg:text-[3rem] xl:text-[3.2rem] font-extrabold leading-[1.18] tracking-[-0.025em] whitespace-pre-line ${styles.neonTitleStrong}`}
               {...fadeUp}
               {...(!reduce && { transition: { ...fadeUp.transition, delay: 0.16 } })}
             >
