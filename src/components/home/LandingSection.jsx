@@ -14,8 +14,8 @@ export default function LandingSection() {
   const eyebrow = "Pour indépendants, artisans et petites entreprises";
   const location = "Bordeaux & à distance";
   const title = `Sites web & outils
-sur mesure
-pour votre activité`;   
+    pour développer
+    votre activité`;   
 
   const tagline = "Des sites clairs et rapides, avec des fonctionnalités utiles (réservation en ligne, gestion, formulaires…) pour vous faire gagner du temps et générer plus de clients.";
 
