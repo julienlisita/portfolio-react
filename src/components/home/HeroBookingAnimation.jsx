@@ -7,7 +7,7 @@ export default function HeroBookingAnimation() {
   return (
     <div className="relative mx-auto w-full max-w-md rounded-3xl border border-[#5AC8FA]/25 bg-white p-3 sm:p-4 shadow-xl shadow-[#5AC8FA]/10">
       
-      <div className="relative h-52 sm:h-60 lg:h-72 overflow-hidden rounded-2xl bg-[#007AFF]/5 p-3 sm:p-4">
+      <div className="relative h-44 sm:h-60 lg:h-72 overflow-hidden rounded-2xl bg-[#007AFF]/5 p-3 sm:p-4">
         
         {/* Étape 1 : site vitrine */}
         <motion.div

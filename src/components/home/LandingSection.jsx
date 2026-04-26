@@ -17,7 +17,7 @@ export default function LandingSection() {
 sur mesure
 pour votre activité`;   
 
-  const tagline = "Des sites clairs et rapides, avec des fonctionnalités utiles comme la réservation en ligne, la gestion ou des formulaires, pour vous faire gagner du temps et générer plus de clients.";
+  const tagline = "Des sites clairs et rapides, avec des fonctionnalités utiles (réservation en ligne, gestion, formulaires…) pour vous faire gagner du temps et générer plus de clients.";
 
   const VISUAL_SRC = "/assets/mockups/portfolio-services-ipad.png";
 
@@ -113,7 +113,7 @@ const spotlightStyleDesktop = {
             />
 
             <motion.p
-              className="text-lg sm:text-xl lg:text-2xl font-semibold text-white tracking-tight"
+              className="text-xl sm:text-2xl lg:text-3xl font-semibold text-white tracking-tight"
               {...(!reduce && { transition: { ...fade.transition, delay: 0.05 } })}
             >
               {name}
@@ -153,12 +153,12 @@ const spotlightStyleDesktop = {
               {...(!reduce && { transition: { ...fade.transition, delay: 0.3 } })}
             >
               <Button to="/contact" variant="primary">
-                Discuter de votre projet
+                Discutons de votre projet
               </Button>
             </motion.div>
           </div>
 
-          <div className="mt-6 sm:mt-8 lg:mt-0 w-full max-w-[300px] sm:max-w-[360px] lg:max-w-[430px] justify-self-center lg:justify-self-end">
+          <div className="mt-5 sm:mt-8 lg:mt-0 w-full max-w-[260px] sm:max-w-[360px] lg:max-w-[430px] justify-self-center lg:justify-self-end">
             <HeroBookingAnimation />
           </div>
 
