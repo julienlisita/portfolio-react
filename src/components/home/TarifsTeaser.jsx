@@ -19,17 +19,17 @@ export default function TarifsTeaser() {
         <TeaserCard
           icon={<BadgeEuro className="text-[#007AFF]" size={22} aria-hidden />}
           title="Site vitrine"
-          desc="À partir de 650 € (selon contenu & personnalisation))"
+          desc="À partir de 900 € – site clair, moderne et pensé pour générer des demandes"
         />
         <TeaserCard
           icon={<Wrench className="text-[#007AFF]" size={22} aria-hidden />}
-          title="Fonctionnalités sur mesure"
-          desc="Réservation, admin, formulaires avancés…"
+          title="Fonctionnalités & outils"
+          desc="Sur devis – réservation, espace admin, automatisation selon votre activité"
         />
         <TeaserCard
           icon={<Clock className="text-[#007AFF]" size={22} aria-hidden />}
           title="Délais"
-          desc="En général 2 à 4 semaines"
+          desc="En général 2 à 4 semaines selon le projet"
         />
       </div>
     </HomeSectionWrapper>
