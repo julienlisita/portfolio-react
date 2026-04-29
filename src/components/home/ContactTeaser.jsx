@@ -9,12 +9,12 @@ export default function ContactTeaser()
     return (
         <HomeSectionWrapper
             id="contact"
-            title="Parlons de votre projet "
+            title="Discutons de votre projet"
             link={{href:"/contact", text:"Page de contact"}}
         > 
             <p className="text-base sm:text-lg lg:text-xl">
-            Une question, un projet à discuter ou un devis à demander ?
-                Contactez-moi facilement par mail, téléphone ou via le formulaire.  
+                Une question, un projet ou besoin d’un devis ?
+                Discutons ensemble de votre besoin et voyons comment y répondre simplement. 
             </p>
             {/* Coordonnées rapides */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 text-base">
