@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 export default function ServicesPreview() {
   const services = [
     {
-      title: "Création de site internet",
-      subtitle: "Site vitrine clair & pro",
+      title: "Un site clair pour attirer des clients",
+      subtitle: "Site vitrine & visibilité",
       icon: <Monitor />,
       description:
         "Un site moderne (mobile-first) pour présenter votre activité, inspirer confiance et générer des prises de contact.",
@@ -17,8 +17,8 @@ export default function ServicesPreview() {
       link: "/services/creation-site-internet",
     },
     {
-      title: "Fonctionnalités & outils sur mesure",
-      subtitle: "Réservation, admin, outils métiers",
+      title: "Des outils pour gagner du temps",
+      subtitle: "Réservation, formulaires, espace admin",
       icon: <Layers />,
       description:
         "Réservation en ligne, espace admin, formulaires avancés… Une solution adaptée à votre activité, évolutive et sécurisée.",
@@ -26,8 +26,8 @@ export default function ServicesPreview() {
       link: "/services/creation-site-internet-fonctionnalites-sur-mesure",
     },
     {
-      title: "Suivi & maintenance du site",
-      subtitle: "Sécurité & évolutions",
+      title: "Un suivi pour rester fiable", 
+      subtitle: "Maintenance, sécurité, évolutions",
       icon: <LifeBuoy />,
       description:
         "Mises à jour, sécurité, corrections et petites évolutions : votre site reste fiable et performant dans le temps.",
