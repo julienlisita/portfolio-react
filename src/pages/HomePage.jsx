@@ -12,17 +12,21 @@ import AudiencePreview from "../components/home/AudiencePreview";
 import WhyWorkWithMe from "../components/home/WhyWorkWithMe";
 import TarifsTeaser from "../components/home/TarifsTeaser";
 import HomeSectionWrapper from "../components/home/HomeSectionWrapper";
+import ProblemSection from "../components/home/ProblemSection";
+import BenefitsSection from "../components/home/BenefitsSection";
 
 export default function HomePage() {
   return (
     <>
       <LandingSection />
-      <AudiencePreview />
+      <ProblemSection/>
       <ServicesPreview />
-      <AboutPreview />
-      <WhyWorkWithMe />
+      <BenefitsSection />
       <ProjectsPreview />
       <TarifsTeaser/>
+      <WhyWorkWithMe />
+      <AudiencePreview />
+      <AboutPreview />
       <SkillsPreview />
       <BlogPreview />
       <ContactTeaser />
