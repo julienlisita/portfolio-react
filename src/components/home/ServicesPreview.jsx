@@ -43,9 +43,7 @@ export default function ServicesPreview() {
       link={{ href: "/services", text: "Voir les services ›" }}
     >
       <p className="text-base sm:text-lg lg:text-xl">
-        Un accompagnement simple : on clarifie le besoin, je
-        développe, je mets en ligne, et je
-        peux assurer le suivi si besoin.
+         Selon votre besoin, je vous aide à créer un site clair, ajouter des fonctionnalités utiles ou faire évoluer votre présence en ligne dans la durée.
       </p>
 
       <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">

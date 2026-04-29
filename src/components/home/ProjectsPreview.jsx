@@ -18,7 +18,7 @@ export default function ProjectsPreview() {
       link={{ href: "/realisations", text: "Voir d'autres projets" }}
     >
       <p className="text-base sm:text-lg lg:text-xl text-gray-300">
-        Quelques exemples concrets : sites vitrines et applications web — avec un vrai focus sur la clarté, la performance et le SEO.
+        Des exemples de projets pensés pour répondre à des besoins réels : présenter une activité, générer des contacts, faciliter la réservation ou gérer du contenu.
       </p>
 
       <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">

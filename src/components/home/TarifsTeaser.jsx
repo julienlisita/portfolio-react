@@ -11,8 +11,7 @@ export default function TarifsTeaser() {
       link={{ href: "/tarifs", text: "Voir les tarifs" }}
     >
       <p className="text-base sm:text-lg lg:text-xl text-gray-300">
-        Des tarifs clairs, adaptés à votre besoin. Je vous propose un devis après un échange gratuit,
-        en fonction de vos pages, de vos objectifs et du niveau de personnalisation.
+        Chaque projet est estimé selon vos objectifs, vos contenus et les fonctionnalités nécessaires. L’idée : vous proposer une solution claire, utile et adaptée à votre budget.
       </p>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
