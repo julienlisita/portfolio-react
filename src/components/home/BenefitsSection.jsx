@@ -5,25 +5,25 @@ import { TrendingUp, Clock, Users, Sparkles } from "lucide-react";
 
 const benefits = [
   {
-    icon: <TrendingUp />,
+    icon: <TrendingUp size={22} aria-hidden/>,
     title: "Plus de demandes",
     description:
       "Un site structuré pour guider vos visiteurs et transformer l’intérêt en prises de contact.",
   },
   {
-    icon: <Users />,
+    icon: <Users size={22} aria-hidden/>,
     title: "Une image professionnelle",
     description:
       "Un design moderne et cohérent qui inspire confiance dès les premières secondes.",
   },
   {
-    icon: <Clock />,
+    icon: <Clock size={22} aria-hidden/>,
     title: "Moins de tâches manuelles",
     description:
       "Réservation, formulaires, automatisations… vous gagnez du temps au quotidien.",
   },
   {
-    icon: <Sparkles />,
+    icon: <Sparkles size={22} aria-hidden/>,
     title: "Une solution qui évolue",
     description:
       "Votre site s’adapte à votre activité avec des fonctionnalités ajoutées au fil du temps.",

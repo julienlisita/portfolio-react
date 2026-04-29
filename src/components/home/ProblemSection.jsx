@@ -5,19 +5,19 @@ import { Clock, Search, MousePointerClick } from "lucide-react";
 
 const problems = [
   {
-    icon: <Search />,
+    icon: <Search size={22} aria-hidden/>,
     title: "Peu de visibilité",
     description:
       "Votre activité existe, mais vos clients potentiels ne vous trouvent pas ou ne comprennent pas clairement ce que vous proposez.",
   },
   {
-    icon: <MousePointerClick />,
+    icon: <MousePointerClick size={22} aria-hidden/>,
     title: "Peu de demandes",
     description:
       "Votre site présente votre activité, mais il ne guide pas assez vos visiteurs vers une prise de contact.",
   },
   {
-    icon: <Clock />,
+    icon: <Clock size={22} aria-hidden/>,
     title: "Trop de tâches manuelles",
     description:
       "Réponses répétitives, rendez-vous à organiser, formulaires à traiter… certaines actions pourraient être simplifiées.",

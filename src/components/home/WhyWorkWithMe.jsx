@@ -1,7 +1,7 @@
 // src/components/home/WhyWorkWithMe.jsx
 
 import HomeSectionWrapper from "./HomeSectionWrapper";
-import { CheckCircle2 } from "lucide-react";
+import { Check } from "lucide-react";
 
 const points = [
   {
@@ -43,7 +43,7 @@ export default function WhyWorkWithMe() {
             key={point.title}
             className="flex items-start gap-3 bg-[#1f1f1f] rounded-2xl p-4 sm:p-5"
           >
-            <CheckCircle2
+            <Check
               className="mt-1 flex-shrink-0 text-[#007AFF]"
               size={20}
             />

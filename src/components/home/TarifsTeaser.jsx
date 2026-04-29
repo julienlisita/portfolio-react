@@ -17,17 +17,18 @@ export default function TarifsTeaser() {
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
         <TeaserCard
-          icon={<BadgeEuro className="text-[#007AFF]" size={22} aria-hidden />}
+          icon={<BadgeEuro size={22} aria-hidden />}
           title="Site vitrine"
           desc="À partir de 900 € – site clair, moderne et pensé pour générer des demandes"
         />
         <TeaserCard
-          icon={<Wrench className="text-[#007AFF]" size={22} aria-hidden />}
+          icon={<Wrench size={22} aria-hidden />}
+          
           title="Fonctionnalités & outils"
           desc="Sur devis – réservation, espace admin, automatisation selon votre activité"
         />
         <TeaserCard
-          icon={<Clock className="text-[#007AFF]" size={22} aria-hidden />}
+          icon={<Clock size={22} aria-hidden />}
           title="Délais"
           desc="En général 2 à 4 semaines selon le projet"
         />
@@ -40,7 +41,9 @@ function TeaserCard({ icon, title, desc }) {
   return (
     <div className="bg-[#1f1f1f] rounded-2xl p-6 h-full shadow-lg">
       <div className="flex items-start gap-3">
-        <div className="mt-0.5">{icon}</div>
+          <div className="mt-0.5 inline-flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-[#007AFF]/10 text-[#007AFF]">
+            {icon}
+          </div>
         <div>
           <h3 className="text-base sm:text-lg font-semibold text-gray-100">
             {title}
