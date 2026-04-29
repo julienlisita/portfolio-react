@@ -25,19 +25,21 @@ export default function AboutPreview() {
         {/* Texte */}
         <div className="w-full sm:flex-1 flex flex-col justify-center">
           <p className="text-base sm:text-lg lg:text-xl leading-snug text-gray-300">
-            Je suis Julien, développeur web freelance basé à Bordeaux.
-            J’accompagne mes clients de l’idée à la mise en ligne,
-            avec une approche simple, structurée et orientée résultats.
+            Je suis Julien, développeur web basé à Bordeaux. J’aide les indépendants,
+            artisans et petites entreprises à créer des sites web et des outils utiles
+            pour développer leur activité.
           </p>
 
           <p className="text-base sm:text-lg lg:text-xl mt-5 sm:mt-6 text-gray-300">
-            Après plusieurs années en ingénierie logicielle, je me suis spécialisé dans
-            le web pour créer des projets concrets : sites vitrines et outils sur mesure.
+            Mon rôle ne se limite pas à développer un site : je vous aide à clarifier
+            vos besoins, structurer vos contenus et choisir les fonctionnalités vraiment
+            utiles pour vos clients.
           </p>
 
           <p className="text-base sm:text-lg lg:text-xl mt-5 sm:mt-6 text-gray-300">
-            Mon objectif est simple&nbsp;: vous aider à clarifier le besoin,
-            construire la bonne solution et livrer un site pensé pour durer.
+            Avec une méthode simple et progressive, je conçois des solutions claires,
+            rapides et évolutives, pensées pour être faciles à maintenir et utiles dans
+            la durée.
           </p>
         </div>
       </div>
