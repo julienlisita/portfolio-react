@@ -4,25 +4,25 @@ import HomeSectionWrapper from "./HomeSectionWrapper";
 import { Check } from "lucide-react";
 
 const points = [
-  {
-    title: "Un seul interlocuteur",
+{
+    title: "Un accompagnement clair",
     description:
-      "Je vous accompagne de A à Z : conception, développement, mise en ligne et évolutions.",
+      "Je vous aide à cadrer le besoin, prioriser les fonctionnalités utiles et avancer étape par étape.",
   },
   {
-    title: "Un site qui parle à vos clients",
+    title: "Une solution pensée pour vos clients",
     description:
-      "Structure claire, design moderne et navigation intuitive pour inspirer confiance.",
+      "Structure, contenus et parcours sont conçus pour faciliter la compréhension et la prise de contact.",
   },
   {
-    title: "Référencement naturel intégré",
+    title: "Une base rapide et durable",
     description:
-      "Code propre, rapidité et bonnes pratiques SEO pour une meilleure visibilité.",
+      "Le site est développé proprement, avec une attention portée à la performance, au SEO et à l’évolutivité.",
   },
   {
-    title: "Transparence & simplicité",
+    title: "Des échanges simples et transparents",
     description:
-      "Des échanges clairs, des choix expliqués et un budget défini dès le départ.",
+      "Vous savez ce qui est prévu, pourquoi c’est fait et comment votre projet avance.",
   },
 ];
 
@@ -33,8 +33,7 @@ export default function WhyWorkWithMe() {
       title="Pourquoi travailler avec moi ?"
     >
       <p className="text-base sm:text-lg lg:text-xl text-gray-300">
-        Un accompagnement simple et efficace pour obtenir un site professionnel
-        qui inspire confiance et soutient votre activité.
+        Mon objectif est de vous accompagner avec une méthode simple, des choix expliqués clairement et une solution pensée pour durer.
       </p>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">

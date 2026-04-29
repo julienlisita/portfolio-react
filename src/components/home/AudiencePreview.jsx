@@ -6,9 +6,8 @@ export default function AudiencePreview() {
   return (
     <HomeSectionWrapper id="pour-qui" title="Pour qui c’est fait ?">
       <p className="text-base sm:text-lg lg:text-xl">
-        J’aide les <strong>artisans, indépendants, commerces et
-        petites entreprises</strong> à avoir un site clair, fiable et
-        visible, sans que vous ayez à gérer la technique.
+        J’accompagne surtout les professionnels qui veulent une présence en ligne claire,
+        utile et capable de soutenir leur activité au quotidien.
       </p>
 
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -18,11 +17,11 @@ export default function AudiencePreview() {
         />
         <AudienceCard
           title="Artisans & petites entreprises"
-          description="Bâtiment, services, restauration… Un site qui inspire confiance et vous aide à générer des demandes."
+          description="Bâtiment, services, restauration, commerces locaux… Une présence professionnelle pour inspirer confiance et recevoir plus de demandes."
         />
         <AudienceCard
-          title="Cabinets & structures de services"
-          description="Services à la personne, accompagnement… Infos accessibles, navigation simple, contact immédiat."
+          title="Petites structures & services"
+          description="Associations, services à la personne, cabinets… Des informations accessibles, des formulaires utiles et une organisation simplifiée."
         />
       </div>
     </HomeSectionWrapper>
