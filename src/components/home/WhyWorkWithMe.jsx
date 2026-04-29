@@ -30,7 +30,7 @@ export default function WhyWorkWithMe() {
   return (
     <HomeSectionWrapper
       id="pourquoi"
-      title="Pourquoi travailler avec moi ?"
+      title="Une façon de travailler simple et efficace"
     >
       <p className="text-base sm:text-lg lg:text-xl text-gray-300">
         Mon objectif est de vous accompagner avec une méthode simple, des choix expliqués clairement et une solution pensée pour durer.

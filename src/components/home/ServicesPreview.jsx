@@ -39,7 +39,7 @@ export default function ServicesPreview() {
   return (
     <HomeSectionWrapper
       id="service"
-      title="Ce que je propose"
+      title="Comment je peux vous aider"
       link={{ href: "/services", text: "Voir les services ›" }}
     >
       <p className="text-base sm:text-lg lg:text-xl">

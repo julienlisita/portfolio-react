@@ -4,7 +4,7 @@ import HomeSectionWrapper from "./HomeSectionWrapper";
 
 export default function AudiencePreview() {
   return (
-    <HomeSectionWrapper id="pour-qui" title="Pour qui c’est fait ?">
+    <HomeSectionWrapper id="pour-qui" title="Pour qui ce type de projet est adapté ?">
       <p className="text-base sm:text-lg lg:text-xl">
         J’accompagne surtout les professionnels qui veulent une présence en ligne claire,
         utile et capable de soutenir leur activité au quotidien.

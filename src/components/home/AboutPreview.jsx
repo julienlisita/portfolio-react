@@ -6,7 +6,7 @@ export default function AboutPreview() {
   return (
     <HomeSectionWrapper
       id="about"
-      title="Qui suis-je ?"
+      title="Qui je suis et comment je travaille"
       link={{ href: "/a-propos", text: "Découvrir mon parcours" }}
     >
       <div className="flex flex-col sm:flex-row items-start justify-between gap-6 sm:gap-10">

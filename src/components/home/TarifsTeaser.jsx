@@ -7,7 +7,7 @@ export default function TarifsTeaser() {
   return (
     <HomeSectionWrapper
       id="tarifs"
-      title="Tarifs (repères simples)"
+      title="Des tarifs clairs et adaptés"
       link={{ href: "/tarifs", text: "Voir les tarifs" }}
     >
       <p className="text-base sm:text-lg lg:text-xl text-gray-300">

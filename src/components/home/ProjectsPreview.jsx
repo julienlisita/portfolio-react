@@ -14,7 +14,7 @@ export default function ProjectsPreview() {
   return (
     <HomeSectionWrapper
       id="portfolio"
-      title="Derniers projets"
+      title="Des projets pensés pour des besoins réels"
       link={{ href: "/realisations", text: "Voir d'autres projets" }}
     >
       <p className="text-base sm:text-lg lg:text-xl text-gray-300">
