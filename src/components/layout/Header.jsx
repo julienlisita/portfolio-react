@@ -63,7 +63,7 @@ export default function Header() {
           "
         >
           {/* Logo */}
-          <Link to="/" aria-label="Retour à l’accueil" className="shrink-0">
+          <Link to="/" aria-label="Retour à l’accueil" className="flex items-center gap-2 shrink-0">
             <img
               src="/assets/logos/site/logo.png"
               alt="Logo Julien Lisita"
@@ -71,6 +71,9 @@ export default function Header() {
               loading="eager"
               decoding="async"
             />
+            <span className="text-sm sm:text-base font-medium text-gray-100">
+              Julien Lisita
+            </span>
           </Link>
 
           {/* Navigation desktop */}
@@ -103,7 +106,8 @@ export default function Header() {
               variant="primary" size="sm"
               aria-label="Me contacter"
             >
-              Contact
+              <span className="sm:hidden">Contact</span>
+              <span className="hidden sm:inline">Discuter du projet</span>
             </Button>
 
             {/* Burger menu (mobile) */}
