@@ -28,7 +28,6 @@ export default function HomePage() {
       <AudiencePreview />
       <AboutPreview />
       <SkillsPreview />
-      <BlogPreview />
       <ContactTeaser />
       {/* Localisation */}
       <HomeSectionWrapper className="text-base sm:text-lg lg:text-xl">

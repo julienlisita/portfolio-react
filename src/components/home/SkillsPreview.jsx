@@ -63,11 +63,11 @@ export default function SkillesPreview() {
   return (
     <HomeSectionWrapper
     id="competences"
-    title="Une base technique solide"
+    title="Une base technique fiable"
     link={{ href: "/comment-je-travaille", text: "Ma méthode de travail" }}
   >
     <p className="text-base sm:text-lg lg:text-xl">
-      Le choix des technologies jouant un rôle clé dans la réussite d’un projet, voici un aperçu des outils que j’utilise à chaque étape de réalisation.
+      J’utilise des technologies modernes pour créer des sites rapides, fiables et faciles à faire évoluer, sans vous imposer de complexité inutile.
     </p>
   
     <div className="flex flex-col gap-6">
