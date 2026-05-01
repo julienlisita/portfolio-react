@@ -13,8 +13,8 @@ export default function ContactTeaser()
             link={{href:"/contact", text:"Page de contact"}}
         > 
             <p className="text-base sm:text-lg lg:text-xl">
-                Une question, un projet ou besoin d’un devis ?
-                Discutons ensemble de votre besoin et voyons comment y répondre simplement. 
+                Un projet, une question ou besoin d’un devis ?
+                Expliquez-moi votre besoin, je vous réponds simplement avec une solution adaptée.
             </p>
             {/* Coordonnées rapides */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 text-base">

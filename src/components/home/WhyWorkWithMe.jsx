@@ -10,7 +10,7 @@ const points = [
       "Je vous aide à cadrer le besoin, prioriser les fonctionnalités utiles et avancer étape par étape.",
   },
   {
-    title: "Une solution pensée pour vos clients",
+    title: "Une solution pensée pour vos utilisateurs",
     description:
       "Structure, contenus et parcours sont conçus pour faciliter la compréhension et la prise de contact.",
   },

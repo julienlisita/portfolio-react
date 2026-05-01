@@ -26,7 +26,7 @@ export default function AboutPreview() {
         <div className="w-full sm:flex-1 flex flex-col justify-center">
           <p className="text-base sm:text-lg lg:text-xl leading-snug text-gray-300">
             Je suis Julien, développeur web basé à Bordeaux. J’aide les indépendants,
-            artisans et petites entreprises à créer des sites web et des outils utiles
+            artisans et petites entreprises à créer des sites et des outils concrets
             pour développer leur activité.
           </p>
 
@@ -38,7 +38,7 @@ export default function AboutPreview() {
 
           <p className="text-base sm:text-lg lg:text-xl mt-5 sm:mt-6 text-gray-300">
             Avec une méthode simple et progressive, je conçois des solutions claires,
-            rapides et évolutives, pensées pour être faciles à maintenir et utiles dans
+            rapides et évolutives, pensées pour être faciles à maintenir dans
             la durée.
           </p>
         </div>

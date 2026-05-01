@@ -67,7 +67,7 @@ export default function SkillesPreview() {
     link={{ href: "/comment-je-travaille", text: "Ma méthode de travail" }}
   >
     <p className="text-base sm:text-lg lg:text-xl">
-      J’utilise des technologies modernes pour créer des sites rapides, fiables et faciles à faire évoluer, sans vous imposer de complexité inutile.
+      Je mets en place une base technique fiable pour que votre site fonctionne correctement, reste rapide et puisse évoluer sans problème.
     </p>
   
     <div className="flex flex-col gap-6">

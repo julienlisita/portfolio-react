@@ -18,7 +18,7 @@ export default function TarifsTeaser() {
         <TeaserCard
           icon={<BadgeEuro size={22} aria-hidden />}
           title="Site vitrine"
-          desc="À partir de 900 € – site clair, moderne et pensé pour générer des demandes"
+          desc="À partir de 900 € – site clair et structuré pour faciliter les prises de contact"
         />
         <TeaserCard
           icon={<Wrench size={22} aria-hidden />}
