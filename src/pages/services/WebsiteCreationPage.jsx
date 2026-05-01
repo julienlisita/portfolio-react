@@ -13,7 +13,7 @@ export default function WebsiteCreationPage() {
   const faq = [
     {
       q: "Combien coûte un site vitrine à Bordeaux ?",
-      a: "En général à partir de 800 €, selon le nombre de pages, le niveau de personnalisation et les options (formulaire avancé, réservation, blog…).",
+      a: "Un site vitrine démarre généralement à partir de 900 €, selon le nombre de pages, le contenu à intégrer, le niveau de personnalisation et les options éventuelles.",
     },
     {
       q: "Dois-je fournir les textes et les images ?",
@@ -25,7 +25,7 @@ export default function WebsiteCreationPage() {
     },
     {
       q: "Pouvez-vous reprendre un site existant (refonte) ?",
-      a: "Oui. Je peux moderniser le design, clarifier la structure et améliorer les performances, tout en respectant votre identité.",
+      a: "Oui, je peux vous accompagner sur une refonte : clarifier la structure, moderniser le design et reconstruire le site sur une base plus propre et plus durable.",
     },
     {
       q: "Hébergement et nom de domaine : vous vous en occupez ?",
@@ -44,9 +44,9 @@ export default function WebsiteCreationPage() {
       <FaqSection title="FAQ — Création de site internet" faq={faq} ariaLabelledby="faq-vitrine-title" />
 
       <CtaFinal
-        title="Votre site internet commence ici"
-        tagline="Un site rapide, élégant et clair pour présenter votre activité et générer des contacts."
-        primary={{ href: "/contact", text: "Demander un échange" }}
+        title="Créons un site utile pour votre activité"
+        tagline="Un site clair, rapide et professionnel pour présenter vos services, inspirer confiance et générer des demandes."
+        primary={{ href: "/contact", text: "Discuter du projet" }}
         secondary={{ href: "/tarifs", text: "Voir les tarifs" }}
       />
     </>

@@ -4,10 +4,10 @@ import { Users, CheckCircle } from "lucide-react";
 import Section from "../../layout/Section";
 
 const items = [
-  "Artisans (bâtiment, services, métiers de bouche…)",
-  "Indépendants (coach, thérapeute, consultant…)",
-  "Commerces locaux (restaurant, salon, institut…)",
-  "Associations et petites structures",
+  "Artisans qui veulent présenter leurs services et rassurer leurs futurs clients",
+  "Indépendants, coachs, thérapeutes ou consultants qui veulent clarifier leur offre",
+  "Commerces et structures locales qui veulent être trouvés plus facilement",
+  "Petites entreprises qui veulent une présence en ligne professionnelle et durable",
 ];
 
 export default function WebsiteCreationAudience() {
@@ -15,7 +15,7 @@ export default function WebsiteCreationAudience() {
     <Section className="text-base sm:text-lg lg:text-xl">
       <h2 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
         <Users className="w-5 h-5 text-[#007AFF]" />
-        Pour qui ?
+        Pour qui ce service est-il adapté ?
       </h2>
 
       <ul className="list-none ml-6 space-y-2">

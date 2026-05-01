@@ -7,8 +7,9 @@ export default function WebsiteCreationIntro() {
 
     <Section className="text-base sm:text-lg lg:text-xl">
       <p className="text-gray-300 mb-8">
-        Idéal pour les artisans, indépendants et commerces qui veulent un site clair,
-        rapide et professionnel pour présenter leur activité et faciliter la prise de contact.
+        Vous avez besoin d’un site clair, professionnel et facile à comprendre ?
+        Je conçois des sites vitrines pensés pour présenter votre activité,
+        inspirer confiance et transformer vos visiteurs en prises de contact.
       </p>
     </Section>
   );
