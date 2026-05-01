@@ -12,7 +12,7 @@ export default function ServicesPreview() {
       subtitle: "Site vitrine & visibilité",
       icon: <Monitor />,
       description:
-        "Un site moderne (mobile-first) pour présenter votre activité, inspirer confiance et générer des prises de contact.",
+        "Un site moderne pour présenter votre activité, inspirer confiance et générer des prises de contact.",
       color: ["#5AC8FA", "#007AFF"],
       link: "/services/creation-site-internet",
     },
@@ -21,7 +21,7 @@ export default function ServicesPreview() {
       subtitle: "Réservation, formulaires, espace admin",
       icon: <Layers />,
       description:
-        "Réservation en ligne, espace admin, formulaires avancés… Une solution adaptée à votre activité, évolutive et sécurisée.",
+        "Des fonctionnalités utiles pour simplifier votre organisation et éviter les tâches répétitives.",
       color: ["#007AFF", "#9B59B6"],
       link: "/services/creation-site-internet-fonctionnalites-sur-mesure",
     },
@@ -30,7 +30,7 @@ export default function ServicesPreview() {
       subtitle: "Maintenance, sécurité, évolutions",
       icon: <LifeBuoy />,
       description:
-        "Mises à jour, sécurité, corrections et petites évolutions : votre site reste fiable et performant dans le temps.",
+        "Un accompagnement pour garder votre site rapide, à jour et prêt à évoluer avec votre activité.",
       color: ["#9B59B6", "#FF66B2"],
       link: "/services/suivi-et-evolutions",
     },

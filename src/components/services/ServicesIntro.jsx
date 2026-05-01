@@ -6,8 +6,9 @@ export default function ServicesIntro() {
   return (
     <Section>
       <p className="text-left text-base sm:text-lg lg:text-xl text-gray-300">
-        Sites vitrines et fonctionnalités sur mesure pour artisans, indépendants et petites entreprises.
-        3 offres selon vos besoins: site vitrine, sur mesure et suivi & maintenance.
+        Je vous aide à créer un site web clair, utile et évolutif, pensé pour
+        développer votre activité, générer des demandes et simplifier votre
+        organisation.
       </p>
     </Section>
   );

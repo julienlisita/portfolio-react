@@ -4,17 +4,17 @@ import Section from "../layout/Section";
 import Button from "../UI/Button";
 
 const steps = [
-  { t: "Échange initial", d: "nous discutons de vos besoins, de vos envies et de vos priorités." },
-  { t: "Conception", d: "je vous conseille sur la structure et le design, avec un plan clair." },
-  { t: "Développement", d: "je développe votre site et je vous montre l’avancement régulièrement." },
-  { t: "Mise en ligne", d: "votre site est prêt, accessible à vos clients et optimisé pour tous les supports." },
-  { t: "Suivi & maintenance", d: "je reste disponible pour des mises à jour ou des évolutions." },
+  { t: "Échange initial", d: "Nous clarifions vos besoins, vos objectifs et les priorités du projet." },
+  { t: "Conception", d: "jJe vous propose une structure claire, un parcours cohérent et une direction visuelle adaptée." },
+  { t: "Développement", d: "Je développe le site ou les fonctionnalités, avec des points réguliers pour valider l’avancement." },
+  { t: "Mise en ligne", d: "Votre site est publié, testé et accessible sur tous les supports." },
+  { t: "Suivi & maintenance", d: "Je peux rester disponible pour les ajustements, la maintenance ou les futures évolutions." },
 ];
 
 export default function ServicesMethod() {
   return (
     <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
-      <p>Un parcours simple et transparent, avec des points de validation à chaque étape.</p>
+      <p>Un projet avance mieux quand les étapes sont claires. Vous savez ce qui est prévu, ce qui est en cours et ce qui reste à valider.</p>
 
       <p className="text-sm text-gray-400 mt-2">
         Pour les plus curieux, je détaille mon approche et mes choix techniques ici :{" "}
