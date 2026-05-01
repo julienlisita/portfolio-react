@@ -5,7 +5,7 @@ import Section from "../layout/Section";
 export default function PricingExamples() {
   return (
     <Section title="Exemples de projets (fourchettes)">
-      <div className="grid md:grid-cols-3 gap-4 mt-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
         <div className="bg-[#2a2a2a] p-4 rounded-lg border border-[#2f2f2f]">
           <h3 className="font-semibold text-gray-100">Artisan / commerce</h3>
           <p className="text-gray-300 text-sm mt-1">
@@ -23,7 +23,7 @@ export default function PricingExamples() {
         </div>
         <div className="bg-[#2a2a2a] p-4 rounded-lg border border-[#2f2f2f]">
           <h3 className="font-semibold text-gray-100">
-            Site avec formulaire avancé
+            Site avec formulaire personnalisé
           </h3>
           <p className="text-gray-300 text-sm mt-1">
             demande de devis, candidature ou rendez-vous via formulaire personnalisé

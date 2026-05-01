@@ -8,7 +8,7 @@ export default function PricingFaqAndCta() {
   const faq = [
     {
       q: "Combien coûte un site vitrine ?",
-      a: "Un site vitrine démarre généralement à partir de 900 €. Le tarif dépend du nombre de pages, du contenu, du niveau de personnalisation et des fonctionnalités éventuelles.",
+      a: "Un site vitrine démarre généralement à partir de 900 €. Le tarif dépend du nombre de pages, du contenu, du niveau de personnalisation et des options éventuelles.",
     },
     {
       q: "Quel est le délai moyen ?",
@@ -16,7 +16,7 @@ export default function PricingFaqAndCta() {
     },
     {
       q: "Puis-je ajouter des options plus tard ?",
-      a: "Oui : pages, formulaires, blog/actus, réservation, espace administrable… tout est évolutif.",
+      a: "Oui : pages, formulaires personnalisés, blog/actus, espace administrateur ou réservation avec gestion des créneaux… le site peut évoluer progressivement.",
     },
     {
       q: "Comment obtenir un devis précis ?",
@@ -34,7 +34,7 @@ export default function PricingFaqAndCta() {
       <CtaFinal
         title="Discutons de votre projet"
         tagline="Expliquez-moi votre besoin : je vous propose une solution claire, adaptée et un devis précis après un échange gratuit."
-        primary={{ href: "/contact", text: "Demander un devis >" }}
+        primary={{ href: "/contact", text: "Demander un devis" }}
         secondary={{ href: "/realisations", text: "Voir des projets" }}
       />
     </>
