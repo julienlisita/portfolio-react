@@ -11,24 +11,24 @@ import MaintenanceOutro from "../../components/services/maintenance/MaintenanceO
 export default function MaintenancePage() {
   const faq = [
     {
-      q: "Pourquoi prendre une maintenance ?",
-      a: "Pour garder un site fiable et à jour : corrections, sécurité, performance, petites évolutions. Votre site ne se dégrade pas avec le temps.",
+      q: "Pourquoi prévoir une maintenance après la mise en ligne ?",
+      a: "Pour éviter qu’un site se dégrade avec le temps : bugs, formulaires qui ne fonctionnent plus, lenteurs, contenus à ajuster ou petites évolutions à ajouter.",
     },
     {
       q: "Proposez-vous un forfait mensuel ?",
-      a: "Oui : préventif + support prioritaire. Une intervention ponctuelle à la demande est aussi possible.",
+      a: "Oui. Le forfait mensuel convient si vous voulez un suivi régulier, des vérifications préventives et une meilleure réactivité en cas de besoin.",
     },
     {
-      q: "Que couvre la maintenance ?",
-      a: "Bugs, mises à jour, optimisations, petites évolutions et conseils techniques. Le périmètre exact dépend de la formule.",
+      q: "Puis-je vous contacter seulement quand j’ai besoin ?",
+      a: "Oui. L’intervention ponctuelle est possible pour corriger un bug, modifier une page, ajuster un formulaire ou ajouter une petite évolution.",
     },
     {
       q: "Mon site n’a pas été réalisé par vous : vous pouvez le maintenir ?",
-      a: "Oui, après un audit rapide pour valider la prise en charge et éviter les mauvaises surprises.",
+      a: "Oui, après un audit rapide pour vérifier la base technique, identifier les risques éventuels et confirmer ce qui peut être pris en charge.",
     },
     {
       q: "Quels sont les délais de réponse ?",
-      a: "Je réponds généralement sous 24–48h ouvrées. En formule prioritaire, les délais sont raccourcis.",
+      a: "Je réponds généralement sous 24 à 48h ouvrées. Les demandes incluses dans un forfait peuvent être traitées en priorité selon la formule choisie.",
     },
   ];
 
@@ -43,8 +43,8 @@ export default function MaintenancePage() {
       <FaqSection title="FAQ — Suivi & maintenance" faq={faq} ariaLabelledby="faq-support-title" />
 
       <CtaFinal
-        title="Un suivi technique fiable"
-        tagline="Gardez votre site à jour, sécurisé et performant."
+        title="Gardons votre site fiable dans la durée"
+        tagline="Maintenance, corrections et petites évolutions pour éviter les blocages et faire avancer votre site avec votre activité."
         primary={{ href: "/contact", text: "Demander un suivi" }}
         secondary={{ href: "/tarifs", text: "Voir les tarifs" }}
       />

@@ -4,11 +4,11 @@ import { LifeBuoy, Wrench, Shield, Gauge, ListChecks, ClipboardList } from "luci
 import Section from "../../layout/Section";
 
 const items = [
-  { icon: Wrench, text: "Correction de bugs & support technique" },
-  { icon: Shield, text: "Mises à jour & sécurité (prévention + correctifs)" },
-  { icon: Gauge, text: "Optimisations de performance (vitesse, stabilité)" },
-  { icon: ListChecks, text: "Petites évolutions et ajustements au fil des besoins" },
-  { icon: ClipboardList, text: "Conseil & suivi technique personnalisé" },
+  { icon: Wrench, text: "Corriger rapidement les bugs ou comportements inattendus" },
+  { icon: Shield, text: "Limiter les risques liés aux mises à jour, dépendances ou formulaires" },
+  { icon: Gauge, text: "Conserver un site rapide et agréable à utiliser" },
+  { icon: ListChecks, text: "jouter de petites évolutions sans relancer un projet complet" },
+  { icon: ClipboardList, text: "Avoir un interlocuteur qui connaît votre site et peut vous conseiller" },
 ];
 
 export default function MaintenanceIncluded() {
@@ -16,7 +16,7 @@ export default function MaintenanceIncluded() {
      <Section className="text-base sm:text-lg lg:text-xl">
       <h2 className="text-xl font-semibold mt-8 mb-3 flex items-center gap-2">
         <LifeBuoy className="w-5 h-5 text-[#007AFF]" />
-        Ce qui est inclus
+        Ce que le suivi permet de garder sous contrôle
       </h2>
 
       <ul className="list-none ml-6 space-y-2">

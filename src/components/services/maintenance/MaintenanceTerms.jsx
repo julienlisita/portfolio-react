@@ -7,17 +7,17 @@ const items = [
   {
     icon: CalendarCheck,
     title: "Forfait mensuel",
-    desc: "Pour la tranquillité : préventif + support prioritaire + suivi régulier.",
+    desc: "pour un suivi régulier, des vérifications préventives et une priorité en cas de besoin.",
   },
   {
     icon: Ticket,
     title: "Intervention à la demande",
-    desc: "Vous me sollicitez quand vous en avez besoin, sans engagement.",
+    desc: "pour corriger un problème ou ajouter une évolution précise, sans engagement mensuel.",
   },
   {
     icon: FileText,
-    title: "Rapport possible",
-    desc: "Un résumé des actions menées (mensuel si forfait).",
+    title: "Suivi clair",
+    desc: "avec un résumé des actions réalisées si vous souhaitez garder une trace des interventions.",
   },
 ];
 
@@ -26,7 +26,7 @@ export default function MaintenanceTerms() {
     <Section className="text-base sm:text-lg lg:text-xl">
       <h2 className="text-xl font-semibold mt-10 mb-3 flex items-center gap-2">
         <ClipboardList className="w-5 h-5 text-[#007AFF]" />
-        Modalités
+        Deux façons de fonctionner
       </h2>
 
       <ul className="list-none ml-6 space-y-2">
