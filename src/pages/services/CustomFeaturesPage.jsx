@@ -7,30 +7,9 @@ import CustomFeaturesAudience from "../../components/services/CustomFeatures/Cus
 import CustomFeaturesOffer from "../../components/services/CustomFeatures/CustomFeaturesOffer";
 import CustomFeaturesUseCases from "../../components/services/CustomFeatures/CustomFeaturesUseCases";
 import PageTitle from "../../components/UI/PageTitle";
+import { customFeaturesFaq } from "../../data/faqs";
 
 export default function CustomFeaturesPage() {
-  const faq = [
-    {
-      q: "Qu’est-ce qu’une fonctionnalité sur mesure ?",
-      a: "Ce sont des outils adaptés à votre activité : réservation avec gestion des créneaux, espace administrateur, gestion de contenus, espace client ou outil interne.",
-    },
-    {
-      q: "Peut-on commencer avec une version simple ?",
-      a: "Oui. On peut créer une première version utile, puis ajouter des fonctionnalités progressivement selon vos besoins.",
-    },
-    {
-      q: "Est-ce sécurisé ?",
-      a: "Oui. L’outil est conçu avec des accès protégés, des rôles utilisateurs et des bonnes pratiques de sécurité.",
-    },
-    {
-      q: "Est-ce que ça peut évoluer dans le temps ?",
-      a: "Oui. La solution est pensée pour évoluer : nouvelles fonctionnalités, modules ou améliorations sans tout refaire.",
-    },
-    {
-      q: "Vous gérez la mise en ligne ?",
-      a: "Oui. Je m’occupe du déploiement et je vous accompagne après la mise en production si nécessaire.",
-    },
-  ];
 
   return (
     <>
@@ -40,7 +19,7 @@ export default function CustomFeaturesPage() {
       <CustomFeaturesOffer />
       <CustomFeaturesUseCases />
 
-      <FaqSection title="FAQ — Fonctionnalités sur mesure" faq={faq} ariaLabelledby="faq-apps-title" />
+      <FaqSection title="FAQ — Fonctionnalités sur mesure" faq={customFeaturesFaq} ariaLabelledby="faq-apps-title" />
 
       <CtaFinal
         title="Discutons de votre besoin"

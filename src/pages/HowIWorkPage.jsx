@@ -25,27 +25,10 @@ import HowIWorkNoCodeComparison from "../components/howIWork/HowIWorkNoCodeCompa
 import HowIWorkOutcomes from "../components/howIWork/HowIWorkOutcomes";
 import HowIWorkMockups from "../components/howIWork/HowIWorkMockups";
 import HowIWorkTechStack from "../components/howIWork/HowIWorkTechStack";
+import { howIWorkFaq } from "../data/faqs";
 
 
 export default function HowIWorkPage() {
-  const faq = [
-    {
-      q: "Est-ce que je dois comprendre la technique ?",
-      a: "Non. Je vous explique uniquement ce qui est utile pour décider. Mon rôle : transformer votre besoin en un site clair, fiable et évolutif, sans jargon inutile.",
-    },
-    {
-      q: "Travaillez-vous avec des artisans, indépendants et commerces ?",
-      a: "Oui, c’est mon cœur de cible : artisans, indépendants, commerces et petites entreprises à Bordeaux et à distance partout en France.",
-    },
-    {
-      q: "Proposez-vous des maquettes ?",
-      a: "Oui si besoin : soit une structure simple validée ensemble, soit une maquette Figma plus poussée avant le développement.",
-    },
-    {
-      q: "Et après la mise en ligne ?",
-      a: "Je peux assurer le suivi : corrections, mises à jour, sécurité, optimisations et petites évolutions.",
-    },
-  ];
 
   const technologies = [
     // Frontend
@@ -83,7 +66,7 @@ export default function HowIWorkPage() {
       <HowIWorkMockups />
       <HowIWorkTechStack technologies={technologies} />
 
-      <FaqSection title="FAQ — Méthode" faq={faq} ariaLabelledby="faq-skills-title" />
+      <FaqSection title="FAQ — Méthode" faq={howIWorkFaq} ariaLabelledby="faq-skills-title" />
 
       <CtaFinal
         title="On en parle ?"
