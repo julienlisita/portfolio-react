@@ -16,7 +16,7 @@ export default function ServicesPage() {
     },
     {
       q: "Site vitrine ou outil sur mesure : comment choisir ?",
-      a: "Un site vitrine sert surtout à présenter votre activité et générer des contacts. Un outil sur mesure ajoute des fonctionnalités utiles : réservation, formulaires métier, espace administrable ou espace client.",
+      a: "Un site vitrine présente votre activité et facilite les demandes de contact, devis ou candidature. Un outil sur mesure ajoute une vraie logique de gestion : réservation avec créneaux, espace administrateur, espace client ou outil métier.",
     },
     {
       q: "Travaillez-vous avec des indépendants et petites entreprises ?",

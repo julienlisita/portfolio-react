@@ -8,7 +8,7 @@ export default function ServicesOffers() {
   return (
     <Section title="Comment je peux vous aider">
       <p className="text-base sm:text-lg text-gray-300 mb-6">
-        Selon votre besoin, je peux vous aider à attirer des clients, simplifier votre organisation ou assurer le suivi technique de votre site.Selon votre situation, je peux intervenir sur la visibilité, l’organisation ou le suivi technique de votre site.
+       Selon votre besoin, je peux vous aider à attirer des clients, mettre en place des outils de gestion ou assurer le suivi technique de votre site.
       </p>
 
       <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">

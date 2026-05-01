@@ -5,7 +5,7 @@ import Button from "../UI/Button";
 
 const steps = [
   { t: "Échange initial", d: "Nous clarifions vos besoins, vos objectifs et les priorités du projet." },
-  { t: "Conception", d: "jJe vous propose une structure claire, un parcours cohérent et une direction visuelle adaptée." },
+  { t: "Conception", d: "Je vous propose une structure claire, un parcours cohérent et une direction visuelle adaptée." },
   { t: "Développement", d: "Je développe le site ou les fonctionnalités, avec des points réguliers pour valider l’avancement." },
   { t: "Mise en ligne", d: "Votre site est publié, testé et accessible sur tous les supports." },
   { t: "Suivi & maintenance", d: "Je peux rester disponible pour les ajustements, la maintenance ou les futures évolutions." },
@@ -13,7 +13,7 @@ const steps = [
 
 export default function ServicesMethod() {
   return (
-    <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl">
+    <Section id="method" title="Ma méthode de travail" className="text-base sm:text-lg lg:text-xl text-gray-300">
       <p>Un projet avance mieux quand les étapes sont claires. Vous savez ce qui est prévu, ce qui est en cours et ce qui reste à valider.</p>
 
       <p className="text-sm text-gray-400 mt-2">
