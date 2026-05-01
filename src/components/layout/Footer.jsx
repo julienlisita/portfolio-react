@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Bloc haut */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-8">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex items-center gap-2 shrink-0">
             <img
               src="/assets/logos/site/logo.png"
               alt="Logo Julien Lisita"
@@ -20,6 +20,9 @@ export default function Footer() {
               loading="lazy"
               decoding="async"
             />
+            <span className="text-sm sm:text-base font-medium text-gray-100 whitespace-nowrap">
+              Julien Lisita
+            </span>
           </div>
 
           {/* Liens (structurés) */}
@@ -41,14 +44,14 @@ export default function Footer() {
             <nav aria-label="Ressources" className="space-y-2">
               <p className="text-xs uppercase tracking-wider text-gray-400">Ressources</p>
               <div className="flex flex-col gap-2">
-                <Link className="hover:underline" to="/comment-je-travaille">Approche & choix techniques</Link>
+                <Link className="hover:underline" to="/comment-je-travaille">Comment je travaille</Link>
                 <Link className="hover:underline" to="/blog">Blog</Link>
               </div>
             </nav>
 
             {/* Profil / Technique */}
             <div className="space-y-2">
-              <p className="text-xs uppercase tracking-wider text-gray-400">Profil</p>
+              <p className="text-xs uppercase tracking-wider text-gray-400">Réseaux</p>
               <div className="flex items-center gap-3">
                 <a
                   href="https://www.linkedin.com/in/julienlisita/"
@@ -90,7 +93,7 @@ export default function Footer() {
         {/* Bloc bas */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-300">
           <p className="text-xs sm:text-sm text-center sm:text-left opacity-80">
-            © {year} Tous droits réservés — Julien LISITA — Développeur Web — Entreprise Individuelle (EI)
+            © {year} Julien LISITA — Développeur Web à Bordeaux (EI)
           </p>
 
           <nav aria-label="Liens légaux" className="flex items-center gap-x-4 text-xs sm:text-sm">
