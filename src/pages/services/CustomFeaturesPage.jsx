@@ -12,7 +12,7 @@ export default function CustomFeaturesPage() {
   const faq = [
     {
       q: "Qu’est-ce qu’une fonctionnalité sur mesure ?",
-      a: "Ce sont des outils adaptés à votre activité : réservation en ligne, espace admin, gestion de contenus, formulaires avancés ou espace client.",
+      a: "Ce sont des outils adaptés à votre activité : réservation avec gestion des créneaux, espace administrateur, gestion de contenus, espace client ou outil interne.",
     },
     {
       q: "Peut-on commencer avec une version simple ?",
