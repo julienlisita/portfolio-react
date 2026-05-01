@@ -4,10 +4,10 @@ import { Users, CheckCircle } from "lucide-react";
 import Section from "../../layout/Section";
 
 const items = [
-  "PME/TPE qui veulent digitaliser un process",
-  "Associations avec besoins de gestion interne",
-  "Porteurs de projet (prototype / MVP)",
-  "Structures avec besoin d’un espace admin / espace client",
+  "Indépendants qui veulent automatiser certaines tâches (réservation, demandes, suivi…)",
+  "Entreprises de services qui reçoivent des demandes ou gèrent des informations régulièrement",
+  "Structures qui ont besoin d’un espace administrateur pour gérer leurs contenus ou leurs données",
+  "Porteurs de projet qui veulent créer un outil ou tester une idée (prototype / MVP)",
 ];
 
 export default function CustomFeaturesAudience() {

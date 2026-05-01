@@ -11,24 +11,24 @@ import PageTitle from "../../components/UI/PageTitle";
 export default function CustomFeaturesPage() {
   const faq = [
     {
-      q: "Qu’est-ce que vous appelez “sur mesure” ?",
-      a: "Des fonctionnalités adaptées à votre activité : réservation, espace admin, gestion de contenus, candidatures, espace client…",
+      q: "Qu’est-ce qu’une fonctionnalité sur mesure ?",
+      a: "Ce sont des outils adaptés à votre activité : réservation en ligne, espace admin, gestion de contenus, formulaires avancés ou espace client.",
     },
     {
-      q: "Pouvez-vous développer une première version rapidement ?",
-      a: "Oui. On avance par itérations : une première version utile, puis des améliorations selon les retours.",
+      q: "Peut-on commencer avec une version simple ?",
+      a: "Oui. On peut créer une première version utile, puis ajouter des fonctionnalités progressivement selon vos besoins.",
     },
     {
       q: "Est-ce sécurisé ?",
-      a: "Oui : authentification, rôles, accès protégés et bonnes pratiques de sécurité dès la conception.",
+      a: "Oui. L’outil est conçu avec des accès protégés, des rôles utilisateurs et des bonnes pratiques de sécurité.",
     },
     {
       q: "Est-ce que ça peut évoluer dans le temps ?",
-      a: "Oui. Le projet est conçu pour grandir : nouvelles fonctionnalités, nouveaux modules, sans tout refaire.",
+      a: "Oui. La solution est pensée pour évoluer : nouvelles fonctionnalités, modules ou améliorations sans tout refaire.",
     },
     {
-      q: "Vous vous occupez de la mise en ligne ?",
-      a: "Oui : déploiement, configuration, et accompagnement après mise en production.",
+      q: "Vous gérez la mise en ligne ?",
+      a: "Oui. Je m’occupe du déploiement et je vous accompagne après la mise en production si nécessaire.",
     },
   ];
 
@@ -43,10 +43,10 @@ export default function CustomFeaturesPage() {
       <FaqSection title="FAQ — Fonctionnalités sur mesure" faq={faq} ariaLabelledby="faq-apps-title" />
 
       <CtaFinal
-        title="Construisons votre solution sur mesure"
-        tagline="Un accompagnement global : cadrage, développement, mise en ligne et évolutions."
-        primary={{ href: "/contact", text: "Discuter du besoin" }}
-        secondary={{ href: "/realisations", text: "Voir des projets" }}
+        title="Discutons de votre besoin"
+        tagline="Vous avez une idée, un besoin ou un outil à créer ? Voyons ensemble la solution la plus simple et la plus utile."
+        primary={{ href: "/contact", text: "Discuter du projet" }}
+        secondary={{ href: "/realisations", text: "Voir des réalisations" }}
       />
     </>
   );

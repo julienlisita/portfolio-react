@@ -4,10 +4,10 @@ import { Briefcase, BarChart3, Lock, Rocket } from "lucide-react";
 import Section from "../../layout/Section";
 
 const useCases = [
-  { icon: Briefcase, text: "Outil métier (CRM léger, gestion interne, planning…)" },
-  { icon: BarChart3, text: "Dashboard / back-office sécurisé" },
-  { icon: Lock, text: "Espace client (documents, suivi, messages…)" },
-  { icon: Rocket, text: "Prototype / MVP pour valider une idée" },
+  { icon: Briefcase, text: "Coach ou thérapeute : prise de rendez-vous et demandes en ligne" },
+  { icon: BarChart3, text: "Entreprise de services : gestion de candidatures, contenus ou actualités" },
+  { icon: Lock, text: "Structure B2B : espace client avec documents ou suivi sécurisé" },
+  { icon: Rocket, text: "Porteur de projet : prototype fonctionnel pour tester une idée" },
 ];
 
 export default function CustomFeaturesUseCases() {

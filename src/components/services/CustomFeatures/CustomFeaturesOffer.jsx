@@ -4,11 +4,11 @@ import { Layers, Wrench } from "lucide-react";
 import Section from "../../layout/Section";
 
 const items = [
-  "Développement full-stack (front + back) selon votre besoin",
-  "Espace d’administration simple (ajout/modification de contenus, gestion…)",
-  "UX responsive (mobile/desktop) adaptée aux usages réels",
-  "Sécurité : accès protégés, rôles, API sécurisées",
-  "Déploiement + accompagnement en production",
+  "Réservation en ligne avec créneaux, demandes et notifications",
+  "Formulaires métier adaptés à vos besoins : candidature, devis, inscription, demande client",
+  "Espace administrateur pour modifier vos contenus ou gérer certaines demandes",
+  "Espace client sécurisé pour centraliser documents, informations ou suivi",
+  "Outil interne simple : planning, suivi, tableau de bord ou gestion de contenus",
 ];
 
 export default function CustomFeaturesOffer() {
