@@ -2,7 +2,23 @@
 
 import Section from "../layout/Section";
 
-export default function PricingOptions({ commonOptions, advancedOptions }) {
+export default function PricingOptions() {
+
+  const commonOptions = [
+  { title: "Page supplémentaire", price: "+120 à 180 € / page" },
+  { title: "Formulaire personnalisé", price: "+80 à 150 €" },
+  { title: "Design & maquettes (Figma)", price: "+250 à 500 €" },
+  { title: "Aide au contenu", price: "+100 à 300 €" },
+];
+
+const advancedOptions = [
+  { title: "Zone d’actualités / blog", price: "+300 à 600 €" },
+  { title: "Espace administrateur simple", price: "+800 € et +" },
+  { title: "Réservation avec espace admin", price: "+1 200 à 2 000 €" },
+  { title: "Maintenance mensuelle", price: "à partir de 40 € / mois" },
+
+];
+
   return (
     <Section title="Options (selon vos besoins)">
       <p className="text-sm text-gray-400 mt-2">
