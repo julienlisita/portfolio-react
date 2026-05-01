@@ -33,9 +33,8 @@ export default function WebsiteCreationWhyAndSeo() {
       </h3>
 
       <p className="text-gray-300 ml-6">
-        Dès la création, le site est structuré pour être clair pour vos visiteurs
-        et compréhensible par Google : pages bien organisées, balises de base,
-        performance, responsive et contenu orienté recherche locale.
+        Le site est structuré pour être clair pour vos visiteurs et compréhensible par Google :
+        pages bien organisées, performance, responsive et base SEO adaptée à une activité locale.
       </p>
     </Section>
   );

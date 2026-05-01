@@ -45,7 +45,7 @@ export default function WebsiteCreationPage() {
 
       <CtaFinal
         title="Créons un site utile pour votre activité"
-        tagline="Un site clair, rapide et professionnel pour présenter vos services, inspirer confiance et générer des demandes."
+        tagline="Un site pensé pour rassurer vos visiteurs et faciliter la prise de contact."
         primary={{ href: "/contact", text: "Discuter du projet" }}
         secondary={{ href: "/tarifs", text: "Voir les tarifs" }}
       />

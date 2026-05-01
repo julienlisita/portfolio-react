@@ -7,9 +7,9 @@ export default function WebsiteCreationIntro() {
 
     <Section className="text-base sm:text-lg lg:text-xl">
       <p className="text-gray-300 mb-8">
-        Vous avez besoin d’un site clair, professionnel et facile à comprendre ?
-        Je conçois des sites vitrines pensés pour présenter votre activité,
-        inspirer confiance et transformer vos visiteurs en prises de contact.
+        Vous avez besoin d’un site qui explique clairement ce que vous faites et donne envie de vous contacter ?
+        Je conçois des sites vitrines pensés pour rassurer vos visiteurs, mettre en valeur vos services
+        et faciliter la prise de contact.
       </p>
     </Section>
   );
