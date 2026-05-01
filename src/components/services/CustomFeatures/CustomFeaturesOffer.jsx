@@ -5,10 +5,10 @@ import Section from "../../layout/Section";
 
 const items = [
   "Réservation en ligne avec créneaux, demandes et notifications",
-  "Formulaires métier adaptés à vos besoins : candidature, devis, inscription, demande client",
   "Espace administrateur pour modifier vos contenus ou gérer certaines demandes",
   "Espace client sécurisé pour centraliser documents, informations ou suivi",
   "Outil interne simple : planning, suivi, tableau de bord ou gestion de contenus",
+  "Logique métier adaptée à votre activité",
 ];
 
 export default function CustomFeaturesOffer() {
@@ -16,7 +16,7 @@ export default function CustomFeaturesOffer() {
      <Section className="text-base sm:text-lg lg:text-xl">
         <h2 className="text-xl font-semibold mt-10 mb-3 flex items-center gap-2">
           <Layers className="w-5 h-5 text-[#007AFF]" />
-          Ce que je propose
+            Des outils concrets pour votre activité
         </h2>
 
       <ul className="list-none ml-6 space-y-2">

@@ -13,7 +13,7 @@ const packs = [
       "4 à 5 pages essentielles",
       "Design clair adapté à votre activité",
       "Site responsive mobile / desktop",
-      "Formulaire de contact",
+      "Formulaire de contact avec possibilité de formulaires adaptés (devis, candidature…)",
       "Base SEO propre",
       "Mise en ligne accompagnée",
     ],

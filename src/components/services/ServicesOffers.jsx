@@ -8,7 +8,7 @@ export default function ServicesOffers() {
   return (
     <Section title="Comment je peux vous aider">
       <p className="text-base sm:text-lg text-gray-300 mb-6">
-        Selon votre situation, je peux intervenir sur la visibilité, l’organisation ou le suivi technique de votre site.
+        Selon votre besoin, je peux vous aider à attirer des clients, simplifier votre organisation ou assurer le suivi technique de votre site.Selon votre situation, je peux intervenir sur la visibilité, l’organisation ou le suivi technique de votre site.
       </p>
 
       <div className="w-full grid gap-6 sm:gap-7 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -17,7 +17,7 @@ export default function ServicesOffers() {
           icon={<Monitor />}
           title="Un site clair pour attirer des clients"
           subtitle="Site vitrine & visibilité"
-          description="Un site professionnel pour présenter votre activité, inspirer confiance et guider vos visiteurs vers une prise de contact."
+          description="Un site professionnel pour présenter votre activité, inspirer confiance et guider vos visiteurs vers une prise de contact, une demande de devis ou une candidature."
           color={["#5AC8FA", "#007AFF"]}
           link="/services/creation-site-internet"
         />
@@ -26,8 +26,8 @@ export default function ServicesOffers() {
           variant="page"
           icon={<Layers />}
           title="Des outils pour gagner du temps"
-          subtitle="Réservation, formulaires, espace admin"
-          description="Des fonctionnalités adaptées à votre activité pour simplifier votre organisation : réservation en ligne, formulaires métier, espace administrable ou espace client."
+          subtitle="Espace admin, réservation, outils métier"
+          description="Des outils connectés à votre site pour gérer des créneaux, contenus, demandes ou espaces clients, selon votre activité."
           color={["#007AFF", "#9B59B6"]}
           link="/services/creation-site-internet-fonctionnalites-sur-mesure"
         />

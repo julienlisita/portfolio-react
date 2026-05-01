@@ -12,13 +12,13 @@ export default function ServicesPreview() {
       subtitle: "Site vitrine & visibilité",
       icon: <Monitor />,
       description:
-        "Un site moderne pour présenter votre activité, inspirer confiance et générer des prises de contact.",
+        "Un site moderne pour présenter votre activité, inspirer confiance et faciliter les demandes de contact.",
       color: ["#5AC8FA", "#007AFF"],
       link: "/services/creation-site-internet",
     },
     {
       title: "Des outils pour gagner du temps",
-      subtitle: "Réservation, formulaires, espace admin",
+      subtitle: "Espace admin, réservation,  outils métier",
       icon: <Layers />,
       description:
         "Des fonctionnalités utiles pour simplifier votre organisation et éviter les tâches répétitives.",

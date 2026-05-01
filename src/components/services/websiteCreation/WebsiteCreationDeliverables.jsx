@@ -7,6 +7,7 @@ const items = [
   "Une présentation claire de votre activité et de vos services",
   "Un design professionnel cohérent avec votre image",
   "Une navigation simple pour guider vos visiteurs vers le contact",
+  "Un formulaire adapté à votre activité (devis, candidature, demande…)",
   "Un site rapide et agréable sur mobile",
   "Une base SEO propre pour être visible localement",
   "Une mise en ligne accompagnée, avec conseils pour la suite",
