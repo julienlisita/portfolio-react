@@ -5,9 +5,9 @@ import Section from "../../layout/Section";
 
 const items = [
   { icon: Wrench, text: "Corriger rapidement les bugs ou comportements inattendus" },
-  { icon: Shield, text: "Limiter les risques liés aux mises à jour, dépendances ou formulaires" },
+  { icon: Shield, text: "Limiter les risques liés aux mises à jour, formulaires ou services externes" },
   { icon: Gauge, text: "Conserver un site rapide et agréable à utiliser" },
-  { icon: ListChecks, text: "jouter de petites évolutions sans relancer un projet complet" },
+  { icon: ListChecks, text: "Ajouter de petites évolutions sans relancer un projet complet" },
   { icon: ClipboardList, text: "Avoir un interlocuteur qui connaît votre site et peut vous conseiller" },
 ];
 

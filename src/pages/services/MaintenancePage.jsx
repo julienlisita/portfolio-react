@@ -44,7 +44,7 @@ export default function MaintenancePage() {
 
       <CtaFinal
         title="Gardons votre site fiable dans la durée"
-        tagline="Maintenance, corrections et petites évolutions pour éviter les blocages et faire avancer votre site avec votre activité."
+        tagline="Corrections, suivi et petites évolutions pour éviter les blocages et faire avancer votre site avec votre activité."
         primary={{ href: "/contact", text: "Demander un suivi" }}
         secondary={{ href: "/tarifs", text: "Voir les tarifs" }}
       />
