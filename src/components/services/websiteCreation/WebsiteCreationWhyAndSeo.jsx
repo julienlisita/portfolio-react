@@ -7,7 +7,7 @@ const whyItems = [
   "Un site plus rapide et plus léger qu’une solution chargée de plugins inutiles",
   "Une structure maîtrisée, pensée pour évoluer avec votre activité",
   "Moins de dépendances techniques et une maintenance plus simple",
-  "La possibilité d’ajouter plus tard des fonctionnalités utiles : réservation, formulaire avancé, actualités…",
+  "La possibilité d’ajouter plus tard des options ou fonctionnalités : formulaire personnalisé, actualités, espace admin, réservation…",
 ];
 
 export default function WebsiteCreationWhyAndSeo() {
