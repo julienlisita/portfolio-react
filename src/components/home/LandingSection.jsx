@@ -17,7 +17,7 @@ export default function LandingSection() {
     pour développer
     votre activité`;   
 
-  const tagline = "Des sites clairs et rapides, avec des fonctionnalités utiles (réservation en ligne, gestion, formulaires…) pour vous faire gagner du temps et générer plus de clients.";
+  const tagline = "Je conçois des sites clairs, rapides et évolutifs, avec des outils utiles quand votre activité en a besoin : réservation, espace admin, gestion de contenus…";
 
   const VISUAL_SRC = "/assets/mockups/portfolio-services-ipad.png";
 
@@ -172,13 +172,13 @@ const spotlightStyleDesktop = {
         {...(!reduce && { transition: { ...fade.transition, delay: 0.7 } })}
       >
         <a
-          href="#about"
+          href="#problemes"
           onClick={(e) => {
             e.preventDefault();
-            document.querySelector("#pour-qui")?.scrollIntoView({ behavior: "smooth" });
+            document.querySelector("#problemes")?.scrollIntoView({ behavior: "smooth" });
           }}
           className="group"
-          aria-label="Aller à la section À propos"
+          aria-label="Aller à la section suivante"
         >
           <ArrowDown
             className={`h-10 w-10 sm:h-12 sm:w-12 text-[#5AC8FA] ${styles.pulseArrow}`}
