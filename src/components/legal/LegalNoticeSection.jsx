@@ -10,7 +10,7 @@ export default function LegalNoticeSection() {
         <br />
         Julien Lisita – Développeur web freelance
         <br />
-        Adresse : 12 Avenue Pierre Mendes-France, 33700 Mérignac
+        Adresse : 63 rue Ernest Renan, 33000 Bordeaux
         <br />
         Email : contact@julienlisita.com
         <br />
