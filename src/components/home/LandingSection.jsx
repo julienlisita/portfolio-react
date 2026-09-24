@@ -11,13 +11,13 @@ export default function LandingSection() {
   const reduce = useReducedMotion();
 
   const name = "Julien Lisita";
-  const eyebrow = "Pour indépendants, artisans et petites entreprises";
+  const eyebrow = "Pour indépendants, artisans & entreprises";
   const location = "Bordeaux & à distance";
   const title = `Sites web & outils
     pour développer
     votre activité`;   
 
-  const tagline = "Je conçois des sites et applications web adaptés à votre activité : présence en ligne, réservation, espaces de gestion, outils métier et fonctionnalités sur mesure.";
+  const tagline = "Je conçois des sites et applications web adaptés à votre activité : présence en ligne, réservation, espaces de gestion, outils métier sur mesure.";
 
   const VISUAL_SRC = "/assets/mockups/portfolio-services-ipad.png";
 
