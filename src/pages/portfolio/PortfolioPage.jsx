@@ -17,8 +17,8 @@ export default function PortfolioPage() {
 
       <PortfolioIntro />
 
-      <PortfolioGrid title="Sites vitrines" projects={vitrines} />
       <PortfolioGrid title="Applications web" projects={tools} />
+      <PortfolioGrid title="Sites vitrines" projects={vitrines} />
 
       <CtaFinal
         title="Votre projet, le prochain ?"

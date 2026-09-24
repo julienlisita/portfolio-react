@@ -16,7 +16,7 @@ export default function ProjectCard({
     category === "vitrines"
       ? "Site vitrine"
       : category === "web"
-      ? "Sur mesure"
+      ? "Application web"
       : null;
 
   return (
