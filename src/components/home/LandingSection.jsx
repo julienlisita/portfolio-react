@@ -17,7 +17,7 @@ export default function LandingSection() {
     pour développer
     votre activité`;   
 
-  const tagline = "Je conçois des sites clairs, rapides et évolutifs, avec des outils utiles quand votre activité en a besoin : réservation, espace admin, gestion de contenus…";
+  const tagline = "Je conçois des sites et applications web adaptés à votre activité : présence en ligne, réservation, espaces de gestion, outils métier et fonctionnalités sur mesure.";
 
   const VISUAL_SRC = "/assets/mockups/portfolio-services-ipad.png";
 
