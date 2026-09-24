@@ -22,7 +22,7 @@ export default function ServicesPreview() {
       icon: <Layers />,
       description:
         "Des fonctionnalités utiles pour simplifier votre organisation et éviter les tâches répétitives.",
-      color: ["#007AFF", "#9B59B6"],
+      color: ["#007AFF", "#4A64D8"],
       link: "/services/creation-site-internet-fonctionnalites-sur-mesure",
     },
     {
@@ -31,7 +31,7 @@ export default function ServicesPreview() {
       icon: <LifeBuoy />,
       description:
         "Un accompagnement pour garder votre site rapide, à jour et prêt à évoluer avec votre activité.",
-      color: ["#9B59B6", "#FF66B2"],
+      color: ["#4A64D8", "#9B59B6"],
       link: "/services/suivi-et-evolutions",
     },
   ];

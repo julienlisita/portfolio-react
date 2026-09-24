@@ -28,7 +28,7 @@ export default function ServicesOffers() {
           title="Des outils pour gagner du temps"
           subtitle="Espace admin, réservation, outils métier"
           description="Des outils connectés à votre site pour gérer des créneaux, contenus, demandes ou espaces clients, selon votre activité."
-          color={["#007AFF", "#9B59B6"]}
+          color={["#007AFF", "#4A64D8"]}
           link="/services/creation-site-internet-fonctionnalites-sur-mesure"
         />
 
@@ -38,7 +38,7 @@ export default function ServicesOffers() {
           title="Un suivi pour rester fiable"
           subtitle="Maintenance, sécurité, améliorations"
           description="Un accompagnement après la mise en ligne pour garder votre site fiable, rapide et à jour, avec des ajustements possibles selon vos besoins."
-          color={["#9B59B6", "#FF66B2"]}
+          color={["#4A64D8", "#9B59B6"]}
           link="/services/suivi-et-evolutions"
         />
       </div>
