@@ -7,13 +7,13 @@ export default function PricingOptions() {
   const commonOptions = [
   { title: "Page supplémentaire", price: "+120 à 180 € / page" },
   { title: "Formulaire personnalisé", price: "+80 à 150 €" },
-  { title: "Design & maquettes (Figma)", price: "+250 à 500 €" },
   { title: "Aide au contenu", price: "+100 à 300 €" },
+  { title: "Animations spécifiques", price: "sur devis" },
 ];
 
 const advancedOptions = [
   { title: "Zone d’actualités / blog", price: "+300 à 600 €" },
-  { title: "Espace administrateur simple", price: "+800 € et +" },
+  { title: "Espace administrateur simple", price: "à partir de 800 €" },
   { title: "Réservation avec espace admin", price: "+1 200 à 2 000 €" },
   { title: "Maintenance mensuelle", price: "à partir de 40 € / mois" },
 
@@ -50,7 +50,8 @@ const advancedOptions = [
           </ul>
 
           <p className="text-xs text-gray-500 mt-4">
-            Autres possibles : espace admin complet, espace client, paiement, intégrations spécifiques…
+            Pour une application, un outil métier ou des besoins plus spécifiques,
+            le tarif est établi sur devis selon le périmètre du projet.
           </p>
         </div>
       </div>
